@@ -1622,13 +1622,22 @@ svg {
             "width":4,
             "opacity":1,
             "line-color":token("--primary"),
-            "label":"data(label)",
-            "font-size":"12px",
-            "color":token("--foreground"),
+            "label":"data(pathLabel)",
+            "font-size":"11px",
+            "font-weight":600,
+            "color":token("--muted-foreground"),
             "text-background-color":token("--background"),
-            "text-background-opacity":0.94,
-            "text-background-padding":"3px",
-            "text-rotation":"autorotate"
+            "text-background-opacity":0.82,
+            "text-background-padding":"4px",
+            "text-background-shape":"roundrectangle",
+            "text-border-color":token("--border"),
+            "text-border-width":1,
+            "text-border-opacity":0.55,
+            "text-wrap":"wrap",
+            "text-max-width":"190px",
+            "text-margin-y":"data(pathOffset)",
+            "text-rotation":"autorotate",
+            "min-zoomed-font-size":7
           }}
         ]
       });
@@ -1697,6 +1706,10 @@ svg {
 
       function clearClasses() {
         cy.elements().removeClass("muted focus");
+        cy.edges().forEach(function (edge) {
+          edge.removeData("pathLabel");
+          edge.removeData("pathOffset");
+        });
       }
 
       function showNode(node) {
@@ -1787,8 +1800,11 @@ svg {
         path.nodes.forEach(function (id) {
           cy.getElementById(id).removeClass("muted").addClass("focus");
         });
-        path.edges.forEach(function (id) {
-          cy.getElementById(id).removeClass("muted").addClass("focus");
+        path.edges.forEach(function (id, index) {
+          var edge = cy.getElementById(id);
+          edge.data("pathLabel", (index + 1) + ". " + edge.data("label"));
+          edge.data("pathOffset", index % 2 === 0 ? 24 : -24);
+          edge.removeClass("muted").addClass("focus");
         });
         var fromLabel = cy.getElementById(fromId).data("label");
         var toLabel = cy.getElementById(toId).data("label");
@@ -1798,7 +1814,7 @@ svg {
           var sourceNode = edge.source().data("label");
           var targetNode = edge.target().data("label");
           var part = document.createElement("span");
-          part.textContent = sourceNode + " ↔ " + targetNode + " (" + edge.data("label") + ") ";
+          part.textContent = (index + 1) + ". " + sourceNode + " ↔ " + targetNode + " (" + edge.data("label") + ") ";
           detail.appendChild(part);
           detail.appendChild(sourceLink(edge.data("sourceUrl")));
           if (index < path.edges.length - 1) {
@@ -1818,6 +1834,8 @@ svg {
       cy.on("tap", "edge", function (event) {
         clearClasses();
         var edge = event.target;
+        edge.data("pathLabel", edge.data("label"));
+        edge.data("pathOffset", 20);
         edge.addClass("focus");
         edge.connectedNodes().addClass("focus");
         detail.textContent = edge.source().data("label") + " ↔ " + edge.target().data("label") + " — " + edge.data("label") + " ";
