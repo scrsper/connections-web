@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
-    "check": "wrangler deploy --dry-run",
+    "check": "node scripts/validate.mjs && wrangler deploy --dry-run",
     "deploy": "wrangler deploy"
   },
   "devDependencies": {
