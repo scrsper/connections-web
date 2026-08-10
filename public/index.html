@@ -937,6 +937,98 @@ svg {
       box-shadow: inset 0 1px 0 color-mix(in srgb, var(--foreground) 5%, transparent);
       touch-action: pan-y;
     }
+    #founder-network-timeline .route-builder {
+      display: grid;
+      gap: 0.75rem;
+    }
+    #founder-network-timeline .route-builder-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.35rem 1rem;
+    }
+    #founder-network-timeline .route-builder-head p {
+      color: var(--muted-foreground);
+    }
+    #founder-network-timeline .route-fields {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      align-items: end;
+      gap: 0.6rem;
+    }
+    #founder-network-timeline .route-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    #founder-network-timeline .route-actions .form-check {
+      margin-right: auto;
+    }
+    #founder-network-timeline .field-step {
+      display: inline-grid;
+      width: 1.35rem;
+      height: 1.35rem;
+      margin-right: 0.3rem;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary-foreground);
+      background: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    #founder-network-timeline .route-status {
+      color: var(--muted-foreground);
+    }
+    #founder-network-timeline .graph-stage {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(270px, 22rem);
+      gap: 0.75rem;
+      align-items: stretch;
+    }
+    #founder-network-timeline .trace-panel {
+      display: flex;
+      min-height: 0;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    #founder-network-timeline .trace-panel h3 {
+      margin: 0;
+    }
+    #founder-network-timeline .trace-steps {
+      display: grid;
+      gap: 0.55rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    #founder-network-timeline .trace-step {
+      display: grid;
+      grid-template-columns: 1.7rem minmax(0, 1fr);
+      gap: 0.55rem;
+      align-items: start;
+      padding-top: 0.55rem;
+      border-top: 1px solid var(--border);
+    }
+    #founder-network-timeline .trace-number {
+      display: grid;
+      width: 1.55rem;
+      height: 1.55rem;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary-foreground);
+      background: var(--primary);
+      font-weight: 500;
+    }
+    #founder-network-timeline .trace-event {
+      display: block;
+      color: var(--foreground);
+    }
+    #founder-network-timeline .trace-pair {
+      display: block;
+      color: var(--muted-foreground);
+    }
     #founder-network-timeline .graph-toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -998,6 +1090,17 @@ svg {
         min-height: 540px;
       }
     }
+    @media (max-width: 900px) {
+      #founder-network-timeline .graph-stage {
+        grid-template-columns: 1fr;
+      }
+      #founder-network-timeline .route-fields {
+        grid-template-columns: 1fr;
+      }
+      #founder-network-timeline #swap-path {
+        justify-self: start;
+      }
+    }
   </style>
 
   <section class="card explorer-intro" aria-labelledby="explorer-title">
@@ -1009,24 +1112,34 @@ svg {
     </ol>
   </section>
 
-  <div class="viz-controls" aria-label="Shortest relationship path controls">
-    <label class="form-label" for="path-from">From
-      <select class="form-select" id="path-from">
-        <option value="">Select here first…</option>
-      </select>
-    </label>
-    <label class="form-label" for="path-to">To
-      <select class="form-select" id="path-to">
-        <option value="">Then select a destination…</option>
-      </select>
-    </label>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="include-weak">
-      <label class="form-check-label" for="include-weak">Include weak or canceled links</label>
+  <section class="card route-builder" aria-labelledby="route-builder-title">
+    <div class="route-builder-head">
+      <h3 id="route-builder-title">Trace a connection</h3>
+      <p class="text-small">Pick any two people or entities. We’ll find and explain the shortest documented route.</p>
     </div>
-    <button class="btn btn-primary" type="button" id="trace-path" disabled>Trace path</button>
-    <button class="btn btn-ghost" type="button" id="clear-path">Clear</button>
-  </div>
+    <div class="route-fields">
+      <label class="form-label" for="path-from"><span class="field-step">1</span>Starting point
+        <select class="form-select" id="path-from">
+          <option value="">Choose a person or entity…</option>
+        </select>
+      </label>
+      <button class="btn" type="button" id="swap-path" disabled aria-label="Swap starting point and destination">⇄ Swap</button>
+      <label class="form-label" for="path-to"><span class="field-step">2</span>Destination
+        <select class="form-select" id="path-to">
+          <option value="">Choose where to connect…</option>
+        </select>
+      </label>
+    </div>
+    <div class="route-actions">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="include-weak">
+        <label class="form-check-label" for="include-weak">Include disputed or canceled links</label>
+      </div>
+      <span class="route-status text-small" id="route-status" aria-live="polite">Choose a starting point to begin.</span>
+      <button class="btn btn-ghost" type="button" id="clear-path">Start over</button>
+      <button class="btn btn-primary" type="button" id="trace-path" disabled>Find connection →</button>
+    </div>
+  </section>
 
   <div class="legend text-small" aria-label="Graph legend">
     <span class="legend-item"><span class="node-key person"></span>Person</span>
@@ -1061,9 +1174,13 @@ svg {
     </div>
   </div>
 
-  <div id="relationship-graph" role="img" aria-label="Interactive network of the listed people, companies, media organizations, countries, and bridge entities. Select two names above to show a shortest documented path."></div>
-  <div class="card path-detail" aria-live="polite">
-    <span id="path-detail">Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.</span>
+  <div class="graph-stage">
+    <div id="relationship-graph" role="img" aria-label="Interactive network of the listed people, companies, media organizations, countries, and bridge entities. Select two names above to show a shortest documented path."></div>
+    <aside class="card trace-panel" aria-live="polite" aria-labelledby="trace-panel-title">
+      <h3 id="trace-panel-title">Path guide</h3>
+      <span id="path-detail">Choose two points above, then select <strong>Find connection</strong>. Numbered markers will appear on the route and match the evidence listed here.</span>
+      <ol class="trace-steps" id="trace-steps"></ol>
+    </aside>
   </div>
 
   <h3 class="timeline-heading" id="timeline-heading">Timeline</h3>
@@ -1140,6 +1257,10 @@ svg {
       var viewTimelineButton = root.querySelector("#view-timeline");
       var focusArea = root.querySelector("#focus-area");
       var detail = root.querySelector("#path-detail");
+      var traceSteps = root.querySelector("#trace-steps");
+      var tracePanelTitle = root.querySelector("#trace-panel-title");
+      var routeStatus = root.querySelector("#route-status");
+      var swapButton = root.querySelector("#swap-path");
       var colorProbe = document.createElement("span");
       colorProbe.setAttribute("aria-hidden", "true");
       colorProbe.style.cssText = "position:absolute;visibility:hidden;pointer-events:none";
@@ -1238,6 +1359,9 @@ svg {
         {id:"kcentre", label:"Kabbalah Centre", kind:"company", x:120, y:1350, summary:"Modern teaching organization developed by Philip Berg; distinct from the full historical Kabbalistic tradition.", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
         {id:"philipberg", label:"Philip Berg", kind:"person", x:120, y:1470, summary:"Rabbi who developed the modern Kabbalah Centre and broadened its popular reach.", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
         {id:"madonna", label:"Madonna", kind:"person", x:270, y:1470, summary:"Singer and prominent student and supporter of the Kabbalah Centre’s modern teachings.", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"justinsledge", label:"Dr. Justin Sledge", kind:"person", x:610, y:1080, summary:"Scholar and creator of ESOTERICA, where he presents academically grounded material on Western esotericism, including Kabbalah.", source:"https://www.justinsledge.com/esoterica"},
+        {id:"esoterica", label:"ESOTERICA", kind:"media", x:720, y:1160, summary:"Justin Sledge’s educational YouTube project covering magic, mysticism, alchemy, Kabbalah, Hermetic philosophy, and related traditions.", source:"https://www.justinsledge.com/esoterica"},
+        {id:"shmuley", label:"Rabbi Shmuley Boteach", kind:"person", x:815, y:1040, summary:"American Orthodox rabbi, author, media personality, and public advocate for Israel.", source:"https://www.shmuley.com/about"},
         {id:"khazars", label:"Khazar Khaganate", kind:"country", x:900, y:1110, summary:"Medieval steppe polity whose ruling elite is reported in several sources to have adopted Judaism; scope and chronology remain debated.", source:"https://www.iranicaonline.org/articles/khazars/"},
         {id:"bulan", label:"Bulan", kind:"person", x:1050, y:1110, summary:"Name given in later accounts to a Khazar ruler associated with conversion to Judaism; exact date and title are uncertain.", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
         {id:"obadiahkhazar", label:"King Obadiah (Khazar account)", kind:"person", x:1190, y:1110, summary:"Later correspondence credits Obadiah with rabbinic schools and reforms; some scholars question his historicity.", source:"https://www.jewishvirtuallibrary.org/obadiah"},
@@ -1367,6 +1491,9 @@ svg {
         {id:"berg-kcentre", a:"philipberg", b:"kcentre", label:"developed modern organization", relation:"origin", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
         {id:"kcentre-kabbalah", a:"kcentre", b:"kabbalah", label:"modern popular teaching organization; not the whole tradition", relation:"origin", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
         {id:"madonna-kcentre", a:"madonna", b:"kcentre", label:"prominent student and supporter", relation:"origin", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"sledge-esoterica", a:"justinsledge", b:"esoterica", label:"creator and host of the educational project", relation:"origin", source:"https://www.justinsledge.com/esoterica"},
+        {id:"esoterica-kabbalah", a:"esoterica", b:"kabbalah", label:"scholarly video coverage of Kabbalah and Jewish mysticism", relation:"origin", source:"https://www.justinsledge.com/esoterica"},
+        {id:"shmuley-israel", a:"shmuley", b:"israel", label:"public advocate and media commentator supporting Israel", relation:"public", source:"https://www.shmuley.com/about"},
         {id:"bulan-khazars", a:"bulan", b:"khazars", label:"ruler in later conversion accounts; date/title uncertain", relation:"public", confidence:"medium", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
         {id:"khazars-rabbinic", a:"khazars", b:"rabbinicjudaism", label:"reported elite conversion; date and scale disputed", relation:"origin", confidence:"medium", source:"https://www.iranicaonline.org/articles/khazars/"},
         {id:"bulan-rabbinic", a:"bulan", b:"rabbinicjudaism", label:"Judaism selected in later debate narrative", relation:"origin", confidence:"medium", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
@@ -1623,20 +1750,18 @@ svg {
             "opacity":1,
             "line-color":token("--primary"),
             "label":"data(pathLabel)",
-            "font-size":"11px",
-            "font-weight":600,
-            "color":token("--muted-foreground"),
-            "text-background-color":token("--background"),
-            "text-background-opacity":0.82,
-            "text-background-padding":"4px",
-            "text-background-shape":"roundrectangle",
-            "text-border-color":token("--border"),
-            "text-border-width":1,
-            "text-border-opacity":0.55,
-            "text-wrap":"wrap",
-            "text-max-width":"190px",
+            "font-size":"13px",
+            "font-weight":500,
+            "color":token("--primary-foreground"),
+            "text-background-color":token("--primary"),
+            "text-background-opacity":1,
+            "text-background-padding":"6px",
+            "text-background-shape":"ellipse",
+            "text-border-color":token("--background"),
+            "text-border-width":2,
+            "text-border-opacity":1,
             "text-margin-y":"data(pathOffset)",
-            "text-rotation":"autorotate",
+            "text-rotation":"none",
             "min-zoomed-font-size":7
           }}
         ]
@@ -1644,9 +1769,9 @@ svg {
 
       var focusGroups = {
         tech:["omidyar","ebay","elon","xcom","confinity","paypal","levchin","nosek","howery","banister","sponsornet","netscape","youtube","affirm","thiel","thielcapital","foundersfund","valar","mithril","palantir","gigafund","angel","neal","flock","ring","amazon","bezos","openai","altman","xai","xsocial","spacex","andreessen","a16z","sacks"],
-        politics:["trump","thiel","elon","altman","amazon","netanyahu","israel","tucker","tcn","mercer","capital1789","owens","cuban","adelson","soros","charleskoch","davidkoch","kochindustries","schwarzman","blackstone","sacks","vance","palantir","ukraine","zelenskyy","denmark","sweden","howery"],
+        politics:["trump","thiel","elon","altman","amazon","netanyahu","israel","tucker","tcn","mercer","capital1789","owens","cuban","adelson","soros","charleskoch","davidkoch","kochindustries","schwarzman","blackstone","sacks","vance","palantir","ukraine","zelenskyy","denmark","sweden","howery","shmuley"],
         finance:["ebay","amazon","bezos","trump","buffett","berkshire","schwarzman","blackstone","fink","blackrock","bogle","vanguard","statestreet","creditsuisse","ubs","ryancohen","gamestop","chewy","icahn","charleskoch","davidkoch","kochindustries"],
-        kabbalah:["kabbalah","zohar","mosesdeleon","cordovero","luria","vital","scholem","kcentre","philipberg","madonna","rabbinicjudaism"],
+        kabbalah:["kabbalah","zohar","mosesdeleon","cordovero","luria","vital","scholem","kcentre","philipberg","madonna","rabbinicjudaism","justinsledge","esoterica"],
         khazars:["khazars","bulan","obadiahkhazar","rabbinicjudaism","christianity","islam","khazarcorr","kabbalah"],
         bolsheviks:["bolsheviks","lenin","trotsky","octoberrev","ussr","ukrainianssr","ukraine","levchin","palantir","zelenskyy","mogilevich"],
         crime:["mogilevich","transnationalcrime","ukraine"]
@@ -1690,11 +1815,30 @@ svg {
         toSelect.appendChild(second);
       });
       function updateTraceState() {
-        traceButton.disabled = !fromSelect.value || !toSelect.value;
+        var hasFrom = Boolean(fromSelect.value);
+        var hasTo = Boolean(toSelect.value);
+        traceButton.disabled = !hasFrom || !hasTo;
+        swapButton.disabled = !hasFrom && !hasTo;
+        if (!hasFrom) {
+          routeStatus.textContent = "Choose a starting point to begin.";
+        } else if (!hasTo) {
+          routeStatus.textContent = "Great—now choose a destination.";
+        } else if (fromSelect.value === toSelect.value) {
+          routeStatus.textContent = "Choose two different points to trace a route.";
+          traceButton.disabled = true;
+        } else {
+          routeStatus.textContent = "Ready to find the shortest documented connection.";
+        }
       }
 
       fromSelect.addEventListener("change", updateTraceState);
       toSelect.addEventListener("change", updateTraceState);
+      swapButton.addEventListener("click", function () {
+        var previousFrom = fromSelect.value;
+        fromSelect.value = toSelect.value;
+        toSelect.value = previousFrom;
+        updateTraceState();
+      });
       updateTraceState();
 
       function sourceLink(url) {
@@ -1714,6 +1858,8 @@ svg {
 
       function showNode(node) {
         clearClasses();
+        traceSteps.replaceChildren();
+        tracePanelTitle.textContent = "Selected node";
         var neighborhood = node.closedNeighborhood();
         cy.elements().not(neighborhood).addClass("muted");
         node.addClass("focus");
@@ -1802,24 +1948,37 @@ svg {
         });
         path.edges.forEach(function (id, index) {
           var edge = cy.getElementById(id);
-          edge.data("pathLabel", (index + 1) + ". " + edge.data("label"));
-          edge.data("pathOffset", index % 2 === 0 ? 24 : -24);
+          edge.data("pathLabel", String(index + 1));
+          edge.data("pathOffset", 0);
           edge.removeClass("muted").addClass("focus");
         });
         var fromLabel = cy.getElementById(fromId).data("label");
         var toLabel = cy.getElementById(toId).data("label");
-        detail.textContent = fromLabel + " → " + toLabel + ": " + path.edges.length + " degrees — ";
+        tracePanelTitle.textContent = fromLabel + " → " + toLabel;
+        detail.textContent = path.edges.length + (path.edges.length === 1 ? " documented step" : " documented steps") + ". Each number below matches the marker on the graph.";
+        traceSteps.replaceChildren();
         path.edges.forEach(function (id, index) {
           var edge = cy.getElementById(id);
           var sourceNode = edge.source().data("label");
           var targetNode = edge.target().data("label");
-          var part = document.createElement("span");
-          part.textContent = (index + 1) + ". " + sourceNode + " ↔ " + targetNode + " (" + edge.data("label") + ") ";
-          detail.appendChild(part);
-          detail.appendChild(sourceLink(edge.data("sourceUrl")));
-          if (index < path.edges.length - 1) {
-            detail.appendChild(document.createTextNode(" · "));
-          }
+          var item = document.createElement("li");
+          item.className = "trace-step";
+          var number = document.createElement("span");
+          number.className = "trace-number";
+          number.textContent = String(index + 1);
+          var copy = document.createElement("span");
+          var eventText = document.createElement("strong");
+          eventText.className = "trace-event";
+          eventText.textContent = edge.data("label");
+          var pair = document.createElement("span");
+          pair.className = "trace-pair text-small";
+          pair.textContent = sourceNode + " ↔ " + targetNode + " · ";
+          pair.appendChild(sourceLink(edge.data("sourceUrl")));
+          copy.appendChild(eventText);
+          copy.appendChild(pair);
+          item.appendChild(number);
+          item.appendChild(copy);
+          traceSteps.appendChild(item);
         });
         var pathCollection = cy.collection();
         path.nodes.forEach(function (id) {
@@ -1834,8 +1993,10 @@ svg {
       cy.on("tap", "edge", function (event) {
         clearClasses();
         var edge = event.target;
-        edge.data("pathLabel", edge.data("label"));
-        edge.data("pathOffset", 20);
+        traceSteps.replaceChildren();
+        tracePanelTitle.textContent = "Selected relationship";
+        edge.data("pathLabel", "1");
+        edge.data("pathOffset", 0);
         edge.addClass("focus");
         edge.connectedNodes().addClass("focus");
         detail.textContent = edge.source().data("label") + " ↔ " + edge.target().data("label") + " — " + edge.data("label") + " ";
@@ -1846,6 +2007,8 @@ svg {
           return;
         }
         clearClasses();
+        traceSteps.replaceChildren();
+        tracePanelTitle.textContent = "Path guide";
         detail.textContent = "Selection cleared. Click another node to inspect its documented connections.";
       });
       traceButton.addEventListener("click", tracePath);
@@ -1856,6 +2019,8 @@ svg {
         fromSelect.value = "";
         toSelect.value = "";
         updateTraceState();
+        traceSteps.replaceChildren();
+        tracePanelTitle.textContent = "Path guide";
         cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
         detail.textContent = "Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.";
       });
