@@ -1003,7 +1003,7 @@ svg {
   <section class="card explorer-intro" aria-labelledby="explorer-title">
     <h2 id="explorer-title">Explore the documented network</h2>
     <ol class="instruction-list text-small">
-      <li><strong>Inspect:</strong> click any node to isolate its immediate connections and open its source.</li>
+      <li><strong>Inspect:</strong> click any node to zoom in, isolate its immediate connections, and open its source.</li>
       <li><strong>Connect:</strong> choose a starting node and destination, then select <em>Trace path</em>.</li>
       <li><strong>Navigate:</strong> use the zoom controls and drag the empty canvas to pan. Your mouse wheel keeps scrolling the page.</li>
     </ol>
@@ -1041,7 +1041,7 @@ svg {
   </div>
 
   <div class="graph-toolbar" aria-label="Graph navigation controls">
-    <span class="text-small text-muted">Choose a topic to declutter the map. Click a node to inspect it; wheel scrolling moves the page.</span>
+    <span class="text-small text-muted">Click a node to zoom and inspect it; click empty canvas to clear. Wheel scrolling moves the page.</span>
     <div class="graph-toolbar-actions">
       <label class="sr-only" for="focus-area">Focus topic</label>
       <select class="form-select topic-select" id="focus-area">
@@ -1706,6 +1706,16 @@ svg {
         node.addClass("focus");
         detail.textContent = node.data("label") + " — " + node.data("summary") + " ";
         detail.appendChild(sourceLink(node.data("sourceUrl")));
+        var currentZoom = cy.zoom();
+        var targetZoom = Math.min(cy.maxZoom(), Math.max(currentZoom, 0.8, Math.min(1.1, currentZoom * 1.24)));
+        var position = node.position();
+        cy.animate({
+          zoom:targetZoom,
+          pan:{
+            x:cy.width() / 2 - position.x * targetZoom,
+            y:cy.height() / 2 - position.y * targetZoom
+          }
+        }, {duration:260});
       }
 
       function buildPath(fromId, toId, allowWeak) {
@@ -1812,6 +1822,13 @@ svg {
         edge.connectedNodes().addClass("focus");
         detail.textContent = edge.source().data("label") + " ↔ " + edge.target().data("label") + " — " + edge.data("label") + " ";
         detail.appendChild(sourceLink(edge.data("sourceUrl")));
+      });
+      cy.on("tap", function (event) {
+        if (event.target !== cy) {
+          return;
+        }
+        clearClasses();
+        detail.textContent = "Selection cleared. Click another node to inspect its documented connections.";
       });
       traceButton.addEventListener("click", tracePath);
       clearButton.addEventListener("click", function () {
