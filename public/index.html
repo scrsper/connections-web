@@ -1,0 +1,1622 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Founder Network Timeline</title>
+<style>:root {
+  color-scheme: light dark;
+  background-color: transparent !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --main-surface-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --red: light-dark(rgb(186 38 35), rgb(250 66 62));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono",
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 10px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 17'%3E%3Cpath d='M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z'/%3E%3C/svg%3E");
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-visualize-standalone] {
+  background-color: var(--background) !important;
+}
+
+/* Generic mobile code-block hosts provide light/dark mode but no series palette.
+   AppBlock hosts set all six variables themselves. */
+:root:not([data-app-block-surface]) {
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(#f3883b, #f59a56);
+  --viz-series-3: light-dark(#5dc977, #74d58b);
+  --viz-series-4: light-dark(#eb77b1, #f08fc0);
+  --viz-series-5: light-dark(#9b79ec, #aa91ef);
+  --viz-series-6: light-dark(#3ab9b1, #5acbc2);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html > body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+:root:not([data-app-block-surface]) > body {
+  padding: 12px;
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive > .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align="right"]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align="center"]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget > :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* The bundled tooltip runtime owns [data-tooltip]. AppBlock's CSS-only
+   pseudo-tooltip can widen dense grids even while hidden. */
+main [data-tooltip]::after {
+  content: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls > .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls > .form-label > :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--interactive-label-primary-default, var(--primary-foreground));
+  background: var(--interactive-bg-primary-default, var(--foreground));
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(
+    in srgb,
+    var(--interactive-label-primary-default, var(--primary-foreground)) 50%,
+    transparent
+  );
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type="file"] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type="file"]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type="file"]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type="color"] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type="color"]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type="checkbox"]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: "";
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type="radio"]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: "";
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed="true"],
+    [aria-selected="true"],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed="true"], [aria-selected="true"], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget > svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+</style>
+</head>
+<body>
+<div id="founder-network-timeline">
+  <style>
+    #founder-network-timeline {
+      color: var(--foreground);
+      background: transparent;
+      width: 100%;
+    }
+    #founder-network-timeline .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem 1rem;
+      align-items: center;
+      margin: 0.5rem 0 0.75rem;
+    }
+    #founder-network-timeline .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--muted-foreground);
+    }
+    #founder-network-timeline .node-key {
+      width: 0.8rem;
+      height: 0.8rem;
+      display: inline-block;
+      background: var(--viz-series-2);
+    }
+    #founder-network-timeline .node-key.person {
+      border-radius: 50%;
+      background: var(--viz-series-1);
+    }
+    #founder-network-timeline .node-key.country {
+      transform: rotate(45deg);
+      background: var(--viz-series-3);
+    }
+    #founder-network-timeline .node-key.media {
+      background: var(--viz-series-4);
+    }
+    #founder-network-timeline .node-key.bridge {
+      clip-path: polygon(25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%, 0 50%);
+      background: var(--viz-series-6);
+    }
+    #founder-network-timeline .line-key {
+      width: 1.6rem;
+      border-top: 2px solid var(--viz-series-1);
+      display: inline-block;
+    }
+    #founder-network-timeline .line-key.money {
+      border-color: var(--viz-series-2);
+    }
+    #founder-network-timeline .line-key.public {
+      border-color: var(--viz-series-3);
+    }
+    #founder-network-timeline .line-key.family {
+      border-color: var(--viz-series-4);
+    }
+    #founder-network-timeline .line-key.weak {
+      border-color: var(--destructive);
+      border-top-style: dashed;
+    }
+    #founder-network-timeline #relationship-graph {
+      width: 100%;
+      height: 690px;
+      color: var(--foreground);
+      touch-action: none;
+    }
+    #founder-network-timeline .path-detail {
+      margin: 0.65rem 0 0.4rem;
+    }
+    #founder-network-timeline .timeline-heading {
+      margin: 1rem 0 0.35rem;
+    }
+    #founder-network-timeline .confidence {
+      white-space: nowrap;
+    }
+    #founder-network-timeline .confidence::before {
+      content: "";
+      display: inline-block;
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      margin-right: 0.3rem;
+      background: var(--green);
+    }
+    #founder-network-timeline .confidence.medium::before {
+      background: var(--viz-series-5);
+    }
+    #founder-network-timeline .confidence.weak::before {
+      background: var(--destructive);
+    }
+    #founder-network-timeline .notes {
+      margin-top: 0.65rem;
+      color: var(--muted-foreground);
+    }
+    @media (max-width: 600px) {
+      #founder-network-timeline #relationship-graph {
+        height: 820px;
+      }
+    }
+  </style>
+
+  <div class="viz-controls" aria-label="Shortest relationship path controls">
+    <label class="form-label" for="path-from">From
+      <select class="form-select" id="path-from"></select>
+    </label>
+    <label class="form-label" for="path-to">To
+      <select class="form-select" id="path-to"></select>
+    </label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="include-weak">
+      <label class="form-check-label" for="include-weak">Include weak or canceled links</label>
+    </div>
+    <button class="btn btn-primary" type="button" id="trace-path">Trace path</button>
+    <button class="btn btn-ghost" type="button" id="clear-path">Clear</button>
+  </div>
+
+  <div class="legend text-small" aria-label="Graph legend">
+    <span class="legend-item"><span class="node-key person"></span>Person</span>
+    <span class="legend-item"><span class="node-key"></span>Company or fund</span>
+    <span class="legend-item"><span class="node-key country"></span>Country or armed force</span>
+    <span class="legend-item"><span class="node-key media"></span>Media entity</span>
+    <span class="legend-item"><span class="node-key bridge"></span>Necessary bridge</span>
+    <span class="legend-item"><span class="line-key"></span>Founder, work, or origin</span>
+    <span class="legend-item"><span class="line-key money"></span>Investment, ownership, or acquisition</span>
+    <span class="legend-item"><span class="line-key public"></span>Public-sector or place</span>
+    <span class="legend-item"><span class="line-key family"></span>Family</span>
+    <span class="legend-item"><span class="line-key weak"></span>Unverified or canceled</span>
+  </div>
+
+  <div id="relationship-graph" role="img" aria-label="Interactive network of the listed people, companies, media organizations, countries, and bridge entities. Select two names above to show a shortest documented path."></div>
+  <div class="card path-detail" aria-live="polite">
+    <span id="path-detail">Select a node for evidence, or choose two names to trace a shortest documented path.</span>
+  </div>
+
+  <h3 class="timeline-heading">Timeline</h3>
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th class="text-nowrap">Year</th>
+          <th>Documented event</th>
+          <th class="text-nowrap">Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="text-nowrap">1920s–50s</td><td>Mahmud Mir-Djalali serves in and helps modernize Iran’s army; later holds senior posts.</td><td><span class="confidence">High</span> · <a href="https://www.iranicaonline.org/articles/mirjalali-mahmud/">Iranica</a></td></tr>
+        <tr><td class="text-nowrap">1971</td><td>Elon Musk is born to Maye Haldeman Musk and Errol Musk.</td><td><span class="confidence">High</span> · <a href="https://www.britannica.com/money/Elon-Musk">Britannica</a></td></tr>
+        <tr><td class="text-nowrap">1975</td><td>Max Levchin is born in Kyiv, then in the Ukrainian SSR.</td><td><span class="confidence">High</span> · <a href="https://investors.affirm.com/management/max-levchin">Affirm</a></td></tr>
+        <tr><td class="text-nowrap">1994</td><td>Jeff Bezos founds Amazon; Jim Clark and Marc Andreessen found Netscape.</td><td><span class="confidence">High</span> · <a href="https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx">Amazon</a> · <a href="https://www.computerhistory.org/tdih/april/4/">CHM</a></td></tr>
+        <tr><td class="text-nowrap">1995</td><td>Pierre Omidyar launches AuctionWeb, later eBay. Levchin, Luke Nosek, and Scott Banister start SponsorNet.</td><td><span class="confidence">High</span> · <a href="https://www.ebayinc.com/company/our-history/">eBay</a> · <a href="https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek">Illinois</a></td></tr>
+        <tr><td class="text-nowrap">1998</td><td>Peter Thiel, Max Levchin, Luke Nosek, and Ken Howery build Confinity, the company that becomes PayPal.</td><td><span class="confidence">High</span> · <a href="https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek">Illinois</a></td></tr>
+        <tr><td class="text-nowrap">1999</td><td>Elon Musk co-founds the online bank X.com.</td><td><span class="confidence">High</span> · <a href="https://www.britannica.com/money/Elon-Musk">Britannica</a></td></tr>
+        <tr><td class="text-nowrap">2000–01</td><td>X.com merges with Confinity; the combined company is renamed PayPal.</td><td><span class="confidence">High</span> · <a href="https://www.wired.com/2001/09/paypal/">Wired</a></td></tr>
+        <tr><td class="text-nowrap">2002</td><td>eBay acquires PayPal.</td><td><span class="confidence">High</span> · <a href="https://www.ebayinc.com/company/our-history/">eBay</a></td></tr>
+        <tr><td class="text-nowrap">2003</td><td>Peter Thiel, Alex Karp, Stephen Cohen, Joe Lonsdale, and Nathan Gettings found Palantir.</td><td><span class="confidence">High</span> · <a href="https://investors.palantir.com/governance/board-of-directors">Palantir</a></td></tr>
+        <tr><td class="text-nowrap">2005</td><td>Thiel, Howery, and Nosek co-found Founders Fund. Former PayPal employees found YouTube.</td><td><span class="confidence">High</span> · <a href="https://foundersfund.com/team/peter-thiel/">Founders Fund</a> · <a href="https://www.newyorker.com/magazine/2012/01/16/streaming-dreams">New Yorker</a></td></tr>
+        <tr><td class="text-nowrap">2010</td><td>Peter Thiel, James Fitzgerald, and Andrew McCormack establish Valar Ventures.</td><td><span class="confidence">High</span> · <a href="https://www.valar.com/">Valar</a></td></tr>
+        <tr><td class="text-nowrap">2012</td><td>Thiel and Ajay Royan found Mithril Capital; Max Levchin creates Affirm.</td><td><span class="confidence">High</span> · <a href="https://www.mithril.com/">Mithril</a> · <a href="https://investors.affirm.com/management/max-levchin">Affirm</a></td></tr>
+        <tr><td class="text-nowrap">2013</td><td>Pierre Omidyar creates First Look Media. Neal Harmon and collaborators start the business that becomes Angel Studios. Ring is founded by Jamie Siminoff.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald">Guardian</a> · <a href="https://ir.angel.com/management/">Angel</a></td></tr>
+        <tr><td class="text-nowrap">2014</td><td>First Look launches The Intercept with Glenn Greenwald, Laura Poitras, and Jeremy Scahill.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald">Guardian</a></td></tr>
+        <tr><td class="text-nowrap">2014–17</td><td>Records document meetings and correspondence between Peter Thiel and Jeffrey Epstein.</td><td><span class="confidence">High</span> · <a href="https://www.wired.com/story/epstein-jeffrey-files-peter-thiel-diet-sushi/">Wired</a></td></tr>
+        <tr><td class="text-nowrap">2015</td><td>Sam Altman, Elon Musk, and others launch OpenAI. Epstein-linked entities begin investing $40 million across two Valar funds.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/article/technology/musk-other-tech-chiefs-back-artificial-intelligence-startup-with-1-billion-idUSKBN0TU2RA/">Reuters</a> · <a href="https://www.washingtonpost.com/politics/2025/09/25/epstein-house-oversight-records/">Washington Post</a></td></tr>
+        <tr><td class="text-nowrap">2017</td><td>Luke Nosek co-founds Gigafund. Garrett Langley, Matt Feury, and Paige Todd found Flock Safety. PayPal sells the X.com domain back to Musk.</td><td><span class="confidence">High</span> · <a href="https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489">Axios</a> · <a href="https://www.scheller.gatech.edu/news/2025/entrepreneurs-of-scheller-paige-todd.html">Georgia Tech</a> · <a href="https://www.cnbc.com/2017/07/11/elon-musk-now-owns-x-com-the-defunct-domain-of-his-second-startup.html">CNBC</a></td></tr>
+        <tr><td class="text-nowrap">2018</td><td>Amazon acquires Ring. Elon Musk leaves OpenAI’s board.</td><td><span class="confidence">High</span> · <a href="https://press.aboutamazon.com/2018/4/amazon-and-ring-close-acquisition-now-working-together-to-empower-neighbors-with-affordable-ways-to-monitor-their-homes-and-reduce-crime-in-neighborhoods">Amazon</a> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a></td></tr>
+        <tr><td class="text-nowrap">2019–21</td><td>Ken Howery serves as U.S. ambassador to Sweden.</td><td><span class="confidence">High</span> · <a href="https://history.state.gov/departmenthistory/people/howery-kenneth-a">State Dept.</a></td></tr>
+        <tr><td class="text-nowrap">2020</td><td>Glenn Greenwald resigns from The Intercept after an editorial dispute.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2020/oct/29/journalist-glenn-greenwald-resigns-the-intercept">Guardian</a></td></tr>
+        <tr><td class="text-nowrap">2021–22</td><td>VidAngel’s successor becomes Angel Studios; Gigafund leads a $47 million financing round.</td><td><span class="confidence">High</span> · <a href="https://www.angel.com/press/release/angel-studios-streaming-platform-behind-the-chosen-raises-usd47-million">Angel</a></td></tr>
+        <tr><td class="text-nowrap">2022</td><td>Zelenskyy meets Palantir CEO Alex Karp in Kyiv and discusses cooperation.</td><td><span class="confidence">High</span> · <a href="https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541">Ukraine presidency</a></td></tr>
+        <tr><td class="text-nowrap">2023</td><td>Musk founds xAI and reuses X.com for the social platform formerly called Twitter. The Intercept becomes independent of First Look.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a> · <a href="https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit">Axios</a></td></tr>
+        <tr><td class="text-nowrap">2024</td><td>Palantir announces a strategic partnership with Israel’s Ministry of Defense. Ken Howery is reported among xAI’s investors.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/thiels-palantir-dumped-by-norwegian-investor-over-work-israel-2024-10-25/">Reuters</a> · <a href="https://techcrunch.com/2024/05/26/elon-musks-xai-raises-6b-from-valor-a16z-and-sequoia/">TechCrunch</a></td></tr>
+        <tr><td class="text-nowrap">2025</td><td>xAI acquires X. Ken Howery begins serving as U.S. ambassador to Denmark. Ring and Flock announce an intended integration.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/">Reuters</a> · <a href="https://dk.usembassy.gov/ambassador/">U.S. Embassy</a></td></tr>
+        <tr><td class="text-nowrap">2026</td><td>Ring and Flock cancel the integration before launch. SpaceX acquires xAI. Ukraine expands work with Palantir.</td><td><span class="confidence">High</span> · <a href="https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/">Ring</a> · <a href="https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/">Reuters</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="notes text-small">
+    <span class="confidence medium">Medium confidence</span> applies to the Mahmud Mir-Djalali → Elahé Mir-Djalali → Pierre Omidyar genealogy: the army career and mother–son link are independently documented, while the grandfather link relies on recent secondary biographies. No Epstein → Israel state-level edge is drawn. A listed Epstein–Musk calendar item is available only when weak links are enabled because the released schedule does not prove a meeting occurred.
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js"></script>
+  <script>
+    (function () {
+      var root = document.getElementById("founder-network-timeline");
+      var graph = root.querySelector("#relationship-graph");
+      var fromSelect = root.querySelector("#path-from");
+      var toSelect = root.querySelector("#path-to");
+      var includeWeak = root.querySelector("#include-weak");
+      var traceButton = root.querySelector("#trace-path");
+      var clearButton = root.querySelector("#clear-path");
+      var detail = root.querySelector("#path-detail");
+      var theme = getComputedStyle(root);
+      function token(name) {
+        return theme.getPropertyValue(name).trim();
+      }
+
+      var nodes = [
+        {id:"mir", label:"Mahmud Mir-Djalali", kind:"person", x:45, y:40, summary:"Iranian artillery officer and senior Imperial-era military figure.", source:"https://www.iranicaonline.org/articles/mirjalali-mahmud/"},
+        {id:"army", label:"Imperial Iranian Army", kind:"country", x:175, y:40, summary:"The armed force in which Mir-Djalali built his career.", source:"https://www.iranicaonline.org/articles/mirjalali-mahmud/"},
+        {id:"elahe", label:"Elahé Mir-Djalali", kind:"bridge", x:45, y:115, summary:"Pierre Omidyar’s mother; a necessary family bridge.", source:"https://presse.louvre.fr/a-new-donation-of-2-3-millionfor-the-elahe-omidyar-mir-djalali-fund-in-the-louvre-endowment-fund/"},
+        {id:"omidyar", label:"Pierre Omidyar", kind:"person", x:160, y:115, summary:"Founder of eBay and First Look Media.", source:"https://www.ebayinc.com/company/our-history/"},
+        {id:"ebay", label:"eBay", kind:"company", x:265, y:165, summary:"Founded as AuctionWeb by Pierre Omidyar in 1995; acquired PayPal in 2002.", source:"https://www.ebayinc.com/company/our-history/"},
+        {id:"firstlook", label:"First Look Media", kind:"media", x:90, y:215, summary:"Media organization created and funded by Pierre Omidyar in 2013.", source:"https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald"},
+        {id:"intercept", label:"The Intercept", kind:"bridge", x:85, y:285, summary:"Launched by First Look in 2014; became an independent nonprofit in 2023.", source:"https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit"},
+        {id:"greenwald", label:"Glenn Greenwald", kind:"person", x:55, y:355, summary:"Co-founding editor of The Intercept; resigned in 2020.", source:"https://www.theguardian.com/media/2020/oct/29/journalist-glenn-greenwald-resigns-the-intercept"},
+        {id:"maye", label:"Maye Haldeman Musk", kind:"person", x:165, y:320, summary:"Mother of Elon Musk.", source:"https://www.britannica.com/money/Elon-Musk"},
+        {id:"errol", label:"Errol Musk", kind:"person", x:255, y:360, summary:"Father of Elon Musk.", source:"https://www.britannica.com/money/Elon-Musk"},
+        {id:"elon", label:"Elon Musk", kind:"person", x:285, y:275, summary:"Co-founder of X.com and OpenAI; founder of xAI.", source:"https://www.britannica.com/money/Elon-Musk"},
+        {id:"xcom", label:"X.com bank (1999)", kind:"company", x:360, y:230, summary:"Musk’s online bank; merged with Confinity. This is not the same company as today’s social platform X.", source:"https://www.wired.com/2001/09/paypal/"},
+        {id:"confinity", label:"Confinity", kind:"bridge", x:430, y:145, summary:"Payments company created by Thiel, Levchin, Nosek, Howery, and colleagues; merged with X.com.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"paypal", label:"PayPal", kind:"company", x:445, y:265, summary:"Name adopted by the combined X.com–Confinity company in 2001; acquired by eBay in 2002.", source:"https://www.ebayinc.com/company/our-history/"},
+        {id:"levchin", label:"Max Levchin", kind:"person", x:395, y:355, summary:"Confinity and PayPal co-founder; founder and CEO of Affirm.", source:"https://investors.affirm.com/management/max-levchin"},
+        {id:"nosek", label:"Luke Nosek", kind:"person", x:500, y:355, summary:"Worked at Netscape; co-founded Confinity/PayPal, Founders Fund, and Gigafund.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"howery", label:"Ken Howery", kind:"person", x:525, y:155, summary:"PayPal and Founders Fund co-founder; U.S. ambassador to Sweden and later Denmark.", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
+        {id:"banister", label:"Scott Banister", kind:"person", x:305, y:430, summary:"SponsorNet co-founder and early PayPal investor, adviser, and board member.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"sponsornet", label:"SponsorNet", kind:"bridge", x:410, y:435, summary:"1995 startup linking Levchin, Nosek, and Banister before PayPal.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"netscape", label:"Netscape", kind:"company", x:520, y:445, summary:"Founded by Jim Clark and Marc Andreessen; Luke Nosek worked there before PayPal.", source:"https://www.computerhistory.org/tdih/april/4/"},
+        {id:"youtube", label:"YouTube", kind:"company", x:405, y:520, summary:"Founded in 2005 by former PayPal employees Chad Hurley, Steve Chen, and Jawed Karim.", source:"https://www.newyorker.com/magazine/2012/01/16/streaming-dreams"},
+        {id:"affirm", label:"Affirm", kind:"company", x:520, y:520, summary:"Founded by Max Levchin in 2012; a Founders Fund portfolio company.", source:"https://investors.affirm.com/management/max-levchin"},
+        {id:"thiel", label:"Peter Thiel", kind:"person", x:590, y:255, summary:"PayPal, Palantir, Founders Fund, Valar, and Mithril co-founder; early OpenAI backer.", source:"https://foundersfund.com/team/peter-thiel/"},
+        {id:"thielcapital", label:"Thiel Capital", kind:"company", x:625, y:95, summary:"Peter Thiel’s investment office and umbrella for several related initiatives.", source:"https://www.thielcapital.com/"},
+        {id:"foundersfund", label:"Founders Fund", kind:"company", x:640, y:340, summary:"Venture firm co-founded by Thiel, Howery, and Nosek; investor in Palantir, OpenAI, Affirm, and Flock Safety.", source:"https://foundersfund.com/portfolio/"},
+        {id:"valar", label:"Valar Ventures", kind:"company", x:750, y:110, summary:"Global venture firm co-founded by Peter Thiel, James Fitzgerald, and Andrew McCormack.", source:"https://www.valar.com/"},
+        {id:"mithril", label:"Mithril Capital", kind:"company", x:875, y:105, summary:"Long-term investment firm founded by Ajay Royan with Peter Thiel.", source:"https://www.mithril.com/"},
+        {id:"palantir", label:"Palantir Technologies", kind:"company", x:750, y:260, summary:"Data and AI company founded in 2003; works with Ukraine and Israel’s defense ministry.", source:"https://investors.palantir.com/governance/board-of-directors"},
+        {id:"epstein", label:"Jeffrey Epstein", kind:"person", x:875, y:200, summary:"Financier and convicted sex offender. Only documented business/contact records are mapped here.", source:"https://www.washingtonpost.com/politics/2025/09/25/epstein-house-oversight-records/"},
+        {id:"israel", label:"Israel", kind:"country", x:900, y:295, summary:"Palantir announced a 2024 strategic partnership with Israel’s Ministry of Defense.", source:"https://www.reuters.com/technology/thiels-palantir-dumped-by-norwegian-investor-over-work-israel-2024-10-25/"},
+        {id:"ukraine", label:"Ukraine", kind:"country", x:810, y:365, summary:"Palantir has provided and expanded technology cooperation since 2022.", source:"https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541"},
+        {id:"zelenskyy", label:"Volodymyr Zelenskyy", kind:"person", x:925, y:405, summary:"President of Ukraine; met Palantir CEO Alex Karp in 2022 and again in 2026.", source:"https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541"},
+        {id:"gigafund", label:"Gigafund", kind:"company", x:670, y:435, summary:"Venture firm co-founded by Luke Nosek and Stephen Oskoui; led Angel Studios’ 2022 round.", source:"https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489"},
+        {id:"angel", label:"Angel Studios", kind:"company", x:785, y:455, summary:"Audience-driven film and television studio with roots in VidAngel; backed by Gigafund.", source:"https://ir.angel.com/management/"},
+        {id:"neal", label:"Neal Harmon", kind:"person", x:900, y:470, summary:"Co-founder and CEO of Angel Studios.", source:"https://ir.angel.com/management/"},
+        {id:"flock", label:"Flock Safety", kind:"company", x:780, y:535, summary:"Public-safety camera and license-plate-reader company founded in 2017; Founders Fund investor.", source:"https://www.flocksafety.com/blog/flock-safety-secures-major-funding"},
+        {id:"ring", label:"Ring", kind:"company", x:905, y:550, summary:"Jamie Siminoff’s smart-doorbell company, acquired by Amazon in 2018.", source:"https://press.aboutamazon.com/2018/4/amazon-and-ring-close-acquisition-now-working-together-to-empower-neighbors-with-affordable-ways-to-monitor-their-homes-and-reduce-crime-in-neighborhoods"},
+        {id:"amazon", label:"Amazon", kind:"company", x:900, y:635, summary:"Founded by Jeff Bezos in 1994; acquired Ring in 2018.", source:"https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx"},
+        {id:"bezos", label:"Jeff Bezos", kind:"person", x:805, y:640, summary:"Founder of Amazon.", source:"https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx"},
+        {id:"openai", label:"OpenAI", kind:"company", x:625, y:550, summary:"Founded in 2015 by Sam Altman, Elon Musk, and others; Musk left the board in 2018.", source:"https://www.reuters.com/article/technology/musk-other-tech-chiefs-back-artificial-intelligence-startup-with-1-billion-idUSKBN0TU2RA/"},
+        {id:"altman", label:"Sam Altman", kind:"person", x:555, y:660, summary:"OpenAI co-founder and CEO.", source:"https://www.reuters.com/legal/litigation/openai-trial-pitting-elon-musk-against-sam-altman-kicks-off-2026-04-28/"},
+        {id:"xai", label:"xAI", kind:"company", x:520, y:600, summary:"AI company founded by Elon Musk in 2023; acquired X in 2025 and was acquired by SpaceX in 2026.", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
+        {id:"xsocial", label:"X social platform", kind:"bridge", x:425, y:650, summary:"Formerly Twitter; renamed X in 2023 and acquired by xAI in 2025. It reuses the X.com domain but is not the 1999 bank.", source:"https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"},
+        {id:"spacex", label:"SpaceX", kind:"bridge", x:660, y:665, summary:"Musk’s space company; acquired xAI in 2026.", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
+        {id:"sweden", label:"Sweden", kind:"country", x:300, y:610, summary:"Ken Howery served as U.S. ambassador here from 2019 to 2021.", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
+        {id:"denmark", label:"Denmark", kind:"country", x:350, y:680, summary:"Ken Howery began serving as U.S. ambassador here in 2025.", source:"https://dk.usembassy.gov/ambassador/"}
+      ];
+
+      var edges = [
+        {id:"mir-army", a:"mir", b:"army", label:"senior officer, 1920s–50s", relation:"public", source:"https://www.iranicaonline.org/articles/mirjalali-mahmud/"},
+        {id:"mir-elahe", a:"mir", b:"elahe", label:"father–daughter, secondary biographies", relation:"family", confidence:"medium", source:"https://brief.bismarckanalysis.com/p/pierre-omidyars-crusade-against-tech"},
+        {id:"elahe-omidyar", a:"elahe", b:"omidyar", label:"mother–son", relation:"family", source:"https://presse.louvre.fr/a-new-donation-of-2-3-millionfor-the-elahe-omidyar-mir-djalali-fund-in-the-louvre-endowment-fund/"},
+        {id:"omidyar-ebay", a:"omidyar", b:"ebay", label:"founded, 1995", relation:"origin", source:"https://www.ebayinc.com/company/our-history/"},
+        {id:"omidyar-firstlook", a:"omidyar", b:"firstlook", label:"founded and funded, 2013", relation:"money", source:"https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald"},
+        {id:"firstlook-intercept", a:"firstlook", b:"intercept", label:"launched, 2014; separated, 2023", relation:"origin", source:"https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit"},
+        {id:"greenwald-intercept", a:"greenwald", b:"intercept", label:"co-founding editor, 2014–20", relation:"origin", source:"https://www.theguardian.com/media/2020/oct/29/journalist-glenn-greenwald-resigns-the-intercept"},
+        {id:"maye-elon", a:"maye", b:"elon", label:"mother–son", relation:"family", source:"https://www.britannica.com/money/Elon-Musk"},
+        {id:"errol-elon", a:"errol", b:"elon", label:"father–son", relation:"family", source:"https://www.britannica.com/money/Elon-Musk"},
+        {id:"elon-xcom", a:"elon", b:"xcom", label:"co-founded, 1999", relation:"origin", source:"https://www.britannica.com/money/Elon-Musk"},
+        {id:"xcom-confinity", a:"xcom", b:"confinity", label:"merged, 2000", relation:"origin", source:"https://www.wired.com/2001/09/paypal/"},
+        {id:"confinity-paypal", a:"confinity", b:"paypal", label:"combined company renamed, 2001", relation:"origin", source:"https://www.wired.com/2001/09/paypal/"},
+        {id:"ebay-paypal", a:"ebay", b:"paypal", label:"acquired, 2002", relation:"money", source:"https://www.ebayinc.com/company/our-history/"},
+        {id:"thiel-confinity", a:"thiel", b:"confinity", label:"co-founder, 1998", relation:"origin", source:"https://foundersfund.com/team/peter-thiel/"},
+        {id:"levchin-confinity", a:"levchin", b:"confinity", label:"co-founder, 1998", relation:"origin", source:"https://investors.affirm.com/management/max-levchin"},
+        {id:"nosek-confinity", a:"nosek", b:"confinity", label:"co-founder, 1998", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"howery-confinity", a:"howery", b:"confinity", label:"co-founder and CFO, 1998", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"banister-paypal", a:"banister", b:"paypal", label:"early investor, adviser, board", relation:"money", source:"https://www.linkedin.com/in/banister/details/experience/"},
+        {id:"levchin-sponsornet", a:"levchin", b:"sponsornet", label:"co-founder, 1995", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"nosek-sponsornet", a:"nosek", b:"sponsornet", label:"co-founder, 1995", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"banister-sponsornet", a:"banister", b:"sponsornet", label:"co-founder, 1995", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"nosek-netscape", a:"nosek", b:"netscape", label:"employee before PayPal", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"paypal-youtube", a:"paypal", b:"youtube", label:"three alumni founded, 2005", relation:"origin", source:"https://www.newyorker.com/magazine/2012/01/16/streaming-dreams"},
+        {id:"levchin-affirm", a:"levchin", b:"affirm", label:"founded, 2012", relation:"origin", source:"https://investors.affirm.com/management/max-levchin"},
+        {id:"levchin-ukraine", a:"levchin", b:"ukraine", label:"born in Kyiv, 1975", relation:"public", source:"https://investors.affirm.com/management/max-levchin"},
+        {id:"thiel-thielcapital", a:"thiel", b:"thielcapital", label:"founder and principal", relation:"origin", source:"https://www.thielcapital.com/"},
+        {id:"thiel-foundersfund", a:"thiel", b:"foundersfund", label:"co-founded, 2005", relation:"origin", source:"https://foundersfund.com/team/peter-thiel/"},
+        {id:"howery-foundersfund", a:"howery", b:"foundersfund", label:"co-founded, 2005", relation:"origin", source:"https://foundersfund.com/"},
+        {id:"nosek-foundersfund", a:"nosek", b:"foundersfund", label:"co-founded, 2005", relation:"origin", source:"https://foundersfund.com/"},
+        {id:"thiel-valar", a:"thiel", b:"valar", label:"co-founded, 2010", relation:"origin", source:"https://www.valar.com/"},
+        {id:"thiel-mithril", a:"thiel", b:"mithril", label:"co-founded, 2012", relation:"origin", source:"https://www.mithril.com/"},
+        {id:"thiel-palantir", a:"thiel", b:"palantir", label:"co-founded, 2003", relation:"origin", source:"https://investors.palantir.com/governance/board-of-directors"},
+        {id:"foundersfund-palantir", a:"foundersfund", b:"palantir", label:"portfolio company", relation:"money", source:"https://foundersfund.com/portfolio/"},
+        {id:"foundersfund-affirm", a:"foundersfund", b:"affirm", label:"investor", relation:"money", source:"https://foundersfund.com/portfolio/"},
+        {id:"nosek-gigafund", a:"nosek", b:"gigafund", label:"co-founded, 2017", relation:"origin", source:"https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489"},
+        {id:"gigafund-angel", a:"gigafund", b:"angel", label:"led $47m round, 2022", relation:"money", source:"https://www.angel.com/press/release/angel-studios-streaming-platform-behind-the-chosen-raises-usd47-million"},
+        {id:"neal-angel", a:"neal", b:"angel", label:"co-founder and CEO", relation:"origin", source:"https://ir.angel.com/management/"},
+        {id:"foundersfund-flock", a:"foundersfund", b:"flock", label:"investor, including 2025 round", relation:"money", source:"https://www.flocksafety.com/blog/flock-safety-secures-major-funding"},
+        {id:"palantir-ukraine", a:"palantir", b:"ukraine", label:"technology cooperation, 2022–present", relation:"public", source:"https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541"},
+        {id:"zelenskyy-ukraine", a:"zelenskyy", b:"ukraine", label:"president, 2019–present", relation:"public", source:"https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541"},
+        {id:"palantir-israel", a:"palantir", b:"israel", label:"defense-ministry partnership, 2024", relation:"public", source:"https://www.reuters.com/technology/thiels-palantir-dumped-by-norwegian-investor-over-work-israel-2024-10-25/"},
+        {id:"epstein-valar", a:"epstein", b:"valar", label:"$40m limited-partner investments, 2015–16", relation:"money", source:"https://www.washingtonpost.com/politics/2025/09/25/epstein-house-oversight-records/"},
+        {id:"epstein-thiel", a:"epstein", b:"thiel", label:"documented meetings and correspondence, 2014–17", relation:"origin", source:"https://www.wired.com/story/epstein-jeffrey-files-peter-thiel-diet-sushi/"},
+        {id:"epstein-elon", a:"epstein", b:"elon", label:"calendar listed a possible meeting; occurrence unverified; Musk denies", relation:"weak", confidence:"weak", source:"https://www.reuters.com/world/us/us-house-democrats-release-epstein-schedules-showing-plans-meet-musk-thiel-2025-09-26/"},
+        {id:"thiel-openai", a:"thiel", b:"openai", label:"early backer, 2015", relation:"money", source:"https://www.reuters.com/article/technology/musk-other-tech-chiefs-back-artificial-intelligence-startup-with-1-billion-idUSKBN0TU2RA/"},
+        {id:"foundersfund-openai", a:"foundersfund", b:"openai", label:"portfolio company and investor", relation:"money", source:"https://foundersfund.com/portfolio/"},
+        {id:"altman-openai", a:"altman", b:"openai", label:"co-founder, 2015; CEO", relation:"origin", source:"https://www.reuters.com/legal/litigation/openai-trial-pitting-elon-musk-against-sam-altman-kicks-off-2026-04-28/"},
+        {id:"elon-openai", a:"elon", b:"openai", label:"co-founder, 2015; left board, 2018", relation:"origin", source:"https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/"},
+        {id:"elon-xai", a:"elon", b:"xai", label:"founded, 2023", relation:"origin", source:"https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/"},
+        {id:"howery-xai", a:"howery", b:"xai", label:"reported personal investor, 2024", relation:"money", source:"https://techcrunch.com/2024/05/26/elon-musks-xai-raises-6b-from-valor-a16z-and-sequoia/"},
+        {id:"xcom-xsocial", a:"xcom", b:"xsocial", label:"domain sold back to Musk in 2017; reused in 2023", relation:"origin", source:"https://www.cnbc.com/2017/07/11/elon-musk-now-owns-x-com-the-defunct-domain-of-his-second-startup.html"},
+        {id:"xai-xsocial", a:"xai", b:"xsocial", label:"acquired, 2025", relation:"money", source:"https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"},
+        {id:"spacex-xai", a:"spacex", b:"xai", label:"acquired, 2026", relation:"money", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
+        {id:"bezos-amazon", a:"bezos", b:"amazon", label:"founded, 1994", relation:"origin", source:"https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx"},
+        {id:"amazon-ring", a:"amazon", b:"ring", label:"acquired, 2018", relation:"money", source:"https://press.aboutamazon.com/2018/4/amazon-and-ring-close-acquisition-now-working-together-to-empower-neighbors-with-affordable-ways-to-monitor-their-homes-and-reduce-crime-in-neighborhoods"},
+        {id:"ring-flock", a:"ring", b:"flock", label:"planned 2025; canceled 2026 before launch", relation:"weak", confidence:"weak", source:"https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/"},
+        {id:"howery-sweden", a:"howery", b:"sweden", label:"U.S. ambassador, 2019–21", relation:"public", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
+        {id:"howery-denmark", a:"howery", b:"denmark", label:"U.S. ambassador, 2025–present", relation:"public", source:"https://dk.usembassy.gov/ambassador/"}
+      ];
+
+      var elements = [];
+      nodes.forEach(function (n) {
+        elements.push({
+          data: {id:n.id, label:n.label, kind:n.kind, summary:n.summary, sourceUrl:n.source},
+          position: {x:n.x, y:n.y},
+          classes: n.kind
+        });
+      });
+      edges.forEach(function (e) {
+        elements.push({
+          data: {
+            id:e.id,
+            source:e.a,
+            target:e.b,
+            label:e.label,
+            relation:e.relation,
+            confidence:e.confidence || "high",
+            sourceUrl:e.source
+          },
+          classes: e.relation + (e.confidence === "weak" ? " weak-link" : "")
+        });
+      });
+
+      var cy = cytoscape({
+        container: graph,
+        elements: elements,
+        layout: {name:"preset", fit:true, padding:36},
+        minZoom:0.55,
+        maxZoom:2.2,
+        wheelSensitivity:0.18,
+        boxSelectionEnabled:false,
+        autoungrabify:true,
+        style: [
+          {selector:"node", style:{
+            "label":"data(label)",
+            "font-size":"16px",
+            "font-weight":"400",
+            "color":token("--foreground"),
+            "text-wrap":"wrap",
+            "text-max-width":"112px",
+            "text-valign":"bottom",
+            "text-margin-y":"8px",
+            "text-background-color":token("--background"),
+            "text-background-opacity":0.88,
+            "text-background-padding":"2px",
+            "border-width":0,
+            "width":"24px",
+            "height":"24px",
+            "background-color":token("--viz-series-1")
+          }},
+          {selector:"node.company", style:{
+            "shape":"round-rectangle",
+            "width":"38px",
+            "height":"24px",
+            "background-color":token("--viz-series-2")
+          }},
+          {selector:"node.country", style:{
+            "shape":"diamond",
+            "width":"31px",
+            "height":"31px",
+            "background-color":token("--viz-series-3")
+          }},
+          {selector:"node.media", style:{
+            "shape":"rectangle",
+            "width":"38px",
+            "height":"24px",
+            "background-color":token("--viz-series-4")
+          }},
+          {selector:"node.bridge", style:{
+            "shape":"hexagon",
+            "width":"22px",
+            "height":"22px",
+            "background-color":token("--viz-series-6")
+          }},
+          {selector:"edge", style:{
+            "width":1.6,
+            "curve-style":"bezier",
+            "line-color":token("--viz-series-1"),
+            "target-arrow-shape":"none",
+            "opacity":0.58
+          }},
+          {selector:"edge.money", style:{"line-color":token("--viz-series-2")}},
+          {selector:"edge.public", style:{"line-color":token("--viz-series-3")}},
+          {selector:"edge.family", style:{"line-color":token("--viz-series-4")}},
+          {selector:"edge.weak", style:{
+            "line-color":token("--destructive"),
+            "line-style":"dashed",
+            "opacity":0.68
+          }},
+          {selector:".muted", style:{"opacity":0.1}},
+          {selector:"node.focus", style:{
+            "width":"38px",
+            "height":"38px",
+            "border-width":3,
+            "border-color":token("--primary")
+          }},
+          {selector:"edge.focus", style:{
+            "width":4,
+            "opacity":1,
+            "line-color":token("--primary"),
+            "label":"data(label)",
+            "font-size":"12px",
+            "color":token("--foreground"),
+            "text-background-color":token("--background"),
+            "text-background-opacity":0.94,
+            "text-background-padding":"3px",
+            "text-rotation":"autorotate"
+          }}
+        ]
+      });
+
+      var sortedNodes = nodes.slice().sort(function (a, b) {
+        return a.label.localeCompare(b.label);
+      });
+      sortedNodes.forEach(function (n) {
+        var first = document.createElement("option");
+        first.value = n.id;
+        first.textContent = n.label;
+        fromSelect.appendChild(first);
+        var second = document.createElement("option");
+        second.value = n.id;
+        second.textContent = n.label;
+        toSelect.appendChild(second);
+      });
+      fromSelect.value = "omidyar";
+      toSelect.value = "elon";
+
+      function sourceLink(url) {
+        var a = document.createElement("a");
+        a.href = url;
+        a.textContent = "source";
+        return a;
+      }
+
+      function clearClasses() {
+        cy.elements().removeClass("muted focus");
+      }
+
+      function showNode(node) {
+        clearClasses();
+        var neighborhood = node.closedNeighborhood();
+        cy.elements().not(neighborhood).addClass("muted");
+        node.addClass("focus");
+        detail.textContent = node.data("label") + " — " + node.data("summary") + " ";
+        detail.appendChild(sourceLink(node.data("sourceUrl")));
+      }
+
+      function buildPath(fromId, toId, allowWeak) {
+        var queue = [fromId];
+        var seen = {};
+        var previousNode = {};
+        var previousEdge = {};
+        seen[fromId] = true;
+        while (queue.length) {
+          var current = queue.shift();
+          if (current === toId) {
+            break;
+          }
+          edges.forEach(function (e) {
+            if (!allowWeak && e.confidence === "weak") {
+              return;
+            }
+            var next = null;
+            if (e.a === current) {
+              next = e.b;
+            } else if (e.b === current) {
+              next = e.a;
+            }
+            if (next && !seen[next]) {
+              seen[next] = true;
+              previousNode[next] = current;
+              previousEdge[next] = e.id;
+              queue.push(next);
+            }
+          });
+        }
+        if (!seen[toId]) {
+          return null;
+        }
+        var nodeIds = [toId];
+        var edgeIds = [];
+        var cursor = toId;
+        while (cursor !== fromId) {
+          edgeIds.unshift(previousEdge[cursor]);
+          cursor = previousNode[cursor];
+          nodeIds.unshift(cursor);
+        }
+        return {nodes:nodeIds, edges:edgeIds};
+      }
+
+      function tracePath() {
+        var fromId = fromSelect.value;
+        var toId = toSelect.value;
+        if (fromId === toId) {
+          showNode(cy.getElementById(fromId));
+          return;
+        }
+        var path = buildPath(fromId, toId, includeWeak.checked);
+        clearClasses();
+        if (!path) {
+          detail.textContent = "No path is available under the current evidence rule.";
+          return;
+        }
+        cy.elements().addClass("muted");
+        path.nodes.forEach(function (id) {
+          cy.getElementById(id).removeClass("muted").addClass("focus");
+        });
+        path.edges.forEach(function (id) {
+          cy.getElementById(id).removeClass("muted").addClass("focus");
+        });
+        var fromLabel = cy.getElementById(fromId).data("label");
+        var toLabel = cy.getElementById(toId).data("label");
+        detail.textContent = fromLabel + " → " + toLabel + ": " + path.edges.length + " degrees — ";
+        path.edges.forEach(function (id, index) {
+          var edge = cy.getElementById(id);
+          var sourceNode = edge.source().data("label");
+          var targetNode = edge.target().data("label");
+          var part = document.createElement("span");
+          part.textContent = sourceNode + " ↔ " + targetNode + " (" + edge.data("label") + ") ";
+          detail.appendChild(part);
+          detail.appendChild(sourceLink(edge.data("sourceUrl")));
+          if (index < path.edges.length - 1) {
+            detail.appendChild(document.createTextNode(" · "));
+          }
+        });
+        var pathCollection = cy.collection();
+        path.nodes.forEach(function (id) {
+          pathCollection = pathCollection.union(cy.getElementById(id));
+        });
+        cy.animate({fit:{eles:pathCollection, padding:70}}, {duration:280});
+      }
+
+      cy.on("tap", "node", function (event) {
+        showNode(event.target);
+      });
+      cy.on("tap", "edge", function (event) {
+        clearClasses();
+        var edge = event.target;
+        edge.addClass("focus");
+        edge.connectedNodes().addClass("focus");
+        detail.textContent = edge.source().data("label") + " ↔ " + edge.target().data("label") + " — " + edge.data("label") + " ";
+        detail.appendChild(sourceLink(edge.data("sourceUrl")));
+      });
+      traceButton.addEventListener("click", tracePath);
+      clearButton.addEventListener("click", function () {
+        clearClasses();
+        cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
+        detail.textContent = "Select a node for evidence, or choose two names to trace a shortest documented path.";
+      });
+      window.addEventListener("resize", function () {
+        cy.resize();
+      });
+    }());
+  </script>
+</div>
+
+<script id="codex-visualization-floating-ui-core" src="https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js"></script>
+<script id="codex-visualization-floating-ui-dom" src="https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js"></script>
+<script id="codex-visualization-lucide" async src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js"></script>
+<script id="codex-visualization-tooltip">/* oxlint-disable typescript/no-unsafe-argument, typescript/no-unsafe-call, typescript/no-unsafe-return */
+// Runs inside the visualization sandbox, not the host webview.
+(() => {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set(["top", "right", "bottom", "left"]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =>
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest("[data-tooltip]")
+      : null;
+  const containsTarget = (trigger, target) =>
+    target?.nodeType != null && trigger.contains(target);
+  const getContent = (trigger) =>
+    trigger.getAttribute("data-tooltip")?.trim() ?? "";
+  const getPlacement = (trigger) => {
+    const placement = trigger.getAttribute("data-tooltip-placement");
+    return tooltipPlacements.has(placement) ? placement : "top";
+  };
+  const getTooltip = () => {
+    if (tooltip == null) {
+      tooltip = document.createElement("div");
+      tooltip.id = tooltipId;
+      tooltip.className = "tooltip";
+      tooltip.setAttribute("role", "tooltip");
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) => {
+    const ids = new Set(
+      (trigger.getAttribute("aria-describedby") ?? "")
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute("aria-describedby");
+    } else {
+      trigger.setAttribute("aria-describedby", [...ids].join(" "));
+    }
+  };
+  const clearOpenTimeout = () => {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) => {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) => {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              "--tooltip-available-width",
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              "--tooltip-available-height",
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: "fixed",
+    })
+      .then(({ x, y }) => {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = "visible";
+      })
+      .catch(() => {
+        if (activeTrigger === trigger && request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) => {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = "hidden";
+    floating.style.transform = "translate(0, 0)";
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () => {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) => {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() < skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() => {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) => {
+    if (event.pointerType === "touch") {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) => {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) => {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(":focus-visible")) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) => {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () => {
+    closeTooltip(false);
+    document.removeEventListener("pointerover", handlePointerOpen);
+    document.removeEventListener("pointerout", handleLeave);
+    document.removeEventListener("focusin", handleFocusIn);
+    document.removeEventListener("focusout", handleLeave);
+    document.removeEventListener("keydown", handleKeyDown);
+    document.removeEventListener("contextmenu", handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener("pointerover", handlePointerOpen);
+  document.addEventListener("pointerout", handleLeave);
+  document.addEventListener("focusin", handleFocusIn);
+  document.addEventListener("focusout", handleLeave);
+  document.addEventListener("keydown", handleKeyDown);
+  document.addEventListener("contextmenu", handleContextMenu);
+  window.addEventListener("pagehide", destroy, { once: true });
+})();
+</script>
+<script id="codex-visualization-lucide-initialization">(() => {
+  const initialize = () => {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById("codex-visualization-lucide")
+    ?.addEventListener("load", initialize, { once: true });
+})();
+</script>
+</body>
+</html>
