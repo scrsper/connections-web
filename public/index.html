@@ -925,7 +925,7 @@ svg {
     }
     #founder-network-timeline #relationship-graph {
       width: 100%;
-      height: 980px;
+      height: clamp(620px, 72vh, 760px);
       overflow: hidden;
       border: 1px solid var(--border);
       border-radius: var(--radius-2xl);
@@ -935,7 +935,23 @@ svg {
         radial-gradient(circle at 82% 28%, color-mix(in srgb, var(--viz-series-3) 8%, transparent), transparent 28%),
         color-mix(in srgb, var(--card) 72%, transparent);
       box-shadow: inset 0 1px 0 color-mix(in srgb, var(--foreground) 5%, transparent);
-      touch-action: none;
+      touch-action: pan-y;
+    }
+    #founder-network-timeline .graph-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin: 0.35rem 0 0.55rem;
+    }
+    #founder-network-timeline .graph-toolbar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    #founder-network-timeline .graph-toolbar .btn {
+      min-height: 32px;
     }
     #founder-network-timeline .path-detail {
       margin: 0.65rem 0 0.4rem;
@@ -970,7 +986,8 @@ svg {
         grid-template-columns: 1fr;
       }
       #founder-network-timeline #relationship-graph {
-        height: 1080px;
+        height: min(70vh, 680px);
+        min-height: 540px;
       }
     }
   </style>
@@ -980,7 +997,7 @@ svg {
     <ol class="instruction-list text-small">
       <li><strong>Inspect:</strong> click any node to isolate its immediate connections and open its source.</li>
       <li><strong>Connect:</strong> choose a starting node and destination, then select <em>Trace path</em>.</li>
-      <li><strong>Navigate:</strong> scroll or pinch to zoom, and drag the empty canvas to pan around the network.</li>
+      <li><strong>Navigate:</strong> use the zoom controls and drag the empty canvas to pan. Your mouse wheel keeps scrolling the page.</li>
     </ol>
   </section>
 
@@ -1015,12 +1032,22 @@ svg {
     <span class="legend-item"><span class="line-key weak"></span>Unverified or canceled</span>
   </div>
 
+  <div class="graph-toolbar" aria-label="Graph navigation controls">
+    <span class="text-small text-muted">Click a node to focus it. Wheel scrolling moves the page, not the graph.</span>
+    <div class="graph-toolbar-actions">
+      <button class="btn" type="button" id="zoom-out" aria-label="Zoom graph out">− Zoom</button>
+      <button class="btn" type="button" id="zoom-in" aria-label="Zoom graph in">+ Zoom</button>
+      <button class="btn" type="button" id="fit-graph">Fit graph</button>
+      <button class="btn btn-primary" type="button" id="view-timeline">View timeline ↓</button>
+    </div>
+  </div>
+
   <div id="relationship-graph" role="img" aria-label="Interactive network of the listed people, companies, media organizations, countries, and bridge entities. Select two names above to show a shortest documented path."></div>
   <div class="card path-detail" aria-live="polite">
     <span id="path-detail">Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.</span>
   </div>
 
-  <h3 class="timeline-heading">Timeline</h3>
+  <h3 class="timeline-heading" id="timeline-heading">Timeline</h3>
   <div class="table-responsive">
     <table class="table table-sm">
       <thead>
@@ -1078,10 +1105,18 @@ svg {
       var includeWeak = root.querySelector("#include-weak");
       var traceButton = root.querySelector("#trace-path");
       var clearButton = root.querySelector("#clear-path");
+      var zoomInButton = root.querySelector("#zoom-in");
+      var zoomOutButton = root.querySelector("#zoom-out");
+      var fitGraphButton = root.querySelector("#fit-graph");
+      var viewTimelineButton = root.querySelector("#view-timeline");
       var detail = root.querySelector("#path-detail");
-      var theme = getComputedStyle(root);
+      var colorProbe = document.createElement("span");
+      colorProbe.setAttribute("aria-hidden", "true");
+      colorProbe.style.cssText = "position:absolute;visibility:hidden;pointer-events:none";
+      root.appendChild(colorProbe);
       function token(name) {
-        return theme.getPropertyValue(name).trim();
+        colorProbe.style.color = "var(" + name + ")";
+        return getComputedStyle(colorProbe).color;
       }
 
       var nodes = [
@@ -1326,7 +1361,7 @@ svg {
         layout: {name:"preset", fit:true, padding:36},
         minZoom:0.55,
         maxZoom:2.2,
-        wheelSensitivity:0.18,
+        userZoomingEnabled:false,
         boxSelectionEnabled:false,
         autoungrabify:true,
         style: [
@@ -1339,10 +1374,10 @@ svg {
             "text-max-width":"148px",
             "text-valign":"bottom",
             "text-margin-y":"12px",
-            "text-background-color":token("--background"),
-            "text-background-opacity":0.94,
-            "text-background-padding":"4px",
-            "text-background-shape":"round-rectangle",
+            "text-background-opacity":0,
+            "text-outline-color":token("--background"),
+            "text-outline-width":"2px",
+            "text-outline-opacity":0.96,
             "border-width":2,
             "border-color":token("--background"),
             "width":"42px",
@@ -1568,6 +1603,34 @@ svg {
         cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
         detail.textContent = "Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.";
       });
+      function zoomGraph(factor) {
+        var nextZoom = Math.max(cy.minZoom(), Math.min(cy.maxZoom(), cy.zoom() * factor));
+        cy.zoom({
+          level:nextZoom,
+          renderedPosition:{x:cy.width() / 2, y:cy.height() / 2}
+        });
+      }
+      zoomInButton.addEventListener("click", function () {
+        zoomGraph(1.22);
+      });
+      zoomOutButton.addEventListener("click", function () {
+        zoomGraph(1 / 1.22);
+      });
+      fitGraphButton.addEventListener("click", function () {
+        cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
+      });
+      viewTimelineButton.addEventListener("click", function () {
+        root.querySelector("#timeline-heading").scrollIntoView({behavior:"smooth", block:"start"});
+      });
+      graph.addEventListener("wheel", function (event) {
+        if (event.ctrlKey) {
+          return;
+        }
+        var scale = event.deltaMode === 1 ? 16 : (event.deltaMode === 2 ? window.innerHeight : 1);
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        window.scrollBy({top:event.deltaY * scale, left:0, behavior:"auto"});
+      }, {passive:false, capture:true});
       window.addEventListener("resize", function () {
         cy.resize();
       });
