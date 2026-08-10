@@ -13,6 +13,9 @@ Cloudflare account's public workers.dev subdomain.
 
 Cloudflare Workers Builds should use:
 
-    Build command: npm install
+    Build command: (leave empty)
     Deploy command: npm run deploy
     Root directory: /
+
+GitHub Actions also validates the Wrangler configuration on every push and
+pull request before future changes reach production.
