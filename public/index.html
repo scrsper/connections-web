@@ -828,6 +828,49 @@ svg {
       background: transparent;
       width: 100%;
     }
+    #founder-network-timeline .explorer-intro {
+      display: grid;
+      gap: 0.45rem;
+      margin-bottom: 0.85rem;
+      border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--primary) 10%, transparent), transparent 62%),
+        var(--card);
+    }
+    #founder-network-timeline .explorer-intro h2 {
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+    }
+    #founder-network-timeline .instruction-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.55rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: explorer-step;
+    }
+    #founder-network-timeline .instruction-list li {
+      position: relative;
+      min-width: 0;
+      padding-left: 2rem;
+      color: var(--muted-foreground);
+      counter-increment: explorer-step;
+    }
+    #founder-network-timeline .instruction-list li::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: grid;
+      width: 1.45rem;
+      height: 1.45rem;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary-foreground);
+      background: var(--primary);
+      content: counter(explorer-step);
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
     #founder-network-timeline .legend {
       display: flex;
       flex-wrap: wrap;
@@ -882,8 +925,16 @@ svg {
     }
     #founder-network-timeline #relationship-graph {
       width: 100%;
-      height: 690px;
+      height: 980px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-2xl);
       color: var(--foreground);
+      background:
+        radial-gradient(circle at 20% 12%, color-mix(in srgb, var(--viz-series-1) 9%, transparent), transparent 30%),
+        radial-gradient(circle at 82% 28%, color-mix(in srgb, var(--viz-series-3) 8%, transparent), transparent 28%),
+        color-mix(in srgb, var(--card) 72%, transparent);
+      box-shadow: inset 0 1px 0 color-mix(in srgb, var(--foreground) 5%, transparent);
       touch-action: none;
     }
     #founder-network-timeline .path-detail {
@@ -915,24 +966,40 @@ svg {
       color: var(--muted-foreground);
     }
     @media (max-width: 600px) {
+      #founder-network-timeline .instruction-list {
+        grid-template-columns: 1fr;
+      }
       #founder-network-timeline #relationship-graph {
-        height: 820px;
+        height: 1080px;
       }
     }
   </style>
 
+  <section class="card explorer-intro" aria-labelledby="explorer-title">
+    <h2 id="explorer-title">Explore the documented network</h2>
+    <ol class="instruction-list text-small">
+      <li><strong>Inspect:</strong> click any node to isolate its immediate connections and open its source.</li>
+      <li><strong>Connect:</strong> choose a starting node and destination, then select <em>Trace path</em>.</li>
+      <li><strong>Navigate:</strong> scroll or pinch to zoom, and drag the empty canvas to pan around the network.</li>
+    </ol>
+  </section>
+
   <div class="viz-controls" aria-label="Shortest relationship path controls">
     <label class="form-label" for="path-from">From
-      <select class="form-select" id="path-from"></select>
+      <select class="form-select" id="path-from">
+        <option value="">Select here first…</option>
+      </select>
     </label>
     <label class="form-label" for="path-to">To
-      <select class="form-select" id="path-to"></select>
+      <select class="form-select" id="path-to">
+        <option value="">Then select a destination…</option>
+      </select>
     </label>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="include-weak">
       <label class="form-check-label" for="include-weak">Include weak or canceled links</label>
     </div>
-    <button class="btn btn-primary" type="button" id="trace-path">Trace path</button>
+    <button class="btn btn-primary" type="button" id="trace-path" disabled>Trace path</button>
     <button class="btn btn-ghost" type="button" id="clear-path">Clear</button>
   </div>
 
@@ -941,7 +1008,6 @@ svg {
     <span class="legend-item"><span class="node-key"></span>Company or fund</span>
     <span class="legend-item"><span class="node-key country"></span>Country or armed force</span>
     <span class="legend-item"><span class="node-key media"></span>Media entity</span>
-    <span class="legend-item"><span class="node-key bridge"></span>Necessary bridge</span>
     <span class="legend-item"><span class="line-key"></span>Founder, work, or origin</span>
     <span class="legend-item"><span class="line-key money"></span>Investment, ownership, or acquisition</span>
     <span class="legend-item"><span class="line-key public"></span>Public-sector or place</span>
@@ -951,7 +1017,7 @@ svg {
 
   <div id="relationship-graph" role="img" aria-label="Interactive network of the listed people, companies, media organizations, countries, and bridge entities. Select two names above to show a shortest documented path."></div>
   <div class="card path-detail" aria-live="polite">
-    <span id="path-detail">Select a node for evidence, or choose two names to trace a shortest documented path.</span>
+    <span id="path-detail">Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.</span>
   </div>
 
   <h3 class="timeline-heading">Timeline</h3>
@@ -982,21 +1048,24 @@ svg {
         <tr><td class="text-nowrap">2014</td><td>First Look launches The Intercept with Glenn Greenwald, Laura Poitras, and Jeremy Scahill.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald">Guardian</a></td></tr>
         <tr><td class="text-nowrap">2014–17</td><td>Records document meetings and correspondence between Peter Thiel and Jeffrey Epstein.</td><td><span class="confidence">High</span> · <a href="https://www.wired.com/story/epstein-jeffrey-files-peter-thiel-diet-sushi/">Wired</a></td></tr>
         <tr><td class="text-nowrap">2015</td><td>Sam Altman, Elon Musk, and others launch OpenAI. Epstein-linked entities begin investing $40 million across two Valar funds.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/article/technology/musk-other-tech-chiefs-back-artificial-intelligence-startup-with-1-billion-idUSKBN0TU2RA/">Reuters</a> · <a href="https://www.washingtonpost.com/politics/2025/09/25/epstein-house-oversight-records/">Washington Post</a></td></tr>
+        <tr><td class="text-nowrap">2016</td><td>Donald Trump names Peter Thiel and Rebekah Mercer to the executive committee of his presidential transition team.</td><td><span class="confidence">High</span> · <a href="https://www.presidency.ucsb.edu/documents/press-release-president-elect-donald-j-trump-announces-new-implementation-phase">Trump transition release</a></td></tr>
         <tr><td class="text-nowrap">2017</td><td>Luke Nosek co-founds Gigafund. Garrett Langley, Matt Feury, and Paige Todd found Flock Safety. PayPal sells the X.com domain back to Musk.</td><td><span class="confidence">High</span> · <a href="https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489">Axios</a> · <a href="https://www.scheller.gatech.edu/news/2025/entrepreneurs-of-scheller-paige-todd.html">Georgia Tech</a> · <a href="https://www.cnbc.com/2017/07/11/elon-musk-now-owns-x-com-the-defunct-domain-of-his-second-startup.html">CNBC</a></td></tr>
         <tr><td class="text-nowrap">2018</td><td>Amazon acquires Ring. Elon Musk leaves OpenAI’s board.</td><td><span class="confidence">High</span> · <a href="https://press.aboutamazon.com/2018/4/amazon-and-ring-close-acquisition-now-working-together-to-empower-neighbors-with-affordable-ways-to-monitor-their-homes-and-reduce-crime-in-neighborhoods">Amazon</a> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2019–21</td><td>Ken Howery serves as U.S. ambassador to Sweden.</td><td><span class="confidence">High</span> · <a href="https://history.state.gov/departmenthistory/people/howery-kenneth-a">State Dept.</a></td></tr>
         <tr><td class="text-nowrap">2020</td><td>Glenn Greenwald resigns from The Intercept after an editorial dispute.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2020/oct/29/journalist-glenn-greenwald-resigns-the-intercept">Guardian</a></td></tr>
         <tr><td class="text-nowrap">2021–22</td><td>VidAngel’s successor becomes Angel Studios; Gigafund leads a $47 million financing round.</td><td><span class="confidence">High</span> · <a href="https://www.angel.com/press/release/angel-studios-streaming-platform-behind-the-chosen-raises-usd47-million">Angel</a></td></tr>
         <tr><td class="text-nowrap">2022</td><td>Zelenskyy meets Palantir CEO Alex Karp in Kyiv and discusses cooperation.</td><td><span class="confidence">High</span> · <a href="https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541">Ukraine presidency</a></td></tr>
-        <tr><td class="text-nowrap">2023</td><td>Musk founds xAI and reuses X.com for the social platform formerly called Twitter. The Intercept becomes independent of First Look.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a> · <a href="https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit">Axios</a></td></tr>
-        <tr><td class="text-nowrap">2024</td><td>Palantir announces a strategic partnership with Israel’s Ministry of Defense. Ken Howery is reported among xAI’s investors.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/thiels-palantir-dumped-by-norwegian-investor-over-work-israel-2024-10-25/">Reuters</a> · <a href="https://techcrunch.com/2024/05/26/elon-musks-xai-raises-6b-from-valor-a16z-and-sequoia/">TechCrunch</a></td></tr>
-        <tr><td class="text-nowrap">2025</td><td>xAI acquires X. Ken Howery begins serving as U.S. ambassador to Denmark. Ring and Flock announce an intended integration.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/">Reuters</a> · <a href="https://dk.usembassy.gov/ambassador/">U.S. Embassy</a></td></tr>
+        <tr><td class="text-nowrap">2023</td><td>Musk founds xAI and reuses X.com for the social platform formerly called Twitter. Tucker Carlson launches programming on X, interviews Trump, and starts a subscription network; 1789 Capital becomes an early investor. The Intercept becomes independent of First Look.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a> · <a href="https://www.reuters.com/business/media-telecom/tucker-carlsons-streaming-service-charge-9-per-month-2023-12-11/">Reuters</a> · <a href="https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/">Reuters</a> · <a href="https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit">Axios</a></td></tr>
+        <tr><td class="text-nowrap">2024</td><td>Palantir announces a strategic partnership with Israel’s Ministry of Defense. Ken Howery is reported among xAI’s investors. Trump names Elon Musk to a government-efficiency role after the election.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/thiels-palantir-dumped-by-norwegian-investor-over-work-israel-2024-10-25/">Reuters</a> · <a href="https://techcrunch.com/2024/05/26/elon-musks-xai-raises-6b-from-valor-a16z-and-sequoia/">TechCrunch</a> · <a href="https://www.reuters.com/world/us/trump-says-elon-musk-vivek-ramaswamy-will-lead-department-government-efficiency-2024-11-13/">Reuters</a></td></tr>
+        <tr><td class="text-nowrap">2024</td><td>Miriam Adelson becomes the lead funder of a major pro-Trump spending group. Mark Cuban campaigns for Kamala Harris and criticizes Trump’s tariff plan.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/world/us/republican-mega-donor-adelson-back-major-pro-trump-spending-group-2024-05-30/">Reuters</a> · <a href="https://www.reuters.com/world/us/billionaire-cuban-stumps-harris-musk-hits-trail-trump-2024-10-17/">Reuters</a></td></tr>
+        <tr><td class="text-nowrap">2025</td><td>Amazon contributes $1 million and Sam Altman personally contributes $1 million to Trump’s inaugural fund. Musk serves temporarily as a special government employee and senior adviser. xAI acquires X; Howery becomes U.S. ambassador to Denmark; Ring and Flock announce an intended integration.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/world/us/corporate-america-pledges-donations-trump-inauguration-2024-12-17/">Reuters</a> · <a href="https://www.reuters.com/world/us/elon-musk-leaving-trump-administration-white-house-official-confirms-2025-05-29/">Reuters</a> · <a href="https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/">Reuters</a> · <a href="https://dk.usembassy.gov/ambassador/">U.S. Embassy</a></td></tr>
+        <tr><td class="text-nowrap">2025</td><td>Carlson and Patel buy out the outside investors in their media company. The Trump administration and George Soros’s Open Society Foundations enter an escalating public and legal conflict.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/">Reuters</a> · <a href="https://www.reuters.com/world/us/soros-foundation-says-reported-justice-department-push-probe-is-politically-2025-09-25/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2026</td><td>Ring and Flock cancel the integration before launch. SpaceX acquires xAI. Ukraine expands work with Palantir.</td><td><span class="confidence">High</span> · <a href="https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/">Ring</a> · <a href="https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/">Reuters</a></td></tr>
       </tbody>
     </table>
   </div>
   <div class="notes text-small">
-    <span class="confidence medium">Medium confidence</span> applies to the Mahmud Mir-Djalali → Elahé Mir-Djalali → Pierre Omidyar genealogy: the army career and mother–son link are independently documented, while the grandfather link relies on recent secondary biographies. No Epstein → Israel state-level edge is drawn. A listed Epstein–Musk calendar item is available only when weak links are enabled because the released schedule does not prove a meeting occurred.
+    <span class="confidence medium">Medium confidence</span> applies to the Mahmud Mir-Djalali → Elahé Mir-Djalali → Pierre Omidyar genealogy: the army career and mother–son link are independently documented, while the grandfather link relies on recent secondary biographies. No Epstein → Israel state-level edge is drawn. The Epstein–Musk calendar item and Thiel–Carlson investment discussion appear only when weak links are enabled: the first does not prove a meeting occurred, and the second documents possible investment talks rather than a confirmed completed investment. Political-opposition edges record a documented relationship, not agreement or affiliation.
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js"></script>
@@ -1018,23 +1087,23 @@ svg {
       var nodes = [
         {id:"mir", label:"Mahmud Mir-Djalali", kind:"person", x:45, y:40, summary:"Iranian artillery officer and senior Imperial-era military figure.", source:"https://www.iranicaonline.org/articles/mirjalali-mahmud/"},
         {id:"army", label:"Imperial Iranian Army", kind:"country", x:175, y:40, summary:"The armed force in which Mir-Djalali built his career.", source:"https://www.iranicaonline.org/articles/mirjalali-mahmud/"},
-        {id:"elahe", label:"Elahé Mir-Djalali", kind:"bridge", x:45, y:115, summary:"Pierre Omidyar’s mother; a necessary family bridge.", source:"https://presse.louvre.fr/a-new-donation-of-2-3-millionfor-the-elahe-omidyar-mir-djalali-fund-in-the-louvre-endowment-fund/"},
+        {id:"elahe", label:"Elahé Mir-Djalali", kind:"person", x:45, y:115, summary:"Pierre Omidyar’s mother; a necessary family bridge.", source:"https://presse.louvre.fr/a-new-donation-of-2-3-millionfor-the-elahe-omidyar-mir-djalali-fund-in-the-louvre-endowment-fund/"},
         {id:"omidyar", label:"Pierre Omidyar", kind:"person", x:160, y:115, summary:"Founder of eBay and First Look Media.", source:"https://www.ebayinc.com/company/our-history/"},
         {id:"ebay", label:"eBay", kind:"company", x:265, y:165, summary:"Founded as AuctionWeb by Pierre Omidyar in 1995; acquired PayPal in 2002.", source:"https://www.ebayinc.com/company/our-history/"},
         {id:"firstlook", label:"First Look Media", kind:"media", x:90, y:215, summary:"Media organization created and funded by Pierre Omidyar in 2013.", source:"https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald"},
-        {id:"intercept", label:"The Intercept", kind:"bridge", x:85, y:285, summary:"Launched by First Look in 2014; became an independent nonprofit in 2023.", source:"https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit"},
+        {id:"intercept", label:"The Intercept", kind:"media", x:85, y:285, summary:"Launched by First Look in 2014; became an independent nonprofit in 2023.", source:"https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit"},
         {id:"greenwald", label:"Glenn Greenwald", kind:"person", x:55, y:355, summary:"Co-founding editor of The Intercept; resigned in 2020.", source:"https://www.theguardian.com/media/2020/oct/29/journalist-glenn-greenwald-resigns-the-intercept"},
         {id:"maye", label:"Maye Haldeman Musk", kind:"person", x:165, y:320, summary:"Mother of Elon Musk.", source:"https://www.britannica.com/money/Elon-Musk"},
         {id:"errol", label:"Errol Musk", kind:"person", x:255, y:360, summary:"Father of Elon Musk.", source:"https://www.britannica.com/money/Elon-Musk"},
         {id:"elon", label:"Elon Musk", kind:"person", x:285, y:275, summary:"Co-founder of X.com and OpenAI; founder of xAI.", source:"https://www.britannica.com/money/Elon-Musk"},
         {id:"xcom", label:"X.com bank (1999)", kind:"company", x:360, y:230, summary:"Musk’s online bank; merged with Confinity. This is not the same company as today’s social platform X.", source:"https://www.wired.com/2001/09/paypal/"},
-        {id:"confinity", label:"Confinity", kind:"bridge", x:430, y:145, summary:"Payments company created by Thiel, Levchin, Nosek, Howery, and colleagues; merged with X.com.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"confinity", label:"Confinity", kind:"company", x:430, y:145, summary:"Payments company created by Thiel, Levchin, Nosek, Howery, and colleagues; merged with X.com.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
         {id:"paypal", label:"PayPal", kind:"company", x:445, y:265, summary:"Name adopted by the combined X.com–Confinity company in 2001; acquired by eBay in 2002.", source:"https://www.ebayinc.com/company/our-history/"},
         {id:"levchin", label:"Max Levchin", kind:"person", x:395, y:355, summary:"Confinity and PayPal co-founder; founder and CEO of Affirm.", source:"https://investors.affirm.com/management/max-levchin"},
         {id:"nosek", label:"Luke Nosek", kind:"person", x:500, y:355, summary:"Worked at Netscape; co-founded Confinity/PayPal, Founders Fund, and Gigafund.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
         {id:"howery", label:"Ken Howery", kind:"person", x:525, y:155, summary:"PayPal and Founders Fund co-founder; U.S. ambassador to Sweden and later Denmark.", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
         {id:"banister", label:"Scott Banister", kind:"person", x:305, y:430, summary:"SponsorNet co-founder and early PayPal investor, adviser, and board member.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
-        {id:"sponsornet", label:"SponsorNet", kind:"bridge", x:410, y:435, summary:"1995 startup linking Levchin, Nosek, and Banister before PayPal.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
+        {id:"sponsornet", label:"SponsorNet", kind:"company", x:410, y:435, summary:"1995 startup linking Levchin, Nosek, and Banister before PayPal.", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
         {id:"netscape", label:"Netscape", kind:"company", x:520, y:445, summary:"Founded by Jim Clark and Marc Andreessen; Luke Nosek worked there before PayPal.", source:"https://www.computerhistory.org/tdih/april/4/"},
         {id:"youtube", label:"YouTube", kind:"company", x:405, y:520, summary:"Founded in 2005 by former PayPal employees Chad Hurley, Steve Chen, and Jawed Karim.", source:"https://www.newyorker.com/magazine/2012/01/16/streaming-dreams"},
         {id:"affirm", label:"Affirm", kind:"company", x:520, y:520, summary:"Founded by Max Levchin in 2012; a Founders Fund portfolio company.", source:"https://investors.affirm.com/management/max-levchin"},
@@ -1058,8 +1127,17 @@ svg {
         {id:"openai", label:"OpenAI", kind:"company", x:625, y:550, summary:"Founded in 2015 by Sam Altman, Elon Musk, and others; Musk left the board in 2018.", source:"https://www.reuters.com/article/technology/musk-other-tech-chiefs-back-artificial-intelligence-startup-with-1-billion-idUSKBN0TU2RA/"},
         {id:"altman", label:"Sam Altman", kind:"person", x:555, y:660, summary:"OpenAI co-founder and CEO.", source:"https://www.reuters.com/legal/litigation/openai-trial-pitting-elon-musk-against-sam-altman-kicks-off-2026-04-28/"},
         {id:"xai", label:"xAI", kind:"company", x:520, y:600, summary:"AI company founded by Elon Musk in 2023; acquired X in 2025 and was acquired by SpaceX in 2026.", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
-        {id:"xsocial", label:"X social platform", kind:"bridge", x:425, y:650, summary:"Formerly Twitter; renamed X in 2023 and acquired by xAI in 2025. It reuses the X.com domain but is not the 1999 bank.", source:"https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"},
-        {id:"spacex", label:"SpaceX", kind:"bridge", x:660, y:665, summary:"Musk’s space company; acquired xAI in 2026.", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
+        {id:"xsocial", label:"X social platform", kind:"media", x:425, y:650, summary:"Formerly Twitter; renamed X in 2023 and acquired by xAI in 2025. It reuses the X.com domain but is not the 1999 bank.", source:"https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/"},
+        {id:"spacex", label:"SpaceX", kind:"company", x:660, y:665, summary:"Musk’s space company; acquired xAI in 2026.", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
+        {id:"trump", label:"Donald Trump", kind:"person", x:745, y:735, summary:"U.S. president whose documented links here include Peter Thiel’s 2016 transition role, Elon Musk’s 2024–25 advisory work, and 2025 inaugural contributions from Amazon and Sam Altman.", source:"https://www.presidency.ucsb.edu/documents/press-release-president-elect-donald-j-trump-announces-new-implementation-phase"},
+        {id:"tucker", label:"Tucker Carlson", kind:"person", x:900, y:735, summary:"Conservative broadcaster who launched programming on X in 2023, interviewed Trump there, and co-founded a subscription media company with Neil Patel.", source:"https://www.reuters.com/business/media-telecom/tucker-carlsons-streaming-service-charge-9-per-month-2023-12-11/"},
+        {id:"tcn", label:"Tucker Carlson Network", kind:"media", x:1035, y:790, summary:"Subscription media venture founded by Tucker Carlson and Neil Patel in 2023; early investors were bought out in 2025.", source:"https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/"},
+        {id:"mercer", label:"Rebekah Mercer", kind:"person", x:930, y:880, summary:"Conservative donor and investor; served on Trump’s 2016 transition executive committee and co-founded 1789 Capital, an early investor in Carlson’s media company.", source:"https://www.presidency.ucsb.edu/documents/press-release-president-elect-donald-j-trump-announces-new-implementation-phase"},
+        {id:"capital1789", label:"1789 Capital", kind:"company", x:1060, y:900, summary:"Investment firm that made an early investment in Tucker Carlson’s media company; that stake was bought out in 2025.", source:"https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/"},
+        {id:"owens", label:"Candace Owens", kind:"person", x:815, y:900, summary:"Conservative commentator and BLEXIT co-founder whose media and political activity included promoting Trump’s agenda, alongside later disagreements.", source:"https://www.reuters.com/world/us/conservative-influencer-charlie-kirk-shot-dead-manhunt-suspect-2025-09-11/"},
+        {id:"cuban", label:"Mark Cuban", kind:"person", x:645, y:865, summary:"Entrepreneur, investor, and former Dallas Mavericks owner who campaigned for Kamala Harris and publicly challenged Trump’s economic proposals in 2024.", source:"https://www.reuters.com/world/us/billionaire-cuban-stumps-harris-musk-hits-trail-trump-2024-10-17/"},
+        {id:"adelson", label:"Miriam Adelson", kind:"person", x:700, y:970, summary:"Physician, casino owner, and Republican megadonor who was the lead funder of a major pro-Trump spending group in 2024.", source:"https://www.reuters.com/world/us/republican-mega-donor-adelson-back-major-pro-trump-spending-group-2024-05-30/"},
+        {id:"soros", label:"George Soros", kind:"person", x:515, y:950, summary:"Financier and philanthropist who founded the Open Society Foundations; a longstanding political target of Trump and allied movements.", source:"https://www.opensocietyfoundations.org/george-soros"},
         {id:"sweden", label:"Sweden", kind:"country", x:300, y:610, summary:"Ken Howery served as U.S. ambassador here from 2019 to 2021.", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
         {id:"denmark", label:"Denmark", kind:"country", x:350, y:680, summary:"Ken Howery began serving as U.S. ambassador here in 2025.", source:"https://dk.usembassy.gov/ambassador/"}
       ];
@@ -1120,15 +1198,109 @@ svg {
         {id:"spacex-xai", a:"spacex", b:"xai", label:"acquired, 2026", relation:"money", source:"https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"},
         {id:"bezos-amazon", a:"bezos", b:"amazon", label:"founded, 1994", relation:"origin", source:"https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx"},
         {id:"amazon-ring", a:"amazon", b:"ring", label:"acquired, 2018", relation:"money", source:"https://press.aboutamazon.com/2018/4/amazon-and-ring-close-acquisition-now-working-together-to-empower-neighbors-with-affordable-ways-to-monitor-their-homes-and-reduce-crime-in-neighborhoods"},
+        {id:"trump-thiel", a:"trump", b:"thiel", label:"transition executive committee, 2016", relation:"public", source:"https://www.presidency.ucsb.edu/documents/press-release-president-elect-donald-j-trump-announces-new-implementation-phase"},
+        {id:"trump-elon", a:"trump", b:"elon", label:"government-efficiency adviser, 2024–25", relation:"public", source:"https://www.reuters.com/world/us/elon-musk-leaving-trump-administration-white-house-official-confirms-2025-05-29/"},
+        {id:"trump-amazon", a:"trump", b:"amazon", label:"$1m inaugural contribution, 2025", relation:"money", source:"https://www.reuters.com/world/us/corporate-america-pledges-donations-trump-inauguration-2024-12-17/"},
+        {id:"trump-altman", a:"trump", b:"altman", label:"$1m personal inaugural contribution, 2025", relation:"money", source:"https://www.reuters.com/world/us/corporate-america-pledges-donations-trump-inauguration-2024-12-17/"},
+        {id:"tucker-xsocial", a:"tucker", b:"xsocial", label:"launched show and content partnership, 2023", relation:"origin", source:"https://www.reuters.com/business/media-telecom/former-cnn-anchor-don-lemon-host-exclusive-show-musks-x-2024-01-09/"},
+        {id:"tucker-trump", a:"tucker", b:"trump", label:"high-profile X interview, 2023", relation:"public", source:"https://www.reuters.com/business/media-telecom/tucker-carlsons-streaming-service-charge-9-per-month-2023-12-11/"},
+        {id:"tucker-tcn", a:"tucker", b:"tcn", label:"co-founded subscription network, 2023", relation:"origin", source:"https://www.reuters.com/business/media-telecom/tucker-carlsons-streaming-service-charge-9-per-month-2023-12-11/"},
+        {id:"capital1789-tcn", a:"capital1789", b:"tcn", label:"early investment, 2023; bought out, 2025", relation:"money", source:"https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/"},
+        {id:"mercer-capital1789", a:"mercer", b:"capital1789", label:"co-founded investment firm", relation:"origin", source:"https://www.wsj.com/business/media/tucker-carlsons-media-company-secures-investment-led-by-new-anti-woke-firm-1789-capital-a47d20dd"},
+        {id:"mercer-trump", a:"mercer", b:"trump", label:"transition executive committee, 2016", relation:"public", source:"https://www.presidency.ucsb.edu/documents/press-release-president-elect-donald-j-trump-announces-new-implementation-phase"},
+        {id:"thiel-tucker", a:"thiel", b:"tucker", label:"reported possible investment talks, 2023; completion unconfirmed", relation:"weak", confidence:"weak", source:"https://tvnewscheck.com/business/article/tucker-carlson-could-see-rebekah-mercer-peter-thiel-invest-in-his-media-company/"},
+        {id:"owens-trump", a:"owens", b:"trump", label:"pro-Trump advocacy and agenda amplification", relation:"public", source:"https://www.reuters.com/world/us/conservative-influencer-charlie-kirk-shot-dead-manhunt-suspect-2025-09-11/"},
+        {id:"cuban-trump", a:"cuban", b:"trump", label:"political opposition and tariff dispute, 2024", relation:"public", source:"https://www.reuters.com/world/us/billionaire-cuban-stumps-harris-musk-hits-trail-trump-2024-10-17/"},
+        {id:"adelson-trump", a:"adelson", b:"trump", label:"lead donor to pro-Trump spending group, 2024", relation:"money", source:"https://www.reuters.com/world/us/republican-mega-donor-adelson-back-major-pro-trump-spending-group-2024-05-30/"},
+        {id:"soros-trump", a:"soros", b:"trump", label:"political adversaries; foundation targeted, 2025", relation:"public", source:"https://www.reuters.com/world/us/soros-foundation-says-reported-justice-department-push-probe-is-politically-2025-09-25/"},
         {id:"ring-flock", a:"ring", b:"flock", label:"planned 2025; canceled 2026 before launch", relation:"weak", confidence:"weak", source:"https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/"},
         {id:"howery-sweden", a:"howery", b:"sweden", label:"U.S. ambassador, 2019–21", relation:"public", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
         {id:"howery-denmark", a:"howery", b:"denmark", label:"U.S. ambassador, 2025–present", relation:"public", source:"https://dk.usembassy.gov/ambassador/"}
       ];
 
+      var nodeMeta = {
+        mir:"Iranian army officer",
+        army:"Armed force · Imperial Iran",
+        elahe:"Family link · Omidyar",
+        omidyar:"Founder · eBay, First Look",
+        ebay:"Marketplace · founded 1995",
+        firstlook:"Media group · founded 2013",
+        intercept:"News nonprofit · launched 2014",
+        greenwald:"Journalist · Intercept co-founder",
+        maye:"Model/author · Elon’s mother",
+        errol:"Engineer · Elon’s father",
+        elon:"Founder · X.com, xAI",
+        xcom:"Online bank · founded 1999",
+        confinity:"Payments startup · founded 1998",
+        paypal:"Payments · renamed 2001",
+        levchin:"Founder · PayPal, Affirm",
+        nosek:"Founder · PayPal, Gigafund",
+        howery:"Founder/investor · PayPal",
+        banister:"Investor · early PayPal",
+        sponsornet:"Web startup · founded 1995",
+        netscape:"Web pioneer · founded 1994",
+        youtube:"Video platform · founded 2005",
+        affirm:"Fintech · founded 2012",
+        thiel:"Founder · PayPal, Palantir",
+        thielcapital:"Investment office · Thiel",
+        foundersfund:"Venture capital · founded 2005",
+        valar:"Venture capital · founded 2010",
+        mithril:"Investment firm · founded 2012",
+        palantir:"Data and AI · founded 2003",
+        epstein:"Financier · documented contacts",
+        israel:"Country · Palantir partnership",
+        ukraine:"Country · Palantir cooperation",
+        zelenskyy:"President · Ukraine",
+        gigafund:"Venture capital · founded 2017",
+        angel:"Film and TV studio",
+        neal:"Founder/CEO · Angel Studios",
+        flock:"Public-safety technology",
+        ring:"Smart-home security",
+        amazon:"Commerce/cloud · founded 1994",
+        bezos:"Founder · Amazon",
+        openai:"AI company · founded 2015",
+        altman:"Co-founder/CEO · OpenAI",
+        xai:"AI company · founded 2023",
+        xsocial:"Social platform · formerly Twitter",
+        spacex:"Space company · founded 2002",
+        trump:"U.S. president · 45th and 47th",
+        tucker:"Broadcaster · media founder",
+        tcn:"Subscription media · founded 2023",
+        mercer:"Donor/investor · 1789 Capital",
+        capital1789:"Investment firm · founded 2022",
+        owens:"Commentator · BLEXIT co-founder",
+        cuban:"Entrepreneur/investor · Dallas",
+        adelson:"Megadonor · pro-Trump PAC",
+        soros:"Founder · Open Society",
+        sweden:"Country · Howery 2019–21",
+        denmark:"Country · Howery 2025–"
+      };
+
+      var iconSvg = {
+        person:"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='7.5' r='4' fill='white'/><path d='M4 21c.3-4.8 3.5-8 8-8s7.7 3.2 8 8H4Z' fill='white'/></svg>",
+        company:"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4 21V5h10v4h6v12H4Z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/><path d='M8 9h2m-2 4h2m-2 4h2m6-4h1m-1 4h1' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>",
+        country:"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 22V3m1 1h12l-2.5 4L18 12H6' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+        media:"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect x='3' y='5' width='18' height='15' rx='2' fill='none' stroke='white' stroke-width='2'/><path d='M7 9h4v4H7V9Zm7 0h3M14 13h3M7 16h10' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round'/></svg>",
+        bridge:"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M9.5 14.5 7 17a3.5 3.5 0 0 1-5-5l3-3a3.5 3.5 0 0 1 5 0m4.5.5L17 7a3.5 3.5 0 0 1 5 5l-3 3a3.5 3.5 0 0 1-5 0M8 16l8-8' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>"
+      };
+
+      function iconForKind(kind) {
+        var svgHeader = "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE svg>";
+        return "data:image/svg+xml;utf8," + encodeURIComponent(svgHeader + (iconSvg[kind] || iconSvg.bridge));
+      }
+
       var elements = [];
       nodes.forEach(function (n) {
         elements.push({
-          data: {id:n.id, label:n.label, kind:n.kind, summary:n.summary, sourceUrl:n.source},
+          data: {
+            id:n.id,
+            label:n.label,
+            displayLabel:n.label + "\n" + (nodeMeta[n.id] || n.kind),
+            kind:n.kind,
+            summary:n.summary,
+            sourceUrl:n.source,
+            icon:iconForKind(n.kind)
+          },
           position: {x:n.x, y:n.y},
           classes: n.kind
         });
@@ -1159,44 +1331,51 @@ svg {
         autoungrabify:true,
         style: [
           {selector:"node", style:{
-            "label":"data(label)",
-            "font-size":"16px",
-            "font-weight":"400",
+            "label":"data(displayLabel)",
+            "font-size":"12px",
+            "font-weight":"500",
             "color":token("--foreground"),
             "text-wrap":"wrap",
-            "text-max-width":"112px",
+            "text-max-width":"148px",
             "text-valign":"bottom",
-            "text-margin-y":"8px",
+            "text-margin-y":"12px",
             "text-background-color":token("--background"),
-            "text-background-opacity":0.88,
-            "text-background-padding":"2px",
-            "border-width":0,
-            "width":"24px",
-            "height":"24px",
+            "text-background-opacity":0.94,
+            "text-background-padding":"4px",
+            "text-background-shape":"round-rectangle",
+            "border-width":2,
+            "border-color":token("--background"),
+            "width":"42px",
+            "height":"42px",
+            "background-image":"data(icon)",
+            "background-fit":"contain",
+            "background-width":"22px",
+            "background-height":"22px",
+            "background-repeat":"no-repeat",
             "background-color":token("--viz-series-1")
           }},
           {selector:"node.company", style:{
             "shape":"round-rectangle",
-            "width":"38px",
-            "height":"24px",
+            "width":"46px",
+            "height":"42px",
             "background-color":token("--viz-series-2")
           }},
           {selector:"node.country", style:{
-            "shape":"diamond",
-            "width":"31px",
-            "height":"31px",
+            "shape":"round-rectangle",
+            "width":"46px",
+            "height":"42px",
             "background-color":token("--viz-series-3")
           }},
           {selector:"node.media", style:{
-            "shape":"rectangle",
-            "width":"38px",
-            "height":"24px",
+            "shape":"round-rectangle",
+            "width":"46px",
+            "height":"42px",
             "background-color":token("--viz-series-4")
           }},
           {selector:"node.bridge", style:{
-            "shape":"hexagon",
-            "width":"22px",
-            "height":"22px",
+            "shape":"round-rectangle",
+            "width":"46px",
+            "height":"42px",
             "background-color":token("--viz-series-6")
           }},
           {selector:"edge", style:{
@@ -1216,10 +1395,12 @@ svg {
           }},
           {selector:".muted", style:{"opacity":0.1}},
           {selector:"node.focus", style:{
-            "width":"38px",
-            "height":"38px",
+            "width":"56px",
+            "height":"56px",
             "border-width":3,
-            "border-color":token("--primary")
+            "border-color":token("--foreground"),
+            "background-width":"28px",
+            "background-height":"28px"
           }},
           {selector:"edge.focus", style:{
             "width":4,
@@ -1249,8 +1430,13 @@ svg {
         second.textContent = n.label;
         toSelect.appendChild(second);
       });
-      fromSelect.value = "omidyar";
-      toSelect.value = "elon";
+      function updateTraceState() {
+        traceButton.disabled = !fromSelect.value || !toSelect.value;
+      }
+
+      fromSelect.addEventListener("change", updateTraceState);
+      toSelect.addEventListener("change", updateTraceState);
+      updateTraceState();
 
       function sourceLink(url) {
         var a = document.createElement("a");
@@ -1318,6 +1504,11 @@ svg {
       function tracePath() {
         var fromId = fromSelect.value;
         var toId = toSelect.value;
+        if (!fromId || !toId) {
+          detail.textContent = "Choose both a starting node and a destination before tracing a path.";
+          updateTraceState();
+          return;
+        }
         if (fromId === toId) {
           showNode(cy.getElementById(fromId));
           return;
@@ -1371,8 +1562,11 @@ svg {
       traceButton.addEventListener("click", tracePath);
       clearButton.addEventListener("click", function () {
         clearClasses();
+        fromSelect.value = "";
+        toSelect.value = "";
+        updateTraceState();
         cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
-        detail.textContent = "Select a node for evidence, or choose two names to trace a shortest documented path.";
+        detail.textContent = "Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.";
       });
       window.addEventListener("resize", function () {
         cy.resize();
