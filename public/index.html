@@ -949,6 +949,14 @@ svg {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
+      align-items: center;
+    }
+    #founder-network-timeline .topic-select {
+      width: auto;
+      min-width: 12.5rem;
+      min-height: 32px;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
     }
     #founder-network-timeline .graph-toolbar .btn {
       min-height: 32px;
@@ -1033,8 +1041,19 @@ svg {
   </div>
 
   <div class="graph-toolbar" aria-label="Graph navigation controls">
-    <span class="text-small text-muted">Click a node to focus it. Wheel scrolling moves the page, not the graph.</span>
+    <span class="text-small text-muted">Choose a topic to declutter the map. Click a node to inspect it; wheel scrolling moves the page.</span>
     <div class="graph-toolbar-actions">
+      <label class="sr-only" for="focus-area">Focus topic</label>
+      <select class="form-select topic-select" id="focus-area">
+        <option value="all">All topics</option>
+        <option value="tech">Tech, PayPal &amp; AI</option>
+        <option value="politics">Politics &amp; media</option>
+        <option value="finance">Finance, Koch &amp; GameStop</option>
+        <option value="kabbalah">Kabbalah &amp; teachers</option>
+        <option value="khazars">Khazars &amp; conversion accounts</option>
+        <option value="bolsheviks">Bolsheviks &amp; Ukraine</option>
+        <option value="crime">Documented organized-crime cases</option>
+      </select>
       <button class="btn" type="button" id="zoom-out" aria-label="Zoom graph out">− Zoom</button>
       <button class="btn" type="button" id="zoom-in" aria-label="Zoom graph in">+ Zoom</button>
       <button class="btn" type="button" id="fit-graph">Fit graph</button>
@@ -1058,9 +1077,16 @@ svg {
         </tr>
       </thead>
       <tbody>
+        <tr><td class="text-nowrap">c. 740–860</td><td>Later Khazar accounts describe a ruler—usually called Bulan—adopting Judaism after a debate involving Christian, Muslim, and Jewish representatives. The date, ruler’s title, scale of conversion, and literary debate are disputed.</td><td><span class="confidence medium">Medium</span> · <a href="https://www.iranicaonline.org/articles/khazars/">Iranica</a> · <a href="https://sourcebooks.fordham.edu/source/khazars1.asp">Correspondence</a></td></tr>
+        <tr><td class="text-nowrap">13th century</td><td>The Zohar emerges in medieval Spain. Tradition attributes it to Shimon bar Yochai; critical scholarship associates its composition or redaction especially with Moses de León and his circle.</td><td><span class="confidence medium">Medium</span> · <a href="https://plato.stanford.edu/entries/scholem/">Stanford Encyclopedia</a></td></tr>
+        <tr><td class="text-nowrap">16th century</td><td>Moses Cordovero systematizes earlier Kabbalah in Safed; Isaac Luria develops a new school, recorded and transmitted chiefly by his disciple Hayyim Vital.</td><td><span class="confidence">High</span> · <a href="https://www.jewishvirtuallibrary.org/isaac-ben-solomon-luria">JVL: Luria</a> · <a href="https://www.jewishvirtuallibrary.org/chaim-vital">JVL: Vital</a></td></tr>
+        <tr><td class="text-nowrap">1917</td><td>Lenin’s Bolsheviks seize power in the October Revolution; Trotsky is a central organizer and leader.</td><td><span class="confidence">High</span> · <a href="https://www.britannica.com/event/October-Revolution-Russian-history">Britannica</a></td></tr>
+        <tr><td class="text-nowrap">1917–22</td><td>Bolshevik forces and rival Ukrainian governments fight for control. A Soviet Ukrainian republic is established and becomes a founding republic of the USSR in 1922.</td><td><span class="confidence">High</span> · <a href="https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CU%5CK%5CUkrainianSovietSocialistRepublic.htm">Encyclopedia of Ukraine</a></td></tr>
         <tr><td class="text-nowrap">1920s–50s</td><td>Mahmud Mir-Djalali serves in and helps modernize Iran’s army; later holds senior posts.</td><td><span class="confidence">High</span> · <a href="https://www.iranicaonline.org/articles/mirjalali-mahmud/">Iranica</a></td></tr>
+        <tr><td class="text-nowrap">1960s–70s</td><td>Philip Berg develops the organization later known as the Kabbalah Centre, which presents a modern, popularized form of Kabbalah and later draws celebrity students including Madonna.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">1971</td><td>Elon Musk is born to Maye Haldeman Musk and Errol Musk.</td><td><span class="confidence">High</span> · <a href="https://www.britannica.com/money/Elon-Musk">Britannica</a></td></tr>
         <tr><td class="text-nowrap">1975</td><td>Max Levchin is born in Kyiv, then in the Ukrainian SSR.</td><td><span class="confidence">High</span> · <a href="https://investors.affirm.com/management/max-levchin">Affirm</a></td></tr>
+        <tr><td class="text-nowrap">1975–88</td><td>John Bogle launches Vanguard in 1975. Stephen Schwarzman and Peter Peterson found Blackstone in 1985. Larry Fink and partners establish the business that becomes BlackRock inside Blackstone in 1988.</td><td><span class="confidence">High</span> · <a href="https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-history.html">Vanguard</a> · <a href="https://www.blackrock.com/corporate/about-us/who-we-are/leadership/larry-fink">BlackRock</a></td></tr>
         <tr><td class="text-nowrap">1994</td><td>Jeff Bezos founds Amazon; Jim Clark and Marc Andreessen found Netscape.</td><td><span class="confidence">High</span> · <a href="https://ir.aboutamazon.com/officers-and-directors/person-details/default.aspx">Amazon</a> · <a href="https://www.computerhistory.org/tdih/april/4/">CHM</a></td></tr>
         <tr><td class="text-nowrap">1995</td><td>Pierre Omidyar launches AuctionWeb, later eBay. Levchin, Luke Nosek, and Scott Banister start SponsorNet.</td><td><span class="confidence">High</span> · <a href="https://www.ebayinc.com/company/our-history/">eBay</a> · <a href="https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek">Illinois</a></td></tr>
         <tr><td class="text-nowrap">1998</td><td>Peter Thiel, Max Levchin, Luke Nosek, and Ken Howery build Confinity, the company that becomes PayPal.</td><td><span class="confidence">High</span> · <a href="https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek">Illinois</a></td></tr>
@@ -1078,21 +1104,24 @@ svg {
         <tr><td class="text-nowrap">2016</td><td>Donald Trump names Peter Thiel and Rebekah Mercer to the executive committee of his presidential transition team.</td><td><span class="confidence">High</span> · <a href="https://www.presidency.ucsb.edu/documents/press-release-president-elect-donald-j-trump-announces-new-implementation-phase">Trump transition release</a></td></tr>
         <tr><td class="text-nowrap">2017</td><td>Luke Nosek co-founds Gigafund. Garrett Langley, Matt Feury, and Paige Todd found Flock Safety. PayPal sells the X.com domain back to Musk.</td><td><span class="confidence">High</span> · <a href="https://www.axios.com/2017/12/15/founders-fund-partner-leaves-to-launch-spacex-focused-fund-1513304489">Axios</a> · <a href="https://www.scheller.gatech.edu/news/2025/entrepreneurs-of-scheller-paige-todd.html">Georgia Tech</a> · <a href="https://www.cnbc.com/2017/07/11/elon-musk-now-owns-x-com-the-defunct-domain-of-his-second-startup.html">CNBC</a></td></tr>
         <tr><td class="text-nowrap">2018</td><td>Amazon acquires Ring. Elon Musk leaves OpenAI’s board.</td><td><span class="confidence">High</span> · <a href="https://press.aboutamazon.com/2018/4/amazon-and-ring-close-acquisition-now-working-together-to-empower-neighbors-with-affordable-ways-to-monitor-their-homes-and-reduce-crime-in-neighborhoods">Amazon</a> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a></td></tr>
+        <tr><td class="text-nowrap">2021–23</td><td>Ryan Cohen joins GameStop’s board in 2021 and becomes executive chair, then president and CEO, in 2023. Carl Icahn is reported to hold a sizable short position in GameStop in 2022.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/gamestop-names-billionaire-ryan-cohen-ceo-2023-09-28/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2019–21</td><td>Ken Howery serves as U.S. ambassador to Sweden.</td><td><span class="confidence">High</span> · <a href="https://history.state.gov/departmenthistory/people/howery-kenneth-a">State Dept.</a></td></tr>
         <tr><td class="text-nowrap">2020</td><td>Glenn Greenwald resigns from The Intercept after an editorial dispute.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2020/oct/29/journalist-glenn-greenwald-resigns-the-intercept">Guardian</a></td></tr>
         <tr><td class="text-nowrap">2021–22</td><td>VidAngel’s successor becomes Angel Studios; Gigafund leads a $47 million financing round.</td><td><span class="confidence">High</span> · <a href="https://www.angel.com/press/release/angel-studios-streaming-platform-behind-the-chosen-raises-usd47-million">Angel</a></td></tr>
         <tr><td class="text-nowrap">2022</td><td>Zelenskyy meets Palantir CEO Alex Karp in Kyiv and discusses cooperation.</td><td><span class="confidence">High</span> · <a href="https://www.president.gov.ua/en/news/prezident-ukrayini-ta-seo-palantir-obgovorili-spivpracyu-v-s-75541">Ukraine presidency</a></td></tr>
         <tr><td class="text-nowrap">2023</td><td>Musk founds xAI and reuses X.com for the social platform formerly called Twitter. Tucker Carlson launches programming on X, interviews Trump, and starts a subscription network; 1789 Capital becomes an early investor. The Intercept becomes independent of First Look.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/musks-xai-set-launch-first-ai-model-select-group-2023-11-03/">Reuters</a> · <a href="https://www.reuters.com/business/media-telecom/tucker-carlsons-streaming-service-charge-9-per-month-2023-12-11/">Reuters</a> · <a href="https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/">Reuters</a> · <a href="https://www.axios.com/2023/01/09/the-intercept-spinoff-independent-nonprofit">Axios</a></td></tr>
+        <tr><td class="text-nowrap">2023</td><td>UBS completes its acquisition of Credit Suisse. BlackRock’s separate link is its 2013 acquisition of Credit Suisse’s ETF business—not ownership of the bank.</td><td><span class="confidence">High</span> · <a href="https://www.ubs.com/global/en/media/display-page-ndp/en-20230612-ubs-credit-suisse-acquisition.html">UBS</a> · <a href="https://www.reuters.com/article/business/blackrock-to-buy-credit-suisse-etf-business-idUSBRE90906V/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2024</td><td>Palantir announces a strategic partnership with Israel’s Ministry of Defense. Ken Howery is reported among xAI’s investors. Trump names Elon Musk to a government-efficiency role after the election.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/technology/thiels-palantir-dumped-by-norwegian-investor-over-work-israel-2024-10-25/">Reuters</a> · <a href="https://techcrunch.com/2024/05/26/elon-musks-xai-raises-6b-from-valor-a16z-and-sequoia/">TechCrunch</a> · <a href="https://www.reuters.com/world/us/trump-says-elon-musk-vivek-ramaswamy-will-lead-department-government-efficiency-2024-11-13/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2024</td><td>Miriam Adelson becomes the lead funder of a major pro-Trump spending group. Mark Cuban campaigns for Kamala Harris and criticizes Trump’s tariff plan.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/world/us/republican-mega-donor-adelson-back-major-pro-trump-spending-group-2024-05-30/">Reuters</a> · <a href="https://www.reuters.com/world/us/billionaire-cuban-stumps-harris-musk-hits-trail-trump-2024-10-17/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2025</td><td>Amazon contributes $1 million and Sam Altman personally contributes $1 million to Trump’s inaugural fund. Musk serves temporarily as a special government employee and senior adviser. xAI acquires X; Howery becomes U.S. ambassador to Denmark; Ring and Flock announce an intended integration.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/world/us/corporate-america-pledges-donations-trump-inauguration-2024-12-17/">Reuters</a> · <a href="https://www.reuters.com/world/us/elon-musk-leaving-trump-administration-white-house-official-confirms-2025-05-29/">Reuters</a> · <a href="https://www.reuters.com/markets/deals/musks-xai-buys-social-media-platform-x-45-billion-2025-03-28/">Reuters</a> · <a href="https://dk.usembassy.gov/ambassador/">U.S. Embassy</a></td></tr>
         <tr><td class="text-nowrap">2025</td><td>Carlson and Patel buy out the outside investors in their media company. The Trump administration and George Soros’s Open Society Foundations enter an escalating public and legal conflict.</td><td><span class="confidence">High</span> · <a href="https://www.reuters.com/investigations/trump-linked-venture-fund-1789-capital-tops-1-billion-assets-2025-09-08/">Reuters</a> · <a href="https://www.reuters.com/world/us/soros-foundation-says-reported-justice-department-push-probe-is-politically-2025-09-25/">Reuters</a></td></tr>
         <tr><td class="text-nowrap">2026</td><td>Ring and Flock cancel the integration before launch. SpaceX acquires xAI. Ukraine expands work with Palantir.</td><td><span class="confidence">High</span> · <a href="https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/">Ring</a> · <a href="https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/">Reuters</a></td></tr>
+        <tr><td class="text-nowrap">2026</td><td>GameStop’s proxy reports Ryan Cohen at 9.3% beneficial ownership, Vanguard at 5.7%, and BlackRock at 5.0%. GameStop later discloses a 9.8% eBay stake; acquisition or partnership proposals remain unresolved.</td><td><span class="confidence">High</span> · <a href="https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm">SEC proxy</a> · <a href="https://www.reuters.com/technology/gamestop-owns-nearly-10-ebay-sec-filing-shows-2026-07-17/">Reuters</a></td></tr>
       </tbody>
     </table>
   </div>
   <div class="notes text-small">
-    <span class="confidence medium">Medium confidence</span> applies to the Mahmud Mir-Djalali → Elahé Mir-Djalali → Pierre Omidyar genealogy: the army career and mother–son link are independently documented, while the grandfather link relies on recent secondary biographies. No Epstein → Israel state-level edge is drawn. The Epstein–Musk calendar item and Thiel–Carlson investment discussion appear only when weak links are enabled: the first does not prove a meeting occurred, and the second documents possible investment talks rather than a confirmed completed investment. Political-opposition edges record a documented relationship, not agreement or affiliation.
+    <span class="confidence medium">Medium confidence</span> marks disputed or indirect claims. The Khazar conversion date, the three-religion debate, the number of converts, and the historicity of King Obadiah are not settled; no edge is drawn from Khazars to modern Jews, Israel, finance, Bolsheviks, or organized crime. “Rabbinic Judaism” is used instead of the inaccurate phrase “Babylonian Judaism.” Zohar labels distinguish traditional attribution from modern critical scholarship. Institutional-holding edges usually represent shares managed for funds and clients—not corporate control or coordination. A birthplace edge does not imply state affiliation, and an indictment or wanted notice is not a conviction. Political-opposition edges record a documented relationship, not agreement or affiliation. The Mir-Djalali genealogy remains medium-confidence because the grandfather link relies on recent secondary biographies. The Epstein–Musk and Thiel–Carlson links remain weak and hidden unless enabled.
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js"></script>
@@ -1109,6 +1138,7 @@ svg {
       var zoomOutButton = root.querySelector("#zoom-out");
       var fitGraphButton = root.querySelector("#fit-graph");
       var viewTimelineButton = root.querySelector("#view-timeline");
+      var focusArea = root.querySelector("#focus-area");
       var detail = root.querySelector("#path-detail");
       var colorProbe = document.createElement("span");
       colorProbe.setAttribute("aria-hidden", "true");
@@ -1174,7 +1204,55 @@ svg {
         {id:"adelson", label:"Miriam Adelson", kind:"person", x:700, y:970, summary:"Physician, casino owner, and Republican megadonor who was the lead funder of a major pro-Trump spending group in 2024.", source:"https://www.reuters.com/world/us/republican-mega-donor-adelson-back-major-pro-trump-spending-group-2024-05-30/"},
         {id:"soros", label:"George Soros", kind:"person", x:515, y:950, summary:"Financier and philanthropist who founded the Open Society Foundations; a longstanding political target of Trump and allied movements.", source:"https://www.opensocietyfoundations.org/george-soros"},
         {id:"sweden", label:"Sweden", kind:"country", x:300, y:610, summary:"Ken Howery served as U.S. ambassador here from 2019 to 2021.", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
-        {id:"denmark", label:"Denmark", kind:"country", x:350, y:680, summary:"Ken Howery began serving as U.S. ambassador here in 2025.", source:"https://dk.usembassy.gov/ambassador/"}
+        {id:"denmark", label:"Denmark", kind:"country", x:350, y:680, summary:"Ken Howery began serving as U.S. ambassador here in 2025.", source:"https://dk.usembassy.gov/ambassador/"},
+        {id:"netanyahu", label:"Benjamin Netanyahu", kind:"person", x:1030, y:320, summary:"Israeli prime minister in three periods; a close but sometimes publicly divided political counterpart of Donald Trump.", source:"https://www.reuters.com/world/middle-east/israel-rejects-trumps-15-point-plan-gaza-pm-netanyahu-says-2026-08-09/"},
+        {id:"buffett", label:"Warren Buffett", kind:"person", x:1160, y:40, summary:"Berkshire Hathaway chair and longtime CEO through 2025; Greg Abel became CEO in 2026.", source:"https://www.reuters.com/sustainability/boards-policy-regulation/berkshire-board-names-greg-abel-ceo-2026-unanimous-vote-cnbc-reports-2025-05-05/"},
+        {id:"berkshire", label:"Berkshire Hathaway", kind:"company", x:1300, y:40, summary:"Conglomerate led by Warren Buffett for decades; disclosed an Amazon investment in 2019 and later reduced it.", source:"https://www.reuters.com/article/world/buffetts-berkshire-unveils-861-million-amazon-stake-idUSKCN1SL2RV/"},
+        {id:"schwarzman", label:"Stephen Schwarzman", kind:"person", x:1160, y:150, summary:"Blackstone co-founder and CEO; chaired Trump’s 2017 business advisory forum and supported Trump in 2024.", source:"https://www.reuters.com/world/us/blackstone-ceo-schwarzman-back-trump-axios-reports-2024-05-24/"},
+        {id:"blackstone", label:"Blackstone", kind:"company", x:1300, y:150, summary:"Alternative-asset manager founded in 1985 by Stephen Schwarzman and Peter G. Peterson.", source:"https://www.blackstone.com/the-firm/our-history/"},
+        {id:"fink", label:"Larry Fink", kind:"person", x:1160, y:250, summary:"BlackRock co-founder, chair, and CEO; helped launch its predecessor inside Blackstone in 1988.", source:"https://www.blackrock.com/corporate/about-us/who-we-are/leadership/larry-fink"},
+        {id:"blackrock", label:"BlackRock", kind:"company", x:1300, y:250, summary:"Asset manager formed inside Blackstone in 1988 and separated in 1994; acquired Credit Suisse’s ETF business in 2013.", source:"https://www.reuters.com/article/breakingviews/blackrock-may-fancy-revisiting-blackstone-heritage-idUS1166869439/"},
+        {id:"bogle", label:"John C. Bogle", kind:"person", x:1160, y:355, summary:"Founder of Vanguard and an influential advocate of low-cost index investing.", source:"https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-history.html"},
+        {id:"vanguard", label:"Vanguard", kind:"company", x:1300, y:355, summary:"Client-owned investment manager founded in 1975; its funds reported a managed GameStop holding in 2026.", source:"https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-history.html"},
+        {id:"statestreet", label:"State Street Global Advisors", kind:"company", x:1460, y:355, summary:"Institutional asset manager whose funds have reported GameStop holdings; this does not imply corporate control.", source:"https://www.ssga.com/us/en/about-us/who-we-are/our-history"},
+        {id:"creditsuisse", label:"Credit Suisse", kind:"company", x:1460, y:245, summary:"Swiss bank acquired by UBS in 2023; its ETF business had been sold to BlackRock in 2013.", source:"https://www.ubs.com/global/en/media/display-page-ndp/en-20230612-ubs-credit-suisse-acquisition.html"},
+        {id:"ubs", label:"UBS", kind:"company", x:1600, y:245, summary:"Swiss banking group that completed the acquisition of Credit Suisse in 2023.", source:"https://www.ubs.com/global/en/media/display-page-ndp/en-20230612-ubs-credit-suisse-acquisition.html"},
+        {id:"ryancohen", label:"Ryan Cohen", kind:"person", x:1160, y:500, summary:"Chewy co-founder; GameStop chair, president, CEO, and its largest named beneficial owner in the 2026 proxy.", source:"https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm"},
+        {id:"gamestop", label:"GameStop", kind:"company", x:1320, y:500, summary:"Video-game retailer led by Ryan Cohen; disclosed a 9.8% stake in eBay in July 2026.", source:"https://www.reuters.com/technology/gamestop-owns-nearly-10-ebay-sec-filing-shows-2026-07-17/"},
+        {id:"chewy", label:"Chewy", kind:"company", x:1160, y:610, summary:"Online pet retailer co-founded by Ryan Cohen in 2011.", source:"https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm"},
+        {id:"icahn", label:"Carl Icahn", kind:"person", x:1460, y:520, summary:"Activist investor reported in 2022 to hold a sizable short position in GameStop.", source:"https://www.reuters.com/business/carl-icahn-holds-short-position-gamestop-bloomberg-news-2022-11-21/"},
+        {id:"charleskoch", label:"Charles Koch", kind:"person", x:1160, y:730, summary:"Longtime leader of Koch Industries and a major funder of U.S. libertarian and conservative organizations.", source:"https://www.charleskoch.com/biography"},
+        {id:"davidkoch", label:"David Koch", kind:"person", x:1160, y:835, summary:"Charles Koch’s brother; Koch Industries executive, philanthropist, and political donor until his death in 2019.", source:"https://www.davidkochfoundation.org/about-david-h-koch"},
+        {id:"kochindustries", label:"Koch, Inc.", kind:"company", x:1320, y:785, summary:"Privately held industrial company led for decades by Charles Koch; formerly named Koch Industries.", source:"https://www.charleskoch.com/biography"},
+        {id:"sacks", label:"David Sacks", kind:"person", x:1020, y:520, summary:"Former PayPal COO; served as Trump’s White House AI and crypto adviser before moving to an advisory role in 2026.", source:"https://www.reuters.com/world/us/trump-appoints-former-paypal-coo-david-sacks-ai-crypto-czar-2024-12-06/"},
+        {id:"vance", label:"JD Vance", kind:"person", x:1020, y:625, summary:"U.S. vice president; former venture investor whose Senate campaign received major support from Peter Thiel.", source:"https://www.reuters.com/world/us/with-trump-vp-pick-jd-vance-silicon-valley-conservatives-land-tech-bro-ticket-2024-07-17/"},
+        {id:"andreessen", label:"Marc Andreessen", kind:"person", x:990, y:60, summary:"Netscape co-founder and Andreessen Horowitz co-founder.", source:"https://www.computerhistory.org/tdih/april/4/"},
+        {id:"a16z", label:"Andreessen Horowitz", kind:"company", x:1030, y:160, summary:"Venture firm co-founded by Marc Andreessen; participated in xAI’s 2024 Series B.", source:"https://x.ai/news/series-b"},
+        {id:"kabbalah", label:"Kabbalah", kind:"bridge", x:120, y:1120, summary:"A diverse family of Jewish mystical traditions; not a single organization or unified political movement.", source:"https://www.jewishvirtuallibrary.org/kabbalah-table-of-contents"},
+        {id:"zohar", label:"Zohar", kind:"bridge", x:280, y:1120, summary:"Central Kabbalistic text; traditionally attributed to Shimon bar Yochai, while critical scholarship links its medieval form to Moses de León and a circle.", source:"https://plato.stanford.edu/entries/scholem/"},
+        {id:"mosesdeleon", label:"Moses de León", kind:"person", x:420, y:1080, summary:"Thirteenth-century Castilian Kabbalist closely associated by modern scholarship with the Zohar’s composition or redaction.", source:"https://plato.stanford.edu/entries/scholem/"},
+        {id:"cordovero", label:"Moses Cordovero", kind:"person", x:260, y:1225, summary:"Sixteenth-century Safed Kabbalist who systematized earlier mystical teachings.", source:"https://www.jewishvirtuallibrary.org/kabbalah-table-of-contents"},
+        {id:"luria", label:"Isaac Luria", kind:"person", x:440, y:1225, summary:"Sixteenth-century Safed teacher whose school reshaped later Kabbalah.", source:"https://www.jewishvirtuallibrary.org/isaac-ben-solomon-luria"},
+        {id:"vital", label:"Hayyim Vital", kind:"person", x:590, y:1225, summary:"Luria’s leading disciple and principal recorder and transmitter of Lurianic teachings.", source:"https://www.jewishvirtuallibrary.org/chaim-vital"},
+        {id:"scholem", label:"Gershom Scholem", kind:"person", x:440, y:1350, summary:"Twentieth-century scholar who established the academic study of Jewish mysticism as a major field.", source:"https://plato.stanford.edu/entries/scholem/"},
+        {id:"kcentre", label:"Kabbalah Centre", kind:"company", x:120, y:1350, summary:"Modern teaching organization developed by Philip Berg; distinct from the full historical Kabbalistic tradition.", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"philipberg", label:"Philip Berg", kind:"person", x:120, y:1470, summary:"Rabbi who developed the modern Kabbalah Centre and broadened its popular reach.", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"madonna", label:"Madonna", kind:"person", x:270, y:1470, summary:"Singer and prominent student and supporter of the Kabbalah Centre’s modern teachings.", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"khazars", label:"Khazar Khaganate", kind:"country", x:900, y:1110, summary:"Medieval steppe polity whose ruling elite is reported in several sources to have adopted Judaism; scope and chronology remain debated.", source:"https://www.iranicaonline.org/articles/khazars/"},
+        {id:"bulan", label:"Bulan", kind:"person", x:1050, y:1110, summary:"Name given in later accounts to a Khazar ruler associated with conversion to Judaism; exact date and title are uncertain.", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"obadiahkhazar", label:"King Obadiah (Khazar account)", kind:"person", x:1190, y:1110, summary:"Later correspondence credits Obadiah with rabbinic schools and reforms; some scholars question his historicity.", source:"https://www.jewishvirtuallibrary.org/obadiah"},
+        {id:"rabbinicjudaism", label:"Rabbinic Judaism", kind:"bridge", x:900, y:1245, summary:"The post-Temple Jewish tradition organized around Torah and rabbinic literature; the more accurate term here than “Babylonian Judaism.”", source:"https://www.iranicaonline.org/articles/khazars/"},
+        {id:"christianity", label:"Christianity", kind:"bridge", x:1050, y:1245, summary:"One of the religions represented in the later Khazar conversion-debate narrative; not selected in that story.", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"islam", label:"Islam", kind:"bridge", x:1190, y:1245, summary:"One of the religions represented in the later Khazar conversion-debate narrative; not selected in that story.", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"khazarcorr", label:"Khazar Correspondence", kind:"bridge", x:1050, y:1370, summary:"Medieval letters central to the conversion narrative; valuable sources that still require critical historical interpretation.", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"bolsheviks", label:"Bolsheviks", kind:"bridge", x:650, y:1510, summary:"Lenin-led revolutionary faction that seized power in Russia in 1917 and became the ruling Communist Party.", source:"https://www.britannica.com/topic/Bolshevik"},
+        {id:"lenin", label:"Vladimir Lenin", kind:"person", x:500, y:1510, summary:"Leader of the Bolsheviks and head of the first Soviet government.", source:"https://www.britannica.com/biography/Vladimir-Lenin"},
+        {id:"trotsky", label:"Leon Trotsky", kind:"person", x:500, y:1630, summary:"Central organizer of the October Revolution and Bolshevik military leader during the civil war.", source:"https://www.britannica.com/biography/Leon-Trotsky"},
+        {id:"octoberrev", label:"October Revolution", kind:"bridge", x:800, y:1510, summary:"The Bolshevik seizure of power in Petrograd in November 1917 by the modern calendar.", source:"https://www.britannica.com/event/October-Revolution-Russian-history"},
+        {id:"ussr", label:"Soviet Union (USSR)", kind:"country", x:950, y:1510, summary:"Union state created in 1922 and dissolved in 1991; included the Ukrainian SSR as a founding republic.", source:"https://www.britannica.com/place/Soviet-Union"},
+        {id:"ukrainianssr", label:"Ukrainian SSR", kind:"country", x:950, y:1630, summary:"Soviet republic established through the 1917–21 conflicts; a founding USSR republic in 1922 and predecessor state to independent Ukraine.", source:"https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CU%5CK%5CUkrainianSovietSocialistRepublic.htm"},
+        {id:"mogilevich", label:"Semion Mogilevich", kind:"person", x:1320, y:1510, summary:"Kyiv-born fugitive wanted by the FBI over alleged racketeering, fraud, and money laundering; allegations remain charges, not a conviction.", source:"https://www.fbi.gov/wanted/cei/semion-mogilevich"},
+        {id:"transnationalcrime", label:"Transnational organized crime", kind:"bridge", x:1500, y:1510, summary:"Law-enforcement category used here only for formally documented cases, not for ethnic or national generalization.", source:"https://www.justice.gov/file/236181-0/dl?inline="}
       ];
 
       var edges = [
@@ -1202,7 +1280,6 @@ svg {
         {id:"nosek-netscape", a:"nosek", b:"netscape", label:"employee before PayPal", relation:"origin", source:"https://grainger.illinois.edu/alumni/hall-of-fame/luke-nosek"},
         {id:"paypal-youtube", a:"paypal", b:"youtube", label:"three alumni founded, 2005", relation:"origin", source:"https://www.newyorker.com/magazine/2012/01/16/streaming-dreams"},
         {id:"levchin-affirm", a:"levchin", b:"affirm", label:"founded, 2012", relation:"origin", source:"https://investors.affirm.com/management/max-levchin"},
-        {id:"levchin-ukraine", a:"levchin", b:"ukraine", label:"born in Kyiv, 1975", relation:"public", source:"https://investors.affirm.com/management/max-levchin"},
         {id:"thiel-thielcapital", a:"thiel", b:"thielcapital", label:"founder and principal", relation:"origin", source:"https://www.thielcapital.com/"},
         {id:"thiel-foundersfund", a:"thiel", b:"foundersfund", label:"co-founded, 2005", relation:"origin", source:"https://foundersfund.com/team/peter-thiel/"},
         {id:"howery-foundersfund", a:"howery", b:"foundersfund", label:"co-founded, 2005", relation:"origin", source:"https://foundersfund.com/"},
@@ -1250,7 +1327,63 @@ svg {
         {id:"soros-trump", a:"soros", b:"trump", label:"political adversaries; foundation targeted, 2025", relation:"public", source:"https://www.reuters.com/world/us/soros-foundation-says-reported-justice-department-push-probe-is-politically-2025-09-25/"},
         {id:"ring-flock", a:"ring", b:"flock", label:"planned 2025; canceled 2026 before launch", relation:"weak", confidence:"weak", source:"https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/"},
         {id:"howery-sweden", a:"howery", b:"sweden", label:"U.S. ambassador, 2019–21", relation:"public", source:"https://history.state.gov/departmenthistory/people/howery-kenneth-a"},
-        {id:"howery-denmark", a:"howery", b:"denmark", label:"U.S. ambassador, 2025–present", relation:"public", source:"https://dk.usembassy.gov/ambassador/"}
+        {id:"howery-denmark", a:"howery", b:"denmark", label:"U.S. ambassador, 2025–present", relation:"public", source:"https://dk.usembassy.gov/ambassador/"},
+        {id:"netanyahu-israel", a:"netanyahu", b:"israel", label:"prime minister, 1996–99, 2009–21, 2022–present", relation:"public", source:"https://www.reuters.com/world/middle-east/israel-rejects-trumps-15-point-plan-gaza-pm-netanyahu-says-2026-08-09/"},
+        {id:"netanyahu-trump", a:"netanyahu", b:"trump", label:"close political relationship with documented policy disputes", relation:"public", source:"https://www.reuters.com/world/middle-east/israel-rejects-trumps-15-point-plan-gaza-pm-netanyahu-says-2026-08-09/"},
+        {id:"buffett-berkshire", a:"buffett", b:"berkshire", label:"chair; CEO through 2025", relation:"origin", source:"https://www.reuters.com/sustainability/boards-policy-regulation/berkshire-board-names-greg-abel-ceo-2026-unanimous-vote-cnbc-reports-2025-05-05/"},
+        {id:"berkshire-amazon", a:"berkshire", b:"amazon", label:"disclosed equity stake, 2019; later reduced", relation:"money", source:"https://www.reuters.com/article/world/buffetts-berkshire-unveils-861-million-amazon-stake-idUSKCN1SL2RV/"},
+        {id:"schwarzman-blackstone", a:"schwarzman", b:"blackstone", label:"co-founded, 1985; chair and CEO", relation:"origin", source:"https://www.blackstone.com/the-firm/our-history/"},
+        {id:"schwarzman-trump", a:"schwarzman", b:"trump", label:"business-advisory chair, 2017; supporter, 2024", relation:"public", source:"https://www.reuters.com/world/us/blackstone-ceo-schwarzman-back-trump-axios-reports-2024-05-24/"},
+        {id:"fink-blackrock", a:"fink", b:"blackrock", label:"co-founder, chair and CEO", relation:"origin", source:"https://www.blackrock.com/corporate/about-us/who-we-are/leadership/larry-fink"},
+        {id:"blackstone-blackrock", a:"blackstone", b:"blackrock", label:"BlackRock began inside Blackstone, 1988; separated, 1994", relation:"origin", source:"https://www.reuters.com/article/breakingviews/blackrock-may-fancy-revisiting-blackstone-heritage-idUS1166869439/"},
+        {id:"bogle-vanguard", a:"bogle", b:"vanguard", label:"founded, 1975", relation:"origin", source:"https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/who-we-are/our-history.html"},
+        {id:"ubs-creditsuisse", a:"ubs", b:"creditsuisse", label:"acquired, 2023", relation:"money", source:"https://www.ubs.com/global/en/media/display-page-ndp/en-20230612-ubs-credit-suisse-acquisition.html"},
+        {id:"blackrock-creditsuisse", a:"blackrock", b:"creditsuisse", label:"acquired Credit Suisse ETF business, 2013", relation:"money", source:"https://www.reuters.com/article/business/blackrock-to-buy-credit-suisse-etf-business-idUSBRE90906V/"},
+        {id:"ryan-gamestop", a:"ryancohen", b:"gamestop", label:"chair, president and CEO; 9.3% beneficial owner, 2026 proxy", relation:"origin", source:"https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm"},
+        {id:"ryan-chewy", a:"ryancohen", b:"chewy", label:"co-founded, 2011", relation:"origin", source:"https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm"},
+        {id:"vanguard-gamestop", a:"vanguard", b:"gamestop", label:"funds/clients reported 5.7% managed holding, 2026 proxy", relation:"money", source:"https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm"},
+        {id:"blackrock-gamestop", a:"blackrock", b:"gamestop", label:"funds/clients reported 5.0% managed holding, 2026 proxy", relation:"money", source:"https://www.sec.gov/Archives/edgar/data/1326380/000119312526235130/d937376ddef14a.htm"},
+        {id:"statestreet-gamestop", a:"statestreet", b:"gamestop", label:"funds reported institutional holding; not corporate control", relation:"money", confidence:"medium", source:"https://www.investing.com/equities/gamestop-corp-ownership"},
+        {id:"icahn-gamestop", a:"icahn", b:"gamestop", label:"reported sizable short position, 2022", relation:"money", source:"https://www.reuters.com/business/carl-icahn-holds-short-position-gamestop-bloomberg-news-2022-11-21/"},
+        {id:"gamestop-ebay", a:"gamestop", b:"ebay", label:"9.8% equity stake disclosed, 2026; wider deal unresolved", relation:"money", source:"https://www.reuters.com/technology/gamestop-owns-nearly-10-ebay-sec-filing-shows-2026-07-17/"},
+        {id:"charles-david-koch", a:"charleskoch", b:"davidkoch", label:"brothers and business partners", relation:"family", source:"https://www.davidkochfoundation.org/about-david-h-koch"},
+        {id:"charles-kochinc", a:"charleskoch", b:"kochindustries", label:"chair and CEO since 1967", relation:"origin", source:"https://www.charleskoch.com/biography"},
+        {id:"david-kochinc", a:"davidkoch", b:"kochindustries", label:"executive vice president and co-owner", relation:"origin", source:"https://www.davidkochfoundation.org/about-david-h-koch"},
+        {id:"koch-trump", a:"kochindustries", b:"trump", label:"Koch political network opposed Trump in 2016 and backed a 2024 rival", relation:"public", source:"https://www.reuters.com/world/us/powerful-koch-group-endorses-haleys-2024-republican-presidential-bid-2023-11-28/"},
+        {id:"sacks-paypal", a:"sacks", b:"paypal", label:"chief operating officer in PayPal era", relation:"origin", source:"https://www.reuters.com/world/us/trump-appoints-former-paypal-coo-david-sacks-ai-crypto-czar-2024-12-06/"},
+        {id:"sacks-trump", a:"sacks", b:"trump", label:"White House AI and crypto adviser, 2025–26", relation:"public", source:"https://www.reuters.com/world/us/white-house-ai-czar-sacks-step-down-moves-advisory-role-2026-03-27/"},
+        {id:"vance-trump", a:"vance", b:"trump", label:"vice president, 2025–present", relation:"public", source:"https://www.whitehouse.gov/administration/jd-vance/"},
+        {id:"thiel-vance", a:"thiel", b:"vance", label:"mentor and major 2022 Senate-campaign funder", relation:"money", source:"https://www.reuters.com/world/us/with-trump-vp-pick-jd-vance-silicon-valley-conservatives-land-tech-bro-ticket-2024-07-17/"},
+        {id:"andreessen-netscape", a:"andreessen", b:"netscape", label:"co-founded, 1994", relation:"origin", source:"https://www.computerhistory.org/tdih/april/4/"},
+        {id:"andreessen-a16z", a:"andreessen", b:"a16z", label:"co-founded, 2009", relation:"origin", source:"https://a16z.com/about/"},
+        {id:"a16z-xai", a:"a16z", b:"xai", label:"Series B investor, 2024", relation:"money", source:"https://x.ai/news/series-b"},
+        {id:"kabbalah-zohar", a:"kabbalah", b:"zohar", label:"central source text of medieval Kabbalah", relation:"origin", source:"https://plato.stanford.edu/entries/scholem/"},
+        {id:"deleon-zohar", a:"mosesdeleon", b:"zohar", label:"critical scholarship associates him/circle with composition", relation:"origin", confidence:"medium", source:"https://plato.stanford.edu/entries/scholem/"},
+        {id:"cordovero-kabbalah", a:"cordovero", b:"kabbalah", label:"systematized teachings, 16th century", relation:"origin", source:"https://www.jewishvirtuallibrary.org/kabbalah-table-of-contents"},
+        {id:"luria-kabbalah", a:"luria", b:"kabbalah", label:"developed Lurianic school, 16th century", relation:"origin", source:"https://www.jewishvirtuallibrary.org/isaac-ben-solomon-luria"},
+        {id:"vital-luria", a:"vital", b:"luria", label:"leading disciple and recorder", relation:"origin", source:"https://www.jewishvirtuallibrary.org/chaim-vital"},
+        {id:"scholem-kabbalah", a:"scholem", b:"kabbalah", label:"foundational modern scholar of Jewish mysticism", relation:"origin", source:"https://plato.stanford.edu/entries/scholem/"},
+        {id:"kabbalah-rabbinic", a:"kabbalah", b:"rabbinicjudaism", label:"Jewish mystical tradition within broader Judaism", relation:"origin", source:"https://www.jewishvirtuallibrary.org/kabbalah-table-of-contents"},
+        {id:"berg-kcentre", a:"philipberg", b:"kcentre", label:"developed modern organization", relation:"origin", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"kcentre-kabbalah", a:"kcentre", b:"kabbalah", label:"modern popular teaching organization; not the whole tradition", relation:"origin", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"madonna-kcentre", a:"madonna", b:"kcentre", label:"prominent student and supporter", relation:"origin", source:"https://www.reuters.com/article/lifestyle/kabbalah-spiritual-figure-who-drew-hollywood-following-dies-idUSBRE98G18E/"},
+        {id:"bulan-khazars", a:"bulan", b:"khazars", label:"ruler in later conversion accounts; date/title uncertain", relation:"public", confidence:"medium", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"khazars-rabbinic", a:"khazars", b:"rabbinicjudaism", label:"reported elite conversion; date and scale disputed", relation:"origin", confidence:"medium", source:"https://www.iranicaonline.org/articles/khazars/"},
+        {id:"bulan-rabbinic", a:"bulan", b:"rabbinicjudaism", label:"Judaism selected in later debate narrative", relation:"origin", confidence:"medium", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"bulan-christianity", a:"bulan", b:"christianity", label:"considered but not selected in later debate narrative", relation:"weak", confidence:"weak", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"bulan-islam", a:"bulan", b:"islam", label:"considered but not selected in later debate narrative", relation:"weak", confidence:"weak", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"corr-bulan", a:"khazarcorr", b:"bulan", label:"principal medieval narrative source", relation:"origin", confidence:"medium", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"corr-obadiah", a:"khazarcorr", b:"obadiahkhazar", label:"describes later rabbinic reforms; historicity debated", relation:"origin", confidence:"medium", source:"https://sourcebooks.fordham.edu/source/khazars1.asp"},
+        {id:"obadiah-rabbinic", a:"obadiahkhazar", b:"rabbinicjudaism", label:"schools, Bible, Mishnah and Talmud in later account", relation:"origin", confidence:"medium", source:"https://www.jewishvirtuallibrary.org/obadiah"},
+        {id:"lenin-bolsheviks", a:"lenin", b:"bolsheviks", label:"leader", relation:"origin", source:"https://www.britannica.com/topic/Bolshevik"},
+        {id:"trotsky-bolsheviks", a:"trotsky", b:"bolsheviks", label:"central revolutionary and military leader", relation:"origin", source:"https://www.britannica.com/biography/Leon-Trotsky"},
+        {id:"bolsheviks-october", a:"bolsheviks", b:"octoberrev", label:"seized power, 1917", relation:"public", source:"https://www.britannica.com/event/October-Revolution-Russian-history"},
+        {id:"bolsheviks-ussr", a:"bolsheviks", b:"ussr", label:"ruling party established union state, 1922", relation:"public", source:"https://www.britannica.com/place/Soviet-Union"},
+        {id:"ukrainianssr-ussr", a:"ukrainianssr", b:"ussr", label:"founding union republic, 1922–91", relation:"public", source:"https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CU%5CK%5CUkrainianSovietSocialistRepublic.htm"},
+        {id:"ukrainianssr-ukraine", a:"ukrainianssr", b:"ukraine", label:"predecessor republic; Ukraine declared independence, 1991", relation:"public", source:"https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CU%5CK%5CUkrainianSovietSocialistRepublic.htm"},
+        {id:"levchin-ukrainianssr", a:"levchin", b:"ukrainianssr", label:"born in Kyiv in the Ukrainian SSR, 1975", relation:"public", source:"https://investors.affirm.com/management/max-levchin"},
+        {id:"mogilevich-crime", a:"mogilevich", b:"transnationalcrime", label:"FBI-wanted alleged racketeering and fraud case", relation:"public", source:"https://www.fbi.gov/wanted/cei/semion-mogilevich"},
+        {id:"mogilevich-ukraine", a:"mogilevich", b:"ukraine", label:"born in Kyiv; birthplace only, not state affiliation", relation:"public", source:"https://www.justice.gov/sites/default/files/usao/legacy/2006/02/14/usab5105.pdf"}
       ];
 
       var nodeMeta = {
@@ -1308,7 +1441,55 @@ svg {
         adelson:"Megadonor · pro-Trump PAC",
         soros:"Founder · Open Society",
         sweden:"Country · Howery 2019–21",
-        denmark:"Country · Howery 2025–"
+        denmark:"Country · Howery 2025–",
+        netanyahu:"Prime minister · Israel",
+        buffett:"Chair · Berkshire Hathaway",
+        berkshire:"Conglomerate · founded 1839",
+        schwarzman:"Co-founder/CEO · Blackstone",
+        blackstone:"Alternative assets · founded 1985",
+        fink:"Co-founder/CEO · BlackRock",
+        blackrock:"Asset manager · founded 1988",
+        bogle:"Founder · Vanguard",
+        vanguard:"Asset manager · founded 1975",
+        statestreet:"Asset manager · institutional",
+        creditsuisse:"Bank · acquired 2023",
+        ubs:"Bank · Credit Suisse acquirer",
+        ryancohen:"CEO/chair · GameStop",
+        gamestop:"Retailer · eBay investor",
+        chewy:"Pet commerce · founded 2011",
+        icahn:"Activist investor · GameStop short",
+        charleskoch:"Chair/CEO · Koch",
+        davidkoch:"Executive/donor · 1940–2019",
+        kochindustries:"Private industry · Koch family",
+        sacks:"PayPal alum · White House adviser",
+        vance:"U.S. vice president",
+        andreessen:"Founder · Netscape, a16z",
+        a16z:"Venture capital · xAI investor",
+        kabbalah:"Jewish mystical traditions",
+        zohar:"Mystical text · medieval Spain",
+        mosesdeleon:"Kabbalist · Zohar association",
+        cordovero:"Teacher · systematic Kabbalah",
+        luria:"Teacher · Lurianic Kabbalah",
+        vital:"Disciple/recorder · Luria",
+        scholem:"Scholar · Jewish mysticism",
+        kcentre:"Modern teaching organization",
+        philipberg:"Teacher · Kabbalah Centre",
+        madonna:"Student/supporter · Kabbalah Centre",
+        khazars:"Medieval polity · c. 650–969",
+        bulan:"Ruler in conversion account",
+        obadiahkhazar:"Ruler in later account · disputed",
+        rabbinicjudaism:"Religious tradition",
+        christianity:"Religion · debate narrative",
+        islam:"Religion · debate narrative",
+        khazarcorr:"Medieval source · interpreted",
+        bolsheviks:"Revolutionary faction · 1917",
+        lenin:"Leader · Bolsheviks",
+        trotsky:"Organizer/leader · 1917",
+        octoberrev:"Revolution · 1917",
+        ussr:"Union state · 1922–91",
+        ukrainianssr:"Soviet republic · 1919–91",
+        mogilevich:"FBI-wanted fugitive · alleged",
+        transnationalcrime:"Law-enforcement category"
       };
 
       var iconSvg = {
@@ -1359,7 +1540,7 @@ svg {
         container: graph,
         elements: elements,
         layout: {name:"preset", fit:true, padding:36},
-        minZoom:0.55,
+        minZoom:0.28,
         maxZoom:2.2,
         userZoomingEnabled:false,
         boxSelectionEnabled:false,
@@ -1452,6 +1633,40 @@ svg {
         ]
       });
 
+      var focusGroups = {
+        tech:["omidyar","ebay","elon","xcom","confinity","paypal","levchin","nosek","howery","banister","sponsornet","netscape","youtube","affirm","thiel","thielcapital","foundersfund","valar","mithril","palantir","gigafund","angel","neal","flock","ring","amazon","bezos","openai","altman","xai","xsocial","spacex","andreessen","a16z","sacks"],
+        politics:["trump","thiel","elon","altman","amazon","netanyahu","israel","tucker","tcn","mercer","capital1789","owens","cuban","adelson","soros","charleskoch","davidkoch","kochindustries","schwarzman","blackstone","sacks","vance","palantir","ukraine","zelenskyy","denmark","sweden","howery"],
+        finance:["ebay","amazon","bezos","trump","buffett","berkshire","schwarzman","blackstone","fink","blackrock","bogle","vanguard","statestreet","creditsuisse","ubs","ryancohen","gamestop","chewy","icahn","charleskoch","davidkoch","kochindustries"],
+        kabbalah:["kabbalah","zohar","mosesdeleon","cordovero","luria","vital","scholem","kcentre","philipberg","madonna","rabbinicjudaism"],
+        khazars:["khazars","bulan","obadiahkhazar","rabbinicjudaism","christianity","islam","khazarcorr","kabbalah"],
+        bolsheviks:["bolsheviks","lenin","trotsky","octoberrev","ussr","ukrainianssr","ukraine","levchin","palantir","zelenskyy","mogilevich"],
+        crime:["mogilevich","transnationalcrime","ukraine"]
+      };
+
+      function applyFocusArea(value) {
+        clearClasses();
+        cy.elements().show();
+        if (value === "all" || !focusGroups[value]) {
+          cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
+          return;
+        }
+        var allowed = {};
+        focusGroups[value].forEach(function (id) { allowed[id] = true; });
+        cy.nodes().forEach(function (node) {
+          if (!allowed[node.id()]) { node.hide(); }
+        });
+        cy.edges().forEach(function (edge) {
+          if (!allowed[edge.source().id()] || !allowed[edge.target().id()]) { edge.hide(); }
+        });
+        var visible = cy.elements().filter(function (element) { return element.visible(); });
+        cy.animate({fit:{eles:visible, padding:48}}, {duration:280});
+        detail.textContent = "Focused topic view. Select a node to inspect it, or switch to All topics to trace across the full network.";
+      }
+
+      focusArea.addEventListener("change", function () {
+        applyFocusArea(focusArea.value);
+      });
+
       var sortedNodes = nodes.slice().sort(function (a, b) {
         return a.label.localeCompare(b.label);
       });
@@ -1537,6 +1752,10 @@ svg {
       }
 
       function tracePath() {
+        if (focusArea.value !== "all") {
+          focusArea.value = "all";
+          cy.elements().show();
+        }
         var fromId = fromSelect.value;
         var toId = toSelect.value;
         if (!fromId || !toId) {
@@ -1597,6 +1816,8 @@ svg {
       traceButton.addEventListener("click", tracePath);
       clearButton.addEventListener("click", function () {
         clearClasses();
+        focusArea.value = "all";
+        cy.elements().show();
         fromSelect.value = "";
         toSelect.value = "";
         updateTraceState();
