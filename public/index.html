@@ -1026,9 +1026,47 @@ svg {
       display: block;
       color: var(--foreground);
     }
+    #founder-network-timeline .trace-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.3rem;
+    }
+    #founder-network-timeline .evidence-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.45rem;
+      padding: 0.1rem 0.45rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted-foreground);
+      background: color-mix(in srgb, var(--card) 82%, transparent);
+    }
+    #founder-network-timeline .evidence-tag.high {
+      border-color: color-mix(in srgb, var(--green) 42%, var(--border));
+    }
+    #founder-network-timeline .evidence-tag.medium {
+      border-color: color-mix(in srgb, var(--viz-series-5) 52%, var(--border));
+    }
+    #founder-network-timeline .evidence-tag.weak {
+      border-color: color-mix(in srgb, var(--destructive) 52%, var(--border));
+    }
     #founder-network-timeline .trace-pair {
       display: block;
       color: var(--muted-foreground);
+    }
+    #founder-network-timeline .trace-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      margin-top: 0.35rem;
+    }
+    #founder-network-timeline .trace-panel-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
+      padding-top: 0.35rem;
     }
     #founder-network-timeline .graph-toolbar {
       display: flex;
@@ -1047,6 +1085,13 @@ svg {
     #founder-network-timeline .topic-select {
       width: auto;
       min-width: 12.5rem;
+      min-height: 32px;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+    #founder-network-timeline .degree-select {
+      width: auto;
+      min-width: 10.5rem;
       min-height: 32px;
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
@@ -1107,8 +1152,8 @@ svg {
   <section class="card explorer-intro" aria-labelledby="explorer-title">
     <h2 id="explorer-title">Explore the documented network</h2>
     <ol class="instruction-list text-small">
-      <li><strong>Inspect:</strong> click any node to zoom in, isolate its immediate connections, and open its source.</li>
-      <li><strong>Connect:</strong> choose a starting node and destination, then select <em>Trace path</em>.</li>
+      <li><strong>Inspect:</strong> click a node to zoom in, then switch between one and two degrees of nearby connections.</li>
+      <li><strong>Connect:</strong> choose two points and find a numbered, evidence-linked route you can share.</li>
       <li><strong>Navigate:</strong> use the zoom controls and drag the empty canvas to pan. Your mouse wheel keeps scrolling the page.</li>
     </ol>
   </section>
@@ -1138,7 +1183,7 @@ svg {
       </div>
       <span class="route-status text-small" id="route-status" aria-live="polite">Choose a starting point to begin.</span>
       <button class="btn btn-ghost" type="button" id="clear-path">Start over</button>
-      <button class="btn" type="button" id="random-trace">Surprise me ✦</button>
+      <button class="btn" type="button" id="random-trace">Find a surprising route ✦</button>
       <button class="btn btn-primary" type="button" id="trace-path" disabled>Find connection →</button>
     </div>
   </section>
@@ -1170,6 +1215,11 @@ svg {
         <option value="bolsheviks">Bolsheviks &amp; Ukraine</option>
         <option value="crime">Documented organized-crime cases</option>
       </select>
+      <label class="sr-only" for="degree-depth">Connections shown around a selected node</label>
+      <select class="form-select degree-select" id="degree-depth">
+        <option value="1">Show 1 degree</option>
+        <option value="2">Show 2 degrees</option>
+      </select>
       <button class="btn" type="button" id="zoom-out" aria-label="Zoom graph out">− Zoom</button>
       <button class="btn" type="button" id="zoom-in" aria-label="Zoom graph in">+ Zoom</button>
       <button class="btn" type="button" id="fit-graph">Fit graph</button>
@@ -1183,6 +1233,9 @@ svg {
       <h3 id="trace-panel-title">Path guide</h3>
       <span id="path-detail">Choose two points above, then select <strong>Find connection</strong>. Numbered markers will appear on the route and match the evidence listed here.</span>
       <ol class="trace-steps" id="trace-steps"></ol>
+      <div class="trace-panel-actions">
+        <button class="btn" type="button" id="copy-trace" hidden>Copy trace link</button>
+      </div>
     </aside>
   </div>
 
@@ -1263,11 +1316,15 @@ svg {
       var fitGraphButton = root.querySelector("#fit-graph");
       var viewTimelineButton = root.querySelector("#view-timeline");
       var focusArea = root.querySelector("#focus-area");
+      var degreeDepth = root.querySelector("#degree-depth");
       var detail = root.querySelector("#path-detail");
       var traceSteps = root.querySelector("#trace-steps");
       var tracePanelTitle = root.querySelector("#trace-panel-title");
       var routeStatus = root.querySelector("#route-status");
       var swapButton = root.querySelector("#swap-path");
+      var copyTraceButton = root.querySelector("#copy-trace");
+      var lastSelectedNode = null;
+      var recentRandomPairs = [];
       var colorProbe = document.createElement("span");
       colorProbe.setAttribute("aria-hidden", "true");
       colorProbe.style.cssText = "position:absolute;visibility:hidden;pointer-events:none";
@@ -1963,11 +2020,69 @@ svg {
       });
       updateTraceState();
 
-      function sourceLink(url) {
+      function sourceHost(url) {
+        try {
+          return new URL(url).hostname.replace(/^www\./, "");
+        } catch (error) {
+          return "source";
+        }
+      }
+
+      function sourceLink(url, label) {
         var a = document.createElement("a");
         a.href = url;
-        a.textContent = "source";
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.textContent = label || "Open source";
+        a.setAttribute("aria-label", (label || "Open source") + " at " + sourceHost(url));
         return a;
+      }
+
+      function relationLabel(relation) {
+        return {
+          origin:"Founder, work, or origin",
+          money:"Investment, ownership, or acquisition",
+          public:"Public-sector or place",
+          family:"Family",
+          weak:"Unverified or canceled"
+        }[relation] || "Documented relationship";
+      }
+
+      function confidenceLabel(confidence) {
+        return {
+          high:"High confidence",
+          medium:"Medium confidence",
+          weak:"Weak or unverified"
+        }[confidence] || "High confidence";
+      }
+
+      function setTraceUrl(fromId, toId, allowWeak) {
+        var url = new URL(window.location.href);
+        if (fromId && toId) {
+          url.searchParams.set("from", fromId);
+          url.searchParams.set("to", toId);
+          if (allowWeak) {
+            url.searchParams.set("weak", "1");
+          } else {
+            url.searchParams.delete("weak");
+          }
+        } else {
+          url.searchParams.delete("from");
+          url.searchParams.delete("to");
+          url.searchParams.delete("weak");
+        }
+        window.history.replaceState({}, "", url);
+        copyTraceButton.hidden = !(fromId && toId);
+      }
+
+      function neighborhoodAtDepth(node, depth) {
+        var collection = node.collection();
+        var frontier = node.collection();
+        for (var level = 0; level < depth; level += 1) {
+          frontier = frontier.closedNeighborhood();
+          collection = collection.union(frontier);
+        }
+        return collection;
       }
 
       function clearClasses() {
@@ -1980,13 +2095,16 @@ svg {
 
       function showNode(node) {
         clearClasses();
+        lastSelectedNode = node;
+        copyTraceButton.hidden = true;
         traceSteps.replaceChildren();
         tracePanelTitle.textContent = "Selected node";
-        var neighborhood = node.closedNeighborhood();
+        var depth = Number(degreeDepth.value) || 1;
+        var neighborhood = neighborhoodAtDepth(node, depth);
         cy.elements().not(neighborhood).addClass("muted");
         node.addClass("focus");
-        detail.textContent = node.data("label") + " — " + node.data("summary") + " ";
-        detail.appendChild(sourceLink(node.data("sourceUrl")));
+        detail.textContent = node.data("label") + " — " + node.data("summary") + " Showing " + depth + (depth === 1 ? " degree" : " degrees") + " of documented connections. ";
+        detail.appendChild(sourceLink(node.data("sourceUrl"), "Read source ↗"));
         var currentZoom = cy.zoom();
         var targetZoom = Math.min(cy.maxZoom(), Math.max(currentZoom, 0.8, Math.min(1.1, currentZoom * 1.24)));
         var position = node.position();
@@ -2042,6 +2160,45 @@ svg {
         return {nodes:nodeIds, edges:edgeIds};
       }
 
+      function appendEvidenceStep(edge, index) {
+        var sourceNode = edge.source().data("label");
+        var targetNode = edge.target().data("label");
+        var confidence = edge.data("confidence") || "high";
+        var item = document.createElement("li");
+        item.className = "trace-step";
+        var number = document.createElement("span");
+        number.className = "trace-number";
+        number.textContent = String(index + 1);
+        var copy = document.createElement("span");
+        var eventText = document.createElement("strong");
+        eventText.className = "trace-event";
+        eventText.textContent = edge.data("label");
+        var pair = document.createElement("span");
+        pair.className = "trace-pair text-small";
+        pair.textContent = sourceNode + " ↔ " + targetNode;
+        var meta = document.createElement("span");
+        meta.className = "trace-meta text-small";
+        var relation = document.createElement("span");
+        relation.className = "evidence-tag";
+        relation.textContent = relationLabel(edge.data("relation"));
+        var confidenceTag = document.createElement("span");
+        confidenceTag.className = "evidence-tag " + confidence;
+        confidenceTag.textContent = confidenceLabel(confidence);
+        meta.appendChild(relation);
+        meta.appendChild(confidenceTag);
+        var source = document.createElement("span");
+        source.className = "trace-source text-small";
+        source.textContent = "Evidence: " + sourceHost(edge.data("sourceUrl")) + " · ";
+        source.appendChild(sourceLink(edge.data("sourceUrl"), "open citation ↗"));
+        copy.appendChild(eventText);
+        copy.appendChild(pair);
+        copy.appendChild(meta);
+        copy.appendChild(source);
+        item.appendChild(number);
+        item.appendChild(copy);
+        traceSteps.appendChild(item);
+      }
+
       function tracePath() {
         if (focusArea.value !== "all") {
           focusArea.value = "all";
@@ -2060,8 +2217,10 @@ svg {
         }
         var path = buildPath(fromId, toId, includeWeak.checked);
         clearClasses();
+        lastSelectedNode = null;
         if (!path) {
           detail.textContent = "No path is available under the current evidence rule.";
+          copyTraceButton.hidden = true;
           return;
         }
         cy.elements().addClass("muted");
@@ -2077,31 +2236,13 @@ svg {
         var fromLabel = cy.getElementById(fromId).data("label");
         var toLabel = cy.getElementById(toId).data("label");
         tracePanelTitle.textContent = fromLabel + " → " + toLabel;
-        detail.textContent = path.edges.length + (path.edges.length === 1 ? " documented step" : " documented steps") + ". Each number below matches the marker on the graph.";
+        detail.textContent = path.edges.length + (path.edges.length === 1 ? " documented step" : " documented steps") + ". Each number below matches the marker on the graph. Association does not by itself imply agreement, control, or coordination.";
         traceSteps.replaceChildren();
         path.edges.forEach(function (id, index) {
           var edge = cy.getElementById(id);
-          var sourceNode = edge.source().data("label");
-          var targetNode = edge.target().data("label");
-          var item = document.createElement("li");
-          item.className = "trace-step";
-          var number = document.createElement("span");
-          number.className = "trace-number";
-          number.textContent = String(index + 1);
-          var copy = document.createElement("span");
-          var eventText = document.createElement("strong");
-          eventText.className = "trace-event";
-          eventText.textContent = edge.data("label");
-          var pair = document.createElement("span");
-          pair.className = "trace-pair text-small";
-          pair.textContent = sourceNode + " ↔ " + targetNode + " · ";
-          pair.appendChild(sourceLink(edge.data("sourceUrl")));
-          copy.appendChild(eventText);
-          copy.appendChild(pair);
-          item.appendChild(number);
-          item.appendChild(copy);
-          traceSteps.appendChild(item);
+          appendEvidenceStep(edge, index);
         });
+        setTraceUrl(fromId, toId, includeWeak.checked);
         var pathCollection = cy.collection();
         path.nodes.forEach(function (id) {
           pathCollection = pathCollection.union(cy.getElementById(id));
@@ -2114,6 +2255,8 @@ svg {
       });
       cy.on("tap", "edge", function (event) {
         clearClasses();
+        lastSelectedNode = null;
+        copyTraceButton.hidden = true;
         var edge = event.target;
         traceSteps.replaceChildren();
         tracePanelTitle.textContent = "Selected relationship";
@@ -2121,14 +2264,16 @@ svg {
         edge.data("pathOffset", 0);
         edge.addClass("focus");
         edge.connectedNodes().addClass("focus");
-        detail.textContent = edge.source().data("label") + " ↔ " + edge.target().data("label") + " — " + edge.data("label") + " ";
-        detail.appendChild(sourceLink(edge.data("sourceUrl")));
+        detail.textContent = "This relationship has one cited evidence record. The number on the graph matches the record below.";
+        appendEvidenceStep(edge, 0);
       });
       cy.on("tap", function (event) {
         if (event.target !== cy) {
           return;
         }
         clearClasses();
+        lastSelectedNode = null;
+        copyTraceButton.hidden = true;
         traceSteps.replaceChildren();
         tracePanelTitle.textContent = "Path guide";
         detail.textContent = "Selection cleared. Click another node to inspect its documented connections.";
@@ -2139,16 +2284,62 @@ svg {
           return edges.some(function (edge) { return edge.a === node.id || edge.b === node.id; });
         });
         if (candidates.length < 2) { return; }
-        var firstIndex = Math.floor(Math.random() * candidates.length);
-        var secondIndex = Math.floor(Math.random() * (candidates.length - 1));
-        if (secondIndex >= firstIndex) { secondIndex += 1; }
-        fromSelect.value = candidates[firstIndex].id;
-        toSelect.value = candidates[secondIndex].id;
+        var chosen = null;
+        var best = null;
+        for (var attempt = 0; attempt < 80; attempt += 1) {
+          var first = candidates[Math.floor(Math.random() * candidates.length)];
+          var second = candidates[Math.floor(Math.random() * candidates.length)];
+          if (first.id === second.id) { continue; }
+          var key = [first.id, second.id].sort().join("|");
+          if (recentRandomPairs.indexOf(key) !== -1) { continue; }
+          var candidatePath = buildPath(first.id, second.id, includeWeak.checked);
+          if (!candidatePath) { continue; }
+          var length = candidatePath.edges.length;
+          var score = (length >= 3 && length <= 6 ? 12 : 0) + (first.kind !== second.kind ? 3 : 0) - Math.abs(4 - length);
+          if (!best || score > best.score) {
+            best = {first:first, second:second, key:key, score:score};
+          }
+          if (score >= 14) {
+            chosen = best;
+            break;
+          }
+        }
+        chosen = chosen || best;
+        if (!chosen) { return; }
+        recentRandomPairs.push(chosen.key);
+        if (recentRandomPairs.length > 10) { recentRandomPairs.shift(); }
+        fromSelect.value = chosen.first.id;
+        toSelect.value = chosen.second.id;
         updateTraceState();
         tracePath();
       });
+      degreeDepth.addEventListener("change", function () {
+        if (lastSelectedNode) {
+          showNode(lastSelectedNode);
+        }
+      });
+      copyTraceButton.addEventListener("click", function () {
+        var url = window.location.href;
+        function showCopied() {
+          var original = copyTraceButton.textContent;
+          copyTraceButton.textContent = "Link copied ✓";
+          window.setTimeout(function () { copyTraceButton.textContent = original; }, 1600);
+        }
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(url).then(showCopied);
+          return;
+        }
+        var input = document.createElement("textarea");
+        input.value = url;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        input.remove();
+        showCopied();
+      });
       clearButton.addEventListener("click", function () {
         clearClasses();
+        lastSelectedNode = null;
         focusArea.value = "all";
         cy.elements().show();
         fromSelect.value = "";
@@ -2156,6 +2347,7 @@ svg {
         updateTraceState();
         traceSteps.replaceChildren();
         tracePanelTitle.textContent = "Path guide";
+        setTraceUrl(null, null, false);
         cy.animate({fit:{eles:cy.elements(), padding:36}}, {duration:280});
         detail.textContent = "Start by clicking a node, or use the From and To selectors above to trace the shortest documented path.";
       });
@@ -2190,6 +2382,16 @@ svg {
       window.addEventListener("resize", function () {
         cy.resize();
       });
+      var initialParams = new URL(window.location.href).searchParams;
+      var initialFrom = initialParams.get("from");
+      var initialTo = initialParams.get("to");
+      if (cy.getElementById(initialFrom).length && cy.getElementById(initialTo).length && initialFrom !== initialTo) {
+        fromSelect.value = initialFrom;
+        toSelect.value = initialTo;
+        includeWeak.checked = initialParams.get("weak") === "1";
+        updateTraceState();
+        tracePath();
+      }
     }());
   </script>
 </div>
