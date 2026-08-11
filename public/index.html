@@ -2385,7 +2385,7 @@ svg {
       var initialParams = new URL(window.location.href).searchParams;
       var initialFrom = initialParams.get("from");
       var initialTo = initialParams.get("to");
-      if (cy.getElementById(initialFrom).length && cy.getElementById(initialTo).length && initialFrom !== initialTo) {
+      if (initialFrom && initialTo && cy.getElementById(initialFrom).length && cy.getElementById(initialTo).length && initialFrom !== initialTo) {
         fromSelect.value = initialFrom;
         toSelect.value = initialTo;
         includeWeak.checked = initialParams.get("weak") === "1";
