@@ -28,4 +28,17 @@ if (duplicateNodes.length || duplicateEdges.length || missingEndpoints.length) {
   process.exit(1);
 }
 
+const requiredFeatures = [
+  'id="degree-depth"',
+  'id="copy-trace"',
+  "function appendEvidenceStep",
+  "function setTraceUrl",
+  "recentRandomPairs"
+];
+const missingFeatures = requiredFeatures.filter((feature) => !html.includes(feature));
+if (missingFeatures.length) {
+  console.error({missingFeatures});
+  process.exit(1);
+}
+
 console.log(`Validated ${nodeIds.length} nodes, ${edges.length} edges, and ${inlineScripts.length} inline scripts.`);
