@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="An evidence-coded interactive network and timeline connecting technology founders, companies, investors, media organizations, and public entities.">
+<link rel="icon" type="image/png" href="/favicon.png">
 <title>Connections — Founder &amp; Entity Network</title>
 <style>:root {
   color-scheme: light dark;
@@ -1137,6 +1138,7 @@ svg {
       </div>
       <span class="route-status text-small" id="route-status" aria-live="polite">Choose a starting point to begin.</span>
       <button class="btn btn-ghost" type="button" id="clear-path">Start over</button>
+      <button class="btn" type="button" id="random-trace">Surprise me ✦</button>
       <button class="btn btn-primary" type="button" id="trace-path" disabled>Find connection →</button>
     </div>
   </section>
@@ -1161,6 +1163,7 @@ svg {
         <option value="all">All topics</option>
         <option value="tech">Tech, PayPal &amp; AI</option>
         <option value="politics">Politics &amp; media</option>
+        <option value="comedy">Joe Rogan &amp; comedy</option>
         <option value="finance">Finance, Koch &amp; GameStop</option>
         <option value="kabbalah">Kabbalah &amp; teachers</option>
         <option value="khazars">Khazars &amp; conversion accounts</option>
@@ -1213,6 +1216,7 @@ svg {
         <tr><td class="text-nowrap">2002</td><td>eBay acquires PayPal.</td><td><span class="confidence">High</span> · <a href="https://www.ebayinc.com/company/our-history/">eBay</a></td></tr>
         <tr><td class="text-nowrap">2003</td><td>Peter Thiel, Alex Karp, Stephen Cohen, Joe Lonsdale, and Nathan Gettings found Palantir.</td><td><span class="confidence">High</span> · <a href="https://investors.palantir.com/governance/board-of-directors">Palantir</a></td></tr>
         <tr><td class="text-nowrap">2005</td><td>Thiel, Howery, and Nosek co-found Founders Fund. Former PayPal employees found YouTube.</td><td><span class="confidence">High</span> · <a href="https://foundersfund.com/team/peter-thiel/">Founders Fund</a> · <a href="https://www.newyorker.com/magazine/2012/01/16/streaming-dreams">New Yorker</a></td></tr>
+        <tr><td class="text-nowrap">2009–23</td><td>Joe Rogan launches The Joe Rogan Experience in 2009. Recurring ensemble episodes later connect Rogan with Tom Segura, Bert Kreischer, Ari Shaffir, Shane Gillis, and Mark Normand; Rogan opens Austin’s Comedy Mothership in 2023.</td><td><span class="confidence">High</span> · <a href="https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh">JRE / Spotify</a> · <a href="https://comedymothership.com/">Comedy Mothership</a></td></tr>
         <tr><td class="text-nowrap">2010</td><td>Peter Thiel, James Fitzgerald, and Andrew McCormack establish Valar Ventures.</td><td><span class="confidence">High</span> · <a href="https://www.valar.com/">Valar</a></td></tr>
         <tr><td class="text-nowrap">2012</td><td>Thiel and Ajay Royan found Mithril Capital; Max Levchin creates Affirm.</td><td><span class="confidence">High</span> · <a href="https://www.mithril.com/">Mithril</a> · <a href="https://investors.affirm.com/management/max-levchin">Affirm</a></td></tr>
         <tr><td class="text-nowrap">2013</td><td>Pierre Omidyar creates First Look Media. Neal Harmon and collaborators start the business that becomes Angel Studios. Ring is founded by Jamie Siminoff.</td><td><span class="confidence">High</span> · <a href="https://www.theguardian.com/media/2013/dec/19/pierre-omidyar-first-50m-media-venture-glenn-greenwald">Guardian</a> · <a href="https://ir.angel.com/management/">Angel</a></td></tr>
@@ -1240,7 +1244,7 @@ svg {
     </table>
   </div>
   <div class="notes text-small">
-    <span class="confidence medium">Medium confidence</span> marks disputed or indirect claims. The Khazar conversion date, the three-religion debate, the number of converts, and the historicity of King Obadiah are not settled; no edge is drawn from Khazars to modern Jews, Israel, finance, Bolsheviks, or organized crime. “Rabbinic Judaism” is used instead of the inaccurate phrase “Babylonian Judaism.” Zohar labels distinguish traditional attribution from modern critical scholarship. Institutional-holding edges usually represent shares managed for funds and clients—not corporate control or coordination. A birthplace edge does not imply state affiliation, and an indictment or wanted notice is not a conviction. Political-opposition edges record a documented relationship, not agreement or affiliation. The Mir-Djalali genealogy remains medium-confidence because the grandfather link relies on recent secondary biographies. The Epstein–Musk and Thiel–Carlson links remain weak and hidden unless enabled.
+    <span class="confidence medium">Medium confidence</span> marks disputed or indirect claims. The Khazar conversion date, the three-religion debate, the number of converts, and the historicity of King Obadiah are not settled; no edge is drawn from Khazars to modern Jews, Israel, finance, Bolsheviks, or organized crime. “Rabbinic Judaism” is used instead of the inaccurate phrase “Babylonian Judaism.” Zohar labels distinguish traditional attribution from modern critical scholarship. Institutional-holding edges usually represent shares managed for funds and clients—not corporate control or coordination. A birthplace edge does not imply state affiliation, and an indictment or wanted notice is not a conviction. Political-opposition edges record a documented relationship, not agreement or affiliation. A podcast appearance or comedy collaboration does not imply shared beliefs, coordination, or wrongdoing. The Mir-Djalali genealogy remains medium-confidence because the grandfather link relies on recent secondary biographies. The Epstein–Musk and Thiel–Carlson links remain weak and hidden unless enabled.
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js"></script>
@@ -1252,6 +1256,7 @@ svg {
       var toSelect = root.querySelector("#path-to");
       var includeWeak = root.querySelector("#include-weak");
       var traceButton = root.querySelector("#trace-path");
+      var randomTraceButton = root.querySelector("#random-trace");
       var clearButton = root.querySelector("#clear-path");
       var zoomInButton = root.querySelector("#zoom-in");
       var zoomOutButton = root.querySelector("#zoom-out");
@@ -1399,7 +1404,17 @@ svg {
         {id:"ussr", label:"Soviet Union (USSR)", kind:"country", x:950, y:1510, summary:"Union state created in 1922 and dissolved in 1991; included the Ukrainian SSR as a founding republic.", source:"https://www.britannica.com/place/Soviet-Union"},
         {id:"ukrainianssr", label:"Ukrainian SSR", kind:"country", x:950, y:1630, summary:"Soviet republic established through the 1917–21 conflicts; a founding USSR republic in 1922 and predecessor state to independent Ukraine.", source:"https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CU%5CK%5CUkrainianSovietSocialistRepublic.htm"},
         {id:"mogilevich", label:"Semion Mogilevich", kind:"person", x:1320, y:1510, summary:"Kyiv-born fugitive wanted by the FBI over alleged racketeering, fraud, and money laundering; allegations remain charges, not a conviction.", source:"https://www.fbi.gov/wanted/cei/semion-mogilevich"},
-        {id:"transnationalcrime", label:"Transnational organized crime", kind:"bridge", x:1500, y:1510, summary:"Law-enforcement category used here only for formally documented cases, not for ethnic or national generalization.", source:"https://www.justice.gov/file/236181-0/dl?inline="}
+        {id:"transnationalcrime", label:"Transnational organized crime", kind:"bridge", x:1500, y:1510, summary:"Law-enforcement category used here only for formally documented cases, not for ethnic or national generalization.", source:"https://www.justice.gov/file/236181-0/dl?inline="},
+        {id:"rogan", label:"Joe Rogan", kind:"person", x:1370, y:930, summary:"Comedian and host of The Joe Rogan Experience; founder of Austin’s Comedy Mothership.", source:"https://comedymothership.com/"},
+        {id:"jre", label:"The Joe Rogan Experience", kind:"media", x:1510, y:850, summary:"Long-form interview and comedy podcast hosted by Joe Rogan; the recurring group episodes mapped here are documented appearances, not evidence of shared beliefs.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"comedymothership", label:"Comedy Mothership", kind:"company", x:1510, y:1000, summary:"Austin comedy club created by Joe Rogan and opened in 2023.", source:"https://comedymothership.com/"},
+        {id:"tomsegura", label:"Tom Segura", kind:"person", x:1370, y:1080, summary:"Stand-up comedian and podcaster; a recurring JRE guest and member of its Sober October ensemble.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"bertkreischer", label:"Bert Kreischer", kind:"person", x:1510, y:1130, summary:"Stand-up comedian and podcaster; a recurring JRE guest, Sober October participant, and Tom Segura’s 2 Bears, 1 Cave co-host.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"arishaffir", label:"Ari Shaffir", kind:"person", x:1640, y:1080, summary:"Stand-up comedian and podcaster; a recurring JRE guest in both Sober October and Protect Our Parks episodes.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"shanegillis", label:"Shane Gillis", kind:"person", x:1370, y:1230, summary:"Stand-up comedian and podcaster; a recurring JRE guest and Protect Our Parks participant.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"marknormand", label:"Mark Normand", kind:"person", x:1510, y:1280, summary:"Stand-up comedian and podcaster; a recurring JRE guest and Protect Our Parks participant.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"soberOctober", label:"Sober October crew", kind:"bridge", x:1640, y:1200, summary:"Recurring JRE ensemble featuring Rogan, Tom Segura, Bert Kreischer, and Ari Shaffir.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"protectparks", label:"Protect Our Parks", kind:"bridge", x:1640, y:1340, summary:"Recurring JRE ensemble featuring Rogan, Shane Gillis, Mark Normand, and Ari Shaffir.", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"}
       ];
 
       var edges = [
@@ -1578,7 +1593,21 @@ svg {
         {id:"ukrainianssr-ukraine", a:"ukrainianssr", b:"ukraine", label:"predecessor republic; Ukraine declared independence, 1991", relation:"public", source:"https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CU%5CK%5CUkrainianSovietSocialistRepublic.htm"},
         {id:"levchin-ukrainianssr", a:"levchin", b:"ukrainianssr", label:"born in Kyiv in the Ukrainian SSR, 1975", relation:"public", source:"https://investors.affirm.com/management/max-levchin"},
         {id:"mogilevich-crime", a:"mogilevich", b:"transnationalcrime", label:"FBI-wanted alleged racketeering and fraud case", relation:"public", source:"https://www.fbi.gov/wanted/cei/semion-mogilevich"},
-        {id:"mogilevich-ukraine", a:"mogilevich", b:"ukraine", label:"born in Kyiv; birthplace only, not state affiliation", relation:"public", source:"https://www.justice.gov/sites/default/files/usao/legacy/2006/02/14/usab5105.pdf"}
+        {id:"mogilevich-ukraine", a:"mogilevich", b:"ukraine", label:"born in Kyiv; birthplace only, not state affiliation", relation:"public", source:"https://www.justice.gov/sites/default/files/usao/legacy/2006/02/14/usab5105.pdf"},
+        {id:"rogan-jre", a:"rogan", b:"jre", label:"host since 2009", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"rogan-mothership", a:"rogan", b:"comedymothership", label:"created Austin comedy club; opened 2023", relation:"origin", source:"https://comedymothership.com/"},
+        {id:"rogan-trump", a:"rogan", b:"trump", label:"JRE interview, October 2024", relation:"public", source:"https://www.reuters.com/world/us/trump-records-joe-rogan-podcast-appeal-young-male-voters-2024-10-25/"},
+        {id:"rogan-tucker", a:"rogan", b:"tucker", label:"multiple long-form JRE interviews", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience"},
+        {id:"jre-sober", a:"jre", b:"soberOctober", label:"recurring ensemble episodes", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"sober-tom", a:"soberOctober", b:"tomsegura", label:"ensemble participant", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"sober-bert", a:"soberOctober", b:"bertkreischer", label:"ensemble participant", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"sober-ari", a:"soberOctober", b:"arishaffir", label:"ensemble participant", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"tom-bert", a:"tomsegura", b:"bertkreischer", label:"2 Bears, 1 Cave co-hosts", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"jre-protectparks", a:"jre", b:"protectparks", label:"recurring ensemble episodes", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"protect-shane", a:"protectparks", b:"shanegillis", label:"ensemble participant", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"protect-mark", a:"protectparks", b:"marknormand", label:"ensemble participant", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"protect-ari", a:"protectparks", b:"arishaffir", label:"ensemble participant", relation:"origin", source:"https://creators.spotify.com/pod/profile/joeroganexperience/episodes/1821---Bert-Kreischer--Tony-Hinchcliffe-e1insjh"},
+        {id:"mothership-jre", a:"comedymothership", b:"jre", label:"Rogan’s comedy-club and podcast platforms", relation:"origin", source:"https://comedymothership.com/"}
       ];
 
       var nodeMeta = {
@@ -1861,7 +1890,8 @@ svg {
 
       var focusGroups = {
         tech:["omidyar","ebay","elon","maye","errol","canada","southafrica","xcom","confinity","paypal","levchin","nosek","howery","banister","sponsornet","netscape","youtube","affirm","thiel","thielcapital","foundersfund","valar","mithril","palantir","gigafund","angel","neal","vidangel","flock","ring","amazon","bezos","blueorigin","openai","altman","xai","xsocial","spacex","andreessen","a16z","sacks","rumble","billgates","microsoft"],
-        politics:["trump","thiel","elon","altman","amazon","netanyahu","israel","tucker","tcn","mercer","capital1789","owens","blexit","cuban","mavericks","adelson","soros","opensociety","charleskoch","davidkoch","kochindustries","schwarzman","blackstone","sacks","vance","rumble","palantir","ukraine","zelenskyy","denmark","sweden","howery","shmuley","worldvalues"],
+        politics:["trump","thiel","elon","altman","amazon","netanyahu","israel","tucker","tcn","mercer","capital1789","owens","blexit","cuban","mavericks","adelson","soros","opensociety","charleskoch","davidkoch","kochindustries","schwarzman","blackstone","sacks","vance","rumble","palantir","ukraine","zelenskyy","denmark","sweden","howery","shmuley","worldvalues","rogan","jre"],
+        comedy:["rogan","jre","comedymothership","tomsegura","bertkreischer","arishaffir","shanegillis","marknormand","soberOctober","protectparks","trump","tucker"],
         finance:["ebay","amazon","bezos","trump","buffett","berkshire","givingpledge","billgates","schwarzman","blackstone","fink","blackrock","bogle","vanguard","indexing","statestreet","creditsuisse","ubs","ryancohen","gamestop","chewy","icahn","icahnenterprises","cuban","mavericks","adelson","charleskoch","davidkoch","kochindustries"],
         kabbalah:["kabbalah","zohar","mosesdeleon","castile","toledo","toledoschool","alfonsox","cordovero","luria","vital","safed","scholem","hebrewuniversity","israel","kcentre","philipberg","madonna","rabbinicjudaism","justinsledge","esoterica"],
         khazars:["khazars","bulan","obadiahkhazar","rabbinicjudaism","christianity","islam","khazarcorr","kabbalah"],
@@ -2104,6 +2134,19 @@ svg {
         detail.textContent = "Selection cleared. Click another node to inspect its documented connections.";
       });
       traceButton.addEventListener("click", tracePath);
+      randomTraceButton.addEventListener("click", function () {
+        var candidates = nodes.filter(function (node) {
+          return edges.some(function (edge) { return edge.a === node.id || edge.b === node.id; });
+        });
+        if (candidates.length < 2) { return; }
+        var firstIndex = Math.floor(Math.random() * candidates.length);
+        var secondIndex = Math.floor(Math.random() * (candidates.length - 1));
+        if (secondIndex >= firstIndex) { secondIndex += 1; }
+        fromSelect.value = candidates[firstIndex].id;
+        toSelect.value = candidates[secondIndex].id;
+        updateTraceState();
+        tracePath();
+      });
       clearButton.addEventListener("click", function () {
         clearClasses();
         focusArea.value = "all";
@@ -2355,39 +2398,3 @@ svg {
     if (activeTrigger === trigger || pendingTrigger === trigger) {
       closeTooltip();
     }
-  };
-  const destroy = () => {
-    closeTooltip(false);
-    document.removeEventListener("pointerover", handlePointerOpen);
-    document.removeEventListener("pointerout", handleLeave);
-    document.removeEventListener("focusin", handleFocusIn);
-    document.removeEventListener("focusout", handleLeave);
-    document.removeEventListener("keydown", handleKeyDown);
-    document.removeEventListener("contextmenu", handleContextMenu);
-    tooltip = null;
-  };
-
-  document.addEventListener("pointerover", handlePointerOpen);
-  document.addEventListener("pointerout", handleLeave);
-  document.addEventListener("focusin", handleFocusIn);
-  document.addEventListener("focusout", handleLeave);
-  document.addEventListener("keydown", handleKeyDown);
-  document.addEventListener("contextmenu", handleContextMenu);
-  window.addEventListener("pagehide", destroy, { once: true });
-})();
-</script>
-<script id="codex-visualization-lucide-initialization">(() => {
-  const initialize = () => {
-    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
-  };
-  if (globalThis.lucide != null) {
-    initialize();
-    return;
-  }
-  document
-    .getElementById("codex-visualization-lucide")
-    ?.addEventListener("load", initialize, { once: true });
-})();
-</script>
-</body>
-</html>
