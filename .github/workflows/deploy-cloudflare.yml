@@ -5,6 +5,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'public/**'
+      - 'research/**'
+      - 'scripts/**'
+      - 'package*.json'
+      - 'wrangler.jsonc'
+      - '.github/workflows/deploy-cloudflare.yml'
   workflow_dispatch:
 
 permissions:
@@ -34,9 +41,8 @@ jobs:
       - name: Validate site and Worker configuration
         run: npm run check
 
-      - name: Deploy Worker
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+      - name: Publish version on the existing Worker domain
+        run: npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

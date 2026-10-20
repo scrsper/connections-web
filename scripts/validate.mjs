@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-const html = fs.readFileSync(new URL("../public/index.html", import.meta.url), "utf8");
+const html = fs.readFileSync(new URL("../public/network/index.html", import.meta.url), "utf8");
 const scriptPattern = /<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g;
 const nodePattern = /\{id:"([^"]+)", label:/g;
 const edgePattern = /\{id:"([^"]+)", a:"([^"]+)", b:"([^"]+)"/g;

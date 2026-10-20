@@ -1,0 +1,9 @@
+/atlas.js
+  Cache-Control: public, max-age=0, must-revalidate
+/atlas.css
+  Cache-Control: public, max-age=0, must-revalidate
+/data/*
+  Cache-Control: public, max-age=0, must-revalidate
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer

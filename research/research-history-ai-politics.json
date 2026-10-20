@@ -1,0 +1,2939 @@
+{
+  "sources": [
+    {
+      "id": "hist-eic-charter",
+      "title": "Traders: the East India Company & Asia",
+      "url": "https://www.rmg.co.uk/national-maritime-museum/attractions/traders-east-india-company-asia",
+      "publisher": "Royal Museums Greenwich",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Museum account based on its historical collections; establishes the year, not a specific day."
+    },
+    {
+      "id": "hist-eic-regulation",
+      "title": "Parliament and the East India Company",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/legislativescrutiny/parliament-and-empire/parliament-and-the-american-colonies-before-1765/parliament-and-the-east-india-company/",
+      "publisher": "UK Parliament",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "hist-india-act",
+      "title": "Government of India Act 1858",
+      "url": "https://www.legislation.gov.uk/ukpga/Vict/21-22/106/pdfs/ukpga_18580106_en.pdf",
+      "publisher": "UK legislation archive",
+      "published": "1858-08-02",
+      "accessed": "2026-10-19",
+      "notes": "Original Act, chapter 106."
+    },
+    {
+      "id": "hist-boe",
+      "title": "Who owns the Bank of England?",
+      "url": "https://www.bankofengland.co.uk/explainers/who-owns-the-bank-of-england",
+      "publisher": "Bank of England",
+      "published": "2020-05-19",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "hist-fed",
+      "title": "Federal Reserve Act Signed into Law",
+      "url": "https://www.federalreservehistory.org/essays/federal-reserve-act-signed",
+      "publisher": "Federal Reserve History",
+      "published": "2013-11-22",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "hist-bretton",
+      "title": "Creation of the Bretton Woods System",
+      "url": "https://www.federalreservehistory.org/essays/bretton-woods-created",
+      "publisher": "Federal Reserve History",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "hist-palestine",
+      "title": "Future government of Palestine: Resolution 181 (II)",
+      "url": "https://digitallibrary.un.org/record/667160?ln=en",
+      "publisher": "United Nations General Assembly",
+      "published": "1947-11-29",
+      "accessed": "2026-10-19",
+      "notes": "Resolution recommending partition; not evidence that the complete plan was implemented."
+    },
+    {
+      "id": "intel-cia-history",
+      "title": "History of CIA",
+      "url": "https://www.cia.gov/legacy/cia-history/",
+      "publisher": "Central Intelligence Agency",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "intel-iran",
+      "title": "Foreign Relations of the United States: Campaign to install pro-Western government in Iran",
+      "url": "https://history.state.gov/historicaldocuments/frus1951-54IranEd2/d363",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Historical document records presidential, Secretary of State and DCI approval on 11 July 1953."
+    },
+    {
+      "id": "intel-guatemala",
+      "title": "Guatemala: Normal Relations Interrupted, 1954",
+      "url": "https://history.state.gov/countries/guatemala",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "intel-church",
+      "title": "Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities",
+      "url": "https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm",
+      "publisher": "U.S. Senate",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "intel-mkultra",
+      "title": "Project MKULTRA: Joint Senate hearing",
+      "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-hearings-95mkultra.pdf",
+      "publisher": "U.S. Senate",
+      "published": "1977-08-03",
+      "accessed": "2026-10-19",
+      "notes": "Hearing includes CIA Director Stansfield Turner testimony and newly recovered financial records; incomplete surviving archive."
+    },
+    {
+      "id": "intel-detention",
+      "title": "Committee Releases Study of the CIA’s Detention and Interrogation Program",
+      "url": "https://www.intelligence.senate.gov/2014/12/09/press-committee-releases-study-cias-detention-and-interrogation-program/",
+      "publisher": "Senate Select Committee on Intelligence",
+      "published": "2014-12-09",
+      "accessed": "2026-10-19",
+      "notes": "Release page links executive summary, findings, additional/minority views and CIA response."
+    },
+    {
+      "id": "fin-blackrock-history",
+      "title": "History of BlackRock",
+      "url": "https://www.blackrock.com/corporate/about-us/who-we-are/history",
+      "publisher": "BlackRock",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Corporate history; assets managed for clients are not equivalent to corporate ownership of those assets."
+    },
+    {
+      "id": "security-lineage",
+      "title": "Our History",
+      "url": "https://constellis.com/our-history/",
+      "publisher": "Constellis",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Corporate account distinguishes purchased Xe training/support businesses from excluded aviation businesses and Blackwater intellectual property."
+    },
+    {
+      "id": "security-nisur",
+      "title": "Former Blackwater Employee Re-Sentenced for Fatal 2007 Shooting at Nisur Square in Iraq",
+      "url": "https://www.justice.gov/usao-dc/pr/former-blackwater-employee-re-sentenced-fatal-2007-shooting-nisur-square-iraq",
+      "publisher": "U.S. Department of Justice",
+      "published": "2019-09-10",
+      "accessed": "2026-10-19",
+      "notes": "The body describes the 5 September 2019 resentencing of Paul Slough, Evan Liberty and Dustin Heard. Conviction history must be read with the 2020 pardons."
+    },
+    {
+      "id": "security-state-contract",
+      "title": "Transcript of Blackwater Press Conference",
+      "url": "https://www.justice.gov/archive/opa/pr/2008/December/08-nsd-1070.html",
+      "publisher": "U.S. Department of Justice",
+      "published": "2008-12-08",
+      "accessed": "2026-10-19",
+      "notes": "Used for the State Department security contract, not as a final adjudication of charges announced that day."
+    },
+    {
+      "id": "security-pardons",
+      "title": "Statement Regarding Executive Grants of Clemency",
+      "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-122220/",
+      "publisher": "White House archive",
+      "published": "2020-12-22",
+      "accessed": "2026-10-19",
+      "notes": "Primary evidence of presidential pardons; political justifications in the statement are not independent court findings."
+    },
+    {
+      "id": "ai-dartmouth",
+      "title": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
+      "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+      "publisher": "John McCarthy archive at Stanford University",
+      "published": "1955-08-31",
+      "accessed": "2026-10-19",
+      "notes": "The later mailing list includes interested people who did not attend; it is not an attendance roster."
+    },
+    {
+      "id": "ai-nvidia",
+      "title": "NVIDIA History: A Timeline of Innovation",
+      "url": "https://www.nvidia.com/en-gb/about-nvidia/corporate-timeline/",
+      "publisher": "NVIDIA",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "ai-iqt",
+      "title": "IQT: Our History",
+      "url": "https://www.iqt.org/about",
+      "publisher": "In-Q-Tel",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "IQT states that CIA established it in 1999 and that it is an independent nonprofit, not a government agency."
+    },
+    {
+      "id": "ai-palantir-s1",
+      "title": "Palantir Technologies: Registration Statement on Form S-1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000119312520230013/d904406ds1.htm",
+      "publisher": "Palantir filing with U.S. SEC",
+      "published": "2020-08-25",
+      "accessed": "2026-10-19",
+      "notes": "Corporate incorporation date in financial statement Note 1; founder voting structure in prospectus. Filing is not SEC endorsement."
+    },
+    {
+      "id": "ai-deepmind",
+      "title": "Announcing Google DeepMind",
+      "url": "https://deepmind.google/blog/announcing-google-deepmind/",
+      "publisher": "Google DeepMind",
+      "published": "2023-04-20",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "ai-openai-launch",
+      "title": "Introducing OpenAI",
+      "url": "https://openai.com/index/introducing-openai/",
+      "publisher": "OpenAI",
+      "published": "2015-12-11",
+      "accessed": "2026-10-19",
+      "notes": "Launch-era roles and funding commitments; not a current board or ownership list."
+    },
+    {
+      "id": "ai-microsoft-openai",
+      "title": "Microsoft and OpenAI extend partnership",
+      "url": "https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/",
+      "publisher": "Microsoft",
+      "published": "2023-01-23",
+      "accessed": "2026-10-19",
+      "notes": "Terms summarized here are historical as announced in January 2023."
+    },
+    {
+      "id": "ai-amazon-anthropic",
+      "title": "Expanding access to safer AI with Amazon",
+      "url": "https://www.anthropic.com/news/anthropic-amazon",
+      "publisher": "Anthropic",
+      "published": "2023-09-25",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "ai-amazon-2024",
+      "title": "Powering the next generation of AI development with AWS",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-trainium",
+      "publisher": "Anthropic",
+      "published": "2024-11-22",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "ai-defense-partnership",
+      "title": "Anthropic and Palantir Partner to Bring Claude AI Models to AWS for U.S. Government Intelligence and Defense Operations",
+      "url": "https://investors.palantir.com/news-details/2024/Anthropic-and-Palantir-Partner-to-Bring-Claude-AI-Models-to-AWS-for-U.S.-Government-Intelligence-and-Defense-Operations/",
+      "publisher": "Palantir",
+      "published": "2024-11-07",
+      "accessed": "2026-10-19",
+      "notes": "Partnership announcement does not disclose every agency customer or operational deployment."
+    },
+    {
+      "id": "ai-infrastructure",
+      "title": "BlackRock, Global Infrastructure Partners, Microsoft, and MGX launch new AI partnership",
+      "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-global-infrastructure-partners-microsoft-and-mgx-launch-new-ai",
+      "publisher": "BlackRock",
+      "published": "2024-09-17",
+      "accessed": "2026-10-19",
+      "notes": "Capital targets are proposed fundraising capacity, not money already invested."
+    },
+    {
+      "id": "ukraine-blackrock",
+      "title": "Volodymyr Zelenskyy and CEO of BlackRock discussed how to drive investments into Ukraine",
+      "url": "https://www.president.gov.ua/en/news/volodimir-zelenskij-i-golova-blackrock-obgovorili-zaluchenny-77861",
+      "publisher": "Office of the President of Ukraine",
+      "published": "2022-09-19",
+      "accessed": "2026-10-19",
+      "notes": "Documents discussion of pro bono reconstruction-fund advice, not ownership of Ukraine or its territory."
+    },
+    {
+      "id": "ukraine-palantir",
+      "title": "Memorandum on cooperation in defense and reconstruction of Ukraine signed at Ministry of Digital Transformation",
+      "url": "https://www.kmu.gov.ua/en/news/u-mintsyfry-pidpysano-memorandum-shchodo-spivpratsi-u-sferakh-oborony-ta-vidbudovy-ukrainy",
+      "publisher": "Cabinet of Ministers of Ukraine",
+      "published": "2023-05-25",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "israel-nimbus-google",
+      "title": "Google Cloud selected to provide cloud services to digitally transform the State of Israel",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-selected-to-provide-cloud-services-to-the-state-of-israel",
+      "publisher": "Google Cloud",
+      "published": "2021-05-25",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "israel-nimbus-gov",
+      "title": "The Government of the State of Israel moves to the cloud: Google activated the local cloud zone",
+      "url": "https://www.gov.il/en/pages/_bpress_20102022",
+      "publisher": "Israeli Ministry of Finance",
+      "published": "2022-10-20",
+      "accessed": "2026-10-19",
+      "notes": "Government cloud procurement including security bodies; this source does not identify particular strikes or surveillance targets."
+    },
+    {
+      "id": "russia-unga",
+      "title": "General Assembly resolution demands end to Russian offensive in Ukraine",
+      "url": "https://unsdg.un.org/latest/announcements/general-assembly-resolution-demands-end-russian-offensive-ukraine",
+      "publisher": "United Nations",
+      "published": "2022-03-02",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "russia-icc",
+      "title": "Ukraine: Information for victims",
+      "url": "https://www.icc-cpi.int/victims/ukraine",
+      "publisher": "International Criminal Court",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Records issuance of 17 March 2023 warrants. Arrest warrants allege responsibility and are not convictions."
+    },
+    {
+      "id": "russia-wagner",
+      "title": "Treasury Sanctions Russian Proxy Wagner Group as a Transnational Criminal Organization",
+      "url": "https://home.treasury.gov/news/press-releases/jy1220",
+      "publisher": "U.S. Department of the Treasury",
+      "published": "2023-01-26",
+      "accessed": "2026-10-19",
+      "notes": "U.S. sanctions determination, distinct from a criminal court conviction."
+    },
+    {
+      "id": "russia-gru",
+      "title": "Grand Jury Indicts 12 Russian Intelligence Officers for Hacking Offenses Related to the 2016 Election",
+      "url": "https://www.justice.gov/archives/opa/pr/grand-jury-indicts-12-russian-intelligence-officers-hacking-offenses-related-2016-election",
+      "publisher": "U.S. Department of Justice",
+      "published": "2018-07-13",
+      "accessed": "2026-10-19",
+      "notes": "Indictment alleges crimes; defendants are presumed innocent. DOJ says this indictment did not allege a knowing American participant."
+    },
+    {
+      "id": "politics-tpusa-founding",
+      "title": "Turning Point USA Chapter Handbook 2021–2022",
+      "url": "https://cdn.tpusa.com/assets/books/Chapter-Handbook-2021-2022.pdf",
+      "publisher": "Turning Point USA",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Official handbook dates founding to 5 June 2012."
+    },
+    {
+      "id": "politics-tpusa-team",
+      "title": "Our team",
+      "url": "https://tpusa.com/team/",
+      "publisher": "Turning Point USA",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Current self-published professional biographies; figures and advocacy claims are not independently adopted."
+    },
+    {
+      "id": "politics-blexit",
+      "title": "BLEXIT Foundation Now Powered By Turning Point USA",
+      "url": "https://tpusa.com/live/blexit-black-exit-foundation-now-powered-by-turning-point-usa/",
+      "publisher": "Turning Point USA",
+      "published": "2023-03-13",
+      "accessed": "2026-10-19",
+      "notes": ""
+    },
+    {
+      "id": "politics-owens-role",
+      "title": "Erika Kirk to address assassination claims privately with Candace Owens",
+      "url": "https://www.axios.com/2025/12/15/candace-owens-erika-kirk-turning-point-livestream",
+      "publisher": "Axios",
+      "published": "2025-12-15",
+      "accessed": "2026-10-19",
+      "notes": "Used only for Owens’s reported 2017–2019 TPUSA role; does not validate theories about the assassination."
+    },
+    {
+      "id": "politics-erika-appointed",
+      "title": "Charlie Kirk’s Turning Point taps his widow as its next leader",
+      "url": "https://apnews.com/article/ff9141ca3fd5b8f1a103e7eb03f7535b",
+      "publisher": "Associated Press",
+      "published": "2025-09-18",
+      "accessed": "2026-10-19",
+      "notes": "Reports board announcement electing Erika Kirk CEO and board chair."
+    },
+    {
+      "id": "politics-bible",
+      "title": "PROCLAIM x BIBLEin365",
+      "url": "https://www.proclaim365.com/biblein365",
+      "publisher": "PROCLAIM",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Self-published program description identifying Erika Kirk and Pastor James Kaddis."
+    },
+    {
+      "id": "politics-bible-episode",
+      "title": "10.15.2026 BIBLEin365 Live Q&A",
+      "url": "https://podcasts.apple.com/us/podcast/10-15-2026-biblein365-live-q-a-october/id1728926548?i=1000796742908",
+      "publisher": "PROCLAIM x BIBLEin365 via Apple Podcasts",
+      "published": "2026-10-15",
+      "accessed": "2026-10-19",
+      "notes": "Publisher’s episode description identifies the two hosts; no inference about unrelated affiliations."
+    },
+    {
+      "id": "politics-owens-house",
+      "title": "Confronting Violent White Supremacy: House hearing",
+      "url": "https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=109977",
+      "publisher": "U.S. House of Representatives",
+      "published": "2019-09-20",
+      "accessed": "2026-10-19",
+      "notes": "Witness list identifies Owens as BLEXIT founder and show host."
+    },
+    {
+      "id": "politics-owens-tpusa-house",
+      "title": "Hate Crimes and the Rise of White Nationalism: Serial No. 116-15",
+      "url": "https://www.govinfo.gov/app/details/CHRG-116hhrg36563/CHRG-116hhrg36563",
+      "publisher": "U.S. House Judiciary Committee via GovInfo",
+      "published": "2019-04-09",
+      "accessed": "2026-10-19",
+      "notes": "Witness list identifies Owens as TPUSA director of communications."
+    }
+  ],
+  "entities": [
+    {
+      "id": "east-india-company",
+      "name": "East India Company",
+      "type": "company",
+      "summary": "English chartered trading corporation that acquired territorial governing powers in South Asia.",
+      "sourceIds": [
+        "hist-eic-charter",
+        "hist-india-act"
+      ]
+    },
+    {
+      "id": "british-crown",
+      "name": "British Crown",
+      "type": "institution",
+      "summary": "Crown authority in the specific historical charter and transfer records.",
+      "sourceIds": [
+        "hist-eic-charter",
+        "hist-india-act"
+      ]
+    },
+    {
+      "id": "uk-parliament",
+      "name": "UK Parliament",
+      "type": "government",
+      "summary": "Legislature responsible for the cited company-regulation and governance statutes.",
+      "sourceIds": [
+        "hist-eic-regulation",
+        "hist-india-act"
+      ]
+    },
+    {
+      "id": "bank-of-england",
+      "name": "Bank of England",
+      "type": "institution",
+      "summary": "Founded in 1694; brought into UK public ownership in 1946.",
+      "sourceIds": [
+        "hist-boe"
+      ]
+    },
+    {
+      "id": "uk-government",
+      "name": "UK Government",
+      "type": "government",
+      "summary": "Public owner of the Bank of England.",
+      "sourceIds": [
+        "hist-boe"
+      ]
+    },
+    {
+      "id": "federal-reserve",
+      "name": "Federal Reserve System",
+      "type": "institution",
+      "summary": "U.S. central banking system established by the 1913 Act.",
+      "sourceIds": [
+        "hist-fed"
+      ]
+    },
+    {
+      "id": "us-congress",
+      "name": "U.S. Congress",
+      "type": "government",
+      "summary": "Federal legislature; enacted the Federal Reserve Act.",
+      "sourceIds": [
+        "hist-fed"
+      ]
+    },
+    {
+      "id": "imf",
+      "name": "International Monetary Fund",
+      "type": "organization",
+      "summary": "International monetary institution planned at Bretton Woods.",
+      "sourceIds": [
+        "hist-bretton"
+      ]
+    },
+    {
+      "id": "world-bank",
+      "name": "World Bank",
+      "type": "organization",
+      "summary": "International development institution originating in the Bretton Woods agreements.",
+      "sourceIds": [
+        "hist-bretton"
+      ]
+    },
+    {
+      "id": "un-general-assembly",
+      "name": "United Nations General Assembly",
+      "type": "institution",
+      "summary": "Intergovernmental assembly issuing the cited Palestine and Ukraine resolutions.",
+      "sourceIds": [
+        "hist-palestine",
+        "russia-unga"
+      ]
+    },
+    {
+      "id": "mandatory-palestine",
+      "name": "British Mandate for Palestine",
+      "type": "historical-territory",
+      "summary": "Territory addressed by the 1947 UN partition recommendation.",
+      "sourceIds": [
+        "hist-palestine"
+      ]
+    },
+    {
+      "id": "cia",
+      "name": "Central Intelligence Agency",
+      "type": "government",
+      "summary": "U.S. foreign intelligence agency established in 1947.",
+      "sourceIds": [
+        "intel-cia-history"
+      ]
+    },
+    {
+      "id": "iran-mosaddeq-government",
+      "name": "Government of Mohammad Mosaddeq",
+      "type": "government",
+      "summary": "Iranian government targeted by the 1953 covert operation.",
+      "sourceIds": [
+        "intel-iran"
+      ]
+    },
+    {
+      "id": "guatemala-arbenz-government",
+      "name": "Government of Jacobo Árbenz",
+      "type": "government",
+      "summary": "Guatemalan government overthrown with CIA assistance in 1954.",
+      "sourceIds": [
+        "intel-guatemala"
+      ]
+    },
+    {
+      "id": "us-senate",
+      "name": "U.S. Senate",
+      "type": "government",
+      "summary": "Conducted the cited intelligence investigations and hearings.",
+      "sourceIds": [
+        "intel-church",
+        "intel-mkultra",
+        "intel-detention"
+      ]
+    },
+    {
+      "id": "fbi",
+      "name": "Federal Bureau of Investigation",
+      "type": "government",
+      "summary": "U.S. agency examined by the Church Committee.",
+      "sourceIds": [
+        "intel-church"
+      ]
+    },
+    {
+      "id": "nsa",
+      "name": "National Security Agency",
+      "type": "government",
+      "summary": "U.S. agency examined by the Church Committee.",
+      "sourceIds": [
+        "intel-church"
+      ]
+    },
+    {
+      "id": "blackrock",
+      "name": "BlackRock",
+      "type": "company",
+      "summary": "Asset manager founded in 1988; distinct from Blackwater.",
+      "sourceIds": [
+        "fin-blackrock-history"
+      ]
+    },
+    {
+      "id": "larry-fink",
+      "name": "Larry Fink",
+      "type": "person",
+      "summary": "BlackRock co-founder and participant in the 2022 Ukrainian reconstruction discussion.",
+      "sourceIds": [
+        "fin-blackrock-history",
+        "ukraine-blackrock"
+      ]
+    },
+    {
+      "id": "blackwater",
+      "name": "Blackwater / Xe Services",
+      "type": "company",
+      "summary": "Historical security business; subsequent transactions separated assets and businesses.",
+      "sourceIds": [
+        "security-lineage"
+      ]
+    },
+    {
+      "id": "erik-prince",
+      "name": "Erik Prince",
+      "type": "person",
+      "summary": "Blackwater founder; Constellis states he has no ownership stake in Constellis.",
+      "sourceIds": [
+        "security-lineage"
+      ]
+    },
+    {
+      "id": "ustc-holdings",
+      "name": "USTC Holdings",
+      "type": "company",
+      "summary": "Buyer of Xe training and support businesses in 2010.",
+      "sourceIds": [
+        "security-lineage"
+      ]
+    },
+    {
+      "id": "academi",
+      "name": "Academi",
+      "type": "company",
+      "summary": "Name adopted for acquired training/security operations in 2011.",
+      "sourceIds": [
+        "security-lineage"
+      ]
+    },
+    {
+      "id": "triple-canopy",
+      "name": "Triple Canopy",
+      "type": "company",
+      "summary": "Separate security contractor brought into the 2014 consolidation.",
+      "sourceIds": [
+        "security-lineage"
+      ]
+    },
+    {
+      "id": "constellis",
+      "name": "Constellis",
+      "type": "company",
+      "summary": "Security-services platform incorporating multiple predecessor businesses.",
+      "sourceIds": [
+        "security-lineage"
+      ]
+    },
+    {
+      "id": "us-state-department",
+      "name": "U.S. Department of State",
+      "type": "government",
+      "summary": "Blackwater’s diplomatic-security customer in the cited DOJ account.",
+      "sourceIds": [
+        "security-state-contract"
+      ]
+    },
+    {
+      "id": "us-doj",
+      "name": "U.S. Department of Justice",
+      "type": "government",
+      "summary": "Prosecuting authority in the cited Blackwater and GRU cases.",
+      "sourceIds": [
+        "security-nisur",
+        "russia-gru"
+      ]
+    },
+    {
+      "id": "donald-trump",
+      "name": "Donald Trump",
+      "type": "person",
+      "summary": "U.S. president who issued the cited December 2020 pardons.",
+      "sourceIds": [
+        "security-pardons"
+      ]
+    },
+    {
+      "id": "nicholas-slatten",
+      "name": "Nicholas Slatten",
+      "type": "person",
+      "summary": "Former Blackwater contractor; included in the December 2020 pardon statement.",
+      "sourceIds": [
+        "security-pardons"
+      ]
+    },
+    {
+      "id": "paul-slough",
+      "name": "Paul Slough",
+      "type": "person",
+      "summary": "Former Blackwater guard resentenced in 2019 and pardoned in 2020.",
+      "sourceIds": [
+        "security-nisur",
+        "security-pardons"
+      ]
+    },
+    {
+      "id": "evan-liberty",
+      "name": "Evan Liberty",
+      "type": "person",
+      "summary": "Former Blackwater guard resentenced in 2019 and pardoned in 2020.",
+      "sourceIds": [
+        "security-nisur",
+        "security-pardons"
+      ]
+    },
+    {
+      "id": "dustin-heard",
+      "name": "Dustin Heard",
+      "type": "person",
+      "summary": "Former Blackwater guard resentenced in 2019 and pardoned in 2020.",
+      "sourceIds": [
+        "security-nisur",
+        "security-pardons"
+      ]
+    },
+    {
+      "id": "dartmouth-college",
+      "name": "Dartmouth College",
+      "type": "university",
+      "summary": "Proposed host for the 1956 AI summer research project.",
+      "sourceIds": [
+        "ai-dartmouth"
+      ]
+    },
+    {
+      "id": "john-mccarthy",
+      "name": "John McCarthy",
+      "type": "person",
+      "summary": "Co-author of the 1955 Dartmouth AI proposal.",
+      "sourceIds": [
+        "ai-dartmouth"
+      ]
+    },
+    {
+      "id": "marvin-minsky",
+      "name": "Marvin Minsky",
+      "type": "person",
+      "summary": "Co-author of the 1955 Dartmouth AI proposal.",
+      "sourceIds": [
+        "ai-dartmouth"
+      ]
+    },
+    {
+      "id": "claude-shannon",
+      "name": "Claude Shannon",
+      "type": "person",
+      "summary": "Co-author of the 1955 Dartmouth AI proposal.",
+      "sourceIds": [
+        "ai-dartmouth"
+      ]
+    },
+    {
+      "id": "nathaniel-rochester",
+      "name": "Nathaniel Rochester",
+      "type": "person",
+      "summary": "IBM researcher and co-author of the 1955 AI proposal.",
+      "sourceIds": [
+        "ai-dartmouth"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "type": "company",
+      "summary": "GPU and accelerated-computing company founded in 1993.",
+      "sourceIds": [
+        "ai-nvidia"
+      ]
+    },
+    {
+      "id": "jensen-huang",
+      "name": "Jensen Huang",
+      "type": "person",
+      "summary": "NVIDIA co-founder.",
+      "sourceIds": [
+        "ai-nvidia"
+      ]
+    },
+    {
+      "id": "in-q-tel",
+      "name": "In-Q-Tel",
+      "type": "organization",
+      "summary": "Independent nonprofit strategic investor established by CIA in 1999.",
+      "sourceIds": [
+        "ai-iqt"
+      ]
+    },
+    {
+      "id": "palantir",
+      "name": "Palantir Technologies",
+      "type": "company",
+      "summary": "Software company incorporated in Delaware on 6 May 2003.",
+      "sourceIds": [
+        "ai-palantir-s1"
+      ]
+    },
+    {
+      "id": "peter-thiel",
+      "name": "Peter Thiel",
+      "type": "person",
+      "summary": "Palantir founder and launch-era OpenAI funding supporter.",
+      "sourceIds": [
+        "ai-palantir-s1",
+        "ai-openai-launch"
+      ]
+    },
+    {
+      "id": "alex-karp",
+      "name": "Alex Karp",
+      "type": "person",
+      "summary": "Palantir co-founder identified in its 2020 securities filing.",
+      "sourceIds": [
+        "ai-palantir-s1"
+      ]
+    },
+    {
+      "id": "deepmind",
+      "name": "DeepMind / Google DeepMind",
+      "type": "company",
+      "summary": "AI research organization launched in 2010 and reorganized with Google Brain in 2023.",
+      "sourceIds": [
+        "ai-deepmind"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "type": "company",
+      "summary": "Technology company whose research and cloud units appear in the cited partnerships.",
+      "sourceIds": [
+        "ai-deepmind",
+        "israel-nimbus-google"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "type": "organization",
+      "summary": "AI laboratory launched in 2015; record distinguishes historical launch roles from later governance.",
+      "sourceIds": [
+        "ai-openai-launch"
+      ]
+    },
+    {
+      "id": "sam-altman",
+      "name": "Sam Altman",
+      "type": "person",
+      "summary": "OpenAI launch co-chair.",
+      "sourceIds": [
+        "ai-openai-launch"
+      ]
+    },
+    {
+      "id": "elon-musk",
+      "name": "Elon Musk",
+      "type": "person",
+      "summary": "OpenAI launch co-chair.",
+      "sourceIds": [
+        "ai-openai-launch"
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "type": "company",
+      "summary": "Technology company involved in OpenAI and AI infrastructure partnerships.",
+      "sourceIds": [
+        "ai-microsoft-openai",
+        "ai-infrastructure"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "type": "company",
+      "summary": "AI company that develops Claude models.",
+      "sourceIds": [
+        "ai-amazon-anthropic",
+        "ai-defense-partnership"
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon / Amazon Web Services",
+      "type": "company",
+      "summary": "Investor and cloud provider in the cited AI partnerships and Nimbus procurement.",
+      "sourceIds": [
+        "ai-amazon-anthropic",
+        "israel-nimbus-gov"
+      ]
+    },
+    {
+      "id": "gip",
+      "name": "Global Infrastructure Partners",
+      "type": "company",
+      "summary": "Infrastructure investor named in the 2024 AI investment partnership.",
+      "sourceIds": [
+        "ai-infrastructure"
+      ]
+    },
+    {
+      "id": "mgx",
+      "name": "MGX",
+      "type": "company",
+      "summary": "Abu Dhabi technology investor named in the 2024 AI infrastructure partnership.",
+      "sourceIds": [
+        "ai-infrastructure"
+      ]
+    },
+    {
+      "id": "ukraine-presidency",
+      "name": "Office of the President of Ukraine",
+      "type": "government",
+      "summary": "Participant in the 2022 reconstruction-fund discussion.",
+      "sourceIds": [
+        "ukraine-blackrock"
+      ]
+    },
+    {
+      "id": "volodymyr-zelenskyy",
+      "name": "Volodymyr Zelenskyy",
+      "type": "person",
+      "summary": "Ukrainian president participating in the cited reconstruction discussion.",
+      "sourceIds": [
+        "ukraine-blackrock"
+      ]
+    },
+    {
+      "id": "ukraine-digital-ministry",
+      "name": "Ukraine Ministry of Digital Transformation",
+      "type": "government",
+      "summary": "Signed the May 2023 Palantir memorandum.",
+      "sourceIds": [
+        "ukraine-palantir"
+      ]
+    },
+    {
+      "id": "israel-finance-ministry",
+      "name": "Israeli Ministry of Finance",
+      "type": "government",
+      "summary": "Government procurement authority leading Project Nimbus.",
+      "sourceIds": [
+        "israel-nimbus-gov"
+      ]
+    },
+    {
+      "id": "russian-federation-government",
+      "name": "Government of the Russian Federation",
+      "type": "government",
+      "summary": "State authority addressed in the UN resolution on aggression against Ukraine.",
+      "sourceIds": [
+        "russia-unga"
+      ]
+    },
+    {
+      "id": "icc",
+      "name": "International Criminal Court",
+      "type": "institution",
+      "summary": "Court that issued the cited individual arrest warrants.",
+      "sourceIds": [
+        "russia-icc"
+      ]
+    },
+    {
+      "id": "vladimir-putin",
+      "name": "Vladimir Putin",
+      "type": "person",
+      "summary": "Russian president named in a March 2023 ICC arrest warrant.",
+      "sourceIds": [
+        "russia-icc"
+      ]
+    },
+    {
+      "id": "maria-lvova-belova",
+      "name": "Maria Lvova-Belova",
+      "type": "person",
+      "summary": "Russian children’s-rights commissioner named in a March 2023 ICC arrest warrant.",
+      "sourceIds": [
+        "russia-icc"
+      ]
+    },
+    {
+      "id": "wagner-group",
+      "name": "Wagner Group",
+      "type": "organization",
+      "summary": "Russian private military group designated by U.S. Treasury in January 2023.",
+      "sourceIds": [
+        "russia-wagner"
+      ]
+    },
+    {
+      "id": "yevgeny-prigozhin",
+      "name": "Yevgeny Prigozhin",
+      "type": "person",
+      "summary": "Identified by Treasury as Wagner’s leader in January 2023.",
+      "sourceIds": [
+        "russia-wagner"
+      ]
+    },
+    {
+      "id": "us-treasury",
+      "name": "U.S. Department of the Treasury",
+      "type": "government",
+      "summary": "Authority issuing the cited Wagner sanctions designation.",
+      "sourceIds": [
+        "russia-wagner"
+      ]
+    },
+    {
+      "id": "gru",
+      "name": "Russian military intelligence (GRU)",
+      "type": "government",
+      "summary": "Agency whose officers were charged in the July 2018 U.S. indictment.",
+      "sourceIds": [
+        "russia-gru"
+      ]
+    },
+    {
+      "id": "tpusa",
+      "name": "Turning Point USA",
+      "type": "organization",
+      "summary": "Conservative nonprofit founded in June 2012.",
+      "sourceIds": [
+        "politics-tpusa-founding"
+      ]
+    },
+    {
+      "id": "turning-point-action",
+      "name": "Turning Point Action",
+      "type": "organization",
+      "summary": "Separate 501(c)(4) organization founded by Charlie Kirk in 2019.",
+      "sourceIds": [
+        "politics-tpusa-team"
+      ]
+    },
+    {
+      "id": "charlie-kirk",
+      "name": "Charlie Kirk",
+      "type": "person",
+      "summary": "Founder of Turning Point USA and Turning Point Action.",
+      "sourceIds": [
+        "politics-tpusa-founding",
+        "politics-tpusa-team"
+      ]
+    },
+    {
+      "id": "erika-kirk",
+      "name": "Erika Kirk",
+      "type": "person",
+      "summary": "TPUSA CEO and board chair; leads BIBLEin365 and created PROCLAIM.",
+      "sourceIds": [
+        "politics-tpusa-team",
+        "politics-erika-appointed"
+      ]
+    },
+    {
+      "id": "candace-owens",
+      "name": "Candace Owens",
+      "type": "person",
+      "summary": "Commentator, former TPUSA communications director and BLEXIT co-founder.",
+      "sourceIds": [
+        "politics-owens-tpusa-house",
+        "politics-blexit"
+      ]
+    },
+    {
+      "id": "brandon-tatum",
+      "name": "Brandon Tatum",
+      "type": "person",
+      "summary": "BLEXIT co-founder named in TPUSA’s 2023 announcement.",
+      "sourceIds": [
+        "politics-blexit"
+      ]
+    },
+    {
+      "id": "blexit",
+      "name": "BLEXIT Foundation",
+      "type": "organization",
+      "summary": "Conservative advocacy organization co-founded by Candace Owens and Brandon Tatum.",
+      "sourceIds": [
+        "politics-blexit"
+      ]
+    },
+    {
+      "id": "proclaim",
+      "name": "PROCLAIM",
+      "type": "company",
+      "summary": "Erika Kirk’s Christian clothing and lifestyle brand.",
+      "sourceIds": [
+        "politics-tpusa-team",
+        "politics-bible"
+      ]
+    },
+    {
+      "id": "biblein365",
+      "name": "BIBLEin365",
+      "type": "organization",
+      "summary": "Bible-reading ministry led by Erika Kirk.",
+      "sourceIds": [
+        "politics-bible"
+      ]
+    },
+    {
+      "id": "james-kaddis",
+      "name": "James Kaddis",
+      "type": "person",
+      "summary": "BIBLEin365 pastoral advisor and Calvary Chapel Signal Hill pastor.",
+      "sourceIds": [
+        "politics-bible"
+      ]
+    },
+    {
+      "id": "calvary-signal-hill",
+      "name": "Calvary Chapel Signal Hill",
+      "type": "organization",
+      "summary": "Church identified in the BIBLEin365 program biography.",
+      "sourceIds": [
+        "politics-bible"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "h-eic-1600",
+      "date": "1600",
+      "topic": "Historical institutions",
+      "title": "East India Company receives a royal charter",
+      "summary": "Elizabeth I granted London merchants exclusive English trading rights east of the Cape of Good Hope.",
+      "entityIds": [
+        "east-india-company",
+        "british-crown"
+      ],
+      "sourceIds": [
+        "hist-eic-charter"
+      ],
+      "evidence": "documented",
+      "limitations": "Historical context does not establish institutional continuity with modern companies.",
+      "datePrecision": "year"
+    },
+    {
+      "id": "h-boe-1694",
+      "date": "1694",
+      "topic": "Historical institutions",
+      "title": "Bank of England founded",
+      "summary": "Private subscribers financed a £1.2 million government loan, establishing the Bank of England.",
+      "entityIds": [
+        "bank-of-england",
+        "uk-government"
+      ],
+      "sourceIds": [
+        "hist-boe"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "year"
+    },
+    {
+      "id": "h-eic-1773",
+      "date": "1773",
+      "topic": "Historical institutions",
+      "title": "Parliament regulates East India Company governance",
+      "summary": "Parliamentary inquiries and financial difficulties produced legislation supervising the Company’s Indian administration.",
+      "entityIds": [
+        "east-india-company",
+        "uk-parliament"
+      ],
+      "sourceIds": [
+        "hist-eic-regulation"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "year"
+    },
+    {
+      "id": "h-india-1858",
+      "date": "1858-08-02",
+      "topic": "Historical institutions",
+      "title": "Government of India Act transfers rule to the Crown",
+      "summary": "The Act transferred governance of Company-held Indian territories to the Crown.",
+      "entityIds": [
+        "east-india-company",
+        "uk-parliament",
+        "british-crown"
+      ],
+      "sourceIds": [
+        "hist-india-act"
+      ],
+      "evidence": "documented",
+      "limitations": "This dates a statutory transfer; it is not the Company’s dissolution date.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "h-fed-1913",
+      "date": "1913-12-23",
+      "topic": "Historical institutions",
+      "title": "Federal Reserve Act signed",
+      "summary": "President Woodrow Wilson signed the legislation establishing the Federal Reserve System.",
+      "entityIds": [
+        "federal-reserve",
+        "us-congress"
+      ],
+      "sourceIds": [
+        "hist-fed"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "h-bretton-1944",
+      "date": "1944-07",
+      "topic": "Historical institutions",
+      "title": "Bretton Woods delegates design monetary institutions",
+      "summary": "Delegates from 44 countries agreed to establish the IMF and the institution that became the World Bank.",
+      "entityIds": [
+        "imf",
+        "world-bank"
+      ],
+      "sourceIds": [
+        "hist-bretton"
+      ],
+      "evidence": "documented",
+      "limitations": "Conference agreements and later legal commencement are different milestones.",
+      "datePrecision": "month"
+    },
+    {
+      "id": "h-boe-1946",
+      "date": "1946",
+      "topic": "Historical institutions",
+      "title": "Bank of England enters public ownership",
+      "summary": "The Bank was nationalized and became wholly owned by the UK government.",
+      "entityIds": [
+        "bank-of-england",
+        "uk-government"
+      ],
+      "sourceIds": [
+        "hist-boe"
+      ],
+      "evidence": "documented",
+      "limitations": "Founding private stockholders are not evidence of present private ownership.",
+      "datePrecision": "year"
+    },
+    {
+      "id": "i-cia-1947",
+      "date": "1947-09-18",
+      "topic": "Intelligence & conflict",
+      "title": "CIA formally established",
+      "summary": "The National Security Act created an independent civilian foreign intelligence agency.",
+      "entityIds": [
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-cia-history"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "h-palestine-1947",
+      "date": "1947-11-29",
+      "topic": "Historical institutions",
+      "title": "UN recommends partition of Mandatory Palestine",
+      "summary": "General Assembly Resolution 181 recommended Arab and Jewish states with a special international regime for Jerusalem.",
+      "entityIds": [
+        "un-general-assembly",
+        "mandatory-palestine"
+      ],
+      "sourceIds": [
+        "hist-palestine"
+      ],
+      "evidence": "documented",
+      "limitations": "A recommendation is not proof of implementation or a complete account of the ensuing conflict.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-iran-1953",
+      "date": "1953-07-11",
+      "topic": "Intelligence & conflict",
+      "title": "U.S. leadership approves Iran covert-operation plan",
+      "summary": "A declassified record identifies approval by the president, Secretary of State and CIA director for the campaign against Mosaddeq’s government.",
+      "entityIds": [
+        "cia",
+        "iran-mosaddeq-government"
+      ],
+      "sourceIds": [
+        "intel-iran"
+      ],
+      "evidence": "documented",
+      "limitations": "Approval date; not the later coup date. Surviving released records are incomplete.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-guatemala-1954",
+      "date": "1954-06",
+      "topic": "Intelligence & conflict",
+      "title": "CIA assists overthrow of Árbenz government",
+      "summary": "The State Department’s historical account acknowledges CIA assistance in removing Guatemala’s elected president.",
+      "entityIds": [
+        "cia",
+        "guatemala-arbenz-government"
+      ],
+      "sourceIds": [
+        "intel-guatemala"
+      ],
+      "evidence": "documented",
+      "limitations": "Documents one operation, not a theory about all later Guatemalan events.",
+      "datePrecision": "month"
+    },
+    {
+      "id": "a-dartmouth-1955",
+      "date": "1955-08-31",
+      "topic": "AI & technology",
+      "title": "Dartmouth AI summer project proposed",
+      "summary": "McCarthy, Minsky, Rochester and Shannon proposed a 1956 research project on machine intelligence.",
+      "entityIds": [
+        "dartmouth-college",
+        "john-mccarthy",
+        "marvin-minsky",
+        "nathaniel-rochester",
+        "claude-shannon"
+      ],
+      "sourceIds": [
+        "ai-dartmouth"
+      ],
+      "evidence": "documented",
+      "limitations": "The proposal’s appended mailing list is explicitly not a complete attendance list.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-church-1975",
+      "date": "1975",
+      "topic": "Intelligence & conflict",
+      "title": "Church Committee investigates intelligence abuses",
+      "summary": "The Senate investigated intelligence-agency misconduct and held public hearings in September and October.",
+      "entityIds": [
+        "us-senate",
+        "cia",
+        "fbi",
+        "nsa"
+      ],
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "limitations": "Individual programs and agency conduct require their own records; this is not a generic “black ops” label.",
+      "datePrecision": "year"
+    },
+    {
+      "id": "i-mkultra-1977",
+      "date": "1977-08-03",
+      "topic": "Intelligence & conflict",
+      "title": "Senate holds MKULTRA hearing",
+      "summary": "CIA Director Stansfield Turner testified after additional records of the agency’s behavioral-research program were recovered.",
+      "entityIds": [
+        "us-senate",
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "limitations": "Records were incomplete; the hearing does not prove claims about contemporary individuals.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "f-blackrock-1988",
+      "date": "1988",
+      "topic": "Finance & companies",
+      "title": "BlackRock founded",
+      "summary": "Eight founders, including Larry Fink, established the New York asset manager.",
+      "entityIds": [
+        "blackrock",
+        "larry-fink"
+      ],
+      "sourceIds": [
+        "fin-blackrock-history"
+      ],
+      "evidence": "documented",
+      "limitations": "BlackRock and Blackwater are unrelated entities in this dataset; similar names do not establish a relationship.",
+      "datePrecision": "year"
+    },
+    {
+      "id": "a-nvidia-1993",
+      "date": "1993-04-05",
+      "topic": "AI & technology",
+      "title": "NVIDIA founded",
+      "summary": "Jensen Huang, Chris Malachowsky and Curtis Priem founded NVIDIA.",
+      "entityIds": [
+        "nvidia",
+        "jensen-huang"
+      ],
+      "sourceIds": [
+        "ai-nvidia"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-iqt-1999",
+      "date": "1999",
+      "topic": "Intelligence & conflict",
+      "title": "CIA establishes In-Q-Tel",
+      "summary": "CIA established IQT as an independent nonprofit investor to connect private-sector technology with government needs.",
+      "entityIds": [
+        "cia",
+        "in-q-tel"
+      ],
+      "sourceIds": [
+        "ai-iqt"
+      ],
+      "evidence": "documented",
+      "limitations": "IQT explicitly says it is not a government entity or a division of CIA.",
+      "datePrecision": "year"
+    },
+    {
+      "id": "a-palantir-2003",
+      "date": "2003-05-06",
+      "topic": "AI & technology",
+      "title": "Palantir incorporated",
+      "summary": "Palantir’s SEC filing records incorporation in Delaware on this date.",
+      "entityIds": [
+        "palantir"
+      ],
+      "sourceIds": [
+        "ai-palantir-s1"
+      ],
+      "evidence": "documented",
+      "limitations": "Incorporation, operational launch and individual employment start dates need not coincide.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-cuda-2006",
+      "date": "2006",
+      "topic": "AI & technology",
+      "title": "NVIDIA introduces CUDA",
+      "summary": "CUDA expanded access to GPU parallel processing for research and general computation.",
+      "entityIds": [
+        "nvidia"
+      ],
+      "sourceIds": [
+        "ai-nvidia"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "year"
+    },
+    {
+      "id": "i-nisur-2007",
+      "date": "2007-09-16",
+      "topic": "Intelligence & conflict",
+      "title": "Nisur Square shooting",
+      "summary": "DOJ’s case account records Blackwater guards killing 14 unarmed civilians and wounding others in Baghdad.",
+      "entityIds": [
+        "blackwater",
+        "us-state-department",
+        "us-doj",
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard"
+      ],
+      "sourceIds": [
+        "security-nisur",
+        "security-state-contract"
+      ],
+      "evidence": "documented",
+      "limitations": "This is the charged incident described by DOJ; later sentences and pardons are separate events.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-deepmind-2010",
+      "date": "2010",
+      "topic": "AI & technology",
+      "title": "DeepMind launched",
+      "summary": "DeepMind’s account dates the launch of its AI research organization to 2010.",
+      "entityIds": [
+        "deepmind"
+      ],
+      "sourceIds": [
+        "ai-deepmind"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "year"
+    },
+    {
+      "id": "f-xe-sale-2010",
+      "date": "2010-12-16",
+      "topic": "Finance & companies",
+      "title": "USTC acquires Xe training and support businesses",
+      "summary": "The acquisition covered selected operations, excluding Blackwater intellectual property and other businesses.",
+      "entityIds": [
+        "blackwater",
+        "ustc-holdings"
+      ],
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "f-academi-2011",
+      "date": "2011",
+      "topic": "Finance & companies",
+      "title": "Acquired operations adopt Academi name",
+      "summary": "The purchased training and security operations were renamed Academi.",
+      "entityIds": [
+        "academi",
+        "ustc-holdings",
+        "blackwater"
+      ],
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "year"
+    },
+    {
+      "id": "p-tpusa-2012",
+      "date": "2012-06-05",
+      "topic": "Politics & media",
+      "title": "Turning Point USA founded",
+      "summary": "TPUSA’s handbook dates Charlie Kirk’s founding of the organization to 5 June 2012.",
+      "entityIds": [
+        "tpusa",
+        "charlie-kirk"
+      ],
+      "sourceIds": [
+        "politics-tpusa-founding"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "f-constellis-2014",
+      "date": "2014-06-06",
+      "topic": "Finance & companies",
+      "title": "Constellis Holdings formed",
+      "summary": "A consolidation brought Academi, Triple Canopy and other businesses into the Constellis platform.",
+      "entityIds": [
+        "academi",
+        "triple-canopy",
+        "constellis"
+      ],
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-detention-2014",
+      "date": "2014-12-09",
+      "topic": "Intelligence & conflict",
+      "title": "Senate releases CIA detention study summary",
+      "summary": "The Senate Intelligence Committee published its executive summary, findings, additional views and related materials on CIA detention and interrogation.",
+      "entityIds": [
+        "us-senate",
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-detention"
+      ],
+      "evidence": "documented",
+      "limitations": "Findings, minority views and the CIA response must be attributed separately.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-openai-2015",
+      "date": "2015-12-11",
+      "topic": "AI & technology",
+      "title": "OpenAI launches",
+      "summary": "The launch announcement identified Sam Altman and Elon Musk as co-chairs and named Peter Thiel and AWS among funding supporters.",
+      "entityIds": [
+        "openai",
+        "sam-altman",
+        "elon-musk",
+        "peter-thiel",
+        "amazon"
+      ],
+      "sourceIds": [
+        "ai-openai-launch"
+      ],
+      "evidence": "documented",
+      "limitations": "Funding commitments at launch are not a current ownership, board or payment ledger.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "p-owens-tpusa",
+      "date": "2019-04-09",
+      "topic": "Politics & media",
+      "title": "Congressional record identifies Candace Owens’s TPUSA role",
+      "summary": "The House Judiciary Committee’s witness list identifies Owens as Turning Point USA director of communications.",
+      "entityIds": [
+        "candace-owens",
+        "tpusa",
+        "us-congress"
+      ],
+      "sourceIds": [
+        "politics-owens-tpusa-house"
+      ],
+      "evidence": "documented",
+      "limitations": "This establishes the role on the hearing date, not her complete employment history.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-gru-indictment",
+      "date": "2018-07-13",
+      "topic": "Intelligence & conflict",
+      "title": "U.S. indicts twelve Russian military-intelligence officers",
+      "summary": "DOJ announced charges alleging hacking and staged releases intended to interfere with the 2016 U.S. election.",
+      "entityIds": [
+        "us-doj",
+        "gru"
+      ],
+      "sourceIds": [
+        "russia-gru"
+      ],
+      "evidence": "documented",
+      "limitations": "Charges are allegations. This indictment did not allege a knowing American participant.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "p-tpa-2019",
+      "date": "2019",
+      "topic": "Politics & media",
+      "title": "Charlie Kirk establishes Turning Point Action",
+      "summary": "TPUSA’s biography identifies Turning Point Action as a separate 501(c)(4) founded by Kirk in 2019.",
+      "entityIds": [
+        "charlie-kirk",
+        "turning-point-action"
+      ],
+      "sourceIds": [
+        "politics-tpusa-team"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "year"
+    },
+    {
+      "id": "i-nisur-sentences",
+      "date": "2019-09-05",
+      "topic": "Intelligence & conflict",
+      "title": "Three former Blackwater guards resentenced",
+      "summary": "Paul Slough, Evan Liberty and Dustin Heard received new prison terms for their roles in the Nisur Square shooting.",
+      "entityIds": [
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "security-nisur"
+      ],
+      "evidence": "documented",
+      "limitations": "All three subsequently received presidential pardons in December 2020.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "p-owens-house-2019",
+      "date": "2019-09-20",
+      "topic": "Politics & media",
+      "title": "Candace Owens appears as congressional witness",
+      "summary": "The House hearing record identifies Owens as BLEXIT founder and a show host.",
+      "entityIds": [
+        "candace-owens",
+        "blexit",
+        "us-congress"
+      ],
+      "sourceIds": [
+        "politics-owens-house"
+      ],
+      "evidence": "documented",
+      "limitations": "Witness status does not imply endorsement of testimony by Congress.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-palantir-governance",
+      "date": "2020-08-25",
+      "topic": "AI & technology",
+      "title": "Palantir filing discloses founder voting structure",
+      "summary": "The S-1 described a proposed founder voting arrangement for Alex Karp, Stephen Cohen and Peter Thiel.",
+      "entityIds": [
+        "palantir",
+        "alex-karp",
+        "peter-thiel"
+      ],
+      "sourceIds": [
+        "ai-palantir-s1"
+      ],
+      "evidence": "documented",
+      "limitations": "This is a dated disclosure, not a claim that current ownership is unchanged.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-blackwater-pardons",
+      "date": "2020-12-22",
+      "topic": "Intelligence & conflict",
+      "title": "Trump pardons four former Blackwater contractors",
+      "summary": "The White House announced full pardons for Nicholas Slatten, Paul Slough, Evan Liberty and Dustin Heard.",
+      "entityIds": [
+        "donald-trump",
+        "nicholas-slatten",
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard"
+      ],
+      "sourceIds": [
+        "security-pardons"
+      ],
+      "evidence": "documented",
+      "limitations": "Clemency is distinct from an acquittal or an independent finding that the shooting was lawful.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-nimbus-2021",
+      "date": "2021-05-25",
+      "topic": "AI & technology",
+      "title": "Google announces Nimbus cloud selection",
+      "summary": "Google announced selection to provide cloud services under the Israeli government’s Nimbus procurement.",
+      "entityIds": [
+        "google",
+        "israel-finance-ministry"
+      ],
+      "sourceIds": [
+        "israel-nimbus-google"
+      ],
+      "evidence": "documented",
+      "limitations": "Cloud procurement alone does not identify individual operational uses.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-unga-ukraine",
+      "date": "2022-03-02",
+      "topic": "Intelligence & conflict",
+      "title": "UN General Assembly demands Russian withdrawal",
+      "summary": "A resolution affirming Ukrainian sovereignty and demanding an end to the offensive passed with 141 votes in favor.",
+      "entityIds": [
+        "un-general-assembly",
+        "russian-federation-government"
+      ],
+      "sourceIds": [
+        "russia-unga"
+      ],
+      "evidence": "documented",
+      "limitations": "A General Assembly resolution is distinct from a criminal judgment against individuals.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "f-ukraine-blackrock",
+      "date": "2022-09-19",
+      "topic": "Finance & companies",
+      "title": "Zelenskyy and Fink discuss reconstruction advice",
+      "summary": "The Ukrainian presidency described discussions about BlackRock providing pro bono advice on structuring a reconstruction fund.",
+      "entityIds": [
+        "blackrock",
+        "larry-fink",
+        "ukraine-presidency",
+        "volodymyr-zelenskyy"
+      ],
+      "sourceIds": [
+        "ukraine-blackrock"
+      ],
+      "evidence": "documented",
+      "limitations": "Advisory discussions do not establish ownership of Ukraine, its land or its government.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-nimbus-2022",
+      "date": "2022-10-20",
+      "topic": "AI & technology",
+      "title": "Israeli Finance Ministry announces local Google cloud zone",
+      "summary": "The ministry said Google’s local cloud zone was operating and identified AWS as another Nimbus tender winner.",
+      "entityIds": [
+        "israel-finance-ministry",
+        "google",
+        "amazon"
+      ],
+      "sourceIds": [
+        "israel-nimbus-gov"
+      ],
+      "evidence": "documented",
+      "limitations": "The release includes government and security-sector coverage, but not a list of specific missions.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-microsoft-openai-2023",
+      "date": "2023-01-23",
+      "topic": "AI & technology",
+      "title": "Microsoft expands OpenAI partnership",
+      "summary": "Microsoft announced a multiyear, multibillion-dollar investment following earlier investments in 2019 and 2021.",
+      "entityIds": [
+        "microsoft",
+        "openai"
+      ],
+      "sourceIds": [
+        "ai-microsoft-openai"
+      ],
+      "evidence": "documented",
+      "limitations": "Historical announcement; the amount and later terms should not be inferred from this record.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-wagner-2023",
+      "date": "2023-01-26",
+      "topic": "Intelligence & conflict",
+      "title": "U.S. Treasury designates Wagner a transnational criminal organization",
+      "summary": "Treasury announced sanctions against Wagner and parts of its support network.",
+      "entityIds": [
+        "us-treasury",
+        "wagner-group",
+        "yevgeny-prigozhin"
+      ],
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "evidence": "documented",
+      "limitations": "A U.S. sanctions finding is not a criminal conviction; attribution is to Treasury.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "p-blexit-2023",
+      "date": "2023-03-13",
+      "topic": "Politics & media",
+      "title": "TPUSA announces BLEXIT partnership",
+      "summary": "TPUSA said its resources, leadership and board would support BLEXIT; co-founders Owens and Tatum would remain involved.",
+      "entityIds": [
+        "tpusa",
+        "blexit",
+        "candace-owens",
+        "brandon-tatum",
+        "charlie-kirk"
+      ],
+      "sourceIds": [
+        "politics-blexit"
+      ],
+      "evidence": "documented",
+      "limitations": "The announcement establishes an organizational partnership, not agreement on every later statement.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "i-icc-2023",
+      "date": "2023-03-17",
+      "topic": "Intelligence & conflict",
+      "title": "ICC issues warrants for Putin and Lvova-Belova",
+      "summary": "The Court issued arrest warrants alleging unlawful deportation and transfer of children from occupied Ukrainian areas.",
+      "entityIds": [
+        "icc",
+        "vladimir-putin",
+        "maria-lvova-belova"
+      ],
+      "sourceIds": [
+        "russia-icc"
+      ],
+      "evidence": "documented",
+      "limitations": "Warrants are allegations of individual responsibility, not convictions or collective guilt.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-google-deepmind-2023",
+      "date": "2023-04-20",
+      "topic": "AI & technology",
+      "title": "Google DeepMind announced",
+      "summary": "Google combined DeepMind and the Google Brain team in a new Google DeepMind unit.",
+      "entityIds": [
+        "google",
+        "deepmind"
+      ],
+      "sourceIds": [
+        "ai-deepmind"
+      ],
+      "evidence": "documented",
+      "limitations": "",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-ukraine-palantir-2023",
+      "date": "2023-05-25",
+      "topic": "AI & technology",
+      "title": "Ukraine ministry and Palantir sign memorandum",
+      "summary": "The agreement covered defense and reconstruction cooperation, including damage assessment and reconstruction software.",
+      "entityIds": [
+        "palantir",
+        "ukraine-digital-ministry"
+      ],
+      "sourceIds": [
+        "ukraine-palantir"
+      ],
+      "evidence": "documented",
+      "limitations": "The memorandum does not identify every later deployment or military decision.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-anthropic-amazon-2023",
+      "date": "2023-09-25",
+      "topic": "AI & technology",
+      "title": "Amazon and Anthropic announce investment partnership",
+      "summary": "Amazon committed to invest up to $4 billion; the companies announced cloud and chip collaboration.",
+      "entityIds": [
+        "amazon",
+        "anthropic"
+      ],
+      "sourceIds": [
+        "ai-amazon-anthropic"
+      ],
+      "evidence": "documented",
+      "limitations": "The announced ceiling is not an assertion that the full amount was paid on this date.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-ai-infrastructure-2024",
+      "date": "2024-09-17",
+      "topic": "AI & technology",
+      "title": "BlackRock, GIP, Microsoft and MGX launch AI infrastructure partnership",
+      "summary": "The partners proposed data-center and power investment, seeking $30 billion in equity and up to $100 billion including debt; NVIDIA would supply expertise.",
+      "entityIds": [
+        "blackrock",
+        "gip",
+        "microsoft",
+        "mgx",
+        "nvidia"
+      ],
+      "sourceIds": [
+        "ai-infrastructure"
+      ],
+      "evidence": "documented",
+      "limitations": "Fundraising objectives are not completed investment totals.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-defense-2024",
+      "date": "2024-11-07",
+      "topic": "AI & technology",
+      "title": "Anthropic, Palantir and AWS announce government AI partnership",
+      "summary": "The companies announced access to Claude through Palantir on AWS for U.S. defense and intelligence work.",
+      "entityIds": [
+        "anthropic",
+        "palantir",
+        "amazon"
+      ],
+      "sourceIds": [
+        "ai-defense-partnership"
+      ],
+      "evidence": "documented",
+      "limitations": "Does not establish specific agency use, targeting decisions or involvement in particular incidents.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "a-amazon-2024",
+      "date": "2024-11-22",
+      "topic": "AI & technology",
+      "title": "Amazon expands Anthropic investment",
+      "summary": "Anthropic announced another $4 billion from Amazon, bringing the announced total to $8 billion, and named AWS its primary training partner.",
+      "entityIds": [
+        "amazon",
+        "anthropic"
+      ],
+      "sourceIds": [
+        "ai-amazon-2024"
+      ],
+      "evidence": "documented",
+      "limitations": "Amazon was described as a minority investor; commercial partnership is not sole ownership.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "p-erika-2025",
+      "date": "2025-09-18",
+      "topic": "Politics & media",
+      "title": "Erika Kirk selected to lead TPUSA",
+      "summary": "AP reported the board unanimously elected Erika Kirk CEO and board chair; TPUSA’s biography confirms those roles.",
+      "entityIds": [
+        "erika-kirk",
+        "tpusa",
+        "charlie-kirk"
+      ],
+      "sourceIds": [
+        "politics-erika-appointed",
+        "politics-tpusa-team"
+      ],
+      "evidence": "documented",
+      "limitations": "Professional succession and marriage do not establish unrelated intelligence or criminal affiliations.",
+      "datePrecision": "day"
+    },
+    {
+      "id": "p-bible-2026",
+      "date": "2026-10-15",
+      "topic": "Politics & media",
+      "title": "BIBLEin365 publishes a live Q&A with Erika Kirk and James Kaddis",
+      "summary": "The publisher’s episode description identifies Kirk as ministry leader and Kaddis as pastoral advisor.",
+      "entityIds": [
+        "erika-kirk",
+        "james-kaddis",
+        "biblein365",
+        "calvary-signal-hill"
+      ],
+      "sourceIds": [
+        "politics-bible-episode"
+      ],
+      "evidence": "documented",
+      "limitations": "A documented media/ministry collaboration; no broader affiliation inferred.",
+      "datePrecision": "day"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rh-crown-eic",
+      "from": "british-crown",
+      "to": "east-india-company",
+      "type": "chartered",
+      "label": "Granted trading charter",
+      "date": "1600",
+      "topic": "Historical institutions",
+      "sourceIds": [
+        "hist-eic-charter"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rh-parliament-eic",
+      "from": "uk-parliament",
+      "to": "east-india-company",
+      "type": "regulated",
+      "label": "Regulated governance",
+      "date": "1773",
+      "topic": "Historical institutions",
+      "sourceIds": [
+        "hist-eic-regulation"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rh-eic-crown",
+      "from": "east-india-company",
+      "to": "british-crown",
+      "type": "transferred-governance",
+      "label": "Indian governance transferred",
+      "date": "1858-08-02",
+      "topic": "Historical institutions",
+      "sourceIds": [
+        "hist-india-act"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rh-uk-boe",
+      "from": "uk-government",
+      "to": "bank-of-england",
+      "type": "public-ownership",
+      "label": "Public ownership",
+      "date": "1946",
+      "topic": "Historical institutions",
+      "sourceIds": [
+        "hist-boe"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rh-congress-fed",
+      "from": "us-congress",
+      "to": "federal-reserve",
+      "type": "established-by-law",
+      "label": "Established by statute",
+      "date": "1913-12-23",
+      "topic": "Historical institutions",
+      "sourceIds": [
+        "hist-fed"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-cia-iran",
+      "from": "cia",
+      "to": "iran-mosaddeq-government",
+      "type": "covert-operation",
+      "label": "Covert overthrow campaign",
+      "date": "1953",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "intel-iran"
+      ],
+      "evidence": "documented",
+      "context": "Documented operation; no inference about later unrelated events."
+    },
+    {
+      "id": "ri-cia-guatemala",
+      "from": "cia",
+      "to": "guatemala-arbenz-government",
+      "type": "covert-operation",
+      "label": "Assisted overthrow",
+      "date": "1954-06",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "intel-guatemala"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-senate-cia",
+      "from": "us-senate",
+      "to": "cia",
+      "type": "investigated",
+      "label": "Intelligence oversight investigations",
+      "date": "1975",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-senate-fbi",
+      "from": "us-senate",
+      "to": "fbi",
+      "type": "investigated",
+      "label": "Intelligence oversight investigations",
+      "date": "1975",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-senate-nsa",
+      "from": "us-senate",
+      "to": "nsa",
+      "type": "investigated",
+      "label": "Intelligence oversight investigations",
+      "date": "1975",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rf-fink-blackrock",
+      "from": "larry-fink",
+      "to": "blackrock",
+      "type": "co-founder",
+      "label": "Co-founded",
+      "date": "1988",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "fin-blackrock-history"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rf-prince-blackwater",
+      "from": "erik-prince",
+      "to": "blackwater",
+      "type": "founder",
+      "label": "Founded historical business",
+      "date": "1996",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rf-ustc-xe",
+      "from": "ustc-holdings",
+      "to": "blackwater",
+      "type": "partial-business-acquisition",
+      "label": "Acquired selected operations",
+      "date": "2010-12-16",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rf-academi-constellis",
+      "from": "academi",
+      "to": "constellis",
+      "type": "corporate-consolidation",
+      "label": "Joined consolidation",
+      "date": "2014-06-06",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rf-triple-constellis",
+      "from": "triple-canopy",
+      "to": "constellis",
+      "type": "corporate-consolidation",
+      "label": "Joined consolidation",
+      "date": "2014-06-06",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "security-lineage"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-blackwater-state",
+      "from": "blackwater",
+      "to": "us-state-department",
+      "type": "security-contractor",
+      "label": "Provided diplomatic security",
+      "date": "2007-09-16",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "security-state-contract"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-pardon-nicholas-slatten",
+      "from": "donald-trump",
+      "to": "nicholas-slatten",
+      "type": "presidential-pardon",
+      "label": "Granted full pardon",
+      "date": "2020-12-22",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "security-pardons"
+      ],
+      "evidence": "documented",
+      "context": "Pardon does not itself erase the historical proceedings."
+    },
+    {
+      "id": "ri-pardon-paul-slough",
+      "from": "donald-trump",
+      "to": "paul-slough",
+      "type": "presidential-pardon",
+      "label": "Granted full pardon",
+      "date": "2020-12-22",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "security-pardons"
+      ],
+      "evidence": "documented",
+      "context": "Pardon does not itself erase the historical proceedings."
+    },
+    {
+      "id": "ri-pardon-evan-liberty",
+      "from": "donald-trump",
+      "to": "evan-liberty",
+      "type": "presidential-pardon",
+      "label": "Granted full pardon",
+      "date": "2020-12-22",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "security-pardons"
+      ],
+      "evidence": "documented",
+      "context": "Pardon does not itself erase the historical proceedings."
+    },
+    {
+      "id": "ri-pardon-dustin-heard",
+      "from": "donald-trump",
+      "to": "dustin-heard",
+      "type": "presidential-pardon",
+      "label": "Granted full pardon",
+      "date": "2020-12-22",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "security-pardons"
+      ],
+      "evidence": "documented",
+      "context": "Pardon does not itself erase the historical proceedings."
+    },
+    {
+      "id": "ra-mccarthy-dartmouth",
+      "from": "john-mccarthy",
+      "to": "dartmouth-college",
+      "type": "research-affiliation",
+      "label": "Proposal co-author at Dartmouth",
+      "date": "1955-08-31",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-dartmouth"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-huang-nvidia",
+      "from": "jensen-huang",
+      "to": "nvidia",
+      "type": "co-founder",
+      "label": "Co-founded",
+      "date": "1993-04-05",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-nvidia"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-cia-iqt",
+      "from": "cia",
+      "to": "in-q-tel",
+      "type": "established",
+      "label": "Established independent nonprofit",
+      "date": "1999",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "ai-iqt"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-thiel-palantir",
+      "from": "peter-thiel",
+      "to": "palantir",
+      "type": "co-founder",
+      "label": "Founder in SEC filing",
+      "date": "2020-08-25",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-palantir-s1"
+      ],
+      "evidence": "documented",
+      "context": "Date is the disclosure, not start of affiliation."
+    },
+    {
+      "id": "ra-karp-palantir",
+      "from": "alex-karp",
+      "to": "palantir",
+      "type": "co-founder",
+      "label": "Founder in SEC filing",
+      "date": "2020-08-25",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-palantir-s1"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-thiel-openai",
+      "from": "peter-thiel",
+      "to": "openai",
+      "type": "funding-commitment",
+      "label": "Launch funding supporter",
+      "date": "2015-12-11",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-openai-launch"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-aws-openai",
+      "from": "amazon",
+      "to": "openai",
+      "type": "funding-commitment",
+      "label": "Launch funding supporter",
+      "date": "2015-12-11",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-openai-launch"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-altman-openai",
+      "from": "sam-altman",
+      "to": "openai",
+      "type": "governance",
+      "label": "Launch co-chair",
+      "date": "2015-12-11",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-openai-launch"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-musk-openai",
+      "from": "elon-musk",
+      "to": "openai",
+      "type": "governance",
+      "label": "Launch co-chair",
+      "date": "2015-12-11",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-openai-launch"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-microsoft-openai",
+      "from": "microsoft",
+      "to": "openai",
+      "type": "investment-partnership",
+      "label": "Expanded investment and cloud partnership",
+      "date": "2023-01-23",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-microsoft-openai"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-google-deepmind",
+      "from": "google",
+      "to": "deepmind",
+      "type": "corporate-reorganization",
+      "label": "Combined AI research teams",
+      "date": "2023-04-20",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-deepmind"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-amazon-anthropic",
+      "from": "amazon",
+      "to": "anthropic",
+      "type": "investment-partnership",
+      "label": "Investment and cloud collaboration",
+      "date": "2023-09-25",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-amazon-anthropic"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-aws-training",
+      "from": "amazon",
+      "to": "anthropic",
+      "type": "cloud-partnership",
+      "label": "Primary training partner",
+      "date": "2024-11-22",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-amazon-2024"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-anthropic-palantir",
+      "from": "anthropic",
+      "to": "palantir",
+      "type": "product-integration",
+      "label": "Claude government AI partnership",
+      "date": "2024-11-07",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-defense-partnership"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-palantir-aws",
+      "from": "palantir",
+      "to": "amazon",
+      "type": "cloud-partnership",
+      "label": "Hosted government AI partnership",
+      "date": "2024-11-07",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-defense-partnership"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-blackrock-microsoft",
+      "from": "blackrock",
+      "to": "microsoft",
+      "type": "investment-partnership",
+      "label": "AI infrastructure co-sponsors",
+      "date": "2024-09-17",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-infrastructure"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-blackrock-gip",
+      "from": "blackrock",
+      "to": "gip",
+      "type": "investment-partnership",
+      "label": "AI infrastructure co-sponsors",
+      "date": "2024-09-17",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-infrastructure"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-blackrock-mgx",
+      "from": "blackrock",
+      "to": "mgx",
+      "type": "investment-partnership",
+      "label": "AI infrastructure co-sponsors",
+      "date": "2024-09-17",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-infrastructure"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-nvidia-blackrock",
+      "from": "nvidia",
+      "to": "blackrock",
+      "type": "technical-collaboration",
+      "label": "Infrastructure expertise",
+      "date": "2024-09-17",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ai-infrastructure"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rf-blackrock-ukraine",
+      "from": "blackrock",
+      "to": "ukraine-presidency",
+      "type": "advisory-discussion",
+      "label": "Discussed reconstruction-fund advice",
+      "date": "2022-09-19",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "ukraine-blackrock"
+      ],
+      "evidence": "documented",
+      "context": "Discussion of pro bono advice; not ownership."
+    },
+    {
+      "id": "rf-fink-zelenskyy",
+      "from": "larry-fink",
+      "to": "volodymyr-zelenskyy",
+      "type": "meeting",
+      "label": "Reconstruction video conference",
+      "date": "2022-09-19",
+      "topic": "Finance & companies",
+      "sourceIds": [
+        "ukraine-blackrock"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-palantir-ukraine",
+      "from": "palantir",
+      "to": "ukraine-digital-ministry",
+      "type": "memorandum",
+      "label": "Defense and reconstruction cooperation",
+      "date": "2023-05-25",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "ukraine-palantir"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-google-israel",
+      "from": "google",
+      "to": "israel-finance-ministry",
+      "type": "government-procurement",
+      "label": "Nimbus cloud provider",
+      "date": "2021-05-25",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "israel-nimbus-google"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ra-aws-israel",
+      "from": "amazon",
+      "to": "israel-finance-ministry",
+      "type": "government-procurement",
+      "label": "Nimbus cloud provider",
+      "date": "2022-10-20",
+      "topic": "AI & technology",
+      "sourceIds": [
+        "israel-nimbus-gov"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-unga-russia",
+      "from": "un-general-assembly",
+      "to": "russian-federation-government",
+      "type": "resolution",
+      "label": "Demanded withdrawal",
+      "date": "2022-03-02",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "russia-unga"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "ri-icc-putin",
+      "from": "icc",
+      "to": "vladimir-putin",
+      "type": "arrest-warrant",
+      "label": "Issued arrest warrant",
+      "date": "2023-03-17",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "russia-icc"
+      ],
+      "evidence": "documented",
+      "context": "Alleged crimes; not a conviction."
+    },
+    {
+      "id": "ri-icc-lvova",
+      "from": "icc",
+      "to": "maria-lvova-belova",
+      "type": "arrest-warrant",
+      "label": "Issued arrest warrant",
+      "date": "2023-03-17",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "russia-icc"
+      ],
+      "evidence": "documented",
+      "context": "Alleged crimes; not a conviction."
+    },
+    {
+      "id": "ri-treasury-wagner",
+      "from": "us-treasury",
+      "to": "wagner-group",
+      "type": "sanctions-designation",
+      "label": "Designated criminal organization",
+      "date": "2023-01-26",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "evidence": "documented",
+      "context": "U.S. administrative designation."
+    },
+    {
+      "id": "ri-prigozhin-wagner",
+      "from": "yevgeny-prigozhin",
+      "to": "wagner-group",
+      "type": "leadership",
+      "label": "Leader named by Treasury",
+      "date": "2023-01-26",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "evidence": "documented",
+      "context": "Role as of the announcement date."
+    },
+    {
+      "id": "ri-doj-gru",
+      "from": "us-doj",
+      "to": "gru",
+      "type": "indictment-of-officers",
+      "label": "Charged twelve officers",
+      "date": "2018-07-13",
+      "topic": "Intelligence & conflict",
+      "sourceIds": [
+        "russia-gru"
+      ],
+      "evidence": "documented",
+      "context": "The individuals were charged; agency node summarizes affiliation, not a corporate conviction."
+    },
+    {
+      "id": "rp-charlie-tpusa",
+      "from": "charlie-kirk",
+      "to": "tpusa",
+      "type": "founder",
+      "label": "Founded",
+      "date": "2012-06-05",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-tpusa-founding"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-charlie-action",
+      "from": "charlie-kirk",
+      "to": "turning-point-action",
+      "type": "founder",
+      "label": "Founded",
+      "date": "2019",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-tpusa-team"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-owens-tpusa",
+      "from": "candace-owens",
+      "to": "tpusa",
+      "type": "employment",
+      "label": "Communications director at hearing date",
+      "date": "2019-04-09",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-owens-tpusa-house"
+      ],
+      "evidence": "documented",
+      "context": "Historical employment, not a current role."
+    },
+    {
+      "id": "rp-owens-blexit",
+      "from": "candace-owens",
+      "to": "blexit",
+      "type": "co-founder",
+      "label": "Co-founder",
+      "date": "2023-03-13",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-blexit"
+      ],
+      "evidence": "documented",
+      "context": "Date of announcement confirming role."
+    },
+    {
+      "id": "rp-tatum-blexit",
+      "from": "brandon-tatum",
+      "to": "blexit",
+      "type": "co-founder",
+      "label": "Co-founder",
+      "date": "2023-03-13",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-blexit"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-tpusa-blexit",
+      "from": "tpusa",
+      "to": "blexit",
+      "type": "organizational-partnership",
+      "label": "Resources and leadership support",
+      "date": "2023-03-13",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-blexit"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-erika-tpusa",
+      "from": "erika-kirk",
+      "to": "tpusa",
+      "type": "governance",
+      "label": "CEO and board chair",
+      "date": "2025-09-18",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-erika-appointed",
+        "politics-tpusa-team"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-erika-action",
+      "from": "erika-kirk",
+      "to": "turning-point-action",
+      "type": "leadership",
+      "label": "Leads organization",
+      "date": "2026-10-19",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-tpusa-team"
+      ],
+      "evidence": "documented",
+      "context": "Role observed on source access date; start date not established."
+    },
+    {
+      "id": "rp-erika-proclaim",
+      "from": "erika-kirk",
+      "to": "proclaim",
+      "type": "founder",
+      "label": "Created brand",
+      "date": "2026-10-19",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-tpusa-team"
+      ],
+      "evidence": "documented",
+      "context": "Role observed on source access date."
+    },
+    {
+      "id": "rp-erika-bible",
+      "from": "erika-kirk",
+      "to": "biblein365",
+      "type": "leadership",
+      "label": "Ministry leader",
+      "date": "2026-10-15",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-bible-episode"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-kaddis-bible",
+      "from": "james-kaddis",
+      "to": "biblein365",
+      "type": "advisory",
+      "label": "Pastoral advisor",
+      "date": "2026-10-15",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-bible-episode"
+      ],
+      "evidence": "documented",
+      "context": ""
+    },
+    {
+      "id": "rp-kaddis-church",
+      "from": "james-kaddis",
+      "to": "calvary-signal-hill",
+      "type": "leadership",
+      "label": "Senior pastor",
+      "date": "2026-10-19",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-bible"
+      ],
+      "evidence": "documented",
+      "context": "Observed on source access date."
+    },
+    {
+      "id": "rp-erika-kaddis",
+      "from": "erika-kirk",
+      "to": "james-kaddis",
+      "type": "media-collaboration",
+      "label": "Co-hosted ministry Q&A",
+      "date": "2026-10-15",
+      "topic": "Politics & media",
+      "sourceIds": [
+        "politics-bible-episode"
+      ],
+      "evidence": "documented",
+      "context": ""
+    }
+  ],
+  "coverage": {
+    "scope": "Selected, dated public records across historical institutions, asset management, private security, intelligence oversight, AI, conservative organizations, and specific state institutions. Not an exhaustive historical or membership database.",
+    "period": {
+      "from": "1600",
+      "to": "2026-10-19"
+    },
+    "topics": [
+      "Historical institutions",
+      "Finance & companies",
+      "Intelligence & conflict",
+      "AI & technology",
+      "Politics & media"
+    ],
+    "included": [
+      "East India Company charter, parliamentary regulation and transfer of governing powers; Bank of England ownership; Federal Reserve Act; Bretton Woods; UN partition recommendation.",
+      "CIA creation, documented Iran and Guatemala interventions, Church Committee, MKULTRA hearing and CIA detention-study release.",
+      "BlackRock founding, Ukraine advisory discussions and AI infrastructure partnership; partial Blackwater/Xe–Academi–Constellis lineage; Nisur Square prosecution and pardons.",
+      "Dartmouth AI proposal, NVIDIA, In-Q-Tel, Palantir incorporation and founder governance, DeepMind, OpenAI launch supporters, Microsoft, Anthropic, AWS, MGX and GIP partnerships.",
+      "TPUSA, Charlie Kirk, Candace Owens, BLEXIT, Erika Kirk, Turning Point Action and documented PROCLAIM/BIBLEin365 professional connections.",
+      "Ukraine ministry procurement, Israeli Finance Ministry Nimbus procurement, Russian GRU indictment, Wagner sanctions, UN Ukraine resolution and ICC warrants."
+    ],
+    "limitations": [
+      "Historical precedents are context, not proof of an unbroken hidden network linking every institution.",
+      "BlackRock is an asset manager, Blackwater a security-business lineage; similar names supply no evidence of affiliation.",
+      "Constellis acquired selected predecessor businesses, not all Blackwater assets or intellectual property. Its account says Erik Prince does not own Constellis.",
+      "Country labels must not imply collective guilt; the graph uses ministries, agencies, governments and named individuals.",
+      "Contracts, funding, attendance, employment and advisory roles are distinct. A connection is not evidence of conspiracy or complicity.",
+      "No claim is made that Erika Kirk or TPUSA has an intelligence or criminal affiliation. Unsupported assassination and trafficking rumors were excluded.",
+      "No complete roster of covert personnel or “all AI companies” is claimed; public records cannot establish that scope.",
+      "Official organizational pages establish announced roles and transactions, not independent verification of self-promotional performance claims.",
+      "Arrest warrants, indictments and sanctions are labeled separately from convictions. Records describe historical actions, not necessarily current case status.",
+      "The IQT–Palantir investment is widely reported but was not included as a dated edge because this pass did not locate a primary source establishing date and terms.",
+      "No claimed Palantir–Israeli Defense Ministry operational edge was added from a company media index; the Nimbus procurement edges use direct government/vendor records.",
+      "Events with year or month precision are not assigned invented days; access-date relationships are explicitly marked as observations."
+    ],
+    "counts": {
+      "sources": 46,
+      "entities": 76,
+      "events": 50,
+      "relationships": 63
+    }
+  }
+}

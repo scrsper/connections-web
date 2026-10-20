@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
-    "check": "node scripts/validate.mjs && wrangler deploy --dry-run",
-    "deploy": "wrangler deploy"
+    "build:data": "node scripts/build-atlas.mjs",
+    "check": "npm run build:data && node scripts/validate.mjs && node scripts/validate-atlas.mjs && wrangler deploy --dry-run",
+    "deploy": "node scripts/deploy-version.mjs"
   },
   "devDependencies": {
-    "wrangler": "4.120.1"
+    "wrangler": "4.151.2"
   }
 }
