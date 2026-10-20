@@ -12,4 +12,6 @@ Cloudflare's previous workflow failed on zone-route authentication. Publishing n
 
 Validation: reference/ID/evidence/roster checks, legacy graph validation and Cloudflare dry run pass. Browser checks cover all seven topics, source search for Goodwin within Epstein records, a sourced Thiel–dinner–Epstein path, accessible profile, 128-row 2026 roster, desktop and 390px mobile layout; no page-level horizontal overflow or console errors observed.
 
-Deployment state: pending final release.
+Deployment verified 2026-10-19 22:52 CT. Source commit `1719bae328da45c1e2a1dc4544ec23f3cf58579b` pushed to `main`; GitHub validation and deployment both succeeded. Cloudflare version `aab1f70a-a0e3-4670-b5a1-d0f3a64570d1` serves 100% of traffic. Home, timeline and original map return HTTP 200, and the live dataset exactly matches the checked-in file.
+
+Release totals: 1,432 entities, 106 timeline records, 2,760 relationships, 101 sources and 21 published lists. The annual Bilderberg portion contains 2,347 list rows. Separate rows may represent the same person across years or roles.
