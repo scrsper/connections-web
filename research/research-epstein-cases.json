@@ -1,0 +1,469 @@
+{
+  "sources": [
+    {
+      "id": "epcase-deutsche-final-judgment",
+      "title": "Deutsche Bank survivor settlement: order and final judgment",
+      "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv10018/590047/122/",
+      "publisher": "U.S. District Court, Southern District of New York; reproduced by Justia",
+      "published": "2023-10-20",
+      "accessed": "2026-10-19",
+      "notes": "Doe 1 v. Deutsche Bank Aktiengesellschaft, 1:22-cv-10018 (JSR), docket 122, signed October 20, 2023. Court document, not Justia's automated summary. Paragraph 3 approves the settlement; paragraph 11 bars treating it as an admission or evidence of wrongdoing; paragraph 12 specifies the $75 million fund obligation; paragraph 17 dismisses released claims with prejudice. The order does not itself establish completed distributions."
+    },
+    {
+      "id": "epcase-jpm-final-judgment",
+      "title": "JPMorgan survivor settlement: final judgment text",
+      "url": "https://www.casemine.com/judgement/us/6555a4991c3b28684bf981c5?target=amp_references",
+      "publisher": "U.S. District Court, Southern District of New York; reproduced by CaseMine",
+      "published": "2023-11",
+      "accessed": "2026-10-19",
+      "notes": "Doe v. JPMorgan Chase Bank, 1:22-cv-10019 (JSR). Reproduced judicial text records the November 9, 2023 hearing; CaseMine indexes it November 13. This dataset preserves month precision because the signed docket date was not independently verified. Paragraph 12: no admission; paragraph 13: $290 million paid to the qualified fund; paragraph 18: released claims dismissed with prejudice. The existing JPMorgan registration-document source corroborates November final approval."
+    },
+    {
+      "id": "epcase-jpm-usvi-response",
+      "title": "JPMorgan statement on its USVI settlement",
+      "url": "https://www.nasdaq.com/press-release/jpmorgan-chase-settles-remaining-litigations-relating-to-jeffrey-epstein-2023-09-26",
+      "publisher": "JPMorgan Chase, Business Wire release reproduced by Nasdaq",
+      "published": "2023-09-26",
+      "accessed": "2026-10-19",
+      "notes": "The bank's own statement: agreement in principle for $55 million plus $20 million attorneys' fees; no admission of liability; regret for its association with Epstein. This is a party statement, not an independent finding about the underlying allegations."
+    },
+    {
+      "id": "epcase-bop-charges",
+      "title": "DOJ announces charges over falsified MCC monitoring records",
+      "url": "https://www.justice.gov/usao-sdny/pr/correctional-officers-charged-falsifying-records-august-9th-and-10th-metropolitan",
+      "publisher": "U.S. Attorney's Office, Southern District of New York",
+      "published": "2019-11-19",
+      "accessed": "2026-10-19",
+      "notes": "Press release 19-383, concerning United States v. Noel et al., 19 Cr. 830 (AT). Charges were allegations. Their subsequent deferred prosecution and dismissal are included separately; the announcement is not a conviction."
+    },
+    {
+      "id": "epcase-bop-dismissal",
+      "title": "MCC monitoring-record prosecution: nolle-prosequi filing",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/United%20States%20v.%20Noel%2C%20No.%20119-cr-00830%20%28S.D.N.Y.%202019%29/065.pdf",
+      "publisher": "U.S. District Court, Southern District of New York; hosted by DOJ",
+      "published": "2022-01-03",
+      "accessed": "2026-10-19",
+      "notes": "1:19-cr-00830-AT, docket 65, filed January 3, 2022, three pages. Paragraph 3 recites agreements on/about May 20, 2021; paragraph 4 recommends dismissal after compliance. Prosecutor recommendation dated December 13, 2021. This distinguishes the filed order from OIG report 23-085's December 13 narrative date and its May 25 account of the agreements. DOJ's viewer may require an age-verification step; indexed court text was reviewed."
+    },
+    {
+      "id": "epcase-oig-full-report",
+      "title": "OIG report 23-085: custody, care and supervision of Epstein",
+      "url": "https://oig.justice.gov/sites/default/files/reports/23-085.pdf",
+      "publisher": "U.S. Department of Justice Office of the Inspector General",
+      "published": "2023-06-27",
+      "accessed": "2026-10-19",
+      "notes": "Full report, 128 PDF pages. Executive summary iii–iv: staff misconduct and limits of findings about death. Printed page 6: deferred prosecution, admissions and dismissal narrative. Appendices 1–2: BOP response and OIG treatment of eight recommendations. Agreement with a recommendation is distinct from documented implementation or closure. Court docket 65 is used for the dismissal filing date."
+    },
+    {
+      "id": "epcase-maxwell-appeal",
+      "title": "United States v. Maxwell: Second Circuit opinion affirming judgment",
+      "url": "https://www.supremecourt.gov/DocketPDF/24/24-1073/337362/20250117133905126_22-1426.pdf",
+      "publisher": "U.S. Court of Appeals for the Second Circuit; copy filed with the Supreme Court",
+      "published": "2024-09-17",
+      "accessed": "2026-10-19",
+      "notes": "22-1426-cr, docket 109-1, September 17, 2024. Pages 2–4 identify the three counts in the June 29, 2022 judgment and appellate issues; judgment affirmed. The sentencing hearing occurred June 28. The five-count jury verdict and three-count judgment are different procedural stages."
+    },
+    {
+      "id": "epcase-maxwell-cert-docket",
+      "title": "Supreme Court docket 24-1073: Maxwell petition denied",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-1073.html",
+      "publisher": "Supreme Court of the United States",
+      "published": "2025-10-06",
+      "accessed": "2026-10-19",
+      "notes": "Docket 24-1073 records denial of certiorari on October 6, 2025. A refusal to take the appeal is not a new merits opinion. Later collateral proceedings are separately sourced in the existing atlas."
+    },
+    {
+      "id": "epcase-mit-reform-update",
+      "title": "MIT president's update on donor, reporting and visitor reforms",
+      "url": "https://news.mit.edu/2020/letter-commitments-community-1203",
+      "publisher": "MIT News; letter from President L. Rafael Reif",
+      "published": "2020-12-03",
+      "accessed": "2026-10-19",
+      "notes": "Institutional response following the Epstein review. Describes donor-policy work, changes to reporting and retaliation protections, and a visitor-policy review. Separates completed or ongoing work from recommendations still being finalized; not an independent effectiveness audit."
+    },
+    {
+      "id": "epcase-harvard-sanctions",
+      "title": "Harvard announces disciplinary findings and sanctions concerning Martin Nowak",
+      "url": "https://www.harvardmagazine.com/2021/03/martin-nowak-sanctioned-for-jeffrey-epstein-involvement",
+      "publisher": "Harvard Magazine",
+      "published": "2021-03-25",
+      "accessed": "2026-10-19",
+      "notes": "Independent publication reproduces the substance of Dean Claudine Gay's letter. Its same-day correction says Nowak retained both mathematics and biology appointments. Use the corrected account, not the superseded claim that a departmental appointment ended."
+    },
+    {
+      "id": "epcase-harvard-sanctions-lifted",
+      "title": "Department chair confirms restoration of Nowak's research and advising privileges",
+      "url": "https://www.thecrimson.com/article/2023/5/22/nowak-sanctions-lifted/",
+      "publisher": "The Harvard Crimson",
+      "published": "2023-05-22",
+      "accessed": "2026-10-19",
+      "notes": "Report attributes restoration in March 2023 to department chair Scott Edwards. University spokespeople and Nowak declined comment. The report does not provide an exact March day or a formal disposition document."
+    },
+    {
+      "id": "epcase-harvard-renewed-review",
+      "title": "Harvard confirms renewed paid leave for Nowak pending review",
+      "url": "https://www.harvardmagazine.com/university-news/martin-nowak-harvard-administrative-leave-epstein",
+      "publisher": "Harvard Magazine",
+      "published": "2026-02-27",
+      "accessed": "2026-10-19",
+      "notes": "Reports a Faculty of Arts and Sciences spokesperson's confirmation and Dean Hopi Hoekstra's letter about review of newly released documents. The university had not disclosed specific grounds. Publication date is used because the leave's exact effective date is not established here. No later outcome was verified."
+    }
+  ],
+  "entities": [],
+  "events": [
+    {
+      "id": "epcase-bop-records-indictment",
+      "date": "2019-11-19",
+      "title": "Federal officers charged over falsified prison-monitoring records",
+      "summary": "DOJ announced an indictment alleging that two MCC employees falsified records of required inmate checks on the night of Epstein's death. The case concerned monitoring records and conspiracy to falsify them.",
+      "entityIds": ["federal-bureau-prisons", "us-doj", "fbi", "jeffrey-epstein"],
+      "sourceIds": ["epcase-bop-charges", "epcase-bop-dismissal"],
+      "evidence": "allegation",
+      "topic": "Epstein records",
+      "limitations": "An indictment is an accusation. These charges were later dismissed after deferred-prosecution agreements; this record does not imply a conviction or a homicide charge."
+    },
+    {
+      "id": "epcase-bop-deferred-prosecution",
+      "date": "2021-05-20",
+      "title": "Monitoring-record case enters deferred-prosecution agreements",
+      "summary": "The later dismissal filing records agreements on or about May 20 requiring a six-month period of compliance. OIG reports that the employees admitted falsely certifying checks and agreed to cooperate and complete community service.",
+      "entityIds": ["federal-bureau-prisons", "us-doj"],
+      "sourceIds": ["epcase-bop-dismissal", "epcase-oig-full-report"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "A deferred-prosecution agreement is not a trial conviction. May 20 is the approximate agreement date recited in docket 65; the OIG report describes the agreements under May 25. The later dismissal is separately dated."
+    },
+    {
+      "id": "epcase-bop-charges-dismissed",
+      "date": "2022-01-03",
+      "title": "Dismissal filed after prison employees complete agreements",
+      "summary": "Docket 65 in 19 Cr. 830 records the nolle-prosequi disposition after prosecutors reported that the employees completed the deferred-prosecution terms. The criminal case ended without convictions.",
+      "entityIds": ["federal-bureau-prisons", "us-doj"],
+      "sourceIds": ["epcase-bop-dismissal", "epcase-oig-full-report"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "January 3 is the court filing date. The prosecutor's recommendation was dated December 13, 2021, the date used in OIG's later narrative. Dismissal does not erase the agreements' admissions or the OIG's administrative findings."
+    },
+    {
+      "id": "epcase-deutsche-settlement-approved",
+      "date": "2023-10-20",
+      "title": "Court approves Deutsche Bank's $75 million survivor settlement",
+      "summary": "Judge Jed Rakoff approved the class settlement in 22-cv-10018 and dismissed the released claims with prejudice. The judgment specifies a $75 million obligation to the qualified settlement fund.",
+      "entityIds": ["deutsche-bank", "jeffrey-epstein"],
+      "sourceIds": ["epcase-deutsche-final-judgment"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "Paragraph 11 explicitly prevents treating the settlement as an admission or evidence of liability or wrongdoing. Paragraph 12 specifies the payment obligation, not proof of completed distributions to claimants."
+    },
+    {
+      "id": "epcase-maxwell-appeal-affirmed",
+      "date": "2024-09-17",
+      "title": "Second Circuit affirms Maxwell's criminal judgment",
+      "summary": "The court affirmed the June 29, 2022 judgment, rejecting the appellate challenges it considered, including Maxwell's claim that Epstein's Florida non-prosecution agreement barred her New York prosecution.",
+      "entityIds": ["ghislaine-maxwell", "us-doj", "jeffrey-epstein"],
+      "sourceIds": ["epcase-maxwell-appeal"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "The opinion resolves Maxwell's appeal and the issues presented. It does not adjudicate allegations about every person named in Epstein-related documents."
+    },
+    {
+      "id": "epcase-maxwell-cert-denied",
+      "date": "2025-10-06",
+      "title": "Supreme Court declines Maxwell's petition",
+      "summary": "Supreme Court docket 24-1073 records denial of Maxwell's petition for certiorari following the Second Circuit decision.",
+      "entityIds": ["ghislaine-maxwell", "us-doj"],
+      "sourceIds": ["epcase-maxwell-cert-docket"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "Denial of certiorari does not supply a new Supreme Court merits ruling. This event describes that petition only, not the availability or outcome of every later collateral challenge."
+    },
+    {
+      "id": "epcase-mit-reforms-update",
+      "date": "2020-12-03",
+      "title": "MIT reports progress on donor and reporting reforms",
+      "summary": "President Reif described work on controversial-donor policies, whistleblower and retaliation protections, campus visitors and Media Lab governance following the Epstein review.",
+      "entityIds": ["mit", "mit-media-lab"],
+      "sourceIds": ["epcase-mit-reform-update"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "This is MIT's account of its response. Some measures remained under development; the letter does not independently establish their effectiveness."
+    },
+    {
+      "id": "epcase-harvard-nowak-sanctions",
+      "date": "2021-03-25",
+      "title": "Harvard announces policy findings and sanctions concerning Nowak",
+      "summary": "According to the dean's letter reported by Harvard Magazine, an FAS review found policy violations involving professional conduct, campus access and endorsements. Harvard closed the Program for Evolutionary Dynamics and restricted Nowak's research and advising for two years.",
+      "entityIds": ["harvard", "harvard-ped", "martin-nowak"],
+      "sourceIds": ["epcase-harvard-sanctions"],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "limitations": "University disciplinary findings are not criminal convictions. The corrected report says Nowak retained both departmental appointments. Later restoration of privileges and a separately reported 2026 review must be read as distinct developments."
+    },
+    {
+      "id": "epcase-harvard-nowak-privileges-restored",
+      "date": "2023-03",
+      "title": "Nowak's research and advising privileges restored",
+      "summary": "The Harvard Crimson reported in May that a department chair confirmed restoration of Nowak's privileges in March after the two-year restrictions.",
+      "entityIds": ["harvard", "martin-nowak"],
+      "sourceIds": ["epcase-harvard-sanctions-lifted"],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "limitations": "The exact March date was not supplied. Restoration is not reported as a reversal of the original policy findings; it should not be described as exoneration."
+    },
+    {
+      "id": "epcase-harvard-nowak-renewed-review",
+      "date": "2026-02-27",
+      "title": "Harvard Magazine reports renewed leave pending review",
+      "summary": "A Harvard spokesperson confirmed Nowak was on paid administrative leave while the university reviewed newly released Epstein-related documents. The dean said arrangements were being made for teaching and advising responsibilities.",
+      "entityIds": ["harvard", "martin-nowak"],
+      "sourceIds": ["epcase-harvard-renewed-review"],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "limitations": "Date is publication, not a verified effective date. The institution had not disclosed specific grounds, and the report said Nowak was not accused of a crime. No outcome of this new review was verified."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "epcase-doj-bop-oversight",
+      "from": "us-doj",
+      "to": "federal-bureau-prisons",
+      "type": "oversight_investigation",
+      "label": "Inspector General investigated custody and supervision failures",
+      "date": "2023-06-27",
+      "sourceIds": ["epcase-oig-full-report"],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "context": "DOJ's Inspector General reported administrative misconduct and management failures at MCC and made eight recommendations to BOP.",
+      "limitations": "An oversight relationship, not evidence of a covert partnership. BOP agreement to recommendations does not establish their subsequent implementation."
+    },
+    {
+      "id": "epcase-harvard-nowak-discipline",
+      "from": "harvard",
+      "to": "martin-nowak",
+      "type": "institutional_discipline",
+      "label": "FAS imposed two-year research and advising restrictions",
+      "date": "2021-03-25",
+      "sourceIds": ["epcase-harvard-sanctions", "epcase-harvard-sanctions-lifted"],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "context": "Reported sanctions followed an internal policy review. A department chair later confirmed restoration of privileges in March 2023.",
+      "limitations": "The edge records a university action, not criminal complicity. It does not mean the 2021 restrictions remain in force."
+    }
+  ],
+  "cases": [
+    {
+      "id": "epcase-maxwell-conviction",
+      "title": "Ghislaine Maxwell: conviction, sentence and reviewed appeals",
+      "date": "2022-06-28",
+      "topic": "Epstein records",
+      "summary": "Maxwell received a 20-year sentence following the jury verdict in the federal prosecution concerning her participation in Epstein's abuse of minors.",
+      "entityIds": ["ghislaine-maxwell", "jeffrey-epstein", "us-doj"],
+      "entityRoles": [
+        {"entityId": "ghislaine-maxwell", "role": "convicted defendant"},
+        {"entityId": "jeffrey-epstein", "role": "co-conspirator described in the prosecution"},
+        {"entityId": "us-doj", "role": "prosecuting institution"}
+      ],
+      "sourceIds": ["epstein-maxwell-sentence", "epcase-maxwell-appeal", "epcase-maxwell-cert-docket", "epstein-maxwell-2026-order"],
+      "eventIds": ["epstein-2021-maxwell-verdict", "epstein-2022-maxwell-sentence", "epcase-maxwell-appeal-affirmed", "epcase-maxwell-cert-denied", "epstein-2026-maxwell-petition"],
+      "status": "conviction",
+      "statusDetail": "June 28, 2022 sentencing hearing; judgment entered June 29. Subsequent appellate and collateral decisions are separately dated.",
+      "findings": "The judgment contains three counts: conspiracy to transport minors for criminal sexual activity, transportation of a minor for that purpose, and sex trafficking of a minor. The court imposed concurrent terms, the longest 240 months.",
+      "response": "Maxwell challenged the judgment on appeal, including the scope of Epstein's non-prosecution agreement, time limits, jury issues and sentencing. The Second Circuit affirmed on September 17, 2024; the Supreme Court denied her petition on October 6, 2025.",
+      "outcome": "The reviewed August 25, 2026 district-court order separately denied her post-conviction petition. The conviction and 20-year sentence were not vacated by any of these cited decisions.",
+      "limitations": "This dossier records the cited decisions and their dates, not a guarantee that no further filings exist. Certiorari denial is not a new merits ruling. Maxwell's conviction does not establish guilt of uncharged associates or every person mentioned in released records.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-deutsche-regulatory-action",
+      "title": "Deutsche Bank: NYDFS findings on compliance failures",
+      "date": "2020-07-06",
+      "topic": "Epstein records",
+      "summary": "A New York banking consent order imposed a $150 million penalty for compliance failures involving Epstein and two separate correspondent-bank relationships.",
+      "entityIds": ["deutsche-bank", "nydfs", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "deutsche-bank", "role": "regulated bank subject to consent order"},
+        {"entityId": "nydfs", "role": "investigating and enforcing regulator"},
+        {"entityId": "jeffrey-epstein", "role": "bank customer whose accounts were reviewed"}
+      ],
+      "sourceIds": ["epstein-dfs-order", "epstein-dfs-release"],
+      "eventIds": ["epstein-2013-deutsche", "epstein-2020-bank-penalty"],
+      "status": "regulatory-action",
+      "statusDetail": "Consent order signed July 6, 2020; publicly announced July 7. Findings and remedies are those of the regulator in this order.",
+      "findings": "NYDFS found unsafe and unsound business conduct and an ineffective anti-money-laundering program. Its Epstein findings include inadequate account monitoring and failure to implement or communicate conditions imposed on the relationship.",
+      "response": "The bank agreed to the order and continued cooperation with its monitor. Paragraphs 109–111 credit its cooperation, internal investigations and remediation efforts, which the regulator weighed in resolving the matter.",
+      "outcome": "The order required a $150 million penalty and directed the existing monitor to address the identified failures.",
+      "limitations": "The total penalty covers Epstein, Danske Estonia and FBME matters together; it is not an Epstein-only fine. Regulatory findings are distinct from a criminal conviction, the separate $75 million civil settlement, and proof that every questioned payment was unlawful.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-deutsche-civil-settlement",
+      "title": "Deutsche Bank: $75 million survivor class settlement",
+      "date": "2023-10-20",
+      "topic": "Epstein records",
+      "summary": "SDNY approved the settlement resolving the survivor class's civil claims against Deutsche Bank.",
+      "entityIds": ["deutsche-bank", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "deutsche-bank", "role": "settling bank"},
+        {"entityId": "jeffrey-epstein", "role": "offender underlying survivors' civil claims"}
+      ],
+      "sourceIds": ["epcase-deutsche-final-judgment"],
+      "eventIds": ["epcase-deutsche-settlement-approved"],
+      "status": "civil-settlement",
+      "statusDetail": "Order and final judgment, 1:22-cv-10018 (JSR), docket 122, signed October 20, 2023.",
+      "findings": "The court found the negotiated settlement fair, reasonable and adequate for the class. It did not decide the bank's liability at trial.",
+      "response": "Paragraph 11 expressly states that the settlement and judgment cannot be treated as admissions or evidence of liability, fault or wrongdoing.",
+      "outcome": "The judgment specifies a $75 million payment obligation to the settlement fund and dismisses the released claims with prejudice.",
+      "limitations": "Settlement approval is not a finding that the bank committed the alleged trafficking offenses. This judgment's wording does not itself verify completed payment or distributions to individual claimants.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-jpm-survivor-settlement",
+      "title": "JPMorgan: $290 million survivor class settlement",
+      "date": "2023-11",
+      "topic": "Epstein records",
+      "summary": "Final approval resolved the survivor class's civil claims against JPMorgan in a separate action from the US Virgin Islands government's lawsuit.",
+      "entityIds": ["jpmorgan-chase", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "jpmorgan-chase", "role": "settling bank"},
+        {"entityId": "jeffrey-epstein", "role": "offender underlying survivors' civil claims"}
+      ],
+      "sourceIds": ["epcase-jpm-final-judgment", "epstein-jpm-registration"],
+      "eventIds": ["epstein-2023-class-settlement"],
+      "status": "civil-settlement",
+      "statusDetail": "Final settlement approval in November 2023 in 1:22-cv-10019 (JSR). Hearing held November 9; available judgment reproduction indexed November 13. Month precision is retained.",
+      "findings": "The court approved the settlement's fairness and adequacy and found the bank had satisfied its fund-payment obligation. These are settlement findings, not a merits verdict establishing the underlying allegations.",
+      "response": "Paragraph 12 provides that neither settlement nor judgment is an admission or evidence of liability or wrongdoing.",
+      "outcome": "Paragraph 13 records $290 million paid to the qualified settlement fund. Released claims were dismissed with prejudice; specified individual assault claims against natural persons were not released.",
+      "limitations": "Payment into the fund is distinct from completed claimant distributions. The $290 million amount is separate from the $75 million USVI settlement. This record does not imply criminal guilt of bank personnel.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-jpm-usvi-settlement",
+      "title": "JPMorgan and USVI: $75 million civil settlement",
+      "date": "2023-09-26",
+      "topic": "Epstein records",
+      "summary": "JPMorgan and the US Virgin Islands government announced a settlement of the government's civil suit concerning the bank's relationship with Epstein.",
+      "entityIds": ["jpmorgan-chase", "us-virgin-islands", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "jpmorgan-chase", "role": "settling bank"},
+        {"entityId": "us-virgin-islands", "role": "government civil plaintiff"},
+        {"entityId": "jeffrey-epstein", "role": "bank customer underlying the civil claims"}
+      ],
+      "sourceIds": ["epstein-usvi-jpm", "epcase-jpm-usvi-response"],
+      "eventIds": ["epstein-2023-usvi-settlement"],
+      "status": "civil-settlement",
+      "statusDetail": "Agreement-in-principle announcement on September 26, 2023; this record is tied to that announcement, not an assumed later payment date.",
+      "findings": "The cited announcements establish the agreement and its terms. They do not establish the government's allegations through a trial verdict.",
+      "response": "JPMorgan said the agreement involved no admission of liability, expressed regret for its association with Epstein, and said it would not have continued the relationship had it believed he was using the bank for his crimes.",
+      "outcome": "Announced terms totaled $75 million: $30 million for charitable organizations, $25 million for territorial law-enforcement capacity, and $20 million in attorneys' fees.",
+      "limitations": "Party statements require attribution. The government's description of anti-trafficking measures does not independently establish subsequent implementation. This is a civil settlement, separate from the survivor class settlement.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-bop-custody-investigation",
+      "title": "Bureau of Prisons: Inspector General findings on custody failures",
+      "date": "2023-06-27",
+      "topic": "Epstein records",
+      "summary": "DOJ's Inspector General documented serious staff misconduct and operational failures in Epstein's detention at MCC New York.",
+      "entityIds": ["federal-bureau-prisons", "us-doj", "fbi", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "federal-bureau-prisons", "role": "institution whose custody practices were investigated"},
+        {"entityId": "us-doj", "role": "Inspector General oversight institution"},
+        {"entityId": "fbi", "role": "joint investigating agency"},
+        {"entityId": "jeffrey-epstein", "role": "deceased detainee"}
+      ],
+      "sourceIds": ["epcase-oig-full-report", "epstein-oig-death", "epcase-bop-charges", "epcase-bop-dismissal"],
+      "eventIds": ["epstein-2019-death", "epcase-bop-records-indictment", "epcase-bop-deferred-prosecution", "epcase-bop-charges-dismissed", "epstein-2023-oig"],
+      "status": "official-investigation",
+      "statusDetail": "OIG investigative report 23-085, published June 27, 2023; administrative findings, with a separately described criminal prosecution.",
+      "findings": "OIG identified failures involving a required cellmate, inmate checks, supervision, record accuracy and security-camera recording. It found falsified records and lack of candor by staff, but no evidence contradicting the FBI's conclusion that no criminal act caused Epstein's death.",
+      "response": "BOP agreed with all eight recommendations. In its response concerning staffing, BOP stressed failures to perform duties while acknowledging continued recruitment and retention work. OIG required evidence of implementation before closing recommendations.",
+      "outcome": "The report recommended corrective measures and review of personnel for possible discipline. Two employees' record-falsification charges had been dismissed after compliance with deferred-prosecution agreements; other referrals did not result in prosecutions.",
+      "limitations": "The review's focus was BOP custody and personnel. Agreement with recommendations is not proof they were implemented. Administrative misconduct does not establish murder or a cover-up, and criminal dismissal does not negate the report's separate findings.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-opr-acosta-review",
+      "title": "DOJ OPR: poor judgment in Epstein non-prosecution decision",
+      "date": "2020-11-12",
+      "topic": "Epstein records",
+      "summary": "DOJ released findings from its professional-responsibility review of the 2006–2008 federal investigation, non-prosecution agreement and treatment of victims.",
+      "entityIds": ["us-doj", "alexander-acosta", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "us-doj", "role": "department conducting an internal professional-responsibility review"},
+        {"entityId": "alexander-acosta", "role": "former U.S. attorney whose decisions were reviewed"},
+        {"entityId": "jeffrey-epstein", "role": "subject of the underlying criminal investigation"}
+      ],
+      "sourceIds": ["epstein-opr-summary", "epstein-opr-release"],
+      "eventIds": ["epstein-2007-npa", "epstein-2008-plea", "epstein-2020-opr"],
+      "status": "official-investigation",
+      "statusDetail": "OPR findings publicly released November 12, 2020, using OPR's professional-misconduct standard.",
+      "findings": "OPR did not find professional misconduct by DOJ attorneys. It found that Acosta exercised poor judgment in choosing the non-prosecution agreement and in failing to ensure state authorities would notify federally identified victims about the state plea hearing. It also criticized the treatment of victims.",
+      "response": "DOJ released the executive summary to affected victims and publicly reported both the absence of a professional-misconduct finding and the findings of poor judgment.",
+      "outcome": "The report supplies an official assessment of prosecutorial decisions and victim communications. The cited public announcement reports no professional-misconduct sanction.",
+      "limitations": "A finding of poor judgment is not a criminal conviction; absence of professional misconduct under OPR's standard is not a broad exoneration of every decision or practice. This review did not adjudicate every allegation about Epstein, associates or intelligence agencies.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-mit-institutional-review",
+      "title": "MIT: review of post-conviction gifts and institutional response",
+      "date": "2020-01-10",
+      "topic": "Epstein records",
+      "summary": "MIT released its commissioned Goodwin Procter review of donations, campus visits and approval decisions involving Epstein.",
+      "entityIds": ["mit", "mit-media-lab", "joi-ito", "seth-lloyd", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "mit", "role": "university that commissioned the review"},
+        {"entityId": "mit-media-lab", "role": "university unit examined"},
+        {"entityId": "joi-ito", "role": "former laboratory director whose actions were reviewed"},
+        {"entityId": "seth-lloyd", "role": "faculty member whose actions were reviewed"},
+        {"entityId": "jeffrey-epstein", "role": "donor and campus visitor examined"}
+      ],
+      "sourceIds": ["epstein-mit-report", "epstein-mit-news", "epstein-mit-redirect", "epcase-mit-reform-update"],
+      "eventIds": ["epstein-2019-ito-resignation", "epstein-2020-mit-review", "epstein-2020-mit-donation", "epcase-mit-reforms-update"],
+      "status": "official-investigation",
+      "statusDetail": "Institutionally commissioned fact-finding report released January 10, 2020; not a government criminal investigation or court verdict.",
+      "findings": "The review traced $850,000 in gifts and found serious errors of judgment in accepting post-conviction donations. It said the absence of a controversial-donor policy prevented treating acceptance itself as a policy violation. It separately attributed nondisclosure of gifts to Lloyd.",
+      "response": "MIT announced paid administrative leave for Lloyd, committed to changes in donor review and reporting systems, and donated $850,000 to organizations supporting survivors.",
+      "outcome": "A December 2020 presidential update described reforms completed or underway and additional recommendations still being developed.",
+      "limitations": "Findings are attributed to MIT's commissioned review and limited to its stated donation, leadership and campus-visit scope. They do not establish that recipients participated in Epstein's sexual crimes or independently prove that later reforms worked.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "epcase-harvard-institutional-review",
+      "title": "Harvard: institutional review, sanctions and later proceedings",
+      "date": "2020-05-01",
+      "topic": "Epstein records",
+      "summary": "Harvard's review examined Epstein's gifts, visiting-fellow appointment and relationship with the Program for Evolutionary Dynamics, identifying gaps in institutional policy and oversight.",
+      "entityIds": ["harvard", "harvard-ped", "martin-nowak", "jeffrey-epstein"],
+      "entityRoles": [
+        {"entityId": "harvard", "role": "university conducting the review"},
+        {"entityId": "harvard-ped", "role": "university program examined"},
+        {"entityId": "martin-nowak", "role": "program director later subject to university discipline"},
+        {"entityId": "jeffrey-epstein", "role": "donor, former visiting fellow and campus visitor examined"}
+      ],
+      "sourceIds": ["epstein-harvard-report", "epcase-harvard-sanctions", "epcase-harvard-sanctions-lifted", "epcase-harvard-renewed-review"],
+      "eventIds": ["epstein-2020-harvard-review", "epcase-harvard-nowak-sanctions", "epcase-harvard-nowak-privileges-restored", "epcase-harvard-nowak-renewed-review"],
+      "status": "official-investigation",
+      "statusDetail": "University review published May 1, 2020. Later discipline, restoration and renewed review are separately dated events; this label is not a statement that the 2020 inquiry remains open.",
+      "findings": "The university found no accepted gifts from Epstein after his 2008 conviction, but identified weaknesses in gift communications, visiting-fellow screening and aspects of his program access. Continued association by itself was not a policy violation under the rules then in place.",
+      "response": "Harvard redirected $200,937 in unspent gifts to survivor-support organizations and ordered policy work. A later faculty review led to program closure and two-year restrictions for Nowak.",
+      "outcome": "A department chair confirmed restoration of Nowak's privileges in March 2023. In February 2026, the university confirmed a separate paid leave pending review of newly released records.",
+      "limitations": "The 2020 report was an institutional review, not a criminal judgment. The 2026 leave was pending review rather than a new misconduct finding, and no later outcome was verified. Neither campus contact nor mention in released files establishes criminal complicity.",
+      "reviewed": "2026-10-19"
+    }
+  ],
+  "coverage": {
+    "title": "Epstein: institutional accountability and case outcomes",
+    "scope": "Nine dated dossiers distinguishing a criminal conviction, a banking regulatory action, three civil settlements, two DOJ oversight reviews and two university reviews. Ten additional procedural or institutional-response events supplement the existing atlas; existing entities and source IDs are reused.",
+    "limits": [
+      "Case status is attached to the specified action and date. It does not automatically assert the latest legal or employment status.",
+      "Institutionally commissioned reviews are explicitly identified. The shared official-investigation status is used for them as well as government reviews, with the distinction preserved in statusDetail.",
+      "Settlement amounts, fund payments, claimant distributions and findings of liability are separate concepts. No-admission provisions are retained.",
+      "JPMorgan final approval is preserved at November 2023 precision because the hearing date and the available reproduction's indexed date differ and the signed docket date was not independently pinned.",
+      "The prison-record case uses January 3, 2022, its dismissal filing date. Its prosecutor's recommendation was dated December 13, 2021. The later OIG narrative uses that December date; the distinction is recorded rather than silently harmonized.",
+      "No names or private details of victims, witness contact information, graphic descriptions, or purported comprehensive client list are included.",
+      "No inference of criminality follows from a donation, meeting, document mention, institutional affiliation or graph edge. Entity roles distinguish subjects from investigators and civil plaintiffs.",
+      "This is selected accountability research, not review of the full Epstein document corpus or every later court filing. The separate 2026 Harvard review has no verified outcome in this extension."
+    ]
+  }
+}

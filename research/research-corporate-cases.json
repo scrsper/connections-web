@@ -1,0 +1,1255 @@
+{
+  "sources": [
+    {
+      "id": "corp-blackrock-conflicts-sec",
+      "title": "SEC settles BlackRock Advisors conflict-disclosure case",
+      "url": "https://www.sec.gov/news/pressrelease/2015-71.html",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2015-04-20",
+      "accessed": "2026-10-19",
+      "notes": "Release 2015-71; settlement and no-admission terms in final substantive paragraph."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-sec",
+      "title": "BlackRock separation-agreement settlement",
+      "url": "https://www.sec.gov/newsroom/press-releases/2017-14",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2017-01-17",
+      "accessed": "2026-10-19",
+      "notes": "Release 2017-14."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-order",
+      "title": "In the Matter of BlackRock, Inc.: administrative order",
+      "url": "https://www.sec.gov/litigation/admin/2017/34-79804.pdf",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2017-01-17",
+      "accessed": "2026-10-19",
+      "notes": "Release 34-79804; paragraphs 9–10 address voluntary revision and no known prevented communication or clause enforcement."
+    },
+    {
+      "id": "corp-blackrock-aviron-sec",
+      "title": "SEC settles BlackRock Advisors fund-disclosure case",
+      "url": "https://www.sec.gov/newsroom/press-releases/2023-226",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2023-10-24",
+      "accessed": "2026-10-19",
+      "notes": "Release 2023-226; Aviron descriptions, interest-rate disclosure and correction."
+    },
+    {
+      "id": "corp-nvidia-sec-order",
+      "title": "In the Matter of NVIDIA Corporation: settled disclosure findings",
+      "url": "https://www.sec.gov/files/litigation/admin/2022/33-11060.pdf",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2022-05-06",
+      "accessed": "2026-10-19",
+      "notes": "Release 33-11060; sections II, III paragraphs 1 and 19, and IV.B."
+    },
+    {
+      "id": "corp-ring-ftc-allegations",
+      "title": "FTC announces Ring privacy and security settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ring-employees-illegally-surveilled-customers-failed-stop-hackers-taking-control-users",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-05-31",
+      "accessed": "2026-10-19",
+      "notes": "Complaint allegations; do not substitute headline for adjudicated findings."
+    },
+    {
+      "id": "corp-ring-entered-order",
+      "title": "FTC v. Ring: entered stipulated order",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/Ring-OrderEntered-6.16.2023(003).pdf",
+      "publisher": "U.S. District Court for the District of Columbia, hosted by FTC",
+      "published": "2023-06-16",
+      "accessed": "2026-10-19",
+      "notes": "Docket 12; findings 3–5, definitions A, deletion provisions and section IX."
+    },
+    {
+      "id": "corp-alexa-ftc-allegations",
+      "title": "FTC and DOJ announce Alexa privacy settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-05-31",
+      "accessed": "2026-10-19",
+      "notes": "Complaint allegations and proposed relief; later entry verified separately."
+    },
+    {
+      "id": "corp-alexa-order-entry",
+      "title": "United States v. Amazon.com (Alexa): FTC docket",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3128-amazoncom-alexa-us-v",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-07-21",
+      "accessed": "2026-10-19",
+      "notes": "Timeline lists court-entered order on July 19, 2023; generic page status is not a merits judgment."
+    },
+    {
+      "id": "corp-alexa-company-response",
+      "title": "Amazon response to Alexa settlement",
+      "url": "https://www.aboutamazon.com/news/policy-news-views/amazon-response-to-ftc-settlement-regarding-alexa",
+      "publisher": "Amazon",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Company denies violations; publication date not exposed in retrieved text."
+    },
+    {
+      "id": "corp-facebook-ftc-settlement",
+      "title": "FTC announces Facebook privacy settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+      "publisher": "Federal Trade Commission",
+      "published": "2019-07-24",
+      "accessed": "2026-10-19",
+      "notes": "Separates Facebook case from Cambridge Analytica proceedings."
+    },
+    {
+      "id": "corp-facebook-stipulated-order",
+      "title": "United States v. Facebook: stipulated privacy order",
+      "url": "https://www.ftc.gov/system/files/documents/cases/182_3109_facebook_order_filed_7-24-19.pdf",
+      "publisher": "U.S. District Court filing, hosted by FTC",
+      "published": "2019-07-24",
+      "accessed": "2026-10-19",
+      "notes": "Docket 2-1; findings paragraph 6 gives no-admission provision."
+    },
+    {
+      "id": "corp-facebook-final-approval",
+      "title": "FTC privacy-order docket: Facebook",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184-182-3109-c-4365-facebook-inc-matter",
+      "publisher": "Federal Trade Commission",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "April 28, 2020 order modification and final approval; later 2023 modification proceeding is separate."
+    },
+    {
+      "id": "corp-facebook-company-response",
+      "title": "Facebook response to the FTC agreement",
+      "url": "https://about.fb.com/news/2019/07/ftc-agreement/",
+      "publisher": "Facebook",
+      "published": "2019-07-24",
+      "accessed": "2026-10-19",
+      "notes": "Company acknowledges breach of trust and describes privacy changes."
+    },
+    {
+      "id": "corp-xbox-ftc-settlement",
+      "title": "FTC announces Microsoft Xbox children’s privacy settlement",
+      "url": "https://search.ftc.gov/news-events/news/press-releases/2023/06/ftc-will-require-microsoft-pay-20-million-over-charges-it-illegally-collected-personal-information",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-06-05",
+      "accessed": "2026-10-19",
+      "notes": "Allegations concern collection, notice, consent and retention."
+    },
+    {
+      "id": "corp-xbox-stipulated-order",
+      "title": "United States v. Microsoft: proposed stipulated order",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/microsoftproposedstiporder.pdf",
+      "publisher": "U.S. District Court filing, hosted by FTC",
+      "published": "2023-06-05",
+      "accessed": "2026-10-19",
+      "notes": "Findings paragraph 3; proposed order. Later entry and payment confirmed in FTC update."
+    },
+    {
+      "id": "corp-ftc-2023-privacy-update",
+      "title": "2023 Privacy and Data Security Update",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/2024.03.21-PrivacyandDataSecurityUpdate-508.pdf",
+      "publisher": "Federal Trade Commission",
+      "published": "2024-03-21",
+      "accessed": "2026-10-19",
+      "notes": "Microsoft section, printed page 11, confirms entered order and paid $20 million penalty."
+    },
+    {
+      "id": "corp-xbox-company-response",
+      "title": "Xbox response to FTC settlement",
+      "url": "https://news.xbox.com/en-us/2023/06/05/xbox-ftc-settlement-reimagining-future-of-safety-xbox/",
+      "publisher": "Microsoft / Xbox",
+      "published": "2023-06-05",
+      "accessed": "2026-10-19",
+      "notes": "Company describes corrected retention glitch and deletion."
+    },
+    {
+      "id": "corp-google-search-final-judgment",
+      "title": "United States v. Google: final judgment",
+      "url": "https://www.justice.gov/atr/media/1421546/dl?inline=",
+      "publisher": "U.S. District Court for the District of Columbia, hosted by DOJ",
+      "published": "2025-12-05",
+      "accessed": "2026-10-19",
+      "notes": "Docket 1462; page 2 records August 5, 2024 liability findings; sections III–V prescribe remedies."
+    },
+    {
+      "id": "corp-google-search-stay-order",
+      "title": "United States v. Google: partial-stay order",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_20-cv-03010/pdf/USCOURTS-dcd-1_20-cv-03010-5.pdf",
+      "publisher": "U.S. District Court for the District of Columbia / GovInfo",
+      "published": "2026-05-07",
+      "accessed": "2026-10-19",
+      "notes": "Docket 1514; pages 1–2 identify appeal and cross-appeals; conclusion denies stay without prejudice."
+    },
+    {
+      "id": "corp-google-search-appellate-brief",
+      "title": "United States response and opening cross-appeal brief",
+      "url": "https://www.justice.gov/atr/media/1454586/dl?inline=",
+      "publisher": "U.S. Department of Justice, court filing",
+      "published": "2026-07-28",
+      "accessed": "2026-10-19",
+      "notes": "D.C. Circuit cases 26-5023, 26-5047, 26-5049; this is advocacy, not an appellate ruling."
+    },
+    {
+      "id": "corp-google-search-company-response",
+      "title": "Google explains its search-case appeal",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/public-policy/why-were-appealing-the-doj-search-distribution-case/",
+      "publisher": "Google",
+      "published": "2026-01-16",
+      "accessed": "2026-10-19",
+      "notes": "Company disputes liability and argues data-sharing remedies threaten privacy and competition."
+    },
+    {
+      "id": "corp-google-search-case-index",
+      "title": "United States v. Google search case: official document index",
+      "url": "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc",
+      "publisher": "U.S. Department of Justice",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Inspected through October 13, 2026 filings; enforcement documents and briefs are distinguished from decisions."
+    },
+    {
+      "id": "corp-amazon-prime-ftc-settlement",
+      "title": "FTC announces Amazon Prime settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon",
+      "publisher": "Federal Trade Commission",
+      "published": "2025-09-25",
+      "accessed": "2026-10-19",
+      "notes": "Allegations and settlement terms; separate Amazon antitrust action is not resolved here."
+    },
+    {
+      "id": "corp-amazon-prime-entered-order",
+      "title": "FTC v. Amazon: Prime stipulated order",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/Amazon-ROSCA-Order-Filed_0.pdf",
+      "publisher": "U.S. District Court for the Western District of Washington, hosted by FTC",
+      "published": "2025-09-25",
+      "accessed": "2026-10-19",
+      "notes": "Docket 535; findings paragraph 4 contains no-admission terms."
+    },
+    {
+      "id": "corp-amazon-prime-refund-revision",
+      "title": "Amazon Prime: revised consumer-redress order",
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/2123050amazonprimeredressfundorder.pdf",
+      "publisher": "U.S. District Court for the Western District of Washington, hosted by FTC",
+      "published": "2026-09-14",
+      "accessed": "2026-10-19",
+      "notes": "Pages 5–6 describe expanded automatic payments and conditional supplements; page 11 order signed September 14, 2026."
+    },
+    {
+      "id": "corp-palantir-dol-settlement",
+      "title": "DOL announces Palantir hiring settlement",
+      "url": "https://www.dol.gov/newsroom/releases/ofccp/ofccp20170425",
+      "publisher": "U.S. Department of Labor",
+      "published": "2017-04-25",
+      "accessed": "2026-10-19",
+      "notes": "Historical action; not a description of current federal-contractor policy."
+    },
+    {
+      "id": "corp-palantir-consent-decree",
+      "title": "OFCCP v. Palantir: consent decree and order",
+      "url": "https://www.dol.gov/sites/dolgov/files/ofccp/foia/files/Palantir_CD_DPO_Redacted.pdf",
+      "publisher": "U.S. Department of Labor",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Case 2016-OFC-00009; page 2 paragraphs 4–8 from indexed primary text. Direct PDF returned 403; document signing date not independently verified. Public settlement announced April 25, 2017."
+    }
+  ],
+  "entities": [
+    {
+      "id": "us-sec",
+      "name": "U.S. Securities and Exchange Commission",
+      "type": "government",
+      "summary": "Federal securities regulator issuing the administrative orders indexed here.",
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec",
+        "corp-nvidia-sec-order"
+      ]
+    },
+    {
+      "id": "ftc",
+      "name": "Federal Trade Commission",
+      "type": "government",
+      "summary": "Consumer-protection agency bringing the civil matters indexed here.",
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-ring-ftc-allegations"
+      ]
+    },
+    {
+      "id": "us-dol",
+      "name": "U.S. Department of Labor",
+      "type": "government",
+      "summary": "Department whose OFCCP brought the historical Palantir employment proceeding.",
+      "sourceIds": [
+        "corp-palantir-dol-settlement"
+      ]
+    },
+    {
+      "id": "us-district-court-dc",
+      "name": "U.S. District Court for the District of Columbia",
+      "type": "government",
+      "summary": "Court that issued the Google search judgment and Ring consent order.",
+      "sourceIds": [
+        "corp-google-search-final-judgment",
+        "corp-ring-entered-order"
+      ]
+    },
+    {
+      "id": "blackrock-advisors",
+      "name": "BlackRock Advisors, LLC",
+      "type": "company",
+      "summary": "Investment adviser named in the 2015 and 2023 SEC orders; distinguished from BlackRock, Inc.",
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec",
+        "corp-blackrock-aviron-sec"
+      ]
+    },
+    {
+      "id": "ring",
+      "name": "Ring LLC",
+      "type": "company",
+      "summary": "Home-camera company and settling defendant in the FTC’s 2023 privacy case.",
+      "sourceIds": [
+        "corp-ring-ftc-allegations",
+        "corp-ring-entered-order"
+      ]
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook, Inc.",
+      "type": "company",
+      "summary": "Corporate name used in the 2019 privacy settlement; the FTC docket also tracks subsequent Meta proceedings.",
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-final-approval"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "corp-blackrock-conflicts-2015",
+      "date": "2015-04-20",
+      "title": "BlackRock Advisors settles SEC conflict-disclosure action",
+      "summary": "The adviser accepted a $12 million penalty and compliance review over undisclosed portfolio-manager conflicts.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "Settled administrative findings; neither admission nor criminal conviction."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-2017",
+      "date": "2017-01-17",
+      "title": "BlackRock settles whistleblower-award waiver action",
+      "summary": "SEC ordered a $340,000 penalty over separation agreements waiving whistleblower awards.",
+      "entityIds": [
+        "blackrock",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-blackrock-whistleblower-sec",
+        "corp-blackrock-whistleblower-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "No identified instance of a prevented SEC communication or enforcement of the clause."
+    },
+    {
+      "id": "corp-blackrock-aviron-2023",
+      "date": "2023-10-24",
+      "title": "BlackRock Advisors settles fund-disclosure case",
+      "summary": "SEC imposed a $2.5 million penalty for inaccurate Aviron investment descriptions and interest-rate reporting.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-blackrock-aviron-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "The adviser corrected disclosures in 2019; no admission or denial."
+    },
+    {
+      "id": "corp-nvidia-disclosures-2022",
+      "date": "2022-05-06",
+      "title": "NVIDIA settles SEC cryptomining-disclosure action",
+      "summary": "NVIDIA accepted a $5.5 million penalty concerning two fiscal-2018 quarterly reports.",
+      "entityIds": [
+        "nvidia",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-nvidia-sec-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "Concerns securities disclosure, not AI model safety."
+    },
+    {
+      "id": "corp-ring-settlement-announced",
+      "date": "2023-05-31",
+      "title": "FTC files Ring privacy and security allegations",
+      "summary": "FTC alleged excessive internal video access, algorithm training without consent and inadequate account security.",
+      "entityIds": [
+        "ring",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-ring-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Complaint allegations resolved by consent order, not tried findings."
+    },
+    {
+      "id": "corp-ring-order-entered",
+      "date": "2023-06-16",
+      "title": "Court enters Ring privacy consent order",
+      "summary": "The order requires $5.8 million, security safeguards and deletion of defined recordings and derived work products.",
+      "entityIds": [
+        "ring",
+        "ftc",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-ring-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Specific deletion categories and exceptions are defined in the order."
+    },
+    {
+      "id": "corp-alexa-settlement-announced",
+      "date": "2023-05-31",
+      "title": "Alexa privacy settlement announced",
+      "summary": "DOJ and FTC alleged excessive retention and ineffective deletion of children’s voice and other user data.",
+      "entityIds": [
+        "amazon",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-alexa-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Use of retained data in algorithm improvement was an agency allegation."
+    },
+    {
+      "id": "corp-alexa-order-entered",
+      "date": "2023-07-19",
+      "title": "Court enters Alexa privacy consent order",
+      "summary": "FTC’s docket records entry of the settlement governing deletion, data uses and a $25 million penalty.",
+      "entityIds": [
+        "amazon",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-alexa-order-entry",
+        "corp-alexa-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Amazon disputed the alleged violations."
+    },
+    {
+      "id": "corp-facebook-privacy-2019",
+      "date": "2019-07-24",
+      "title": "Facebook agrees to $5 billion privacy settlement",
+      "summary": "The agreement resolved FTC allegations that Facebook violated its 2012 privacy order.",
+      "entityIds": [
+        "facebook",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-stipulated-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Cambridge Analytica enforcement was related but separate."
+    },
+    {
+      "id": "corp-facebook-order-final-2020",
+      "date": "2020-04-28",
+      "title": "FTC finalizes Facebook privacy-order modification",
+      "summary": "FTC approved the revised administrative privacy order incorporating the 2019 settlement.",
+      "entityIds": [
+        "facebook",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-facebook-final-approval"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Later proposed modifications are separate proceedings."
+    },
+    {
+      "id": "corp-xbox-privacy-2023",
+      "date": "2023-06-05",
+      "title": "Microsoft announces Xbox privacy settlement",
+      "summary": "The $20 million agreement addressed FTC allegations about children’s account data, consent and retention.",
+      "entityIds": [
+        "microsoft",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-xbox-ftc-settlement",
+        "corp-ftc-2023-privacy-update"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "FTC’s 2024 update confirms court entry and payment; this date is the announcement."
+    },
+    {
+      "id": "corp-google-search-liability-2024",
+      "date": "2024-08-05",
+      "title": "Court finds Google unlawfully maintained search monopolies",
+      "summary": "The court found Sherman Act liability in general search services and general search text advertising.",
+      "entityIds": [
+        "google",
+        "us-doj",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-google-search-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Civil trial finding; subsequent appeals are included below."
+    },
+    {
+      "id": "corp-google-search-judgment-2025",
+      "date": "2025-12-05",
+      "title": "Google search remedies enter final district-court judgment",
+      "summary": "The judgment imposes distribution restrictions, qualified data access and syndication duties.",
+      "entityIds": [
+        "google",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-google-search-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Final district-court judgment does not mean appeals are exhausted."
+    },
+    {
+      "id": "corp-google-search-stay-2026",
+      "date": "2026-05-07",
+      "title": "Court denies Google’s partial stay request without prejudice",
+      "summary": "The court declined to pause data-sharing and syndication provisions at that stage, permitting a renewed request after advance notice.",
+      "entityIds": [
+        "google",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-google-search-stay-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "A stay ruling is not an appellate decision on liability."
+    },
+    {
+      "id": "corp-google-search-cross-appeal-2026",
+      "date": "2026-07-28",
+      "title": "United States files Google search cross-appeal brief",
+      "summary": "The government filed a response and opening cross-appeal brief in D.C. Circuit cases 26-5023, 26-5047 and 26-5049.",
+      "entityIds": [
+        "google",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-google-search-appellate-brief"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Party arguments are not appellate findings."
+    },
+    {
+      "id": "corp-amazon-prime-settlement-2025",
+      "date": "2025-09-25",
+      "title": "Amazon Prime settlement enters court order",
+      "summary": "Amazon’s consent settlement provides a $1 billion penalty, $1.5 billion redress fund and enrollment/cancellation changes.",
+      "entityIds": [
+        "amazon",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-amazon-prime-ftc-settlement",
+        "corp-amazon-prime-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Neither admission nor denial; separate from Amazon’s antitrust case."
+    },
+    {
+      "id": "corp-amazon-prime-redress-2026",
+      "date": "2026-09-14",
+      "title": "Amazon Prime refund procedure is revised",
+      "summary": "The revised order expands automatic payments and conditionally permits supplemental distributions capped at $200 total per eligible consumer.",
+      "entityIds": [
+        "amazon",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-amazon-prime-refund-revision"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "The cap is not a guarantee that every consumer receives $200; conditions and phases apply."
+    },
+    {
+      "id": "corp-palantir-hiring-settlement-2017",
+      "date": "2017-04-25",
+      "title": "Palantir hiring-discrimination settlement announced",
+      "summary": "DOL announced a consent decree providing $1,659,434 in relief and eight job offers.",
+      "entityIds": [
+        "palantir",
+        "us-dol"
+      ],
+      "sourceIds": [
+        "corp-palantir-dol-settlement"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "Palantir denied the allegations; this was a settlement, not a contested merits judgment."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "corp-blackrock-conflicts-action",
+      "from": "us-sec",
+      "to": "blackrock-advisors",
+      "type": "regulatory-action",
+      "label": "Settled conflict-disclosure findings",
+      "date": "2015-04-20",
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "SEC imposed a $12 million penalty and compliance relief on the adviser.",
+      "limitations": "Settled administrative findings; BlackRock Advisors neither admitted nor denied them."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-action",
+      "from": "us-sec",
+      "to": "blackrock",
+      "type": "regulatory-action",
+      "label": "Settled whistleblower-rule findings",
+      "date": "2017-01-17",
+      "sourceIds": [
+        "corp-blackrock-whistleblower-sec",
+        "corp-blackrock-whistleblower-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "BlackRock, Inc. settled the SEC award-waiver action for $340,000.",
+      "limitations": "No admission or denial; SEC found no instance of prevented communication or clause enforcement."
+    },
+    {
+      "id": "corp-blackrock-aviron-action",
+      "from": "us-sec",
+      "to": "blackrock-advisors",
+      "type": "regulatory-action",
+      "label": "Settled inaccurate fund-disclosure findings",
+      "date": "2023-10-24",
+      "sourceIds": [
+        "corp-blackrock-aviron-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "SEC imposed a $2.5 million penalty for fund-disclosure inaccuracies.",
+      "limitations": "BlackRock Advisors neither admitted nor denied findings; disclosures were corrected in 2019."
+    },
+    {
+      "id": "corp-nvidia-disclosure-action",
+      "from": "us-sec",
+      "to": "nvidia",
+      "type": "regulatory-action",
+      "label": "Settled securities-disclosure findings",
+      "date": "2022-05-06",
+      "sourceIds": [
+        "corp-nvidia-sec-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "SEC order concerns two fiscal-2018 quarterly reports and imposed $5.5 million.",
+      "limitations": "NVIDIA neither admitted nor denied findings. This is not an AI-safety or criminal judgment."
+    },
+    {
+      "id": "corp-ring-ftc-settlement",
+      "from": "ftc",
+      "to": "ring",
+      "type": "civil-settlement",
+      "label": "Privacy and security consent settlement",
+      "date": "2023-06-16",
+      "sourceIds": [
+        "corp-ring-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Entered order imposes privacy/security duties and a $5.8 million judgment.",
+      "limitations": "Ring neither admitted nor denied allegations; underlying conduct was not tried."
+    },
+    {
+      "id": "corp-ring-amazon-acquisition",
+      "from": "amazon",
+      "to": "ring",
+      "type": "corporate-acquisition",
+      "label": "Acquired Ring",
+      "date": "2018-02",
+      "sourceIds": [
+        "corp-ring-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "FTC identifies Amazon’s February 2018 acquisition of Ring as background.",
+      "limitations": "Corporate ownership alone does not establish responsibility for each alleged practice."
+    },
+    {
+      "id": "corp-alexa-ftc-settlement",
+      "from": "ftc",
+      "to": "amazon",
+      "type": "civil-settlement",
+      "label": "Alexa privacy consent settlement",
+      "date": "2023-07-19",
+      "sourceIds": [
+        "corp-alexa-order-entry",
+        "corp-alexa-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "DOJ pursued the FTC’s Alexa privacy allegations; the court entered the consent order in July 2023.",
+      "limitations": "Amazon denied violations; this service-specific settlement does not adjudicate unrelated AWS practices."
+    },
+    {
+      "id": "corp-facebook-ftc-settlement",
+      "from": "ftc",
+      "to": "facebook",
+      "type": "civil-settlement",
+      "label": "Privacy consent settlement",
+      "date": "2019-07-24",
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-stipulated-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Facebook accepted a $5 billion privacy settlement concerning its 2012 FTC order.",
+      "limitations": "Neither admission nor denial. Cambridge Analytica proceedings and later Meta disputes are separate."
+    },
+    {
+      "id": "corp-xbox-ftc-settlement",
+      "from": "ftc",
+      "to": "microsoft",
+      "type": "civil-settlement",
+      "label": "Xbox children’s privacy settlement",
+      "date": "2023-06-05",
+      "sourceIds": [
+        "corp-xbox-ftc-settlement",
+        "corp-ftc-2023-privacy-update"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Xbox children’s-data settlement; the FTC later confirmed entry and payment of $20 million.",
+      "limitations": "No-admission stipulation; Microsoft said a retention glitch was corrected. No finding about unrelated products."
+    },
+    {
+      "id": "corp-google-search-court-finding",
+      "from": "us-district-court-dc",
+      "to": "google",
+      "type": "court-finding",
+      "label": "Civil monopolization finding",
+      "date": "2024-08-05",
+      "sourceIds": [
+        "corp-google-search-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Trial finding concerns general search services and general search text advertising.",
+      "limitations": "Google disputes liability; 2026 appeal and cross-appeals are documented. No appellate disposition verified here."
+    },
+    {
+      "id": "corp-amazon-prime-ftc-settlement",
+      "from": "ftc",
+      "to": "amazon",
+      "type": "civil-settlement",
+      "label": "Prime enrollment and cancellation settlement",
+      "date": "2025-09-25",
+      "sourceIds": [
+        "corp-amazon-prime-ftc-settlement",
+        "corp-amazon-prime-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Entered Prime consent order provides a civil penalty, consumer redress and interface changes.",
+      "limitations": "Defendants neither admitted nor denied allegations; separate Amazon antitrust litigation is outside this record."
+    },
+    {
+      "id": "corp-palantir-dol-settlement",
+      "from": "us-dol",
+      "to": "palantir",
+      "type": "civil-settlement",
+      "label": "Hiring-discrimination consent decree",
+      "date": "2017-04-25",
+      "sourceIds": [
+        "corp-palantir-dol-settlement",
+        "corp-palantir-consent-decree"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "OFCCP consent decree concerns three engineering job categories and provides monetary relief and job offers.",
+      "limitations": "Palantir denied discrimination and disputed the statistical analysis; no contested merits judgment."
+    }
+  ],
+  "cases": [
+    {
+      "id": "corp-blackrock-conflicts-case",
+      "title": "BlackRock Advisors: undisclosed outside-business conflict",
+      "date": "2015-04-20",
+      "topic": "Finance & companies",
+      "summary": "SEC settlement concerning a portfolio manager’s outside energy business.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackrock-advisors",
+          "role": "Settling adviser"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec"
+      ],
+      "eventIds": [
+        "corp-blackrock-conflicts-2015"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled SEC administrative order, April 2015.",
+      "findings": "SEC found undisclosed conflicts and deficient controls involving the manager’s Rice Energy interest and a fund investment.",
+      "response": "The adviser neither admitted nor denied the findings.",
+      "outcome": "$12 million penalty, censure, cease-and-desist relief and independent compliance review.",
+      "limitations": "The respondent was BlackRock Advisors, LLC. The order does not establish criminal guilt or misconduct by unrelated group companies.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-blackrock-whistleblower-case",
+      "title": "BlackRock: separation agreements and whistleblower incentives",
+      "date": "2017-01-17",
+      "topic": "Finance & companies",
+      "summary": "SEC action over award-waiver language used from 2011 to 2016.",
+      "entityIds": [
+        "blackrock",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackrock",
+          "role": "Settling respondent"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-blackrock-whistleblower-sec",
+        "corp-blackrock-whistleblower-order"
+      ],
+      "eventIds": [
+        "corp-blackrock-whistleblower-2017"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled administrative order under Rule 21F-17.",
+      "findings": "SEC found that award waivers undermined incentives for reporting potential securities violations.",
+      "response": "BlackRock neither admitted nor denied findings; it had revised the agreement before SEC staff contacted it.",
+      "outcome": "$340,000 civil penalty and remedial measures, including annual training.",
+      "limitations": "SEC identified no instance in which the clause stopped a communication or BlackRock enforced it. No criminal finding.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-blackrock-aviron-case",
+      "title": "BlackRock Advisors: Aviron investment disclosures",
+      "date": "2023-10-24",
+      "topic": "Finance & companies",
+      "summary": "SEC order addresses publicly filed fund reports from 2015–2019.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackrock-advisors",
+          "role": "Settling adviser"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-blackrock-aviron-sec"
+      ],
+      "eventIds": [
+        "corp-blackrock-aviron-2023"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled SEC administrative findings.",
+      "findings": "SEC found that reports misclassified film-finance business Aviron and overstated its interest rate.",
+      "response": "BlackRock neither admitted nor denied findings. It identified and corrected the inaccuracies in 2019.",
+      "outcome": "$2.5 million penalty, censure and cease-and-desist order.",
+      "limitations": "This disclosure action is distinct from the separate case against Aviron’s founder. It does not attribute his misconduct to the adviser.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-nvidia-disclosure-case",
+      "title": "NVIDIA: cryptomining’s effect on gaming revenue",
+      "date": "2022-05-06",
+      "topic": "Finance & companies",
+      "summary": "SEC found omissions about a material driver of GPU revenue growth.",
+      "entityIds": [
+        "nvidia",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "nvidia",
+          "role": "Settling issuer"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-nvidia-sec-order"
+      ],
+      "eventIds": [
+        "corp-nvidia-disclosures-2022"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled SEC order, release 33-11060.",
+      "findings": "The order found inadequate disclosure and controls concerning cryptomining demand in two fiscal-2018 quarters.",
+      "response": "NVIDIA consented without admitting or denying the findings.",
+      "outcome": "$5.5 million civil penalty and cease-and-desist order.",
+      "limitations": "The cited Securities Act provisions can rest on negligence; this is not a criminal conviction or resolution of separate investor litigation.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-ring-privacy-case",
+      "title": "Ring: private videos, algorithm training and account security",
+      "date": "2023-06-16",
+      "topic": "AI & technology",
+      "summary": "Court-approved settlement of FTC privacy and security allegations.",
+      "entityIds": [
+        "ring",
+        "ftc",
+        "us-district-court-dc"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "ring",
+          "role": "Settling defendant"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Civil enforcement plaintiff"
+        },
+        {
+          "entityId": "us-district-court-dc",
+          "role": "Approving court"
+        }
+      ],
+      "sourceIds": [
+        "corp-ring-ftc-allegations",
+        "corp-ring-entered-order"
+      ],
+      "eventIds": [
+        "corp-ring-settlement-announced",
+        "corp-ring-order-entered"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Entered stipulated order, docket 12.",
+      "findings": "FTC alleged unauthorized video access and training uses, alongside security failures; these allegations were resolved without trial.",
+      "response": "Ring neither admitted nor denied the allegations and waived appeal of the consent order.",
+      "outcome": "$5.8 million judgment; privacy/security program and deletion of defined pre-March-2018 recordings and affected models or algorithms.",
+      "limitations": "The decree establishes obligations, not criminal guilt. It does not implicate every employee or all later Ring products.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-alexa-privacy-case",
+      "title": "Amazon Alexa: children’s recordings and deletion requests",
+      "date": "2023-07-19",
+      "topic": "AI & technology",
+      "summary": "Entered settlement addressing retention and deletion of Alexa data.",
+      "entityIds": [
+        "amazon",
+        "ftc",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "amazon",
+          "role": "Settling defendant; Alexa service"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Referring enforcement agency"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Counsel for United States"
+        }
+      ],
+      "sourceIds": [
+        "corp-alexa-ftc-allegations",
+        "corp-alexa-order-entry",
+        "corp-alexa-company-response"
+      ],
+      "eventIds": [
+        "corp-alexa-settlement-announced",
+        "corp-alexa-order-entered"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Court entry verified in FTC docket, July 19, 2023.",
+      "findings": "The complaint alleged COPPA and deception violations, including retention after deletion requests and use to improve algorithms.",
+      "response": "Amazon denied violating the law and described parental controls and planned deletion changes.",
+      "outcome": "$25 million penalty, deletion requirements, a ban on using information covered by deletion requests to develop or improve data products, and privacy-program obligations.",
+      "limitations": "Settlement of disputed allegations, not a trial finding. The case does not adjudicate Amazon’s unrelated services.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-facebook-privacy-case",
+      "title": "Facebook: privacy controls and the 2019 FTC settlement",
+      "date": "2019-07-24",
+      "topic": "AI & technology",
+      "summary": "$5 billion agreement addressing alleged violations of an earlier privacy order.",
+      "entityIds": [
+        "facebook",
+        "ftc",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "facebook",
+          "role": "Settling defendant"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Enforcement agency"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Counsel for United States"
+        }
+      ],
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-stipulated-order",
+        "corp-facebook-final-approval",
+        "corp-facebook-company-response"
+      ],
+      "eventIds": [
+        "corp-facebook-privacy-2019",
+        "corp-facebook-order-final-2020"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Settlement announced in 2019; FTC order modification finalized April 28, 2020.",
+      "findings": "FTC alleged deceptive privacy settings, third-party app access and misrepresentations concerning facial recognition and advertising uses.",
+      "response": "Facebook neither admitted nor denied allegations; its statement acknowledged a breach of trust and promised stronger privacy controls.",
+      "outcome": "$5 billion civil penalty and strengthened privacy governance, independent oversight and certifications.",
+      "limitations": "Cambridge Analytica was separately prosecuted administratively. This case does not establish every Cambridge Analytica allegation or decide later Meta disputes.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-xbox-privacy-case",
+      "title": "Microsoft Xbox: children’s account data",
+      "date": "2023-06-05",
+      "topic": "AI & technology",
+      "summary": "COPPA settlement covering notice, parental consent and retention.",
+      "entityIds": [
+        "microsoft",
+        "ftc",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "microsoft",
+          "role": "Settling defendant; Xbox service"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Referring enforcement agency"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Counsel for United States"
+        }
+      ],
+      "sourceIds": [
+        "corp-xbox-ftc-settlement",
+        "corp-xbox-stipulated-order",
+        "corp-ftc-2023-privacy-update",
+        "corp-xbox-company-response"
+      ],
+      "eventIds": [
+        "corp-xbox-privacy-2023"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Announced June 2023; FTC’s 2024 update confirms an entered federal order and payment.",
+      "findings": "FTC alleged premature collection, incomplete notices and excessive retention of children’s personal data.",
+      "response": "No-admission terms appear in the stipulation. Microsoft said it fixed a retention glitch, deleted data and strengthened controls.",
+      "outcome": "$20 million penalty and changes to consent, deletion and disclosures to game publishers.",
+      "limitations": "Microsoft’s glitch explanation is its response, not the entirety of FTC’s allegations. No criminal finding or ruling on unrelated Microsoft products.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-google-search-case",
+      "title": "Google: search-distribution monopolization",
+      "date": "2024-08-05",
+      "topic": "AI & technology",
+      "summary": "Civil trial findings followed by remedies and appellate proceedings.",
+      "entityIds": [
+        "google",
+        "us-doj",
+        "us-district-court-dc"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "google",
+          "role": "Defendant and appellant"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Government plaintiff counsel"
+        },
+        {
+          "entityId": "us-district-court-dc",
+          "role": "Trial court"
+        }
+      ],
+      "sourceIds": [
+        "corp-google-search-final-judgment",
+        "corp-google-search-stay-order",
+        "corp-google-search-appellate-brief",
+        "corp-google-search-company-response",
+        "corp-google-search-case-index"
+      ],
+      "eventIds": [
+        "corp-google-search-liability-2024",
+        "corp-google-search-judgment-2025",
+        "corp-google-search-stay-2026",
+        "corp-google-search-cross-appeal-2026"
+      ],
+      "status": "court-finding",
+      "statusDetail": "District-court liability and December 2025 judgment; 2026 appeal and cross-appeals documented. No appellate disposition verified here.",
+      "findings": "The court found unlawful monopoly maintenance in general search services and general search text advertising.",
+      "response": "Google disputes the decision, emphasizing product quality, user choice and competition, and appealed in January 2026.",
+      "outcome": "Distribution restrictions and data-sharing/syndication remedies; May 2026 partial-stay request denied without prejudice.",
+      "limitations": "Do not call this an unappealable final outcome. The government’s July 2026 brief is advocacy. The separate ad-tech case is outside this record.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-amazon-prime-case",
+      "title": "Amazon Prime: enrollment and cancellation",
+      "date": "2025-09-25",
+      "topic": "AI & technology",
+      "summary": "Consent settlement over allegedly deceptive subscription flows.",
+      "entityIds": [
+        "amazon",
+        "ftc"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "amazon",
+          "role": "Settling defendant"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Civil enforcement plaintiff"
+        }
+      ],
+      "sourceIds": [
+        "corp-amazon-prime-ftc-settlement",
+        "corp-amazon-prime-entered-order",
+        "corp-amazon-prime-refund-revision"
+      ],
+      "eventIds": [
+        "corp-amazon-prime-settlement-2025",
+        "corp-amazon-prime-redress-2026"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Entered September 2025 order; redress procedure revised September 2026.",
+      "findings": "FTC alleged enrollment without informed consent and deliberately difficult cancellation processes.",
+      "response": "The order states defendants neither admit nor deny the complaint allegations.",
+      "outcome": "$1 billion civil penalty, $1.5 billion consumer-redress fund and interface changes; later order expands automatic refunds.",
+      "limitations": "Consumer eligibility and supplemental payments are conditional. This settlement does not decide the separate Amazon antitrust action or imply all subscriptions were unauthorized.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "corp-palantir-hiring-case",
+      "title": "Palantir: engineering-applicant hiring practices",
+      "date": "2017-04-25",
+      "topic": "Finance & companies",
+      "summary": "Consent decree resolving OFCCP’s historical hiring-discrimination allegations.",
+      "entityIds": [
+        "palantir",
+        "us-dol"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "palantir",
+          "role": "Settling employer"
+        },
+        {
+          "entityId": "us-dol",
+          "role": "Enforcement department; OFCCP"
+        }
+      ],
+      "sourceIds": [
+        "corp-palantir-dol-settlement",
+        "corp-palantir-consent-decree"
+      ],
+      "eventIds": [
+        "corp-palantir-hiring-settlement-2017"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "DOL announced the consent decree April 25, 2017.",
+      "findings": "OFCCP alleged race-based adverse impact against Asian applicants for three engineering job categories at Palo Alto.",
+      "response": "Palantir denied the allegations and offered alternative statistical analyses disputing adverse impact.",
+      "outcome": "$1,659,434 in back wages and other relief, including stock-option value, plus eight offers of employment.",
+      "limitations": "Resolved by consent, not a litigated discrimination finding. Historical executive-order duties must not be presented as a statement of current policy.",
+      "reviewed": "2026-10-19"
+    }
+  ],
+  "coverage": {
+    "title": "Corporate cases: documented actions and contested claims",
+    "scope": "Eleven selected SEC, FTC, DOJ, court and DOL matters involving finance, technology, privacy and employment. Case dates identify specific actions. Company responses and later developments are recorded separately.",
+    "limits": [
+      "This selection is not a comprehensive corporate misconduct database. Absence does not establish a clean record.",
+      "Regulatory findings, allegations, consent settlements and trial findings have different meanings. A documented settlement does not make every complaint allegation a proved fact.",
+      "No liability is inferred from attendance, investments, employment, corporate-group membership or other relationships.",
+      "BlackRock Advisors and BlackRock, Inc. are distinct respondents. Amazon’s existing atlas entity combines the parent and AWS; case roles specify services and defendants.",
+      "Google’s judgment is under documented appellate challenge; this edition verifies filings rather than asserting an exhausted appellate outcome.",
+      "Cases on AI suppliers can concern securities or employment rather than AI itself. Alexa and Ring have specific algorithm/data-use allegations.",
+      "Primary DOL decree indexed text was available, but direct PDF retrieval returned 403; the limitation is recorded in the source entry.",
+      "No private complainant identities, contact details, raw customer data or personal victim records are reproduced."
+    ]
+  }
+}

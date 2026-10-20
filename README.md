@@ -5,7 +5,8 @@ Independent, source-led research atlas at https://badtengu.com, served by the ex
 ## Pages
 
 - `/` — editorial home page.
-- `/timeline/` — searchable timeline, connection explorer, profiles, published meeting lists, source library and coverage guide.
+- `/timeline/` — searchable timeline, case dossiers, connection explorer, profiles, published meeting lists, source library and coverage guide.
+- `/timeline/?view=cases` — cases and findings with category filters, responses, outcomes, entity roles and source documents. Individual records have a stable `case` URL parameter.
 - `/network/` — preserved original 137-node / 190-edge map. Its legacy claims are labeled separately from the new research edition.
 - `/data/atlas.json` — downloadable dataset with source references, dates, evidence statuses and limitations.
 
@@ -19,6 +20,8 @@ The October 19, 2026 edition includes selected historical records beginning in 1
 
 Coverage is bounded. Annual participant lists are not permanent membership; archived reproductions are labeled; invitations and anticipated participants do not establish attendance. No exhaustive private-meal roll or criminal “client list” is claimed. Source references and qualification text belong to each claim and must survive future imports. Avoid unsourced identity merges and person-to-person edges inferred merely from co-attendance.
 
+Case records are authored in the three `research-*-cases.json` files. Each has a dated action, category, summary, findings or allegations, response, outcome, limitations, review date, linked timeline events and sources. Every named entity has an explicit role. Categories are `conviction`, `court-finding`, `regulatory-action`, `civil-settlement`, `official-investigation` and `allegation`; they describe a cited action, not a claim that the proceeding remains open or that appeals are exhausted. A documented record of a charge is distinct from proof of the alleged conduct. Preserve no-admission terms, denials, reversals, dismissals and pardons. Keep unidentified victims and private contact information out of the dataset.
+
 ## Local work and validation
 
 ```sh
@@ -27,7 +30,7 @@ npm run check
 npm run dev -- --port 8787
 ```
 
-`check` builds the data, validates references, unique IDs, roster rows, evidence statuses, identity separation and page/script syntax, preserves legacy feature checks, then runs a Cloudflare dry run. Browser QA should exercise source search under topic filters, profiles, graph refocus, traced paths, meeting lists and narrow-screen layout.
+`check` builds the data, validates references, unique IDs, case fields and roles, roster rows, evidence statuses, identity separation and page/script syntax, preserves legacy feature checks, then runs a Cloudflare dry run. Browser QA should exercise case category/search filters, individual case URLs, case links from profiles and timeline records, source search under topic filters, graph refocus, traced paths, meeting lists and narrow-screen layout.
 
 ## Publishing
 

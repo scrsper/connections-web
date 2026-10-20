@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-10-19",
   "title": "Bad Tengu research atlas",
   "sources": [
@@ -945,6 +945,510 @@
       "published": "2019-04-09",
       "accessed": "2026-10-19",
       "notes": "Witness list identifies Owens as TPUSA director of communications."
+    },
+    {
+      "id": "corp-blackrock-conflicts-sec",
+      "title": "SEC settles BlackRock Advisors conflict-disclosure case",
+      "url": "https://www.sec.gov/news/pressrelease/2015-71.html",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2015-04-20",
+      "accessed": "2026-10-19",
+      "notes": "Release 2015-71; settlement and no-admission terms in final substantive paragraph."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-sec",
+      "title": "BlackRock separation-agreement settlement",
+      "url": "https://www.sec.gov/newsroom/press-releases/2017-14",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2017-01-17",
+      "accessed": "2026-10-19",
+      "notes": "Release 2017-14."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-order",
+      "title": "In the Matter of BlackRock, Inc.: administrative order",
+      "url": "https://www.sec.gov/litigation/admin/2017/34-79804.pdf",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2017-01-17",
+      "accessed": "2026-10-19",
+      "notes": "Release 34-79804; paragraphs 9–10 address voluntary revision and no known prevented communication or clause enforcement."
+    },
+    {
+      "id": "corp-blackrock-aviron-sec",
+      "title": "SEC settles BlackRock Advisors fund-disclosure case",
+      "url": "https://www.sec.gov/newsroom/press-releases/2023-226",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2023-10-24",
+      "accessed": "2026-10-19",
+      "notes": "Release 2023-226; Aviron descriptions, interest-rate disclosure and correction."
+    },
+    {
+      "id": "corp-nvidia-sec-order",
+      "title": "In the Matter of NVIDIA Corporation: settled disclosure findings",
+      "url": "https://www.sec.gov/files/litigation/admin/2022/33-11060.pdf",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published": "2022-05-06",
+      "accessed": "2026-10-19",
+      "notes": "Release 33-11060; sections II, III paragraphs 1 and 19, and IV.B."
+    },
+    {
+      "id": "corp-ring-ftc-allegations",
+      "title": "FTC announces Ring privacy and security settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ring-employees-illegally-surveilled-customers-failed-stop-hackers-taking-control-users",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-05-31",
+      "accessed": "2026-10-19",
+      "notes": "Complaint allegations; do not substitute headline for adjudicated findings."
+    },
+    {
+      "id": "corp-ring-entered-order",
+      "title": "FTC v. Ring: entered stipulated order",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/Ring-OrderEntered-6.16.2023(003).pdf",
+      "publisher": "U.S. District Court for the District of Columbia, hosted by FTC",
+      "published": "2023-06-16",
+      "accessed": "2026-10-19",
+      "notes": "Docket 12; findings 3–5, definitions A, deletion provisions and section IX."
+    },
+    {
+      "id": "corp-alexa-ftc-allegations",
+      "title": "FTC and DOJ announce Alexa privacy settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-05-31",
+      "accessed": "2026-10-19",
+      "notes": "Complaint allegations and proposed relief; later entry verified separately."
+    },
+    {
+      "id": "corp-alexa-order-entry",
+      "title": "United States v. Amazon.com (Alexa): FTC docket",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3128-amazoncom-alexa-us-v",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-07-21",
+      "accessed": "2026-10-19",
+      "notes": "Timeline lists court-entered order on July 19, 2023; generic page status is not a merits judgment."
+    },
+    {
+      "id": "corp-alexa-company-response",
+      "title": "Amazon response to Alexa settlement",
+      "url": "https://www.aboutamazon.com/news/policy-news-views/amazon-response-to-ftc-settlement-regarding-alexa",
+      "publisher": "Amazon",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Company denies violations; publication date not exposed in retrieved text."
+    },
+    {
+      "id": "corp-facebook-ftc-settlement",
+      "title": "FTC announces Facebook privacy settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+      "publisher": "Federal Trade Commission",
+      "published": "2019-07-24",
+      "accessed": "2026-10-19",
+      "notes": "Separates Facebook case from Cambridge Analytica proceedings."
+    },
+    {
+      "id": "corp-facebook-stipulated-order",
+      "title": "United States v. Facebook: stipulated privacy order",
+      "url": "https://www.ftc.gov/system/files/documents/cases/182_3109_facebook_order_filed_7-24-19.pdf",
+      "publisher": "U.S. District Court filing, hosted by FTC",
+      "published": "2019-07-24",
+      "accessed": "2026-10-19",
+      "notes": "Docket 2-1; findings paragraph 6 gives no-admission provision."
+    },
+    {
+      "id": "corp-facebook-final-approval",
+      "title": "FTC privacy-order docket: Facebook",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184-182-3109-c-4365-facebook-inc-matter",
+      "publisher": "Federal Trade Commission",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "April 28, 2020 order modification and final approval; later 2023 modification proceeding is separate."
+    },
+    {
+      "id": "corp-facebook-company-response",
+      "title": "Facebook response to the FTC agreement",
+      "url": "https://about.fb.com/news/2019/07/ftc-agreement/",
+      "publisher": "Facebook",
+      "published": "2019-07-24",
+      "accessed": "2026-10-19",
+      "notes": "Company acknowledges breach of trust and describes privacy changes."
+    },
+    {
+      "id": "corp-xbox-ftc-settlement",
+      "title": "FTC announces Microsoft Xbox children’s privacy settlement",
+      "url": "https://search.ftc.gov/news-events/news/press-releases/2023/06/ftc-will-require-microsoft-pay-20-million-over-charges-it-illegally-collected-personal-information",
+      "publisher": "Federal Trade Commission",
+      "published": "2023-06-05",
+      "accessed": "2026-10-19",
+      "notes": "Allegations concern collection, notice, consent and retention."
+    },
+    {
+      "id": "corp-xbox-stipulated-order",
+      "title": "United States v. Microsoft: proposed stipulated order",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/microsoftproposedstiporder.pdf",
+      "publisher": "U.S. District Court filing, hosted by FTC",
+      "published": "2023-06-05",
+      "accessed": "2026-10-19",
+      "notes": "Findings paragraph 3; proposed order. Later entry and payment confirmed in FTC update."
+    },
+    {
+      "id": "corp-ftc-2023-privacy-update",
+      "title": "2023 Privacy and Data Security Update",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/2024.03.21-PrivacyandDataSecurityUpdate-508.pdf",
+      "publisher": "Federal Trade Commission",
+      "published": "2024-03-21",
+      "accessed": "2026-10-19",
+      "notes": "Microsoft section, printed page 11, confirms entered order and paid $20 million penalty."
+    },
+    {
+      "id": "corp-xbox-company-response",
+      "title": "Xbox response to FTC settlement",
+      "url": "https://news.xbox.com/en-us/2023/06/05/xbox-ftc-settlement-reimagining-future-of-safety-xbox/",
+      "publisher": "Microsoft / Xbox",
+      "published": "2023-06-05",
+      "accessed": "2026-10-19",
+      "notes": "Company describes corrected retention glitch and deletion."
+    },
+    {
+      "id": "corp-google-search-final-judgment",
+      "title": "United States v. Google: final judgment",
+      "url": "https://www.justice.gov/atr/media/1421546/dl?inline=",
+      "publisher": "U.S. District Court for the District of Columbia, hosted by DOJ",
+      "published": "2025-12-05",
+      "accessed": "2026-10-19",
+      "notes": "Docket 1462; page 2 records August 5, 2024 liability findings; sections III–V prescribe remedies."
+    },
+    {
+      "id": "corp-google-search-stay-order",
+      "title": "United States v. Google: partial-stay order",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_20-cv-03010/pdf/USCOURTS-dcd-1_20-cv-03010-5.pdf",
+      "publisher": "U.S. District Court for the District of Columbia / GovInfo",
+      "published": "2026-05-07",
+      "accessed": "2026-10-19",
+      "notes": "Docket 1514; pages 1–2 identify appeal and cross-appeals; conclusion denies stay without prejudice."
+    },
+    {
+      "id": "corp-google-search-appellate-brief",
+      "title": "United States response and opening cross-appeal brief",
+      "url": "https://www.justice.gov/atr/media/1454586/dl?inline=",
+      "publisher": "U.S. Department of Justice, court filing",
+      "published": "2026-07-28",
+      "accessed": "2026-10-19",
+      "notes": "D.C. Circuit cases 26-5023, 26-5047, 26-5049; this is advocacy, not an appellate ruling."
+    },
+    {
+      "id": "corp-google-search-company-response",
+      "title": "Google explains its search-case appeal",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/public-policy/why-were-appealing-the-doj-search-distribution-case/",
+      "publisher": "Google",
+      "published": "2026-01-16",
+      "accessed": "2026-10-19",
+      "notes": "Company disputes liability and argues data-sharing remedies threaten privacy and competition."
+    },
+    {
+      "id": "corp-google-search-case-index",
+      "title": "United States v. Google search case: official document index",
+      "url": "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc",
+      "publisher": "U.S. Department of Justice",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Inspected through October 13, 2026 filings; enforcement documents and briefs are distinguished from decisions."
+    },
+    {
+      "id": "corp-amazon-prime-ftc-settlement",
+      "title": "FTC announces Amazon Prime settlement",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon",
+      "publisher": "Federal Trade Commission",
+      "published": "2025-09-25",
+      "accessed": "2026-10-19",
+      "notes": "Allegations and settlement terms; separate Amazon antitrust action is not resolved here."
+    },
+    {
+      "id": "corp-amazon-prime-entered-order",
+      "title": "FTC v. Amazon: Prime stipulated order",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/Amazon-ROSCA-Order-Filed_0.pdf",
+      "publisher": "U.S. District Court for the Western District of Washington, hosted by FTC",
+      "published": "2025-09-25",
+      "accessed": "2026-10-19",
+      "notes": "Docket 535; findings paragraph 4 contains no-admission terms."
+    },
+    {
+      "id": "corp-amazon-prime-refund-revision",
+      "title": "Amazon Prime: revised consumer-redress order",
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/2123050amazonprimeredressfundorder.pdf",
+      "publisher": "U.S. District Court for the Western District of Washington, hosted by FTC",
+      "published": "2026-09-14",
+      "accessed": "2026-10-19",
+      "notes": "Pages 5–6 describe expanded automatic payments and conditional supplements; page 11 order signed September 14, 2026."
+    },
+    {
+      "id": "corp-palantir-dol-settlement",
+      "title": "DOL announces Palantir hiring settlement",
+      "url": "https://www.dol.gov/newsroom/releases/ofccp/ofccp20170425",
+      "publisher": "U.S. Department of Labor",
+      "published": "2017-04-25",
+      "accessed": "2026-10-19",
+      "notes": "Historical action; not a description of current federal-contractor policy."
+    },
+    {
+      "id": "corp-palantir-consent-decree",
+      "title": "OFCCP v. Palantir: consent decree and order",
+      "url": "https://www.dol.gov/sites/dolgov/files/ofccp/foia/files/Palantir_CD_DPO_Redacted.pdf",
+      "publisher": "U.S. Department of Labor",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Case 2016-OFC-00009; page 2 paragraphs 4–8 from indexed primary text. Direct PDF returned 403; document signing date not independently verified. Public settlement announced April 25, 2017."
+    },
+    {
+      "id": "state-cia-findings",
+      "title": "CIA detention study: findings and conclusions",
+      "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-press-findings-and-conclusions.pdf",
+      "publisher": "U.S. Senate Select Committee on Intelligence",
+      "published": "2014-12-09",
+      "accessed": "2026-10-19",
+      "notes": "Committee findings, especially conclusions 1–3, 14 and 15; finding 15 on printed page 12 supports the detainee counts. Released with redactions. Legislative findings, not a criminal judgment."
+    },
+    {
+      "id": "state-cia-response",
+      "title": "CIA comments on the Senate detention study",
+      "url": "https://www.cia.gov/static/e02824d8cacf8c55c511d67a1d76ed21/CIAs-June-2013-Response-to-the-SSCI-Study-on-the-Former-Detention-and-Interrogation-Program.pdf",
+      "publisher": "Central Intelligence Agency",
+      "published": "2013-06-27",
+      "accessed": "2026-10-19",
+      "notes": "Agency response dated June 27, 2013, approved for public release December 8, 2014. Opening memorandum states agreements, disagreements and reforms."
+    },
+    {
+      "id": "state-durham-closure",
+      "title": "Attorney General statement closing certain detainee investigations",
+      "url": "https://www.justice.gov/archives/opa/pr/statement-attorney-general-eric-holder-closure-investigation-interrogation-certain-detainees",
+      "publisher": "U.S. Department of Justice",
+      "published": "2012-08-30",
+      "accessed": "2026-10-19",
+      "notes": "Criminal investigation closure is based on admissible evidence and proof beyond reasonable doubt, not an adjudication that no abuse occurred."
+    },
+    {
+      "id": "state-oig-detainees",
+      "title": "Review of FBI involvement in and observations of detainee interrogations",
+      "url": "https://oig.justice.gov/sites/default/files/archive/special/s0805/final.pdf",
+      "publisher": "U.S. Department of Justice, Office of Inspector General",
+      "published": "2008-05",
+      "accessed": "2026-10-19",
+      "notes": "Full 438-page report; most scan pages were not machine-readable in the web extraction. The OIG's own accompanying semiannual summary is used for the summarized findings."
+    },
+    {
+      "id": "state-oig-detainees-summary",
+      "title": "OIG semiannual report: FBI detainee-interrogation review",
+      "url": "https://oig.justice.gov/archives/semiannual/0811/fbi.htm",
+      "publisher": "U.S. Department of Justice, Office of Inspector General",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Agency summary for April–September 2008. Distinguishes agents' observations of other agencies from FBI participation and policy failures."
+    },
+    {
+      "id": "state-fbi-cointelpro",
+      "title": "And Justice for All, 1954–1971",
+      "url": "https://www.fbi.gov/history/history-of-the-fbi/and-justice-for-all",
+      "publisher": "Federal Bureau of Investigation",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "FBI institutional history acknowledges COINTELPRO's infringement of First Amendment rights and its April 1971 termination. Agency retrospective."
+    },
+    {
+      "id": "state-walsh-archives",
+      "title": "Records of Lawrence Walsh relating to Iran/Contra",
+      "url": "https://www.archives.gov/research/investigations/walsh.html",
+      "publisher": "U.S. National Archives and Records Administration",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Official archival history summarizes prosecutions, immunity-related reversals, pretrial pardons and August 4, 1993 report; page reviewed December 6, 2023."
+    },
+    {
+      "id": "state-iran-pardons",
+      "title": "Proclamation 6518: Grant of Executive Clemency",
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-107/pdf/STATUTE-107-Pg2606.pdf",
+      "publisher": "President George H. W. Bush / U.S. Government Publishing Office",
+      "published": "1992-12-24",
+      "accessed": "2026-10-19",
+      "notes": "Primary pardon instrument and presidential justification; its political characterizations are attributed to the president, not treated as court findings."
+    },
+    {
+      "id": "state-blackwater-appeal",
+      "title": "United States v. Slatten et al., D.C. Circuit decision",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-caDC-15-03078/pdf/USCOURTS-caDC-15-03078-0.pdf",
+      "publisher": "U.S. Court of Appeals for the District of Columbia Circuit",
+      "published": "2017-08-04",
+      "accessed": "2026-10-19",
+      "notes": "Case 15-3078 and consolidated cases; majority and separate opinions. Slatten retrial and resentencing of the other defendants are subsequent developments."
+    },
+    {
+      "id": "state-slatten-sentence",
+      "title": "Slatten sentenced after retrial for Nisur Square murder",
+      "url": "https://www.justice.gov/usao-dc/pr/former-blackwater-employee-sentenced-life-imprisonment-murder-2007-shooting-nisur-square",
+      "publisher": "U.S. Attorney's Office, District of Columbia",
+      "published": "2019-08-14",
+      "accessed": "2026-10-19",
+      "notes": "Prosecutor's account of sentencing and prior reversal, mistrial and retrial; must be read with December 2020 clemency."
+    },
+    {
+      "id": "state-trump-pardon-register",
+      "title": "Pardons granted by President Donald J. Trump, 2017–2021",
+      "url": "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021",
+      "publisher": "U.S. Department of Justice, Office of the Pardon Attorney",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Official register includes the four December 22, 2020 Blackwater pardons and links to individual instruments."
+    },
+    {
+      "id": "state-academi-doj",
+      "title": "Academi/Blackwater charged and enters deferred prosecution agreement",
+      "url": "https://www.justice.gov/archive/usao/nce/press/2012/2012-aug-07_04.html",
+      "publisher": "U.S. Attorney's Office, Eastern District of North Carolina",
+      "published": "2012-08-07",
+      "accessed": "2026-10-19",
+      "notes": "Seventeen-count corporate information and DPA announcement. Includes admissions and mitigation; not a jury verdict."
+    },
+    {
+      "id": "state-academi-dpa",
+      "title": "United States v. Academi LLC: filed deferred prosecution agreement",
+      "url": "https://unicornriot.ninja/wp-content/uploads/2020/07/AcademiLLC_DPA.pdf",
+      "publisher": "U.S. District Court, Eastern District of North Carolina; copy hosted by Unicorn Riot",
+      "published": "2012-08-07",
+      "accessed": "2026-10-19",
+      "notes": "Primary court filing, 2:12-cr-00014-FL, document 15, with statement of facts. Paragraphs 4, 6, 14–16 and 26 address remediation, penalties, admissions and dismissal conditions. Official text on a secondary host."
+    },
+    {
+      "id": "state-academi-dismissal-report",
+      "title": "The Intercept report reproduced by Reader Supported News",
+      "url": "https://readersupportednews.org/component/content/article/318/35937-blackwaters-founder-erik-prince-is-under-federal-investigation",
+      "publisher": "The Intercept, Matthew Cole and Jeremy Scahill; reproduced by Reader Supported News",
+      "published": "2016-03-24",
+      "accessed": "2026-10-19",
+      "notes": "Used only for its report of September 2015 dismissal after DPA compliance. The original site and final dismissal order were unavailable; unrelated allegations in the article are not imported."
+    },
+    {
+      "id": "state-gru-malware",
+      "title": "Six GRU officers charged over destructive malware and cyberattacks",
+      "url": "https://www.justice.gov/usao-wdpa/pr/six-russian-gru-officers-charged-connection-worldwide-deployment-destructive-malware",
+      "publisher": "U.S. Attorney's Office, Western District of Pennsylvania",
+      "published": "2020-10-19",
+      "accessed": "2026-10-19",
+      "notes": "October 15 indictment announced October 19. Allegations include Ukrainian infrastructure, NotPetya and the Olympics; all defendants presumed innocent."
+    },
+    {
+      "id": "state-gru-malware-indictment",
+      "title": "United States v. Andrienko et al.: unsealed indictment",
+      "url": "https://www.justice.gov/usdoj-media/opa/media/1103696/dl?inline=",
+      "publisher": "U.S. District Court, Western District of Pennsylvania / U.S. Department of Justice",
+      "published": "2020-10-15",
+      "accessed": "2026-10-19",
+      "notes": "Primary charging instrument; charges and alleged acts are not findings after trial."
+    },
+    {
+      "id": "epcase-deutsche-final-judgment",
+      "title": "Deutsche Bank survivor settlement: order and final judgment",
+      "url": "https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv10018/590047/122/",
+      "publisher": "U.S. District Court, Southern District of New York; reproduced by Justia",
+      "published": "2023-10-20",
+      "accessed": "2026-10-19",
+      "notes": "Doe 1 v. Deutsche Bank Aktiengesellschaft, 1:22-cv-10018 (JSR), docket 122, signed October 20, 2023. Court document, not Justia's automated summary. Paragraph 3 approves the settlement; paragraph 11 bars treating it as an admission or evidence of wrongdoing; paragraph 12 specifies the $75 million fund obligation; paragraph 17 dismisses released claims with prejudice. The order does not itself establish completed distributions."
+    },
+    {
+      "id": "epcase-jpm-final-judgment",
+      "title": "JPMorgan survivor settlement: final judgment text",
+      "url": "https://www.casemine.com/judgement/us/6555a4991c3b28684bf981c5?target=amp_references",
+      "publisher": "U.S. District Court, Southern District of New York; reproduced by CaseMine",
+      "published": "2023-11",
+      "accessed": "2026-10-19",
+      "notes": "Doe v. JPMorgan Chase Bank, 1:22-cv-10019 (JSR). Reproduced judicial text records the November 9, 2023 hearing; CaseMine indexes it November 13. This dataset preserves month precision because the signed docket date was not independently verified. Paragraph 12: no admission; paragraph 13: $290 million paid to the qualified fund; paragraph 18: released claims dismissed with prejudice. The existing JPMorgan registration-document source corroborates November final approval."
+    },
+    {
+      "id": "epcase-jpm-usvi-response",
+      "title": "JPMorgan statement on its USVI settlement",
+      "url": "https://www.nasdaq.com/press-release/jpmorgan-chase-settles-remaining-litigations-relating-to-jeffrey-epstein-2023-09-26",
+      "publisher": "JPMorgan Chase, Business Wire release reproduced by Nasdaq",
+      "published": "2023-09-26",
+      "accessed": "2026-10-19",
+      "notes": "The bank's own statement: agreement in principle for $55 million plus $20 million attorneys' fees; no admission of liability; regret for its association with Epstein. This is a party statement, not an independent finding about the underlying allegations."
+    },
+    {
+      "id": "epcase-bop-charges",
+      "title": "DOJ announces charges over falsified MCC monitoring records",
+      "url": "https://www.justice.gov/usao-sdny/pr/correctional-officers-charged-falsifying-records-august-9th-and-10th-metropolitan",
+      "publisher": "U.S. Attorney's Office, Southern District of New York",
+      "published": "2019-11-19",
+      "accessed": "2026-10-19",
+      "notes": "Press release 19-383, concerning United States v. Noel et al., 19 Cr. 830 (AT). Charges were allegations. Their subsequent deferred prosecution and dismissal are included separately; the announcement is not a conviction."
+    },
+    {
+      "id": "epcase-bop-dismissal",
+      "title": "MCC monitoring-record prosecution: nolle-prosequi filing",
+      "url": "https://www.justice.gov/multimedia/Court%20Records/United%20States%20v.%20Noel%2C%20No.%20119-cr-00830%20%28S.D.N.Y.%202019%29/065.pdf",
+      "publisher": "U.S. District Court, Southern District of New York; hosted by DOJ",
+      "published": "2022-01-03",
+      "accessed": "2026-10-19",
+      "notes": "1:19-cr-00830-AT, docket 65, filed January 3, 2022, three pages. Paragraph 3 recites agreements on/about May 20, 2021; paragraph 4 recommends dismissal after compliance. Prosecutor recommendation dated December 13, 2021. This distinguishes the filed order from OIG report 23-085's December 13 narrative date and its May 25 account of the agreements. DOJ's viewer may require an age-verification step; indexed court text was reviewed."
+    },
+    {
+      "id": "epcase-oig-full-report",
+      "title": "OIG report 23-085: custody, care and supervision of Epstein",
+      "url": "https://oig.justice.gov/sites/default/files/reports/23-085.pdf",
+      "publisher": "U.S. Department of Justice Office of the Inspector General",
+      "published": "2023-06-27",
+      "accessed": "2026-10-19",
+      "notes": "Full report, 128 PDF pages. Executive summary iii–iv: staff misconduct and limits of findings about death. Printed page 6: deferred prosecution, admissions and dismissal narrative. Appendices 1–2: BOP response and OIG treatment of eight recommendations. Agreement with a recommendation is distinct from documented implementation or closure. Court docket 65 is used for the dismissal filing date."
+    },
+    {
+      "id": "epcase-maxwell-appeal",
+      "title": "United States v. Maxwell: Second Circuit opinion affirming judgment",
+      "url": "https://www.supremecourt.gov/DocketPDF/24/24-1073/337362/20250117133905126_22-1426.pdf",
+      "publisher": "U.S. Court of Appeals for the Second Circuit; copy filed with the Supreme Court",
+      "published": "2024-09-17",
+      "accessed": "2026-10-19",
+      "notes": "22-1426-cr, docket 109-1, September 17, 2024. Pages 2–4 identify the three counts in the June 29, 2022 judgment and appellate issues; judgment affirmed. The sentencing hearing occurred June 28. The five-count jury verdict and three-count judgment are different procedural stages."
+    },
+    {
+      "id": "epcase-maxwell-cert-docket",
+      "title": "Supreme Court docket 24-1073: Maxwell petition denied",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-1073.html",
+      "publisher": "Supreme Court of the United States",
+      "published": "2025-10-06",
+      "accessed": "2026-10-19",
+      "notes": "Docket 24-1073 records denial of certiorari on October 6, 2025. A refusal to take the appeal is not a new merits opinion. Later collateral proceedings are separately sourced in the existing atlas."
+    },
+    {
+      "id": "epcase-mit-reform-update",
+      "title": "MIT president's update on donor, reporting and visitor reforms",
+      "url": "https://news.mit.edu/2020/letter-commitments-community-1203",
+      "publisher": "MIT News; letter from President L. Rafael Reif",
+      "published": "2020-12-03",
+      "accessed": "2026-10-19",
+      "notes": "Institutional response following the Epstein review. Describes donor-policy work, changes to reporting and retaliation protections, and a visitor-policy review. Separates completed or ongoing work from recommendations still being finalized; not an independent effectiveness audit."
+    },
+    {
+      "id": "epcase-harvard-sanctions",
+      "title": "Harvard announces disciplinary findings and sanctions concerning Martin Nowak",
+      "url": "https://www.harvardmagazine.com/2021/03/martin-nowak-sanctioned-for-jeffrey-epstein-involvement",
+      "publisher": "Harvard Magazine",
+      "published": "2021-03-25",
+      "accessed": "2026-10-19",
+      "notes": "Independent publication reproduces the substance of Dean Claudine Gay's letter. Its same-day correction says Nowak retained both mathematics and biology appointments. Use the corrected account, not the superseded claim that a departmental appointment ended."
+    },
+    {
+      "id": "epcase-harvard-sanctions-lifted",
+      "title": "Department chair confirms restoration of Nowak's research and advising privileges",
+      "url": "https://www.thecrimson.com/article/2023/5/22/nowak-sanctions-lifted/",
+      "publisher": "The Harvard Crimson",
+      "published": "2023-05-22",
+      "accessed": "2026-10-19",
+      "notes": "Report attributes restoration in March 2023 to department chair Scott Edwards. University spokespeople and Nowak declined comment. The report does not provide an exact March day or a formal disposition document."
+    },
+    {
+      "id": "epcase-harvard-renewed-review",
+      "title": "Harvard confirms renewed paid leave for Nowak pending review",
+      "url": "https://www.harvardmagazine.com/university-news/martin-nowak-harvard-administrative-leave-epstein",
+      "publisher": "Harvard Magazine",
+      "published": "2026-02-27",
+      "accessed": "2026-10-19",
+      "notes": "Reports a Faculty of Arts and Sciences spokesperson's confirmation and Dean Hopi Hoekstra's letter about review of newly released documents. The university had not disclosed specific grounds. Publication date is used because the leave's exact effective date is not established here. No later outcome was verified."
     }
   ],
   "entities": [
@@ -20110,6 +20614,167 @@
       "sourceIds": [
         "politics-bible"
       ]
+    },
+    {
+      "id": "us-sec",
+      "name": "U.S. Securities and Exchange Commission",
+      "type": "government",
+      "summary": "Federal securities regulator issuing the administrative orders indexed here.",
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec",
+        "corp-nvidia-sec-order"
+      ]
+    },
+    {
+      "id": "ftc",
+      "name": "Federal Trade Commission",
+      "type": "government",
+      "summary": "Consumer-protection agency bringing the civil matters indexed here.",
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-ring-ftc-allegations"
+      ]
+    },
+    {
+      "id": "us-dol",
+      "name": "U.S. Department of Labor",
+      "type": "government",
+      "summary": "Department whose OFCCP brought the historical Palantir employment proceeding.",
+      "sourceIds": [
+        "corp-palantir-dol-settlement"
+      ]
+    },
+    {
+      "id": "us-district-court-dc",
+      "name": "U.S. District Court for the District of Columbia",
+      "type": "government",
+      "summary": "Court that issued the Google search judgment and Ring consent order.",
+      "sourceIds": [
+        "corp-google-search-final-judgment",
+        "corp-ring-entered-order"
+      ]
+    },
+    {
+      "id": "blackrock-advisors",
+      "name": "BlackRock Advisors, LLC",
+      "type": "company",
+      "summary": "Investment adviser named in the 2015 and 2023 SEC orders; distinguished from BlackRock, Inc.",
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec",
+        "corp-blackrock-aviron-sec"
+      ]
+    },
+    {
+      "id": "ring",
+      "name": "Ring LLC",
+      "type": "company",
+      "summary": "Home-camera company and settling defendant in the FTC’s 2023 privacy case.",
+      "sourceIds": [
+        "corp-ring-ftc-allegations",
+        "corp-ring-entered-order"
+      ]
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook, Inc.",
+      "type": "company",
+      "summary": "Corporate name used in the 2019 privacy settlement; the FTC docket also tracks subsequent Meta proceedings.",
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-final-approval"
+      ]
+    },
+    {
+      "id": "state-doj-oig",
+      "name": "DOJ Office of Inspector General",
+      "type": "government",
+      "summary": "Independent oversight office that reviewed FBI detainee-interrogation conduct and policy.",
+      "sourceIds": [
+        "state-oig-detainees-summary"
+      ]
+    },
+    {
+      "id": "state-stansfield-turner",
+      "name": "Stansfield Turner",
+      "type": "person",
+      "summary": "CIA director who testified in 1977 about recovered MKULTRA records.",
+      "sourceIds": [
+        "intel-mkultra"
+      ]
+    },
+    {
+      "id": "state-lawrence-walsh",
+      "name": "Lawrence Walsh",
+      "type": "person",
+      "summary": "Independent counsel appointed in 1986 to investigate Iran-Contra.",
+      "sourceIds": [
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-oliver-north",
+      "name": "Oliver North",
+      "type": "person",
+      "summary": "Iran-Contra defendant whose convictions were vacated over use of immunized congressional testimony.",
+      "sourceIds": [
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-john-poindexter",
+      "name": "John Poindexter",
+      "type": "person",
+      "summary": "Iran-Contra defendant whose convictions were vacated over immunized testimony.",
+      "sourceIds": [
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-caspar-weinberger",
+      "name": "Caspar Weinberger",
+      "type": "person",
+      "summary": "Former defense secretary pardoned before trial on Iran-Contra charges in 1992.",
+      "sourceIds": [
+        "state-iran-pardons",
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-george-hw-bush",
+      "name": "George H. W. Bush",
+      "type": "person",
+      "summary": "President who issued six Iran-Contra pardons on December 24, 1992.",
+      "sourceIds": [
+        "state-iran-pardons"
+      ]
+    },
+    {
+      "id": "state-dc-circuit",
+      "name": "U.S. Court of Appeals for the D.C. Circuit",
+      "type": "government",
+      "summary": "Appellate court responsible for the cited 2017 Blackwater ruling.",
+      "sourceIds": [
+        "state-blackwater-appeal"
+      ]
+    },
+    {
+      "id": "state-gru-unit-26165",
+      "name": "GRU Unit 26165",
+      "type": "government",
+      "summary": "Unit identified in the 2018 U.S. election-hacking indictment; the allegations concern named officers.",
+      "sourceIds": [
+        "russia-gru"
+      ]
+    },
+    {
+      "id": "state-gru-unit-74455",
+      "name": "GRU Unit 74455",
+      "type": "government",
+      "summary": "Unit identified in the 2018 election and 2020 malware indictments; charges concern named officers.",
+      "sourceIds": [
+        "russia-gru",
+        "state-gru-malware"
+      ]
     }
   ],
   "events": [
@@ -22052,6 +22717,813 @@
       "limitations": "A documented media/ministry collaboration; no broader affiliation inferred.",
       "datePrecision": "day",
       "sortDate": "2026-10-15"
+    },
+    {
+      "id": "corp-blackrock-conflicts-2015",
+      "date": "2015-04-20",
+      "title": "BlackRock Advisors settles SEC conflict-disclosure action",
+      "summary": "The adviser accepted a $12 million penalty and compliance review over undisclosed portfolio-manager conflicts.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "Settled administrative findings; neither admission nor criminal conviction.",
+      "sortDate": "2015-04-20"
+    },
+    {
+      "id": "corp-blackrock-whistleblower-2017",
+      "date": "2017-01-17",
+      "title": "BlackRock settles whistleblower-award waiver action",
+      "summary": "SEC ordered a $340,000 penalty over separation agreements waiving whistleblower awards.",
+      "entityIds": [
+        "blackrock",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-blackrock-whistleblower-sec",
+        "corp-blackrock-whistleblower-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "No identified instance of a prevented SEC communication or enforcement of the clause.",
+      "sortDate": "2017-01-17"
+    },
+    {
+      "id": "corp-blackrock-aviron-2023",
+      "date": "2023-10-24",
+      "title": "BlackRock Advisors settles fund-disclosure case",
+      "summary": "SEC imposed a $2.5 million penalty for inaccurate Aviron investment descriptions and interest-rate reporting.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-blackrock-aviron-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "The adviser corrected disclosures in 2019; no admission or denial.",
+      "sortDate": "2023-10-24"
+    },
+    {
+      "id": "corp-nvidia-disclosures-2022",
+      "date": "2022-05-06",
+      "title": "NVIDIA settles SEC cryptomining-disclosure action",
+      "summary": "NVIDIA accepted a $5.5 million penalty concerning two fiscal-2018 quarterly reports.",
+      "entityIds": [
+        "nvidia",
+        "us-sec"
+      ],
+      "sourceIds": [
+        "corp-nvidia-sec-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "Concerns securities disclosure, not AI model safety.",
+      "sortDate": "2022-05-06"
+    },
+    {
+      "id": "corp-ring-settlement-announced",
+      "date": "2023-05-31",
+      "title": "FTC files Ring privacy and security allegations",
+      "summary": "FTC alleged excessive internal video access, algorithm training without consent and inadequate account security.",
+      "entityIds": [
+        "ring",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-ring-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Complaint allegations resolved by consent order, not tried findings.",
+      "sortDate": "2023-05-31"
+    },
+    {
+      "id": "corp-ring-order-entered",
+      "date": "2023-06-16",
+      "title": "Court enters Ring privacy consent order",
+      "summary": "The order requires $5.8 million, security safeguards and deletion of defined recordings and derived work products.",
+      "entityIds": [
+        "ring",
+        "ftc",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-ring-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Specific deletion categories and exceptions are defined in the order.",
+      "sortDate": "2023-06-16"
+    },
+    {
+      "id": "corp-alexa-settlement-announced",
+      "date": "2023-05-31",
+      "title": "Alexa privacy settlement announced",
+      "summary": "DOJ and FTC alleged excessive retention and ineffective deletion of children’s voice and other user data.",
+      "entityIds": [
+        "amazon",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-alexa-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Use of retained data in algorithm improvement was an agency allegation.",
+      "sortDate": "2023-05-31"
+    },
+    {
+      "id": "corp-alexa-order-entered",
+      "date": "2023-07-19",
+      "title": "Court enters Alexa privacy consent order",
+      "summary": "FTC’s docket records entry of the settlement governing deletion, data uses and a $25 million penalty.",
+      "entityIds": [
+        "amazon",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-alexa-order-entry",
+        "corp-alexa-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Amazon disputed the alleged violations.",
+      "sortDate": "2023-07-19"
+    },
+    {
+      "id": "corp-facebook-privacy-2019",
+      "date": "2019-07-24",
+      "title": "Facebook agrees to $5 billion privacy settlement",
+      "summary": "The agreement resolved FTC allegations that Facebook violated its 2012 privacy order.",
+      "entityIds": [
+        "facebook",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-stipulated-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Cambridge Analytica enforcement was related but separate.",
+      "sortDate": "2019-07-24"
+    },
+    {
+      "id": "corp-facebook-order-final-2020",
+      "date": "2020-04-28",
+      "title": "FTC finalizes Facebook privacy-order modification",
+      "summary": "FTC approved the revised administrative privacy order incorporating the 2019 settlement.",
+      "entityIds": [
+        "facebook",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-facebook-final-approval"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Later proposed modifications are separate proceedings.",
+      "sortDate": "2020-04-28"
+    },
+    {
+      "id": "corp-xbox-privacy-2023",
+      "date": "2023-06-05",
+      "title": "Microsoft announces Xbox privacy settlement",
+      "summary": "The $20 million agreement addressed FTC allegations about children’s account data, consent and retention.",
+      "entityIds": [
+        "microsoft",
+        "ftc",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-xbox-ftc-settlement",
+        "corp-ftc-2023-privacy-update"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "FTC’s 2024 update confirms court entry and payment; this date is the announcement.",
+      "sortDate": "2023-06-05"
+    },
+    {
+      "id": "corp-google-search-liability-2024",
+      "date": "2024-08-05",
+      "title": "Court finds Google unlawfully maintained search monopolies",
+      "summary": "The court found Sherman Act liability in general search services and general search text advertising.",
+      "entityIds": [
+        "google",
+        "us-doj",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-google-search-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Civil trial finding; subsequent appeals are included below.",
+      "sortDate": "2024-08-05"
+    },
+    {
+      "id": "corp-google-search-judgment-2025",
+      "date": "2025-12-05",
+      "title": "Google search remedies enter final district-court judgment",
+      "summary": "The judgment imposes distribution restrictions, qualified data access and syndication duties.",
+      "entityIds": [
+        "google",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-google-search-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Final district-court judgment does not mean appeals are exhausted.",
+      "sortDate": "2025-12-05"
+    },
+    {
+      "id": "corp-google-search-stay-2026",
+      "date": "2026-05-07",
+      "title": "Court denies Google’s partial stay request without prejudice",
+      "summary": "The court declined to pause data-sharing and syndication provisions at that stage, permitting a renewed request after advance notice.",
+      "entityIds": [
+        "google",
+        "us-district-court-dc"
+      ],
+      "sourceIds": [
+        "corp-google-search-stay-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "A stay ruling is not an appellate decision on liability.",
+      "sortDate": "2026-05-07"
+    },
+    {
+      "id": "corp-google-search-cross-appeal-2026",
+      "date": "2026-07-28",
+      "title": "United States files Google search cross-appeal brief",
+      "summary": "The government filed a response and opening cross-appeal brief in D.C. Circuit cases 26-5023, 26-5047 and 26-5049.",
+      "entityIds": [
+        "google",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "corp-google-search-appellate-brief"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Party arguments are not appellate findings.",
+      "sortDate": "2026-07-28"
+    },
+    {
+      "id": "corp-amazon-prime-settlement-2025",
+      "date": "2025-09-25",
+      "title": "Amazon Prime settlement enters court order",
+      "summary": "Amazon’s consent settlement provides a $1 billion penalty, $1.5 billion redress fund and enrollment/cancellation changes.",
+      "entityIds": [
+        "amazon",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-amazon-prime-ftc-settlement",
+        "corp-amazon-prime-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "Neither admission nor denial; separate from Amazon’s antitrust case.",
+      "sortDate": "2025-09-25"
+    },
+    {
+      "id": "corp-amazon-prime-redress-2026",
+      "date": "2026-09-14",
+      "title": "Amazon Prime refund procedure is revised",
+      "summary": "The revised order expands automatic payments and conditionally permits supplemental distributions capped at $200 total per eligible consumer.",
+      "entityIds": [
+        "amazon",
+        "ftc"
+      ],
+      "sourceIds": [
+        "corp-amazon-prime-refund-revision"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "limitations": "The cap is not a guarantee that every consumer receives $200; conditions and phases apply.",
+      "sortDate": "2026-09-14"
+    },
+    {
+      "id": "corp-palantir-hiring-settlement-2017",
+      "date": "2017-04-25",
+      "title": "Palantir hiring-discrimination settlement announced",
+      "summary": "DOL announced a consent decree providing $1,659,434 in relief and eight job offers.",
+      "entityIds": [
+        "palantir",
+        "us-dol"
+      ],
+      "sourceIds": [
+        "corp-palantir-dol-settlement"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "limitations": "Palantir denied the allegations; this was a settlement, not a contested merits judgment.",
+      "sortDate": "2017-04-25"
+    },
+    {
+      "id": "state-mkultra-approved",
+      "date": "1953-04-13",
+      "title": "CIA approves MKULTRA",
+      "summary": "The Senate hearing's documentary appendix records approval of the research program.",
+      "entityIds": [
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Approval of research does not establish that its experimental objectives were achieved.",
+      "sortDate": "1953-04-13"
+    },
+    {
+      "id": "state-mkultra-destruction",
+      "date": "1973",
+      "title": "MKULTRA records destroyed",
+      "summary": "Turner's later testimony described destruction authorized by the then CIA director; financial records survived separately.",
+      "entityIds": [
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The surviving archive cannot reconstruct every subject or operation.",
+      "sortDate": "1973"
+    },
+    {
+      "id": "state-cointelpro-ended",
+      "date": "1971-04",
+      "title": "FBI terminates COINTELPRO",
+      "summary": "The FBI's historical account dates termination of the programs to April 1971.",
+      "entityIds": [
+        "fbi"
+      ],
+      "sourceIds": [
+        "state-fbi-cointelpro"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Ending a named program does not resolve every underlying civil-rights claim.",
+      "sortDate": "1971-04"
+    },
+    {
+      "id": "state-church-report",
+      "date": "1976-04-29",
+      "title": "Church Committee issues final report",
+      "summary": "The Senate inquiry found intelligence agencies had undermined constitutional rights and recommended stronger oversight.",
+      "entityIds": [
+        "us-senate",
+        "cia",
+        "fbi"
+      ],
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Legislative findings; individual criminal liability requires separate evidence.",
+      "sortDate": "1976-04-29"
+    },
+    {
+      "id": "state-iran-investigation",
+      "date": "1986-11-26",
+      "title": "FBI begins Iran-Contra investigation",
+      "summary": "The attorney general ordered an investigation after disclosure that Iran arms-sale proceeds had been diverted to the Contras.",
+      "entityIds": [
+        "fbi",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Opening an investigation was not a finding against every official involved.",
+      "sortDate": "1986-11-26"
+    },
+    {
+      "id": "state-iran-indictment",
+      "date": "1988-03-16",
+      "title": "Iran-Contra defendants indicted",
+      "summary": "A grand jury indicted North, Poindexter, Albert Hakim and Richard Secord. Their cases had different outcomes.",
+      "entityIds": [
+        "state-oliver-north",
+        "state-john-poindexter",
+        "state-lawrence-walsh"
+      ],
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "North and Poindexter's later convictions were vacated; Hakim and Secord pleaded guilty.",
+      "sortDate": "1988-03-16"
+    },
+    {
+      "id": "state-iran-pardons-event",
+      "date": "1992-12-24",
+      "title": "Bush grants six Iran-Contra pardons",
+      "summary": "Pardons covered Weinberger, Elliott Abrams, Duane Clarridge, Alan Fiers, Clair George and Robert McFarlane.",
+      "entityIds": [
+        "state-george-hw-bush",
+        "state-caspar-weinberger"
+      ],
+      "sourceIds": [
+        "state-iran-pardons"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Weinberger and Clarridge were pardoned before trial.",
+      "sortDate": "1992-12-24"
+    },
+    {
+      "id": "state-walsh-report",
+      "date": "1993-08-04",
+      "title": "Walsh submits Iran-Contra final report",
+      "summary": "The independent counsel submitted his report after prosecutions, reversals and pardons.",
+      "entityIds": [
+        "state-lawrence-walsh"
+      ],
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The inquiry did not yield a uniform outcome for all defendants.",
+      "sortDate": "1993-08-04"
+    },
+    {
+      "id": "state-fbi-detainee-policy",
+      "date": "2004-05",
+      "title": "FBI issues detainee-interrogation policy",
+      "summary": "OIG later found this guidance late and insufficiently clear about reporting other agencies' mistreatment.",
+      "entityIds": [
+        "fbi",
+        "state-doj-oig"
+      ],
+      "sourceIds": [
+        "state-oig-detainees-summary"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The review generally credited FBI agents for avoiding abuse.",
+      "sortDate": "2004-05"
+    },
+    {
+      "id": "state-oig-detainee-report",
+      "date": "2008-05",
+      "title": "OIG reports on FBI detainee interrogations",
+      "summary": "The inspector general identified shortcomings in guidance and escalation of concerns about other agencies.",
+      "entityIds": [
+        "state-doj-oig",
+        "fbi",
+        "cia"
+      ],
+      "sourceIds": [
+        "state-oig-detainees",
+        "state-oig-detainees-summary"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The OIG did not substantiate allegations of FBI participation in detainee abuse.",
+      "sortDate": "2008-05"
+    },
+    {
+      "id": "state-durham-closure-event",
+      "date": "2012-08-30",
+      "title": "DOJ closes investigations into two detainee deaths",
+      "summary": "DOJ declined prosecution, stating that admissible evidence could not sustain convictions beyond reasonable doubt.",
+      "entityIds": [
+        "us-doj",
+        "cia"
+      ],
+      "sourceIds": [
+        "state-durham-closure"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "A charging decision is distinct from the Senate's later findings and from an acquittal after trial.",
+      "sortDate": "2012-08-30"
+    },
+    {
+      "id": "state-cia-response-event",
+      "date": "2013-06-27",
+      "title": "CIA responds to draft Senate detention findings",
+      "summary": "The agency acknowledged management failures but disputed central conclusions about effectiveness and deliberate misrepresentation.",
+      "entityIds": [
+        "cia",
+        "us-senate"
+      ],
+      "sourceIds": [
+        "state-cia-response"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The memorandum was approved for public release in December 2014; it is the agency's response.",
+      "sortDate": "2013-06-27"
+    },
+    {
+      "id": "state-blackwater-export-settlement",
+      "date": "2010-08-18",
+      "title": "Xe agrees to export-control civil settlement",
+      "summary": "The later filed DPA records a $42 million State Department consent agreement.",
+      "entityIds": [
+        "blackwater",
+        "us-state-department"
+      ],
+      "sourceIds": [
+        "state-academi-dpa"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Civil administrative settlement; this entry is not a criminal conviction.",
+      "sortDate": "2010-08-18"
+    },
+    {
+      "id": "state-academi-dpa-event",
+      "date": "2012-08-07",
+      "title": "Academi enters deferred prosecution agreement",
+      "summary": "The agreement acknowledged corporate conduct and specified a $7.5 million penalty with compliance-cost credits.",
+      "entityIds": [
+        "academi",
+        "blackwater",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-academi-doj",
+        "state-academi-dpa"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "DPA, not conviction; later dismissal is separately reported.",
+      "sortDate": "2012-08-07"
+    },
+    {
+      "id": "state-academi-dismissal-event",
+      "date": "2015-09",
+      "title": "Academi deferred charges reportedly dismissed",
+      "summary": "The Intercept reported that charges were dismissed after the government certified compliance.",
+      "entityIds": [
+        "academi",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-academi-dismissal-report"
+      ],
+      "evidence": "reported",
+      "topic": "Intelligence & conflict",
+      "limitations": "Secondary report reproduced by Reader Supported News; final dismissal order not retrieved.",
+      "sortDate": "2015-09"
+    },
+    {
+      "id": "state-blackwater-appeal-event",
+      "date": "2017-08-04",
+      "title": "Appeals court reverses Slatten conviction and orders resentencing",
+      "summary": "The court ordered a separate retrial for Slatten and new sentences for Slough, Liberty and Heard.",
+      "entityIds": [
+        "state-dc-circuit",
+        "nicholas-slatten",
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard"
+      ],
+      "sourceIds": [
+        "state-blackwater-appeal"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Slatten was later reconvicted; all four were pardoned in 2020.",
+      "sortDate": "2017-08-04"
+    },
+    {
+      "id": "state-slatten-sentence-event",
+      "date": "2019-08-14",
+      "title": "Slatten sentenced to life after retrial",
+      "summary": "Following a 2018 mistrial and subsequent guilty verdict, Slatten received a life sentence for first-degree murder.",
+      "entityIds": [
+        "nicholas-slatten",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-slatten-sentence"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "President Trump granted a full pardon in December 2020.",
+      "sortDate": "2019-08-14"
+    },
+    {
+      "id": "state-gru-malware-event",
+      "date": "2020-10-19",
+      "title": "U.S. announces destructive-malware indictment",
+      "summary": "Six officers of GRU Unit 74455 were charged in an indictment returned October 15.",
+      "entityIds": [
+        "us-doj",
+        "gru",
+        "state-gru-unit-74455"
+      ],
+      "sourceIds": [
+        "state-gru-malware",
+        "state-gru-malware-indictment"
+      ],
+      "evidence": "allegation",
+      "topic": "Intelligence & conflict",
+      "limitations": "The alleged conduct remains an accusation in this record, not a trial finding.",
+      "sortDate": "2020-10-19"
+    },
+    {
+      "id": "epcase-bop-records-indictment",
+      "date": "2019-11-19",
+      "title": "Federal officers charged over falsified prison-monitoring records",
+      "summary": "DOJ announced an indictment alleging that two MCC employees falsified records of required inmate checks on the night of Epstein's death. The case concerned monitoring records and conspiracy to falsify them.",
+      "entityIds": [
+        "federal-bureau-prisons",
+        "us-doj",
+        "fbi",
+        "jeffrey-epstein"
+      ],
+      "sourceIds": [
+        "epcase-bop-charges",
+        "epcase-bop-dismissal"
+      ],
+      "evidence": "allegation",
+      "topic": "Epstein records",
+      "limitations": "An indictment is an accusation. These charges were later dismissed after deferred-prosecution agreements; this record does not imply a conviction or a homicide charge.",
+      "sortDate": "2019-11-19"
+    },
+    {
+      "id": "epcase-bop-deferred-prosecution",
+      "date": "2021-05-20",
+      "title": "Monitoring-record case enters deferred-prosecution agreements",
+      "summary": "The later dismissal filing records agreements on or about May 20 requiring a six-month period of compliance. OIG reports that the employees admitted falsely certifying checks and agreed to cooperate and complete community service.",
+      "entityIds": [
+        "federal-bureau-prisons",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "epcase-bop-dismissal",
+        "epcase-oig-full-report"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "A deferred-prosecution agreement is not a trial conviction. May 20 is the approximate agreement date recited in docket 65; the OIG report describes the agreements under May 25. The later dismissal is separately dated.",
+      "sortDate": "2021-05-20"
+    },
+    {
+      "id": "epcase-bop-charges-dismissed",
+      "date": "2022-01-03",
+      "title": "Dismissal filed after prison employees complete agreements",
+      "summary": "Docket 65 in 19 Cr. 830 records the nolle-prosequi disposition after prosecutors reported that the employees completed the deferred-prosecution terms. The criminal case ended without convictions.",
+      "entityIds": [
+        "federal-bureau-prisons",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "epcase-bop-dismissal",
+        "epcase-oig-full-report"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "January 3 is the court filing date. The prosecutor's recommendation was dated December 13, 2021, the date used in OIG's later narrative. Dismissal does not erase the agreements' admissions or the OIG's administrative findings.",
+      "sortDate": "2022-01-03"
+    },
+    {
+      "id": "epcase-deutsche-settlement-approved",
+      "date": "2023-10-20",
+      "title": "Court approves Deutsche Bank's $75 million survivor settlement",
+      "summary": "Judge Jed Rakoff approved the class settlement in 22-cv-10018 and dismissed the released claims with prejudice. The judgment specifies a $75 million obligation to the qualified settlement fund.",
+      "entityIds": [
+        "deutsche-bank",
+        "jeffrey-epstein"
+      ],
+      "sourceIds": [
+        "epcase-deutsche-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "Paragraph 11 explicitly prevents treating the settlement as an admission or evidence of liability or wrongdoing. Paragraph 12 specifies the payment obligation, not proof of completed distributions to claimants.",
+      "sortDate": "2023-10-20"
+    },
+    {
+      "id": "epcase-maxwell-appeal-affirmed",
+      "date": "2024-09-17",
+      "title": "Second Circuit affirms Maxwell's criminal judgment",
+      "summary": "The court affirmed the June 29, 2022 judgment, rejecting the appellate challenges it considered, including Maxwell's claim that Epstein's Florida non-prosecution agreement barred her New York prosecution.",
+      "entityIds": [
+        "ghislaine-maxwell",
+        "us-doj",
+        "jeffrey-epstein"
+      ],
+      "sourceIds": [
+        "epcase-maxwell-appeal"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "The opinion resolves Maxwell's appeal and the issues presented. It does not adjudicate allegations about every person named in Epstein-related documents.",
+      "sortDate": "2024-09-17"
+    },
+    {
+      "id": "epcase-maxwell-cert-denied",
+      "date": "2025-10-06",
+      "title": "Supreme Court declines Maxwell's petition",
+      "summary": "Supreme Court docket 24-1073 records denial of Maxwell's petition for certiorari following the Second Circuit decision.",
+      "entityIds": [
+        "ghislaine-maxwell",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "epcase-maxwell-cert-docket"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "Denial of certiorari does not supply a new Supreme Court merits ruling. This event describes that petition only, not the availability or outcome of every later collateral challenge.",
+      "sortDate": "2025-10-06"
+    },
+    {
+      "id": "epcase-mit-reforms-update",
+      "date": "2020-12-03",
+      "title": "MIT reports progress on donor and reporting reforms",
+      "summary": "President Reif described work on controversial-donor policies, whistleblower and retaliation protections, campus visitors and Media Lab governance following the Epstein review.",
+      "entityIds": [
+        "mit",
+        "mit-media-lab"
+      ],
+      "sourceIds": [
+        "epcase-mit-reform-update"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "limitations": "This is MIT's account of its response. Some measures remained under development; the letter does not independently establish their effectiveness.",
+      "sortDate": "2020-12-03"
+    },
+    {
+      "id": "epcase-harvard-nowak-sanctions",
+      "date": "2021-03-25",
+      "title": "Harvard announces policy findings and sanctions concerning Nowak",
+      "summary": "According to the dean's letter reported by Harvard Magazine, an FAS review found policy violations involving professional conduct, campus access and endorsements. Harvard closed the Program for Evolutionary Dynamics and restricted Nowak's research and advising for two years.",
+      "entityIds": [
+        "harvard",
+        "harvard-ped",
+        "martin-nowak"
+      ],
+      "sourceIds": [
+        "epcase-harvard-sanctions"
+      ],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "limitations": "University disciplinary findings are not criminal convictions. The corrected report says Nowak retained both departmental appointments. Later restoration of privileges and a separately reported 2026 review must be read as distinct developments.",
+      "sortDate": "2021-03-25"
+    },
+    {
+      "id": "epcase-harvard-nowak-privileges-restored",
+      "date": "2023-03",
+      "title": "Nowak's research and advising privileges restored",
+      "summary": "The Harvard Crimson reported in May that a department chair confirmed restoration of Nowak's privileges in March after the two-year restrictions.",
+      "entityIds": [
+        "harvard",
+        "martin-nowak"
+      ],
+      "sourceIds": [
+        "epcase-harvard-sanctions-lifted"
+      ],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "limitations": "The exact March date was not supplied. Restoration is not reported as a reversal of the original policy findings; it should not be described as exoneration.",
+      "sortDate": "2023-03"
+    },
+    {
+      "id": "epcase-harvard-nowak-renewed-review",
+      "date": "2026-02-27",
+      "title": "Harvard Magazine reports renewed leave pending review",
+      "summary": "A Harvard spokesperson confirmed Nowak was on paid administrative leave while the university reviewed newly released Epstein-related documents. The dean said arrangements were being made for teaching and advising responsibilities.",
+      "entityIds": [
+        "harvard",
+        "martin-nowak"
+      ],
+      "sourceIds": [
+        "epcase-harvard-renewed-review"
+      ],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "limitations": "Date is publication, not a verified effective date. The institution had not disclosed specific grounds, and the report said Nowak was not accused of a crime. No outcome of this new review was verified.",
+      "sortDate": "2026-02-27"
     }
   ],
   "relationships": [
@@ -63471,6 +64943,1739 @@
       "evidence": "documented",
       "context": "",
       "limitations": ""
+    },
+    {
+      "id": "corp-blackrock-conflicts-action",
+      "from": "us-sec",
+      "to": "blackrock-advisors",
+      "type": "regulatory-action",
+      "label": "Settled conflict-disclosure findings",
+      "date": "2015-04-20",
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "SEC imposed a $12 million penalty and compliance relief on the adviser.",
+      "limitations": "Settled administrative findings; BlackRock Advisors neither admitted nor denied them."
+    },
+    {
+      "id": "corp-blackrock-whistleblower-action",
+      "from": "us-sec",
+      "to": "blackrock",
+      "type": "regulatory-action",
+      "label": "Settled whistleblower-rule findings",
+      "date": "2017-01-17",
+      "sourceIds": [
+        "corp-blackrock-whistleblower-sec",
+        "corp-blackrock-whistleblower-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "BlackRock, Inc. settled the SEC award-waiver action for $340,000.",
+      "limitations": "No admission or denial; SEC found no instance of prevented communication or clause enforcement."
+    },
+    {
+      "id": "corp-blackrock-aviron-action",
+      "from": "us-sec",
+      "to": "blackrock-advisors",
+      "type": "regulatory-action",
+      "label": "Settled inaccurate fund-disclosure findings",
+      "date": "2023-10-24",
+      "sourceIds": [
+        "corp-blackrock-aviron-sec"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "SEC imposed a $2.5 million penalty for fund-disclosure inaccuracies.",
+      "limitations": "BlackRock Advisors neither admitted nor denied findings; disclosures were corrected in 2019."
+    },
+    {
+      "id": "corp-nvidia-disclosure-action",
+      "from": "us-sec",
+      "to": "nvidia",
+      "type": "regulatory-action",
+      "label": "Settled securities-disclosure findings",
+      "date": "2022-05-06",
+      "sourceIds": [
+        "corp-nvidia-sec-order"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "SEC order concerns two fiscal-2018 quarterly reports and imposed $5.5 million.",
+      "limitations": "NVIDIA neither admitted nor denied findings. This is not an AI-safety or criminal judgment."
+    },
+    {
+      "id": "corp-ring-ftc-settlement",
+      "from": "ftc",
+      "to": "ring",
+      "type": "civil-settlement",
+      "label": "Privacy and security consent settlement",
+      "date": "2023-06-16",
+      "sourceIds": [
+        "corp-ring-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Entered order imposes privacy/security duties and a $5.8 million judgment.",
+      "limitations": "Ring neither admitted nor denied allegations; underlying conduct was not tried."
+    },
+    {
+      "id": "corp-ring-amazon-acquisition",
+      "from": "amazon",
+      "to": "ring",
+      "type": "corporate-acquisition",
+      "label": "Acquired Ring",
+      "date": "2018-02",
+      "sourceIds": [
+        "corp-ring-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "FTC identifies Amazon’s February 2018 acquisition of Ring as background.",
+      "limitations": "Corporate ownership alone does not establish responsibility for each alleged practice."
+    },
+    {
+      "id": "corp-alexa-ftc-settlement",
+      "from": "ftc",
+      "to": "amazon",
+      "type": "civil-settlement",
+      "label": "Alexa privacy consent settlement",
+      "date": "2023-07-19",
+      "sourceIds": [
+        "corp-alexa-order-entry",
+        "corp-alexa-ftc-allegations"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "DOJ pursued the FTC’s Alexa privacy allegations; the court entered the consent order in July 2023.",
+      "limitations": "Amazon denied violations; this service-specific settlement does not adjudicate unrelated AWS practices."
+    },
+    {
+      "id": "corp-facebook-ftc-settlement",
+      "from": "ftc",
+      "to": "facebook",
+      "type": "civil-settlement",
+      "label": "Privacy consent settlement",
+      "date": "2019-07-24",
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-stipulated-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Facebook accepted a $5 billion privacy settlement concerning its 2012 FTC order.",
+      "limitations": "Neither admission nor denial. Cambridge Analytica proceedings and later Meta disputes are separate."
+    },
+    {
+      "id": "corp-xbox-ftc-settlement",
+      "from": "ftc",
+      "to": "microsoft",
+      "type": "civil-settlement",
+      "label": "Xbox children’s privacy settlement",
+      "date": "2023-06-05",
+      "sourceIds": [
+        "corp-xbox-ftc-settlement",
+        "corp-ftc-2023-privacy-update"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Xbox children’s-data settlement; the FTC later confirmed entry and payment of $20 million.",
+      "limitations": "No-admission stipulation; Microsoft said a retention glitch was corrected. No finding about unrelated products."
+    },
+    {
+      "id": "corp-google-search-court-finding",
+      "from": "us-district-court-dc",
+      "to": "google",
+      "type": "court-finding",
+      "label": "Civil monopolization finding",
+      "date": "2024-08-05",
+      "sourceIds": [
+        "corp-google-search-final-judgment"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Trial finding concerns general search services and general search text advertising.",
+      "limitations": "Google disputes liability; 2026 appeal and cross-appeals are documented. No appellate disposition verified here."
+    },
+    {
+      "id": "corp-amazon-prime-ftc-settlement",
+      "from": "ftc",
+      "to": "amazon",
+      "type": "civil-settlement",
+      "label": "Prime enrollment and cancellation settlement",
+      "date": "2025-09-25",
+      "sourceIds": [
+        "corp-amazon-prime-ftc-settlement",
+        "corp-amazon-prime-entered-order"
+      ],
+      "evidence": "documented",
+      "topic": "AI & technology",
+      "context": "Entered Prime consent order provides a civil penalty, consumer redress and interface changes.",
+      "limitations": "Defendants neither admitted nor denied allegations; separate Amazon antitrust litigation is outside this record."
+    },
+    {
+      "id": "corp-palantir-dol-settlement",
+      "from": "us-dol",
+      "to": "palantir",
+      "type": "civil-settlement",
+      "label": "Hiring-discrimination consent decree",
+      "date": "2017-04-25",
+      "sourceIds": [
+        "corp-palantir-dol-settlement",
+        "corp-palantir-consent-decree"
+      ],
+      "evidence": "documented",
+      "topic": "Finance & companies",
+      "context": "OFCCP consent decree concerns three engineering job categories and provides monetary relief and job offers.",
+      "limitations": "Palantir denied discrimination and disputed the statistical analysis; no contested merits judgment."
+    },
+    {
+      "id": "state-senate-cia-review",
+      "from": "us-senate",
+      "to": "cia",
+      "type": "oversight",
+      "label": "Investigated CIA detention and interrogation",
+      "date": "2014-12-09",
+      "sourceIds": [
+        "state-cia-findings",
+        "state-cia-response"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Legislative oversight with an agency response.",
+      "limitations": "An oversight relationship is not a criminal judgment."
+    },
+    {
+      "id": "state-oig-fbi-review",
+      "from": "state-doj-oig",
+      "to": "fbi",
+      "type": "oversight",
+      "label": "Reviewed detainee-interrogation conduct and policies",
+      "date": "2008-05",
+      "sourceIds": [
+        "state-oig-detainees-summary"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "OIG criticized guidance and generally credited agent conduct.",
+      "limitations": ""
+    },
+    {
+      "id": "state-turner-testimony",
+      "from": "state-stansfield-turner",
+      "to": "us-senate",
+      "type": "testimony",
+      "label": "Testified about recovered MKULTRA records",
+      "date": "1977-08-03",
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Appeared as CIA director and witness.",
+      "limitations": "Testimony does not establish personal involvement in the earlier experiments."
+    },
+    {
+      "id": "state-church-fbi-review",
+      "from": "us-senate",
+      "to": "fbi",
+      "type": "oversight",
+      "label": "Investigated COINTELPRO and intelligence abuses",
+      "date": "1976-04-29",
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Committee investigated the agency's historical conduct.",
+      "limitations": ""
+    },
+    {
+      "id": "state-walsh-north-prosecution",
+      "from": "state-lawrence-walsh",
+      "to": "state-oliver-north",
+      "type": "prosecution",
+      "label": "Prosecuted Iran-Contra charges; convictions later vacated",
+      "date": "1988-03-16",
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Outcome includes reversal arising from immunized testimony.",
+      "limitations": "No standing conviction is asserted."
+    },
+    {
+      "id": "state-walsh-poindexter-prosecution",
+      "from": "state-lawrence-walsh",
+      "to": "state-john-poindexter",
+      "type": "prosecution",
+      "label": "Prosecuted Iran-Contra charges; convictions later vacated",
+      "date": "1988-03-16",
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Outcome includes reversal arising from immunized testimony.",
+      "limitations": "No standing conviction is asserted."
+    },
+    {
+      "id": "state-bush-weinberger-pardon",
+      "from": "state-george-hw-bush",
+      "to": "state-caspar-weinberger",
+      "type": "clemency",
+      "label": "Granted pretrial Iran-Contra pardon",
+      "date": "1992-12-24",
+      "sourceIds": [
+        "state-iran-pardons"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Executive clemency before trial.",
+      "limitations": "Pardon does not adjudicate allegations."
+    },
+    {
+      "id": "state-doj-academi-dpa",
+      "from": "us-doj",
+      "to": "academi",
+      "type": "enforcement-agreement",
+      "label": "Entered corporate deferred prosecution agreement",
+      "date": "2012-08-07",
+      "sourceIds": [
+        "state-academi-doj",
+        "state-academi-dpa"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Corporate agreement included admissions, remediation and a monetary penalty.",
+      "limitations": "Not a conviction; later dismissal is reported in the linked case."
+    },
+    {
+      "id": "state-treasury-wagner-sanctions",
+      "from": "us-treasury",
+      "to": "wagner-group",
+      "type": "sanctions",
+      "label": "Designated under transnational-crime sanctions authority",
+      "date": "2023-01-26",
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Administrative designation attributed to Treasury.",
+      "limitations": "Not a criminal conviction."
+    },
+    {
+      "id": "state-gru-unit26165-affiliation",
+      "from": "state-gru-unit-26165",
+      "to": "gru",
+      "type": "organizational-unit",
+      "label": "Identified as GRU unit in 2018 indictment",
+      "date": "2018-07-13",
+      "sourceIds": [
+        "russia-gru"
+      ],
+      "evidence": "allegation",
+      "topic": "Intelligence & conflict",
+      "context": "Affiliation described in the charging instrument.",
+      "limitations": "Conduct charges concern named defendants."
+    },
+    {
+      "id": "state-gru-unit74455-affiliation",
+      "from": "state-gru-unit-74455",
+      "to": "gru",
+      "type": "organizational-unit",
+      "label": "Identified as GRU unit in indictments",
+      "date": "2020-10-19",
+      "sourceIds": [
+        "russia-gru",
+        "state-gru-malware"
+      ],
+      "evidence": "allegation",
+      "topic": "Intelligence & conflict",
+      "context": "Affiliation described in separate charging instruments.",
+      "limitations": "No unit-wide conviction is asserted."
+    },
+    {
+      "id": "epcase-doj-bop-oversight",
+      "from": "us-doj",
+      "to": "federal-bureau-prisons",
+      "type": "oversight_investigation",
+      "label": "Inspector General investigated custody and supervision failures",
+      "date": "2023-06-27",
+      "sourceIds": [
+        "epcase-oig-full-report"
+      ],
+      "evidence": "documented",
+      "topic": "Epstein records",
+      "context": "DOJ's Inspector General reported administrative misconduct and management failures at MCC and made eight recommendations to BOP.",
+      "limitations": "An oversight relationship, not evidence of a covert partnership. BOP agreement to recommendations does not establish their subsequent implementation."
+    },
+    {
+      "id": "epcase-harvard-nowak-discipline",
+      "from": "harvard",
+      "to": "martin-nowak",
+      "type": "institutional_discipline",
+      "label": "FAS imposed two-year research and advising restrictions",
+      "date": "2021-03-25",
+      "sourceIds": [
+        "epcase-harvard-sanctions",
+        "epcase-harvard-sanctions-lifted"
+      ],
+      "evidence": "reported",
+      "topic": "Epstein records",
+      "context": "Reported sanctions followed an internal policy review. A department chair later confirmed restoration of privileges in March 2023.",
+      "limitations": "The edge records a university action, not criminal complicity. It does not mean the 2021 restrictions remain in force."
+    }
+  ],
+  "cases": [
+    {
+      "id": "corp-blackrock-conflicts-case",
+      "title": "BlackRock Advisors: undisclosed outside-business conflict",
+      "date": "2015-04-20",
+      "topic": "Finance & companies",
+      "summary": "SEC settlement concerning a portfolio manager’s outside energy business.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackrock-advisors",
+          "role": "Settling adviser"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-blackrock-conflicts-sec"
+      ],
+      "eventIds": [
+        "corp-blackrock-conflicts-2015"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled SEC administrative order, April 2015.",
+      "findings": "SEC found undisclosed conflicts and deficient controls involving the manager’s Rice Energy interest and a fund investment.",
+      "response": "The adviser neither admitted nor denied the findings.",
+      "outcome": "$12 million penalty, censure, cease-and-desist relief and independent compliance review.",
+      "limitations": "The respondent was BlackRock Advisors, LLC. The order does not establish criminal guilt or misconduct by unrelated group companies.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2015-04-20"
+    },
+    {
+      "id": "corp-blackrock-whistleblower-case",
+      "title": "BlackRock: separation agreements and whistleblower incentives",
+      "date": "2017-01-17",
+      "topic": "Finance & companies",
+      "summary": "SEC action over award-waiver language used from 2011 to 2016.",
+      "entityIds": [
+        "blackrock",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackrock",
+          "role": "Settling respondent"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-blackrock-whistleblower-sec",
+        "corp-blackrock-whistleblower-order"
+      ],
+      "eventIds": [
+        "corp-blackrock-whistleblower-2017"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled administrative order under Rule 21F-17.",
+      "findings": "SEC found that award waivers undermined incentives for reporting potential securities violations.",
+      "response": "BlackRock neither admitted nor denied findings; it had revised the agreement before SEC staff contacted it.",
+      "outcome": "$340,000 civil penalty and remedial measures, including annual training.",
+      "limitations": "SEC identified no instance in which the clause stopped a communication or BlackRock enforced it. No criminal finding.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2017-01-17"
+    },
+    {
+      "id": "corp-blackrock-aviron-case",
+      "title": "BlackRock Advisors: Aviron investment disclosures",
+      "date": "2023-10-24",
+      "topic": "Finance & companies",
+      "summary": "SEC order addresses publicly filed fund reports from 2015–2019.",
+      "entityIds": [
+        "blackrock-advisors",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackrock-advisors",
+          "role": "Settling adviser"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-blackrock-aviron-sec"
+      ],
+      "eventIds": [
+        "corp-blackrock-aviron-2023"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled SEC administrative findings.",
+      "findings": "SEC found that reports misclassified film-finance business Aviron and overstated its interest rate.",
+      "response": "BlackRock neither admitted nor denied findings. It identified and corrected the inaccuracies in 2019.",
+      "outcome": "$2.5 million penalty, censure and cease-and-desist order.",
+      "limitations": "This disclosure action is distinct from the separate case against Aviron’s founder. It does not attribute his misconduct to the adviser.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-10-24"
+    },
+    {
+      "id": "corp-nvidia-disclosure-case",
+      "title": "NVIDIA: cryptomining’s effect on gaming revenue",
+      "date": "2022-05-06",
+      "topic": "Finance & companies",
+      "summary": "SEC found omissions about a material driver of GPU revenue growth.",
+      "entityIds": [
+        "nvidia",
+        "us-sec"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "nvidia",
+          "role": "Settling issuer"
+        },
+        {
+          "entityId": "us-sec",
+          "role": "Regulator"
+        }
+      ],
+      "sourceIds": [
+        "corp-nvidia-sec-order"
+      ],
+      "eventIds": [
+        "corp-nvidia-disclosures-2022"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Settled SEC order, release 33-11060.",
+      "findings": "The order found inadequate disclosure and controls concerning cryptomining demand in two fiscal-2018 quarters.",
+      "response": "NVIDIA consented without admitting or denying the findings.",
+      "outcome": "$5.5 million civil penalty and cease-and-desist order.",
+      "limitations": "The cited Securities Act provisions can rest on negligence; this is not a criminal conviction or resolution of separate investor litigation.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2022-05-06"
+    },
+    {
+      "id": "corp-ring-privacy-case",
+      "title": "Ring: private videos, algorithm training and account security",
+      "date": "2023-06-16",
+      "topic": "AI & technology",
+      "summary": "Court-approved settlement of FTC privacy and security allegations.",
+      "entityIds": [
+        "ring",
+        "ftc",
+        "us-district-court-dc"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "ring",
+          "role": "Settling defendant"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Civil enforcement plaintiff"
+        },
+        {
+          "entityId": "us-district-court-dc",
+          "role": "Approving court"
+        }
+      ],
+      "sourceIds": [
+        "corp-ring-ftc-allegations",
+        "corp-ring-entered-order"
+      ],
+      "eventIds": [
+        "corp-ring-settlement-announced",
+        "corp-ring-order-entered"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Entered stipulated order, docket 12.",
+      "findings": "FTC alleged unauthorized video access and training uses, alongside security failures; these allegations were resolved without trial.",
+      "response": "Ring neither admitted nor denied the allegations and waived appeal of the consent order.",
+      "outcome": "$5.8 million judgment; privacy/security program and deletion of defined pre-March-2018 recordings and affected models or algorithms.",
+      "limitations": "The decree establishes obligations, not criminal guilt. It does not implicate every employee or all later Ring products.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-06-16"
+    },
+    {
+      "id": "corp-alexa-privacy-case",
+      "title": "Amazon Alexa: children’s recordings and deletion requests",
+      "date": "2023-07-19",
+      "topic": "AI & technology",
+      "summary": "Entered settlement addressing retention and deletion of Alexa data.",
+      "entityIds": [
+        "amazon",
+        "ftc",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "amazon",
+          "role": "Settling defendant; Alexa service"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Referring enforcement agency"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Counsel for United States"
+        }
+      ],
+      "sourceIds": [
+        "corp-alexa-ftc-allegations",
+        "corp-alexa-order-entry",
+        "corp-alexa-company-response"
+      ],
+      "eventIds": [
+        "corp-alexa-settlement-announced",
+        "corp-alexa-order-entered"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Court entry verified in FTC docket, July 19, 2023.",
+      "findings": "The complaint alleged COPPA and deception violations, including retention after deletion requests and use to improve algorithms.",
+      "response": "Amazon denied violating the law and described parental controls and planned deletion changes.",
+      "outcome": "$25 million penalty, deletion requirements, a ban on using information covered by deletion requests to develop or improve data products, and privacy-program obligations.",
+      "limitations": "Settlement of disputed allegations, not a trial finding. The case does not adjudicate Amazon’s unrelated services.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-07-19"
+    },
+    {
+      "id": "corp-facebook-privacy-case",
+      "title": "Facebook: privacy controls and the 2019 FTC settlement",
+      "date": "2019-07-24",
+      "topic": "AI & technology",
+      "summary": "$5 billion agreement addressing alleged violations of an earlier privacy order.",
+      "entityIds": [
+        "facebook",
+        "ftc",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "facebook",
+          "role": "Settling defendant"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Enforcement agency"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Counsel for United States"
+        }
+      ],
+      "sourceIds": [
+        "corp-facebook-ftc-settlement",
+        "corp-facebook-stipulated-order",
+        "corp-facebook-final-approval",
+        "corp-facebook-company-response"
+      ],
+      "eventIds": [
+        "corp-facebook-privacy-2019",
+        "corp-facebook-order-final-2020"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Settlement announced in 2019; FTC order modification finalized April 28, 2020.",
+      "findings": "FTC alleged deceptive privacy settings, third-party app access and misrepresentations concerning facial recognition and advertising uses.",
+      "response": "Facebook neither admitted nor denied allegations; its statement acknowledged a breach of trust and promised stronger privacy controls.",
+      "outcome": "$5 billion civil penalty and strengthened privacy governance, independent oversight and certifications.",
+      "limitations": "Cambridge Analytica was separately prosecuted administratively. This case does not establish every Cambridge Analytica allegation or decide later Meta disputes.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2019-07-24"
+    },
+    {
+      "id": "corp-xbox-privacy-case",
+      "title": "Microsoft Xbox: children’s account data",
+      "date": "2023-06-05",
+      "topic": "AI & technology",
+      "summary": "COPPA settlement covering notice, parental consent and retention.",
+      "entityIds": [
+        "microsoft",
+        "ftc",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "microsoft",
+          "role": "Settling defendant; Xbox service"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Referring enforcement agency"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Counsel for United States"
+        }
+      ],
+      "sourceIds": [
+        "corp-xbox-ftc-settlement",
+        "corp-xbox-stipulated-order",
+        "corp-ftc-2023-privacy-update",
+        "corp-xbox-company-response"
+      ],
+      "eventIds": [
+        "corp-xbox-privacy-2023"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Announced June 2023; FTC’s 2024 update confirms an entered federal order and payment.",
+      "findings": "FTC alleged premature collection, incomplete notices and excessive retention of children’s personal data.",
+      "response": "No-admission terms appear in the stipulation. Microsoft said it fixed a retention glitch, deleted data and strengthened controls.",
+      "outcome": "$20 million penalty and changes to consent, deletion and disclosures to game publishers.",
+      "limitations": "Microsoft’s glitch explanation is its response, not the entirety of FTC’s allegations. No criminal finding or ruling on unrelated Microsoft products.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-06-05"
+    },
+    {
+      "id": "corp-google-search-case",
+      "title": "Google: search-distribution monopolization",
+      "date": "2024-08-05",
+      "topic": "AI & technology",
+      "summary": "Civil trial findings followed by remedies and appellate proceedings.",
+      "entityIds": [
+        "google",
+        "us-doj",
+        "us-district-court-dc"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "google",
+          "role": "Defendant and appellant"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Government plaintiff counsel"
+        },
+        {
+          "entityId": "us-district-court-dc",
+          "role": "Trial court"
+        }
+      ],
+      "sourceIds": [
+        "corp-google-search-final-judgment",
+        "corp-google-search-stay-order",
+        "corp-google-search-appellate-brief",
+        "corp-google-search-company-response",
+        "corp-google-search-case-index"
+      ],
+      "eventIds": [
+        "corp-google-search-liability-2024",
+        "corp-google-search-judgment-2025",
+        "corp-google-search-stay-2026",
+        "corp-google-search-cross-appeal-2026"
+      ],
+      "status": "court-finding",
+      "statusDetail": "District-court liability and December 2025 judgment; 2026 appeal and cross-appeals documented. No appellate disposition verified here.",
+      "findings": "The court found unlawful monopoly maintenance in general search services and general search text advertising.",
+      "response": "Google disputes the decision, emphasizing product quality, user choice and competition, and appealed in January 2026.",
+      "outcome": "Distribution restrictions and data-sharing/syndication remedies; May 2026 partial-stay request denied without prejudice.",
+      "limitations": "Do not call this an unappealable final outcome. The government’s July 2026 brief is advocacy. The separate ad-tech case is outside this record.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2024-08-05"
+    },
+    {
+      "id": "corp-amazon-prime-case",
+      "title": "Amazon Prime: enrollment and cancellation",
+      "date": "2025-09-25",
+      "topic": "AI & technology",
+      "summary": "Consent settlement over allegedly deceptive subscription flows.",
+      "entityIds": [
+        "amazon",
+        "ftc"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "amazon",
+          "role": "Settling defendant"
+        },
+        {
+          "entityId": "ftc",
+          "role": "Civil enforcement plaintiff"
+        }
+      ],
+      "sourceIds": [
+        "corp-amazon-prime-ftc-settlement",
+        "corp-amazon-prime-entered-order",
+        "corp-amazon-prime-refund-revision"
+      ],
+      "eventIds": [
+        "corp-amazon-prime-settlement-2025",
+        "corp-amazon-prime-redress-2026"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Entered September 2025 order; redress procedure revised September 2026.",
+      "findings": "FTC alleged enrollment without informed consent and deliberately difficult cancellation processes.",
+      "response": "The order states defendants neither admit nor deny the complaint allegations.",
+      "outcome": "$1 billion civil penalty, $1.5 billion consumer-redress fund and interface changes; later order expands automatic refunds.",
+      "limitations": "Consumer eligibility and supplemental payments are conditional. This settlement does not decide the separate Amazon antitrust action or imply all subscriptions were unauthorized.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2025-09-25"
+    },
+    {
+      "id": "corp-palantir-hiring-case",
+      "title": "Palantir: engineering-applicant hiring practices",
+      "date": "2017-04-25",
+      "topic": "Finance & companies",
+      "summary": "Consent decree resolving OFCCP’s historical hiring-discrimination allegations.",
+      "entityIds": [
+        "palantir",
+        "us-dol"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "palantir",
+          "role": "Settling employer"
+        },
+        {
+          "entityId": "us-dol",
+          "role": "Enforcement department; OFCCP"
+        }
+      ],
+      "sourceIds": [
+        "corp-palantir-dol-settlement",
+        "corp-palantir-consent-decree"
+      ],
+      "eventIds": [
+        "corp-palantir-hiring-settlement-2017"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "DOL announced the consent decree April 25, 2017.",
+      "findings": "OFCCP alleged race-based adverse impact against Asian applicants for three engineering job categories at Palo Alto.",
+      "response": "Palantir denied the allegations and offered alternative statistical analyses disputing adverse impact.",
+      "outcome": "$1,659,434 in back wages and other relief, including stock-option value, plus eight offers of employment.",
+      "limitations": "Resolved by consent, not a litigated discrimination finding. Historical executive-order duties must not be presented as a statement of current policy.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2017-04-25"
+    },
+    {
+      "id": "state-cia-detention-case",
+      "title": "CIA detention and coercive interrogation: Senate findings",
+      "date": "2014-12-09",
+      "topic": "Intelligence & conflict",
+      "summary": "The Senate examined CIA detention and interrogation after September 11.",
+      "entityIds": [
+        "cia",
+        "us-senate"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "cia",
+          "role": "Program operator and subject of inquiry"
+        },
+        {
+          "entityId": "us-senate",
+          "role": "Congressional investigator"
+        }
+      ],
+      "sourceIds": [
+        "intel-detention",
+        "state-cia-findings",
+        "state-cia-response",
+        "state-durham-closure"
+      ],
+      "eventIds": [
+        "i-detention-2014",
+        "state-cia-response-event",
+        "state-durham-closure-event"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "Dated to public release of the Senate study; legislative findings, not criminal convictions.",
+      "findings": "The committee found brutality, misleading descriptions and ineffective coercive interrogation. It identified at least 119 detainees, including at least 26 held outside the program's detention standard.",
+      "response": "CIA acknowledged management, accountability and contractor-conflict failures, but disputed conclusions about unique intelligence and deliberate deception. Separate Senate minority views are linked from the release.",
+      "outcome": "CIA's response said the program ended in 2009 and described reforms. DOJ's separate 2012 investigation into two deaths ended without charges for insufficient admissible evidence.",
+      "limitations": "The full study remained classified in the cited release; findings and rebuttals must be attributed separately. DOJ closure does not reverse the legislative findings.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2014-12-09"
+    },
+    {
+      "id": "state-fbi-detainees-case",
+      "title": "FBI detainee-interrogation oversight: failures and limits",
+      "date": "2008-05",
+      "topic": "Intelligence & conflict",
+      "summary": "DOJ's inspector general reviewed FBI conduct in Guantanamo, Afghanistan and Iraq.",
+      "entityIds": [
+        "fbi",
+        "state-doj-oig",
+        "cia"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "fbi",
+          "role": "Agency reviewed; agents also reported concerns"
+        },
+        {
+          "entityId": "state-doj-oig",
+          "role": "Independent inspector general"
+        },
+        {
+          "entityId": "cia",
+          "role": "Agency whose techniques agents observed"
+        }
+      ],
+      "sourceIds": [
+        "state-oig-detainees",
+        "state-oig-detainees-summary"
+      ],
+      "eventIds": [
+        "state-fbi-detainee-policy",
+        "state-oig-detainee-report"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "May 2008 OIG review, not an adjudication of every reported incident.",
+      "findings": "OIG found inadequate and delayed guidance and failures to resolve agents' concerns about other agencies' harsh techniques.",
+      "response": "Mueller directed in 2002 that FBI agents avoid joint interrogations using prohibited FBI techniques.",
+      "outcome": "OIG found no support for allegations of FBI detainee abuse and said the vast majority of agents adhered to FBI policy.",
+      "limitations": "OIG noted infrequent departures from normal domestic techniques, while finding no support for abuse allegations. Observing another agency's conduct does not establish participation or supply individual criminal judgments.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2008-05"
+    },
+    {
+      "id": "state-mkultra-case",
+      "title": "MKULTRA: nonconsensual drug experiments and destroyed records",
+      "date": "1977-08-03",
+      "topic": "Intelligence & conflict",
+      "summary": "A Senate hearing examined recovered CIA behavioral-research records.",
+      "entityIds": [
+        "cia",
+        "us-senate",
+        "state-stansfield-turner"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "cia",
+          "role": "Program operator"
+        },
+        {
+          "entityId": "us-senate",
+          "role": "Congressional investigator"
+        },
+        {
+          "entityId": "state-stansfield-turner",
+          "role": "CIA director and witness"
+        }
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "eventIds": [
+        "state-mkultra-approved",
+        "state-mkultra-destruction",
+        "i-mkultra-1977"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "1977 sworn testimony and documentary record; not a current-operations finding.",
+      "findings": "The record describes covert drug testing on unwitting people and funding through research institutions.",
+      "response": "Turner disclosed recovered financial records and agreed to notify identifiable subjects and institutions.",
+      "outcome": "The hearing exposed additional activity despite destruction of operational records in 1973.",
+      "limitations": "Some researchers and institutions were unaware of CIA sponsorship. Experiments do not establish successful mind control; incomplete records prevent a complete victim or operation list.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "1977-08-03"
+    },
+    {
+      "id": "state-cointelpro-case",
+      "title": "COINTELPRO: political disruption and civil-rights abuses",
+      "date": "1976-04-29",
+      "topic": "Intelligence & conflict",
+      "summary": "The Church Committee documented FBI efforts to disrupt political and civil-rights activity.",
+      "entityIds": [
+        "fbi",
+        "us-senate"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "fbi",
+          "role": "Program operator"
+        },
+        {
+          "entityId": "us-senate",
+          "role": "Congressional investigator"
+        }
+      ],
+      "sourceIds": [
+        "intel-church",
+        "state-fbi-cointelpro"
+      ],
+      "eventIds": [
+        "state-cointelpro-ended",
+        "i-church-1975",
+        "state-church-report"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "1976 legislative findings, with later FBI acknowledgment.",
+      "findings": "The inquiry described efforts to discredit civil-rights and antiwar organizations and individuals, including Martin Luther King Jr.",
+      "response": "The FBI's retrospective acknowledges infringement of First Amendment rights. Senator Tower accepted that excesses occurred while cautioning against excessive restraints on national-security discretion.",
+      "outcome": "COINTELPRO ended in April 1971; the later inquiry contributed to permanent congressional intelligence oversight and other reforms.",
+      "limitations": "This case concerns specific historical programs, not every FBI employee or contemporary investigation.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "1976-04-29"
+    },
+    {
+      "id": "state-iran-contra-case",
+      "title": "Iran-Contra prosecutions, vacated convictions and pardons",
+      "date": "1993-08-04",
+      "topic": "Intelligence & conflict",
+      "summary": "An independent counsel investigated arms transactions and diversion of proceeds to the Contras.",
+      "entityIds": [
+        "state-lawrence-walsh",
+        "fbi",
+        "state-oliver-north",
+        "state-john-poindexter",
+        "state-caspar-weinberger",
+        "state-george-hw-bush"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "state-lawrence-walsh",
+          "role": "Independent counsel"
+        },
+        {
+          "entityId": "fbi",
+          "role": "Investigating agency"
+        },
+        {
+          "entityId": "state-oliver-north",
+          "role": "Defendant; convictions vacated"
+        },
+        {
+          "entityId": "state-john-poindexter",
+          "role": "Defendant; convictions vacated"
+        },
+        {
+          "entityId": "state-caspar-weinberger",
+          "role": "Defendant pardoned before trial"
+        },
+        {
+          "entityId": "state-george-hw-bush",
+          "role": "President issuing pardons"
+        }
+      ],
+      "sourceIds": [
+        "state-walsh-archives",
+        "state-iran-pardons"
+      ],
+      "eventIds": [
+        "state-iran-investigation",
+        "state-iran-indictment",
+        "state-iran-pardons-event",
+        "state-walsh-report"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "Dated to Walsh's final report; individual cases had distinct dispositions.",
+      "findings": "NARA records guilty pleas and convictions arising from the investigation, as well as cases ending without sustained convictions.",
+      "response": "North and Poindexter's convictions were vacated because of taint from immunized congressional testimony. Bush defended his pardons as a response to politicized prosecutions.",
+      "outcome": "Bush pardoned six men in December 1992, including Weinberger and Clarridge before trial; Walsh submitted his report in August 1993.",
+      "limitations": "Vacated convictions cannot be presented as standing convictions. A pardon before trial does not establish the charged allegations.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "1993-08-04"
+    },
+    {
+      "id": "state-nisur-case",
+      "title": "Nisur Square: convictions, appeal, retrial and pardons",
+      "date": "2019-09-05",
+      "topic": "Intelligence & conflict",
+      "summary": "Four former Blackwater guards faced U.S. prosecutions over the 2007 Baghdad shootings.",
+      "entityIds": [
+        "nicholas-slatten",
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard",
+        "blackwater",
+        "state-dc-circuit",
+        "us-doj",
+        "donald-trump"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "nicholas-slatten",
+          "role": "Convicted after retrial; pardoned in 2020"
+        },
+        {
+          "entityId": "paul-slough",
+          "role": "Convicted defendant; pardoned in 2020"
+        },
+        {
+          "entityId": "evan-liberty",
+          "role": "Convicted defendant; pardoned in 2020"
+        },
+        {
+          "entityId": "dustin-heard",
+          "role": "Convicted defendant; pardoned in 2020"
+        },
+        {
+          "entityId": "blackwater",
+          "role": "Employer at time of incident"
+        },
+        {
+          "entityId": "state-dc-circuit",
+          "role": "Appellate court"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        },
+        {
+          "entityId": "donald-trump",
+          "role": "President issuing pardons"
+        }
+      ],
+      "sourceIds": [
+        "security-nisur",
+        "state-blackwater-appeal",
+        "state-slatten-sentence",
+        "state-trump-pardon-register",
+        "security-pardons"
+      ],
+      "eventIds": [
+        "i-nisur-2007",
+        "state-blackwater-appeal-event",
+        "state-slatten-sentence-event",
+        "i-nisur-sentences",
+        "i-blackwater-pardons"
+      ],
+      "status": "conviction",
+      "statusDetail": "Historical convictions and 2019 sentences; all four defendants received full presidential pardons on December 22, 2020.",
+      "findings": "Slatten was convicted of first-degree murder after retrial. Slough, Liberty and Heard were convicted of manslaughter, attempted manslaughter and firearms offenses.",
+      "response": "The 2017 appeal found Slatten should have received a separate trial and required resentencing of the others; the court included separate opinions.",
+      "outcome": "Slatten received life in August 2019; the others received 180, 168 and 151 months in September. Trump subsequently pardoned all four.",
+      "limitations": "The record does not establish criminal liability of every employee or company owner. The pardons are executive acts, distinct from the jury verdicts.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2019-09-05"
+    },
+    {
+      "id": "state-blackwater-export-case",
+      "title": "Blackwater/Xe export-control settlement and Academi DPA",
+      "date": "2010-08-18",
+      "topic": "Intelligence & conflict",
+      "summary": "Corporate export and firearms enforcement produced a civil settlement and a later deferred prosecution agreement.",
+      "entityIds": [
+        "blackwater",
+        "academi",
+        "us-state-department",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackwater",
+          "role": "Historical corporate operations covered"
+        },
+        {
+          "entityId": "academi",
+          "role": "Corporate DPA party"
+        },
+        {
+          "entityId": "us-state-department",
+          "role": "Civil export-control regulator"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        }
+      ],
+      "sourceIds": [
+        "state-academi-doj",
+        "state-academi-dpa",
+        "state-academi-dismissal-report"
+      ],
+      "eventIds": [
+        "state-blackwater-export-settlement",
+        "state-academi-dpa-event",
+        "state-academi-dismissal-event"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "2010 State Department settlement; a separate 2012 DPA resolved criminal charges conditionally, without a conviction.",
+      "findings": "The corporate agreement accepted responsibility for its statement of facts involving unauthorized exports, defense services and firearms conduct.",
+      "response": "DOJ acknowledged cooperation, replacement of leadership and improved compliance controls.",
+      "outcome": "The civil penalty was $42 million. The DPA specified $7.5 million with up to $2.5 million in compliance credits. A 2016 Intercept report says deferred charges were dismissed in September 2015 after compliance.",
+      "limitations": "The dismissal is reported through a reproduction; its court order was not retrieved. Corporate admissions do not establish personal guilt of shareholders. No active prosecution or corporate conviction is claimed.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2010-08-18"
+    },
+    {
+      "id": "state-wagner-sanctions-case",
+      "title": "Wagner: U.S. sanctions findings concerning serious abuses",
+      "date": "2023-01-26",
+      "topic": "Intelligence & conflict",
+      "summary": "Treasury designated Wagner a significant transnational criminal organization.",
+      "entityIds": [
+        "wagner-group",
+        "us-treasury",
+        "yevgeny-prigozhin"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "wagner-group",
+          "role": "Sanctioned organization"
+        },
+        {
+          "entityId": "us-treasury",
+          "role": "Sanctions authority"
+        },
+        {
+          "entityId": "yevgeny-prigozhin",
+          "role": "Leader identified in the 2023 decision"
+        }
+      ],
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "eventIds": [
+        "i-wagner-2023"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "January 2023 administrative sanctions determination, not a criminal conviction.",
+      "findings": "Treasury attributed mass executions, rape, child abductions and physical abuse in Mali and the Central African Republic to Wagner personnel.",
+      "response": "The cited Treasury announcement contains no substantive response from Wagner.",
+      "outcome": "Treasury redesignated Wagner under transnational-crime and Central African Republic sanctions authorities.",
+      "limitations": "This entry records the 2023 decision, not a complete or current sanctions register. It does not assign responsibility to every Russian person or every contractor.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-01-26"
+    },
+    {
+      "id": "state-gru-election-case",
+      "title": "Twelve GRU officers: 2016 election-hacking allegations",
+      "date": "2018-07-13",
+      "topic": "Intelligence & conflict",
+      "summary": "A U.S. indictment alleged hacking and release of stolen political documents.",
+      "entityIds": [
+        "gru",
+        "state-gru-unit-26165",
+        "state-gru-unit-74455",
+        "us-doj",
+        "fbi"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "gru",
+          "role": "Agency affiliation alleged for defendants"
+        },
+        {
+          "entityId": "state-gru-unit-26165",
+          "role": "Unit identified in indictment"
+        },
+        {
+          "entityId": "state-gru-unit-74455",
+          "role": "Unit identified in indictment"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        },
+        {
+          "entityId": "fbi",
+          "role": "Investigating agency"
+        }
+      ],
+      "sourceIds": [
+        "russia-gru"
+      ],
+      "eventIds": [
+        "i-gru-indictment"
+      ],
+      "status": "allegation",
+      "statusDetail": "July 2018 indictment; this case card does not represent a conviction or a current docket certification.",
+      "findings": "Prosecutors alleged spearphishing, theft, staged releases and attempts to obtain election-administration data.",
+      "response": "The cited announcement contains no defense pleading and expressly states the presumption of innocence.",
+      "outcome": "Twelve named officers were charged; the verified source records the indictment rather than a trial outcome.",
+      "limitations": "DOJ said this indictment did not allege knowing American participation or changes to vote counts or the election outcome. Institutional affiliation does not make every member a defendant.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2018-07-13"
+    },
+    {
+      "id": "state-gru-malware-case",
+      "title": "GRU Unit 74455: destructive-malware allegations",
+      "date": "2020-10-19",
+      "topic": "Intelligence & conflict",
+      "summary": "U.S. prosecutors charged six officers over alleged cyberattacks affecting civilian infrastructure and public events.",
+      "entityIds": [
+        "gru",
+        "state-gru-unit-74455",
+        "us-doj",
+        "fbi"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "gru",
+          "role": "Agency affiliation alleged for defendants"
+        },
+        {
+          "entityId": "state-gru-unit-74455",
+          "role": "Unit identified in indictment"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        },
+        {
+          "entityId": "fbi",
+          "role": "Investigating agency"
+        }
+      ],
+      "sourceIds": [
+        "state-gru-malware",
+        "state-gru-malware-indictment"
+      ],
+      "eventIds": [
+        "state-gru-malware-event"
+      ],
+      "status": "allegation",
+      "statusDetail": "October 2020 indictment and announcement; no trial verdict is represented.",
+      "findings": "The indictment alleged Ukrainian power-grid attacks, NotPetya damage, election-related hacking and disruption of the 2018 Winter Olympics.",
+      "response": "The charging release contains no defense response and states that the defendants are presumed innocent.",
+      "outcome": "Six officers were charged. Anatoliy Kovalev was also a defendant in the separate 2018 election case.",
+      "limitations": "Charges are allegations, and affiliation is not collective guilt. This research does not certify the current docket or custody status.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2020-10-19"
+    },
+    {
+      "id": "epcase-maxwell-conviction",
+      "title": "Ghislaine Maxwell: conviction, sentence and reviewed appeals",
+      "date": "2022-06-28",
+      "topic": "Epstein records",
+      "summary": "Maxwell received a 20-year sentence following the jury verdict in the federal prosecution concerning her participation in Epstein's abuse of minors.",
+      "entityIds": [
+        "ghislaine-maxwell",
+        "jeffrey-epstein",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "ghislaine-maxwell",
+          "role": "convicted defendant"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "co-conspirator described in the prosecution"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "prosecuting institution"
+        }
+      ],
+      "sourceIds": [
+        "epstein-maxwell-sentence",
+        "epcase-maxwell-appeal",
+        "epcase-maxwell-cert-docket",
+        "epstein-maxwell-2026-order"
+      ],
+      "eventIds": [
+        "epstein-2021-maxwell-verdict",
+        "epstein-2022-maxwell-sentence",
+        "epcase-maxwell-appeal-affirmed",
+        "epcase-maxwell-cert-denied",
+        "epstein-2026-maxwell-petition"
+      ],
+      "status": "conviction",
+      "statusDetail": "June 28, 2022 sentencing hearing; judgment entered June 29. Subsequent appellate and collateral decisions are separately dated.",
+      "findings": "The judgment contains three counts: conspiracy to transport minors for criminal sexual activity, transportation of a minor for that purpose, and sex trafficking of a minor. The court imposed concurrent terms, the longest 240 months.",
+      "response": "Maxwell challenged the judgment on appeal, including the scope of Epstein's non-prosecution agreement, time limits, jury issues and sentencing. The Second Circuit affirmed on September 17, 2024; the Supreme Court denied her petition on October 6, 2025.",
+      "outcome": "The reviewed August 25, 2026 district-court order separately denied her post-conviction petition. The conviction and 20-year sentence were not vacated by any of these cited decisions.",
+      "limitations": "This dossier records the cited decisions and their dates, not a guarantee that no further filings exist. Certiorari denial is not a new merits ruling. Maxwell's conviction does not establish guilt of uncharged associates or every person mentioned in released records.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2022-06-28"
+    },
+    {
+      "id": "epcase-deutsche-regulatory-action",
+      "title": "Deutsche Bank: NYDFS findings on compliance failures",
+      "date": "2020-07-06",
+      "topic": "Epstein records",
+      "summary": "A New York banking consent order imposed a $150 million penalty for compliance failures involving Epstein and two separate correspondent-bank relationships.",
+      "entityIds": [
+        "deutsche-bank",
+        "nydfs",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "deutsche-bank",
+          "role": "regulated bank subject to consent order"
+        },
+        {
+          "entityId": "nydfs",
+          "role": "investigating and enforcing regulator"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "bank customer whose accounts were reviewed"
+        }
+      ],
+      "sourceIds": [
+        "epstein-dfs-order",
+        "epstein-dfs-release"
+      ],
+      "eventIds": [
+        "epstein-2013-deutsche",
+        "epstein-2020-bank-penalty"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "Consent order signed July 6, 2020; publicly announced July 7. Findings and remedies are those of the regulator in this order.",
+      "findings": "NYDFS found unsafe and unsound business conduct and an ineffective anti-money-laundering program. Its Epstein findings include inadequate account monitoring and failure to implement or communicate conditions imposed on the relationship.",
+      "response": "The bank agreed to the order and continued cooperation with its monitor. Paragraphs 109–111 credit its cooperation, internal investigations and remediation efforts, which the regulator weighed in resolving the matter.",
+      "outcome": "The order required a $150 million penalty and directed the existing monitor to address the identified failures.",
+      "limitations": "The total penalty covers Epstein, Danske Estonia and FBME matters together; it is not an Epstein-only fine. Regulatory findings are distinct from a criminal conviction, the separate $75 million civil settlement, and proof that every questioned payment was unlawful.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2020-07-06"
+    },
+    {
+      "id": "epcase-deutsche-civil-settlement",
+      "title": "Deutsche Bank: $75 million survivor class settlement",
+      "date": "2023-10-20",
+      "topic": "Epstein records",
+      "summary": "SDNY approved the settlement resolving the survivor class's civil claims against Deutsche Bank.",
+      "entityIds": [
+        "deutsche-bank",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "deutsche-bank",
+          "role": "settling bank"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "offender underlying survivors' civil claims"
+        }
+      ],
+      "sourceIds": [
+        "epcase-deutsche-final-judgment"
+      ],
+      "eventIds": [
+        "epcase-deutsche-settlement-approved"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Order and final judgment, 1:22-cv-10018 (JSR), docket 122, signed October 20, 2023.",
+      "findings": "The court found the negotiated settlement fair, reasonable and adequate for the class. It did not decide the bank's liability at trial.",
+      "response": "Paragraph 11 expressly states that the settlement and judgment cannot be treated as admissions or evidence of liability, fault or wrongdoing.",
+      "outcome": "The judgment specifies a $75 million payment obligation to the settlement fund and dismisses the released claims with prejudice.",
+      "limitations": "Settlement approval is not a finding that the bank committed the alleged trafficking offenses. This judgment's wording does not itself verify completed payment or distributions to individual claimants.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-10-20"
+    },
+    {
+      "id": "epcase-jpm-survivor-settlement",
+      "title": "JPMorgan: $290 million survivor class settlement",
+      "date": "2023-11",
+      "topic": "Epstein records",
+      "summary": "Final approval resolved the survivor class's civil claims against JPMorgan in a separate action from the US Virgin Islands government's lawsuit.",
+      "entityIds": [
+        "jpmorgan-chase",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "jpmorgan-chase",
+          "role": "settling bank"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "offender underlying survivors' civil claims"
+        }
+      ],
+      "sourceIds": [
+        "epcase-jpm-final-judgment",
+        "epstein-jpm-registration"
+      ],
+      "eventIds": [
+        "epstein-2023-class-settlement"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Final settlement approval in November 2023 in 1:22-cv-10019 (JSR). Hearing held November 9; available judgment reproduction indexed November 13. Month precision is retained.",
+      "findings": "The court approved the settlement's fairness and adequacy and found the bank had satisfied its fund-payment obligation. These are settlement findings, not a merits verdict establishing the underlying allegations.",
+      "response": "Paragraph 12 provides that neither settlement nor judgment is an admission or evidence of liability or wrongdoing.",
+      "outcome": "Paragraph 13 records $290 million paid to the qualified settlement fund. Released claims were dismissed with prejudice; specified individual assault claims against natural persons were not released.",
+      "limitations": "Payment into the fund is distinct from completed claimant distributions. The $290 million amount is separate from the $75 million USVI settlement. This record does not imply criminal guilt of bank personnel.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-11"
+    },
+    {
+      "id": "epcase-jpm-usvi-settlement",
+      "title": "JPMorgan and USVI: $75 million civil settlement",
+      "date": "2023-09-26",
+      "topic": "Epstein records",
+      "summary": "JPMorgan and the US Virgin Islands government announced a settlement of the government's civil suit concerning the bank's relationship with Epstein.",
+      "entityIds": [
+        "jpmorgan-chase",
+        "us-virgin-islands",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "jpmorgan-chase",
+          "role": "settling bank"
+        },
+        {
+          "entityId": "us-virgin-islands",
+          "role": "government civil plaintiff"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "bank customer underlying the civil claims"
+        }
+      ],
+      "sourceIds": [
+        "epstein-usvi-jpm",
+        "epcase-jpm-usvi-response"
+      ],
+      "eventIds": [
+        "epstein-2023-usvi-settlement"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "Agreement-in-principle announcement on September 26, 2023; this record is tied to that announcement, not an assumed later payment date.",
+      "findings": "The cited announcements establish the agreement and its terms. They do not establish the government's allegations through a trial verdict.",
+      "response": "JPMorgan said the agreement involved no admission of liability, expressed regret for its association with Epstein, and said it would not have continued the relationship had it believed he was using the bank for his crimes.",
+      "outcome": "Announced terms totaled $75 million: $30 million for charitable organizations, $25 million for territorial law-enforcement capacity, and $20 million in attorneys' fees.",
+      "limitations": "Party statements require attribution. The government's description of anti-trafficking measures does not independently establish subsequent implementation. This is a civil settlement, separate from the survivor class settlement.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-09-26"
+    },
+    {
+      "id": "epcase-bop-custody-investigation",
+      "title": "Bureau of Prisons: Inspector General findings on custody failures",
+      "date": "2023-06-27",
+      "topic": "Epstein records",
+      "summary": "DOJ's Inspector General documented serious staff misconduct and operational failures in Epstein's detention at MCC New York.",
+      "entityIds": [
+        "federal-bureau-prisons",
+        "us-doj",
+        "fbi",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "federal-bureau-prisons",
+          "role": "institution whose custody practices were investigated"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Inspector General oversight institution"
+        },
+        {
+          "entityId": "fbi",
+          "role": "joint investigating agency"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "deceased detainee"
+        }
+      ],
+      "sourceIds": [
+        "epcase-oig-full-report",
+        "epstein-oig-death",
+        "epcase-bop-charges",
+        "epcase-bop-dismissal"
+      ],
+      "eventIds": [
+        "epstein-2019-death",
+        "epcase-bop-records-indictment",
+        "epcase-bop-deferred-prosecution",
+        "epcase-bop-charges-dismissed",
+        "epstein-2023-oig"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "OIG investigative report 23-085, published June 27, 2023; administrative findings, with a separately described criminal prosecution.",
+      "findings": "OIG identified failures involving a required cellmate, inmate checks, supervision, record accuracy and security-camera recording. It found falsified records and lack of candor by staff, but no evidence contradicting the FBI's conclusion that no criminal act caused Epstein's death.",
+      "response": "BOP agreed with all eight recommendations. In its response concerning staffing, BOP stressed failures to perform duties while acknowledging continued recruitment and retention work. OIG required evidence of implementation before closing recommendations.",
+      "outcome": "The report recommended corrective measures and review of personnel for possible discipline. Two employees' record-falsification charges had been dismissed after compliance with deferred-prosecution agreements; other referrals did not result in prosecutions.",
+      "limitations": "The review's focus was BOP custody and personnel. Agreement with recommendations is not proof they were implemented. Administrative misconduct does not establish murder or a cover-up, and criminal dismissal does not negate the report's separate findings.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2023-06-27"
+    },
+    {
+      "id": "epcase-opr-acosta-review",
+      "title": "DOJ OPR: poor judgment in Epstein non-prosecution decision",
+      "date": "2020-11-12",
+      "topic": "Epstein records",
+      "summary": "DOJ released findings from its professional-responsibility review of the 2006–2008 federal investigation, non-prosecution agreement and treatment of victims.",
+      "entityIds": [
+        "us-doj",
+        "alexander-acosta",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "us-doj",
+          "role": "department conducting an internal professional-responsibility review"
+        },
+        {
+          "entityId": "alexander-acosta",
+          "role": "former U.S. attorney whose decisions were reviewed"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "subject of the underlying criminal investigation"
+        }
+      ],
+      "sourceIds": [
+        "epstein-opr-summary",
+        "epstein-opr-release"
+      ],
+      "eventIds": [
+        "epstein-2007-npa",
+        "epstein-2008-plea",
+        "epstein-2020-opr"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "OPR findings publicly released November 12, 2020, using OPR's professional-misconduct standard.",
+      "findings": "OPR did not find professional misconduct by DOJ attorneys. It found that Acosta exercised poor judgment in choosing the non-prosecution agreement and in failing to ensure state authorities would notify federally identified victims about the state plea hearing. It also criticized the treatment of victims.",
+      "response": "DOJ released the executive summary to affected victims and publicly reported both the absence of a professional-misconduct finding and the findings of poor judgment.",
+      "outcome": "The report supplies an official assessment of prosecutorial decisions and victim communications. The cited public announcement reports no professional-misconduct sanction.",
+      "limitations": "A finding of poor judgment is not a criminal conviction; absence of professional misconduct under OPR's standard is not a broad exoneration of every decision or practice. This review did not adjudicate every allegation about Epstein, associates or intelligence agencies.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2020-11-12"
+    },
+    {
+      "id": "epcase-mit-institutional-review",
+      "title": "MIT: review of post-conviction gifts and institutional response",
+      "date": "2020-01-10",
+      "topic": "Epstein records",
+      "summary": "MIT released its commissioned Goodwin Procter review of donations, campus visits and approval decisions involving Epstein.",
+      "entityIds": [
+        "mit",
+        "mit-media-lab",
+        "joi-ito",
+        "seth-lloyd",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "mit",
+          "role": "university that commissioned the review"
+        },
+        {
+          "entityId": "mit-media-lab",
+          "role": "university unit examined"
+        },
+        {
+          "entityId": "joi-ito",
+          "role": "former laboratory director whose actions were reviewed"
+        },
+        {
+          "entityId": "seth-lloyd",
+          "role": "faculty member whose actions were reviewed"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "donor and campus visitor examined"
+        }
+      ],
+      "sourceIds": [
+        "epstein-mit-report",
+        "epstein-mit-news",
+        "epstein-mit-redirect",
+        "epcase-mit-reform-update"
+      ],
+      "eventIds": [
+        "epstein-2019-ito-resignation",
+        "epstein-2020-mit-review",
+        "epstein-2020-mit-donation",
+        "epcase-mit-reforms-update"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "Institutionally commissioned fact-finding report released January 10, 2020; not a government criminal investigation or court verdict.",
+      "findings": "The review traced $850,000 in gifts and found serious errors of judgment in accepting post-conviction donations. It said the absence of a controversial-donor policy prevented treating acceptance itself as a policy violation. It separately attributed nondisclosure of gifts to Lloyd.",
+      "response": "MIT announced paid administrative leave for Lloyd, committed to changes in donor review and reporting systems, and donated $850,000 to organizations supporting survivors.",
+      "outcome": "A December 2020 presidential update described reforms completed or underway and additional recommendations still being developed.",
+      "limitations": "Findings are attributed to MIT's commissioned review and limited to its stated donation, leadership and campus-visit scope. They do not establish that recipients participated in Epstein's sexual crimes or independently prove that later reforms worked.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2020-01-10"
+    },
+    {
+      "id": "epcase-harvard-institutional-review",
+      "title": "Harvard: institutional review, sanctions and later proceedings",
+      "date": "2020-05-01",
+      "topic": "Epstein records",
+      "summary": "Harvard's review examined Epstein's gifts, visiting-fellow appointment and relationship with the Program for Evolutionary Dynamics, identifying gaps in institutional policy and oversight.",
+      "entityIds": [
+        "harvard",
+        "harvard-ped",
+        "martin-nowak",
+        "jeffrey-epstein"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "harvard",
+          "role": "university conducting the review"
+        },
+        {
+          "entityId": "harvard-ped",
+          "role": "university program examined"
+        },
+        {
+          "entityId": "martin-nowak",
+          "role": "program director later subject to university discipline"
+        },
+        {
+          "entityId": "jeffrey-epstein",
+          "role": "donor, former visiting fellow and campus visitor examined"
+        }
+      ],
+      "sourceIds": [
+        "epstein-harvard-report",
+        "epcase-harvard-sanctions",
+        "epcase-harvard-sanctions-lifted",
+        "epcase-harvard-renewed-review"
+      ],
+      "eventIds": [
+        "epstein-2020-harvard-review",
+        "epcase-harvard-nowak-sanctions",
+        "epcase-harvard-nowak-privileges-restored",
+        "epcase-harvard-nowak-renewed-review"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "University review published May 1, 2020. Later discipline, restoration and renewed review are separately dated events; this label is not a statement that the 2020 inquiry remains open.",
+      "findings": "The university found no accepted gifts from Epstein after his 2008 conviction, but identified weaknesses in gift communications, visiting-fellow screening and aspects of his program access. Continued association by itself was not a policy violation under the rules then in place.",
+      "response": "Harvard redirected $200,937 in unspent gifts to survivor-support organizations and ordered policy work. A later faculty review led to program closure and two-year restrictions for Nowak.",
+      "outcome": "A department chair confirmed restoration of Nowak's privileges in March 2023. In February 2026, the university confirmed a separate paid leave pending review of newly released records.",
+      "limitations": "The 2020 report was an institutional review, not a criminal judgment. The 2026 leave was pending review rather than a new misconduct finding, and no later outcome was verified. Neither campus contact nor mention in released files establishes criminal complicity.",
+      "reviewed": "2026-10-19",
+      "evidence": "documented",
+      "sortDate": "2020-05-01"
     }
   ],
   "rosters": [
@@ -82852,6 +86057,48 @@
         "The IQT–Palantir investment is widely reported but was not included as a dated edge because this pass did not locate a primary source establishing date and terms.",
         "No claimed Palantir–Israeli Defense Ministry operational edge was added from a company media index; the Nimbus procurement edges use direct government/vendor records.",
         "Events with year or month precision are not assigned invented days; access-date relationships are explicitly marked as observations."
+      ],
+      "sourceIds": []
+    },
+    {
+      "title": "Corporate cases: documented actions and contested claims",
+      "summary": "Eleven selected SEC, FTC, DOJ, court and DOL matters involving finance, technology, privacy and employment. Case dates identify specific actions. Company responses and later developments are recorded separately.",
+      "notes": [
+        "This selection is not a comprehensive corporate misconduct database. Absence does not establish a clean record.",
+        "Regulatory findings, allegations, consent settlements and trial findings have different meanings. A documented settlement does not make every complaint allegation a proved fact.",
+        "No liability is inferred from attendance, investments, employment, corporate-group membership or other relationships.",
+        "BlackRock Advisors and BlackRock, Inc. are distinct respondents. Amazon’s existing atlas entity combines the parent and AWS; case roles specify services and defendants.",
+        "Google’s judgment is under documented appellate challenge; this edition verifies filings rather than asserting an exhausted appellate outcome.",
+        "Cases on AI suppliers can concern securities or employment rather than AI itself. Alexa and Ring have specific algorithm/data-use allegations.",
+        "Primary DOL decree indexed text was available, but direct PDF retrieval returned 403; the limitation is recorded in the source entry.",
+        "No private complainant identities, contact details, raw customer data or personal victim records are reproduced."
+      ],
+      "sourceIds": []
+    },
+    {
+      "title": "State, intelligence and security accountability records",
+      "summary": "Ten bounded case histories based on official investigations, court records, sanctions decisions and negotiated resolutions; reviewed 19 October 2026.",
+      "notes": [
+        "This is a selected case collection, not a complete history of covert operations or all alleged misconduct.",
+        "Each status describes the dated record specified in statusDetail. Investigative findings, sanctions and indictments are not interchangeable with convictions.",
+        "Officials, investigators, courts, defendants and program operators have explicit case roles. An entity's appearance does not imply culpability.",
+        "Most sources are primary government records. The reported September 2015 dismissal of the Academi deferred charges is attributed to a reproduced Intercept report; the final court order was not retrieved.",
+        "Redacted or destroyed records limit reconstruction. No inference of undisclosed networks, contemporary mind-control operations, or collective responsibility is drawn."
+      ],
+      "sourceIds": []
+    },
+    {
+      "title": "Epstein: institutional accountability and case outcomes",
+      "summary": "Nine dated dossiers distinguishing a criminal conviction, a banking regulatory action, three civil settlements, two DOJ oversight reviews and two university reviews. Ten additional procedural or institutional-response events supplement the existing atlas; existing entities and source IDs are reused.",
+      "notes": [
+        "Case status is attached to the specified action and date. It does not automatically assert the latest legal or employment status.",
+        "Institutionally commissioned reviews are explicitly identified. The shared official-investigation status is used for them as well as government reviews, with the distinction preserved in statusDetail.",
+        "Settlement amounts, fund payments, claimant distributions and findings of liability are separate concepts. No-admission provisions are retained.",
+        "JPMorgan final approval is preserved at November 2023 precision because the hearing date and the available reproduction's indexed date differ and the signed docket date was not independently pinned.",
+        "The prison-record case uses January 3, 2022, its dismissal filing date. Its prosecutor's recommendation was dated December 13, 2021. The later OIG narrative uses that December date; the distinction is recorded rather than silently harmonized.",
+        "No names or private details of victims, witness contact information, graphic descriptions, or purported comprehensive client list are included.",
+        "No inference of criminality follows from a donation, meeting, document mention, institutional affiliation or graph edge. Entity roles distinguish subjects from investigators and civil plaintiffs.",
+        "This is selected accountability research, not review of the full Epstein document corpus or every later court filing. The separate 2026 Harvard review has no verified outcome in this extension."
       ],
       "sourceIds": []
     }

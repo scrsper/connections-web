@@ -9,8 +9,9 @@
   const makeButton = (label, action, cls) => { const b = el('button', cls, label); b.type = 'button'; b.addEventListener('click', action); return b; };
   const empty = msg => el('div', 'empty', msg);
   const params = new URLSearchParams(location.search);
-  const allowedViews = ['timeline', 'connections', 'directory', 'rosters', 'sources', 'coverage'];
-  const state = {view: allowedViews.includes(params.get('view')) ? params.get('view') : 'timeline', q: params.get('q') || '', topic: params.get('topic') || '', evidence: params.get('evidence') || '', entity: params.get('entity') || '', page: 1};
+  const allowedViews = ['timeline', 'cases', 'connections', 'directory', 'rosters', 'sources', 'coverage'];
+  const caseStatuses = {'conviction':'Criminal conviction','court-finding':'Court finding','regulatory-action':'Regulatory action','civil-settlement':'Civil settlement','official-investigation':'Official investigation','allegation':'Allegation / charge'};
+  const state = {view: allowedViews.includes(params.get('view')) ? params.get('view') : 'timeline', q: params.get('q') || '', topic: params.get('topic') || '', evidence: params.get('evidence') || '', entity: params.get('entity') || '', status: params.get('status') || '', case: params.get('case') || '', page: 1};
   const PAGE_SIZE = 30;
   let data, entities, sources, adjacent, panel;
   function link(url, label) {
@@ -34,19 +35,19 @@
   function limitation(value) { return value ? el('p', 'limitation', textValue(value)) : null; }
   function saveURL() {
     const p = new URLSearchParams();
-    for (const k of ['view','q','topic','evidence','entity']) if(state[k] && !(k === 'view' && state[k] === 'timeline')) p.set(k, state[k]);
+    for (const k of ['view','q','topic','evidence','entity','status','case']) if(state[k] && !(k === 'view' && state[k] === 'timeline') && (!(k==='case'||k==='status')||state.view==='cases')) p.set(k, state[k]);
     history.replaceState(null, '', location.pathname + (p.size ? '?' + p.toString() : ''));
   }
-  function changeView(view) { state.view = view; state.page = 1; render(); }
+  function changeView(view) { state.view = view; state.case=''; state.page = 1; render(); }
   function recordMatches(record) {
     if (state.topic && record.topic !== state.topic && !(record.topics || []).includes(state.topic)) return false;
-    if (state.evidence && record.evidence !== state.evidence) return false;
-    const haystack = norm([record.title,record.name,record.summary,record.context,record.label,record.date,record.type,record.limitations,record.entityIds?.map(id => entities.get(id)?.name),entities.get(record.from)?.name,entities.get(record.to)?.name]);
+    if (state.view!=='cases' && state.evidence && record.evidence !== state.evidence) return false;
+    const haystack = norm([record.title,record.name,record.summary,record.context,record.label,record.date,record.type,record.limitations,record.findings,record.response,record.outcome,record.statusDetail,record.entityIds?.map(id => entities.get(id)?.name),entities.get(record.from)?.name,entities.get(record.to)?.name]);
     return !state.q || norm(state.q).split(/\s+/).filter(Boolean).every(word => haystack.includes(word));
   }
   function relatedRecords(id) { return (adjacent.get(id) || []); }
   function filteredEntities() {
-    const relatedIds = new Set([...data.events, ...data.relationships].filter(recordMatches).flatMap(r => r.entityIds || [r.from, r.to]));
+    const relatedIds = new Set([...data.events, ...data.relationships, ...data.cases].filter(recordMatches).flatMap(r => r.entityIds || [r.from, r.to]));
     return data.entities.filter(e => {
       const searchOK = !state.q || norm([e.name,e.summary,e.aliases,e.type]).includes(norm(state.q)) || relatedIds.has(e.id);
       const scopeOK = !state.topic && !state.evidence || relatedIds.has(e.id);
@@ -62,14 +63,19 @@
       panel.append(nav);
     }
   }
-  function renderEvent(event) {
+  function caseLink(item, label=item.title) {
+    const a=el('a','case-link',label);a.href='/timeline/?view=cases&case='+encodeURIComponent(item.id);return a;
+  }
+  function renderEvent(event, includeCases=true) {
     const li = el('li', 'event'); li.id = event.id;
     const left = el('div'); left.append(el('div', 'event-date', event.date), el('div', 'event-topic', event.topic));
     const body = el('article'); body.append(el('h3','',event.title), el('p','',event.summary));
     const footer = el('div','record-footer'); footer.append(badge(event.evidence));
     (event.entityIds || []).slice(0,8).forEach(id => footer.append(entityChip(id))); body.append(footer);
     const note = limitation(event.limitations); if(note)body.append(note);
-    body.append(sourceLinks(event.sourceIds)); li.append(left,body); return li;
+    body.append(sourceLinks(event.sourceIds));
+    if(includeCases) data.cases.filter(c=>c.eventIds.includes(event.id)).forEach(c=>body.append(caseLink(c,'Read case: '+c.title+' ↗')));
+    li.append(left,body); return li;
   }
   function renderRelation(record) {
     const article = el('article','relation');
@@ -85,6 +91,46 @@
     $('#result-count').textContent = `${items.length.toLocaleString()} dated records · oldest first`;
     if(!items.length){panel.append(empty('No dated records match these filters. Try a broader search or reset the filters.')); return;}
     paginate(items,renderEvent,el('ol','timeline-list'));
+  }
+  function renderCaseCard(item) {
+    const article=el('article','case-card');
+    article.append(el('div','eyebrow red',`${item.date} · ${item.topic}`),el('span','badge case-badge',caseStatuses[item.status]));
+    const heading=el('h2');heading.append(caseLink(item));article.append(heading,el('p','case-summary',item.summary),el('p','small',item.statusDetail),sourceLinks(item.sourceIds));
+    article.append(caseLink(item,'Read findings, response & outcome ↗'));return article;
+  }
+  function renderCaseDetail(item) {
+    $('#result-count').textContent=`Case record · reviewed ${item.reviewed}`;
+    const back=el('a','case-back','← All cases & findings');back.href='/timeline/?view=cases';panel.append(back);
+    const article=el('article','case-detail');article.append(el('p','eyebrow red',`${item.date} · ${item.topic}`),el('span','badge case-badge',caseStatuses[item.status]),el('h2','',item.title),el('p','case-summary',item.summary));
+    const status=el('div','case-status');status.append(el('h3','','Status of the cited action'),el('p','',item.statusDetail));article.append(status);
+    const roles=el('section','case-roles');roles.append(el('h3','','People & institutions in this record'));
+    const roleList=el('dl');
+    item.entityRoles.forEach(r=>{const row=el('div'),name=el('dt');name.append(entityChip(r.entityId));row.append(name,el('dd','',r.role));roleList.append(row);});
+    roles.append(roleList);article.append(roles);
+    const sections=el('div','case-sections');
+    [['Findings or allegations','findings'],['Response & contested points','response'],['Outcome & remedy','outcome'],['What this record does not establish','limitations']].forEach(([heading,key])=>{
+      const section=el('section');section.append(el('h3','',heading),el('p','',item[key]));sections.append(section);
+    });article.append(sections);
+    const documents=el('section','case-documents');documents.append(el('h3','','Source documents'));
+    const sourceList=el('ol');
+    item.sourceIds.forEach(id=>{const source=sources.get(id),li=el('li');li.append(link(source.url,source.title),el('p','small',`${source.publisher}${source.published?' · '+source.published:''}`));if(source.notes)li.append(el('p','small',textValue(source.notes)));sourceList.append(li);});
+    documents.append(sourceList);article.append(documents);
+    const events=data.events.filter(e=>item.eventIds.includes(e.id)).sort((a,b)=>a.sortDate.localeCompare(b.sortDate));
+    if(events.length){article.append(el('h3','','Case chronology'));const list=el('ol','timeline-list');events.forEach(e=>list.append(renderEvent(e,false)));article.append(list);}
+    panel.append(article);
+  }
+  function renderCases() {
+    if(state.case) {
+      const item=data.cases.find(c=>c.id===state.case);
+      if(item){renderCaseDetail(item);return;}
+      $('#result-count').textContent='Case not found';panel.append(empty('This case ID is not in the current edition.'));
+      panel.append(makeButton('Browse all cases',()=>{state.case='';render();}));return;
+    }
+    const items=data.cases.filter(c=>(!state.status||c.status===state.status)&&recordMatches(c)).sort((a,b)=>b.sortDate.localeCompare(a.sortDate)||a.title.localeCompare(b.title));
+    $('#result-count').textContent=`${items.length} case dossiers · newest cited action first`;
+    const intro=el('div','case-intro');intro.append(el('h2','','Cases & findings'),el('p','','Documented harms, allegations and institutional failures, with the response and outcome alongside the evidence. Categories describe a cited legal or investigative action; later appeals, pardons and settlements are explained inside each case.'));panel.append(intro);
+    if(!items.length){panel.append(empty('No cases match these filters. Try another category or reset the filters.'));return;}
+    paginate(items,renderCaseCard,el('div','case-grid'));
   }
   function renderDirectory() {
     const items = filteredEntities();
@@ -102,6 +148,8 @@
     head.append(title,makeButton('×',()=>$('#profile').close(),'profile-close')); head.lastChild.setAttribute('aria-label','Close profile');
     body.append(head,el('p','',e.summary),sourceLinks(e.sourceIds));
     if (e.aliases?.length) body.append(el('p','small','Also indexed as: '+e.aliases.join(', ')));
+    const relatedCases=data.cases.filter(c=>c.entityIds.includes(id));
+    if(relatedCases.length){body.append(el('h3','','Related cases & findings'));relatedCases.forEach(c=>{const row=el('p');row.append(caseLink(c),el('span','small',' — '+c.entityRoles.filter(r=>r.entityId===id).map(r=>r.role).join('; ')));body.append(row);});}
     if(adjacent.has(id))body.append(makeButton('Explore connections ↗',()=>{state.entity=id;state.q='';state.topic='';state.evidence='';$('#search').value='';$('#topic').value='';$('#evidence').value='';$('#profile').close();changeView('connections');},'primary'));
     const records = relatedRecords(id).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
     body.append(el('h3','',`${records.length} indexed relationships`));
@@ -187,8 +235,8 @@
     layout.append(list);panel.append(layout);
   }
   function renderSources() {
-    const scopeIds=new Set([...data.events,...data.relationships].filter(r=>(!state.topic||r.topic===state.topic)&&(!state.evidence||r.evidence===state.evidence)).flatMap(r=>r.sourceIds||[]));
-    const searchIds=new Set([...data.events,...data.relationships].filter(recordMatches).flatMap(r=>r.sourceIds||[]));
+    const scopeIds=new Set([...data.events,...data.relationships,...data.cases].filter(r=>(!state.topic||r.topic===state.topic)&&(!state.evidence||r.evidence===state.evidence)).flatMap(r=>r.sourceIds||[]));
+    const searchIds=new Set([...data.events,...data.relationships,...data.cases].filter(recordMatches).flatMap(r=>r.sourceIds||[]));
     const items=data.sources.filter(s=>(!state.topic&&!state.evidence||scopeIds.has(s.id))&&(!state.q||norm([s.title,s.publisher,s.notes,s.url]).includes(norm(state.q))||searchIds.has(s.id)));
     $('#result-count').textContent=`${items.length} sources · links point to publishers or identified document copies`;
     paginate(items,s=>{
@@ -221,6 +269,7 @@
     const sections=[
       ['What a line establishes','Every relationship has a type, a date where known and at least one source. Employment, governance, investment, an invitation, listed participation, a meeting, correspondence, a charge and a conviction are different claims. The graph keeps them separate.'],
       ['Documented, reported, alleged','Documented means a cited primary record establishes the narrow claim: an official list, filing, court result or institution’s own statement. It is not a universal truth rating. Reported means a claim is attributed to reporting or an account. Allegations are identified and do not imply conviction. Self-published institutional accounts can have limitations.'],
+      ['Reading cases and findings','A case category describes the dated action cited in that dossier. A documented indictment establishes that charges were filed, not that the accused committed them. Settlements can resolve disputed claims without admissions. The response and outcome sections preserve denials, appeals, dismissals, pardons and other qualifications. Entity roles distinguish investigators, courts, defendants and other institutions. These dossiers are selected records, not an exhaustive catalog of wrongdoing or a ranking of people.'],
       ['Reading meeting lists','Bilderberg publishes participant lists for individual meetings, not a roll of permanent members. Steering-committee service is separate. A Dialog invitation or registration list does not prove attendance. Sharing a meeting node does not prove a personal relationship between every participant. No complete public register of all private dinners and lunches is available in this edition.'],
       ['Reading the Epstein files','The releases combine different document types and include unverified submissions. A contact entry, travel record, invitation or mention is not proof of criminal conduct. This edition focuses on sourced public institutional records, proceedings and identified connections. It does not publish a supposed “client list” or victim/private contact details.'],
       ['Historical and geographic scope','The timeline begins in 1600 and offers selected institutional milestones, not a complete history of several centuries. States, governments, ministries, companies and individuals remain distinct. Nationality, religion and ancestry do not establish institutional affiliation or collective responsibility. A chronological sequence alone does not establish causation.'],
@@ -238,25 +287,32 @@
   }
   function render(resetScroll=true) {
     saveURL();panel.replaceChildren();
+    document.title=state.view==='cases'?(data.cases.find(c=>c.id===state.case)?.title||'Cases & findings')+' — Bad Tengu':'Timeline & connections — Bad Tengu';
     document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===state.view;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;});
     panel.setAttribute('aria-labelledby','tab-'+state.view);
-    $('#filters').hidden=state.view==='coverage';
-    ({timeline:renderTimeline,connections:renderConnections,directory:renderDirectory,rosters:renderRosters,sources:renderSources,coverage:renderCoverage})[state.view]();
+    $('#filters').hidden=state.view==='coverage'||state.view==='cases'&&!!state.case;
+    $('#evidence-control').hidden=state.view==='cases';
+    $('#case-status-control').hidden=state.view!=='cases';
+    ({timeline:renderTimeline,cases:renderCases,connections:renderConnections,directory:renderDirectory,rosters:renderRosters,sources:renderSources,coverage:renderCoverage})[state.view]();
     saveURL();
   }
   async function init() {
     const response=await fetch('/data/atlas.json',{cache:'no-cache'});if(!response.ok)throw Error('Research dataset returned '+response.status);
-    data=await response.json();
+    data=await response.json();data.cases=data.cases||[];
     entities=new Map(data.entities.map(e=>[e.id,e]));sources=new Map(data.sources.map(s=>[s.id,s]));adjacent=new Map();
     data.relationships.forEach(r=>{for(const id of uniq([r.from,r.to])){if(!adjacent.has(id))adjacent.set(id,[]);adjacent.get(id).push(r);}});
     if($('#home-metrics')) {
-      $('#metric-events').textContent=data.events.length.toLocaleString();$('#metric-entities').textContent=data.entities.length.toLocaleString();$('#metric-sources').textContent=data.sources.length.toLocaleString();return;
+      $('#metric-events').textContent=data.events.length.toLocaleString();$('#metric-entities').textContent=data.entities.length.toLocaleString();$('#metric-sources').textContent=data.sources.length.toLocaleString();$('#case-count').textContent=data.cases.length+' case dossiers';return;
     }
     panel=$('#panel');$('#edition').replaceChildren(el('span','','RESEARCH EDITION'),el('br'),el('span','',data.updated+' · '+data.relationships.length.toLocaleString()+' indexed relationships'));
-    const topics=uniq([...data.events,...data.relationships].map(r=>r.topic)).filter(Boolean).sort();
+    const topics=uniq([...data.events,...data.relationships,...data.cases].map(r=>r.topic)).filter(Boolean).sort();
     topics.forEach(t=>{const option=el('option','',t);option.value=t;$('#topic').append(option);});
     if(!topics.includes(state.topic))state.topic='';
     if(!['','documented','reported','allegation'].includes(state.evidence))state.evidence='';
+    if(!caseStatuses[state.status])state.status='';
+    Object.entries(caseStatuses).forEach(([value,label])=>{const option=el('option','',label);option.value=value;$('#case-status').append(option);});
+    $('#case-status').value=state.status;
+    $('#case-status').addEventListener('change',()=>{state.status=$('#case-status').value;state.page=1;render();});
     $('#search').value=state.q;$('#topic').value=state.topic;$('#evidence').value=state.evidence;
     let timer;
     $('#search').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{state.q=$('#search').value;state.page=1;render();},180);});
@@ -265,7 +321,7 @@
       b.addEventListener('click',()=>changeView(b.dataset.view));
       b.addEventListener('keydown',ev=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(ev.key)){ev.preventDefault();let i=allowedViews.indexOf(state.view);i=ev.key==='Home'?0:ev.key==='End'?allowedViews.length-1:(i+(ev.key==='ArrowRight'?1:-1)+allowedViews.length)%allowedViews.length;changeView(allowedViews[i]);$('#tab-'+allowedViews[i]).focus();}});
     });
-    $('#reset').addEventListener('click',()=>{clearTimeout(timer);state.q=state.topic=state.evidence=state.entity='';state.page=1;$('#search').value=$('#topic').value=$('#evidence').value='';render();});
+    $('#reset').addEventListener('click',()=>{clearTimeout(timer);state.q=state.topic=state.evidence=state.entity=state.status=state.case='';state.page=1;$('#search').value=$('#topic').value=$('#evidence').value=$('#case-status').value='';render();});
     $('#share').addEventListener('click',async()=>{saveURL();try{await navigator.clipboard.writeText(location.href);$('#share').textContent='Copied';}catch{$('#share').textContent='Copy the address in your browser';}setTimeout(()=>$('#share').textContent='Copy this view',3000);});
     $('#profile').addEventListener('click',ev=>{if(ev.target===$('#profile'))$('#profile').close();});
     render();

@@ -1,0 +1,1191 @@
+{
+  "sources": [
+    {
+      "id": "state-cia-findings",
+      "title": "CIA detention study: findings and conclusions",
+      "url": "https://www.intelligence.senate.gov/wp-content/uploads/2024/08/sites-default-files-press-findings-and-conclusions.pdf",
+      "publisher": "U.S. Senate Select Committee on Intelligence",
+      "published": "2014-12-09",
+      "accessed": "2026-10-19",
+      "notes": "Committee findings, especially conclusions 1–3, 14 and 15; finding 15 on printed page 12 supports the detainee counts. Released with redactions. Legislative findings, not a criminal judgment."
+    },
+    {
+      "id": "state-cia-response",
+      "title": "CIA comments on the Senate detention study",
+      "url": "https://www.cia.gov/static/e02824d8cacf8c55c511d67a1d76ed21/CIAs-June-2013-Response-to-the-SSCI-Study-on-the-Former-Detention-and-Interrogation-Program.pdf",
+      "publisher": "Central Intelligence Agency",
+      "published": "2013-06-27",
+      "accessed": "2026-10-19",
+      "notes": "Agency response dated June 27, 2013, approved for public release December 8, 2014. Opening memorandum states agreements, disagreements and reforms."
+    },
+    {
+      "id": "state-durham-closure",
+      "title": "Attorney General statement closing certain detainee investigations",
+      "url": "https://www.justice.gov/archives/opa/pr/statement-attorney-general-eric-holder-closure-investigation-interrogation-certain-detainees",
+      "publisher": "U.S. Department of Justice",
+      "published": "2012-08-30",
+      "accessed": "2026-10-19",
+      "notes": "Criminal investigation closure is based on admissible evidence and proof beyond reasonable doubt, not an adjudication that no abuse occurred."
+    },
+    {
+      "id": "state-oig-detainees",
+      "title": "Review of FBI involvement in and observations of detainee interrogations",
+      "url": "https://oig.justice.gov/sites/default/files/archive/special/s0805/final.pdf",
+      "publisher": "U.S. Department of Justice, Office of Inspector General",
+      "published": "2008-05",
+      "accessed": "2026-10-19",
+      "notes": "Full 438-page report; most scan pages were not machine-readable in the web extraction. The OIG's own accompanying semiannual summary is used for the summarized findings."
+    },
+    {
+      "id": "state-oig-detainees-summary",
+      "title": "OIG semiannual report: FBI detainee-interrogation review",
+      "url": "https://oig.justice.gov/archives/semiannual/0811/fbi.htm",
+      "publisher": "U.S. Department of Justice, Office of Inspector General",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Agency summary for April–September 2008. Distinguishes agents' observations of other agencies from FBI participation and policy failures."
+    },
+    {
+      "id": "state-fbi-cointelpro",
+      "title": "And Justice for All, 1954–1971",
+      "url": "https://www.fbi.gov/history/history-of-the-fbi/and-justice-for-all",
+      "publisher": "Federal Bureau of Investigation",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "FBI institutional history acknowledges COINTELPRO's infringement of First Amendment rights and its April 1971 termination. Agency retrospective."
+    },
+    {
+      "id": "state-walsh-archives",
+      "title": "Records of Lawrence Walsh relating to Iran/Contra",
+      "url": "https://www.archives.gov/research/investigations/walsh.html",
+      "publisher": "U.S. National Archives and Records Administration",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Official archival history summarizes prosecutions, immunity-related reversals, pretrial pardons and August 4, 1993 report; page reviewed December 6, 2023."
+    },
+    {
+      "id": "state-iran-pardons",
+      "title": "Proclamation 6518: Grant of Executive Clemency",
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-107/pdf/STATUTE-107-Pg2606.pdf",
+      "publisher": "President George H. W. Bush / U.S. Government Publishing Office",
+      "published": "1992-12-24",
+      "accessed": "2026-10-19",
+      "notes": "Primary pardon instrument and presidential justification; its political characterizations are attributed to the president, not treated as court findings."
+    },
+    {
+      "id": "state-blackwater-appeal",
+      "title": "United States v. Slatten et al., D.C. Circuit decision",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-caDC-15-03078/pdf/USCOURTS-caDC-15-03078-0.pdf",
+      "publisher": "U.S. Court of Appeals for the District of Columbia Circuit",
+      "published": "2017-08-04",
+      "accessed": "2026-10-19",
+      "notes": "Case 15-3078 and consolidated cases; majority and separate opinions. Slatten retrial and resentencing of the other defendants are subsequent developments."
+    },
+    {
+      "id": "state-slatten-sentence",
+      "title": "Slatten sentenced after retrial for Nisur Square murder",
+      "url": "https://www.justice.gov/usao-dc/pr/former-blackwater-employee-sentenced-life-imprisonment-murder-2007-shooting-nisur-square",
+      "publisher": "U.S. Attorney's Office, District of Columbia",
+      "published": "2019-08-14",
+      "accessed": "2026-10-19",
+      "notes": "Prosecutor's account of sentencing and prior reversal, mistrial and retrial; must be read with December 2020 clemency."
+    },
+    {
+      "id": "state-trump-pardon-register",
+      "title": "Pardons granted by President Donald J. Trump, 2017–2021",
+      "url": "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021",
+      "publisher": "U.S. Department of Justice, Office of the Pardon Attorney",
+      "published": null,
+      "accessed": "2026-10-19",
+      "notes": "Official register includes the four December 22, 2020 Blackwater pardons and links to individual instruments."
+    },
+    {
+      "id": "state-academi-doj",
+      "title": "Academi/Blackwater charged and enters deferred prosecution agreement",
+      "url": "https://www.justice.gov/archive/usao/nce/press/2012/2012-aug-07_04.html",
+      "publisher": "U.S. Attorney's Office, Eastern District of North Carolina",
+      "published": "2012-08-07",
+      "accessed": "2026-10-19",
+      "notes": "Seventeen-count corporate information and DPA announcement. Includes admissions and mitigation; not a jury verdict."
+    },
+    {
+      "id": "state-academi-dpa",
+      "title": "United States v. Academi LLC: filed deferred prosecution agreement",
+      "url": "https://unicornriot.ninja/wp-content/uploads/2020/07/AcademiLLC_DPA.pdf",
+      "publisher": "U.S. District Court, Eastern District of North Carolina; copy hosted by Unicorn Riot",
+      "published": "2012-08-07",
+      "accessed": "2026-10-19",
+      "notes": "Primary court filing, 2:12-cr-00014-FL, document 15, with statement of facts. Paragraphs 4, 6, 14–16 and 26 address remediation, penalties, admissions and dismissal conditions. Official text on a secondary host."
+    },
+    {
+      "id": "state-academi-dismissal-report",
+      "title": "The Intercept report reproduced by Reader Supported News",
+      "url": "https://readersupportednews.org/component/content/article/318/35937-blackwaters-founder-erik-prince-is-under-federal-investigation",
+      "publisher": "The Intercept, Matthew Cole and Jeremy Scahill; reproduced by Reader Supported News",
+      "published": "2016-03-24",
+      "accessed": "2026-10-19",
+      "notes": "Used only for its report of September 2015 dismissal after DPA compliance. The original site and final dismissal order were unavailable; unrelated allegations in the article are not imported."
+    },
+    {
+      "id": "state-gru-malware",
+      "title": "Six GRU officers charged over destructive malware and cyberattacks",
+      "url": "https://www.justice.gov/usao-wdpa/pr/six-russian-gru-officers-charged-connection-worldwide-deployment-destructive-malware",
+      "publisher": "U.S. Attorney's Office, Western District of Pennsylvania",
+      "published": "2020-10-19",
+      "accessed": "2026-10-19",
+      "notes": "October 15 indictment announced October 19. Allegations include Ukrainian infrastructure, NotPetya and the Olympics; all defendants presumed innocent."
+    },
+    {
+      "id": "state-gru-malware-indictment",
+      "title": "United States v. Andrienko et al.: unsealed indictment",
+      "url": "https://www.justice.gov/usdoj-media/opa/media/1103696/dl?inline=",
+      "publisher": "U.S. District Court, Western District of Pennsylvania / U.S. Department of Justice",
+      "published": "2020-10-15",
+      "accessed": "2026-10-19",
+      "notes": "Primary charging instrument; charges and alleged acts are not findings after trial."
+    }
+  ],
+  "entities": [
+    {
+      "id": "state-doj-oig",
+      "name": "DOJ Office of Inspector General",
+      "type": "government",
+      "summary": "Independent oversight office that reviewed FBI detainee-interrogation conduct and policy.",
+      "sourceIds": [
+        "state-oig-detainees-summary"
+      ]
+    },
+    {
+      "id": "state-stansfield-turner",
+      "name": "Stansfield Turner",
+      "type": "person",
+      "summary": "CIA director who testified in 1977 about recovered MKULTRA records.",
+      "sourceIds": [
+        "intel-mkultra"
+      ]
+    },
+    {
+      "id": "state-lawrence-walsh",
+      "name": "Lawrence Walsh",
+      "type": "person",
+      "summary": "Independent counsel appointed in 1986 to investigate Iran-Contra.",
+      "sourceIds": [
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-oliver-north",
+      "name": "Oliver North",
+      "type": "person",
+      "summary": "Iran-Contra defendant whose convictions were vacated over use of immunized congressional testimony.",
+      "sourceIds": [
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-john-poindexter",
+      "name": "John Poindexter",
+      "type": "person",
+      "summary": "Iran-Contra defendant whose convictions were vacated over immunized testimony.",
+      "sourceIds": [
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-caspar-weinberger",
+      "name": "Caspar Weinberger",
+      "type": "person",
+      "summary": "Former defense secretary pardoned before trial on Iran-Contra charges in 1992.",
+      "sourceIds": [
+        "state-iran-pardons",
+        "state-walsh-archives"
+      ]
+    },
+    {
+      "id": "state-george-hw-bush",
+      "name": "George H. W. Bush",
+      "type": "person",
+      "summary": "President who issued six Iran-Contra pardons on December 24, 1992.",
+      "sourceIds": [
+        "state-iran-pardons"
+      ]
+    },
+    {
+      "id": "state-dc-circuit",
+      "name": "U.S. Court of Appeals for the D.C. Circuit",
+      "type": "government",
+      "summary": "Appellate court responsible for the cited 2017 Blackwater ruling.",
+      "sourceIds": [
+        "state-blackwater-appeal"
+      ]
+    },
+    {
+      "id": "state-gru-unit-26165",
+      "name": "GRU Unit 26165",
+      "type": "government",
+      "summary": "Unit identified in the 2018 U.S. election-hacking indictment; the allegations concern named officers.",
+      "sourceIds": [
+        "russia-gru"
+      ]
+    },
+    {
+      "id": "state-gru-unit-74455",
+      "name": "GRU Unit 74455",
+      "type": "government",
+      "summary": "Unit identified in the 2018 election and 2020 malware indictments; charges concern named officers.",
+      "sourceIds": [
+        "russia-gru",
+        "state-gru-malware"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "state-mkultra-approved",
+      "date": "1953-04-13",
+      "title": "CIA approves MKULTRA",
+      "summary": "The Senate hearing's documentary appendix records approval of the research program.",
+      "entityIds": [
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Approval of research does not establish that its experimental objectives were achieved."
+    },
+    {
+      "id": "state-mkultra-destruction",
+      "date": "1973",
+      "title": "MKULTRA records destroyed",
+      "summary": "Turner's later testimony described destruction authorized by the then CIA director; financial records survived separately.",
+      "entityIds": [
+        "cia"
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The surviving archive cannot reconstruct every subject or operation."
+    },
+    {
+      "id": "state-cointelpro-ended",
+      "date": "1971-04",
+      "title": "FBI terminates COINTELPRO",
+      "summary": "The FBI's historical account dates termination of the programs to April 1971.",
+      "entityIds": [
+        "fbi"
+      ],
+      "sourceIds": [
+        "state-fbi-cointelpro"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Ending a named program does not resolve every underlying civil-rights claim."
+    },
+    {
+      "id": "state-church-report",
+      "date": "1976-04-29",
+      "title": "Church Committee issues final report",
+      "summary": "The Senate inquiry found intelligence agencies had undermined constitutional rights and recommended stronger oversight.",
+      "entityIds": [
+        "us-senate",
+        "cia",
+        "fbi"
+      ],
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Legislative findings; individual criminal liability requires separate evidence."
+    },
+    {
+      "id": "state-iran-investigation",
+      "date": "1986-11-26",
+      "title": "FBI begins Iran-Contra investigation",
+      "summary": "The attorney general ordered an investigation after disclosure that Iran arms-sale proceeds had been diverted to the Contras.",
+      "entityIds": [
+        "fbi",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Opening an investigation was not a finding against every official involved."
+    },
+    {
+      "id": "state-iran-indictment",
+      "date": "1988-03-16",
+      "title": "Iran-Contra defendants indicted",
+      "summary": "A grand jury indicted North, Poindexter, Albert Hakim and Richard Secord. Their cases had different outcomes.",
+      "entityIds": [
+        "state-oliver-north",
+        "state-john-poindexter",
+        "state-lawrence-walsh"
+      ],
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "North and Poindexter's later convictions were vacated; Hakim and Secord pleaded guilty."
+    },
+    {
+      "id": "state-iran-pardons-event",
+      "date": "1992-12-24",
+      "title": "Bush grants six Iran-Contra pardons",
+      "summary": "Pardons covered Weinberger, Elliott Abrams, Duane Clarridge, Alan Fiers, Clair George and Robert McFarlane.",
+      "entityIds": [
+        "state-george-hw-bush",
+        "state-caspar-weinberger"
+      ],
+      "sourceIds": [
+        "state-iran-pardons"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Weinberger and Clarridge were pardoned before trial."
+    },
+    {
+      "id": "state-walsh-report",
+      "date": "1993-08-04",
+      "title": "Walsh submits Iran-Contra final report",
+      "summary": "The independent counsel submitted his report after prosecutions, reversals and pardons.",
+      "entityIds": [
+        "state-lawrence-walsh"
+      ],
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The inquiry did not yield a uniform outcome for all defendants."
+    },
+    {
+      "id": "state-fbi-detainee-policy",
+      "date": "2004-05",
+      "title": "FBI issues detainee-interrogation policy",
+      "summary": "OIG later found this guidance late and insufficiently clear about reporting other agencies' mistreatment.",
+      "entityIds": [
+        "fbi",
+        "state-doj-oig"
+      ],
+      "sourceIds": [
+        "state-oig-detainees-summary"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The review generally credited FBI agents for avoiding abuse."
+    },
+    {
+      "id": "state-oig-detainee-report",
+      "date": "2008-05",
+      "title": "OIG reports on FBI detainee interrogations",
+      "summary": "The inspector general identified shortcomings in guidance and escalation of concerns about other agencies.",
+      "entityIds": [
+        "state-doj-oig",
+        "fbi",
+        "cia"
+      ],
+      "sourceIds": [
+        "state-oig-detainees",
+        "state-oig-detainees-summary"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The OIG did not substantiate allegations of FBI participation in detainee abuse."
+    },
+    {
+      "id": "state-durham-closure-event",
+      "date": "2012-08-30",
+      "title": "DOJ closes investigations into two detainee deaths",
+      "summary": "DOJ declined prosecution, stating that admissible evidence could not sustain convictions beyond reasonable doubt.",
+      "entityIds": [
+        "us-doj",
+        "cia"
+      ],
+      "sourceIds": [
+        "state-durham-closure"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "A charging decision is distinct from the Senate's later findings and from an acquittal after trial."
+    },
+    {
+      "id": "state-cia-response-event",
+      "date": "2013-06-27",
+      "title": "CIA responds to draft Senate detention findings",
+      "summary": "The agency acknowledged management failures but disputed central conclusions about effectiveness and deliberate misrepresentation.",
+      "entityIds": [
+        "cia",
+        "us-senate"
+      ],
+      "sourceIds": [
+        "state-cia-response"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "The memorandum was approved for public release in December 2014; it is the agency's response."
+    },
+    {
+      "id": "state-blackwater-export-settlement",
+      "date": "2010-08-18",
+      "title": "Xe agrees to export-control civil settlement",
+      "summary": "The later filed DPA records a $42 million State Department consent agreement.",
+      "entityIds": [
+        "blackwater",
+        "us-state-department"
+      ],
+      "sourceIds": [
+        "state-academi-dpa"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Civil administrative settlement; this entry is not a criminal conviction."
+    },
+    {
+      "id": "state-academi-dpa-event",
+      "date": "2012-08-07",
+      "title": "Academi enters deferred prosecution agreement",
+      "summary": "The agreement acknowledged corporate conduct and specified a $7.5 million penalty with compliance-cost credits.",
+      "entityIds": [
+        "academi",
+        "blackwater",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-academi-doj",
+        "state-academi-dpa"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "DPA, not conviction; later dismissal is separately reported."
+    },
+    {
+      "id": "state-academi-dismissal-event",
+      "date": "2015-09",
+      "title": "Academi deferred charges reportedly dismissed",
+      "summary": "The Intercept reported that charges were dismissed after the government certified compliance.",
+      "entityIds": [
+        "academi",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-academi-dismissal-report"
+      ],
+      "evidence": "reported",
+      "topic": "Intelligence & conflict",
+      "limitations": "Secondary report reproduced by Reader Supported News; final dismissal order not retrieved."
+    },
+    {
+      "id": "state-blackwater-appeal-event",
+      "date": "2017-08-04",
+      "title": "Appeals court reverses Slatten conviction and orders resentencing",
+      "summary": "The court ordered a separate retrial for Slatten and new sentences for Slough, Liberty and Heard.",
+      "entityIds": [
+        "state-dc-circuit",
+        "nicholas-slatten",
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard"
+      ],
+      "sourceIds": [
+        "state-blackwater-appeal"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "Slatten was later reconvicted; all four were pardoned in 2020."
+    },
+    {
+      "id": "state-slatten-sentence-event",
+      "date": "2019-08-14",
+      "title": "Slatten sentenced to life after retrial",
+      "summary": "Following a 2018 mistrial and subsequent guilty verdict, Slatten received a life sentence for first-degree murder.",
+      "entityIds": [
+        "nicholas-slatten",
+        "us-doj"
+      ],
+      "sourceIds": [
+        "state-slatten-sentence"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "limitations": "President Trump granted a full pardon in December 2020."
+    },
+    {
+      "id": "state-gru-malware-event",
+      "date": "2020-10-19",
+      "title": "U.S. announces destructive-malware indictment",
+      "summary": "Six officers of GRU Unit 74455 were charged in an indictment returned October 15.",
+      "entityIds": [
+        "us-doj",
+        "gru",
+        "state-gru-unit-74455"
+      ],
+      "sourceIds": [
+        "state-gru-malware",
+        "state-gru-malware-indictment"
+      ],
+      "evidence": "allegation",
+      "topic": "Intelligence & conflict",
+      "limitations": "The alleged conduct remains an accusation in this record, not a trial finding."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "state-senate-cia-review",
+      "from": "us-senate",
+      "to": "cia",
+      "type": "oversight",
+      "label": "Investigated CIA detention and interrogation",
+      "date": "2014-12-09",
+      "sourceIds": [
+        "state-cia-findings",
+        "state-cia-response"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Legislative oversight with an agency response.",
+      "limitations": "An oversight relationship is not a criminal judgment."
+    },
+    {
+      "id": "state-oig-fbi-review",
+      "from": "state-doj-oig",
+      "to": "fbi",
+      "type": "oversight",
+      "label": "Reviewed detainee-interrogation conduct and policies",
+      "date": "2008-05",
+      "sourceIds": [
+        "state-oig-detainees-summary"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "OIG criticized guidance and generally credited agent conduct.",
+      "limitations": ""
+    },
+    {
+      "id": "state-turner-testimony",
+      "from": "state-stansfield-turner",
+      "to": "us-senate",
+      "type": "testimony",
+      "label": "Testified about recovered MKULTRA records",
+      "date": "1977-08-03",
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Appeared as CIA director and witness.",
+      "limitations": "Testimony does not establish personal involvement in the earlier experiments."
+    },
+    {
+      "id": "state-church-fbi-review",
+      "from": "us-senate",
+      "to": "fbi",
+      "type": "oversight",
+      "label": "Investigated COINTELPRO and intelligence abuses",
+      "date": "1976-04-29",
+      "sourceIds": [
+        "intel-church"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Committee investigated the agency's historical conduct.",
+      "limitations": ""
+    },
+    {
+      "id": "state-walsh-north-prosecution",
+      "from": "state-lawrence-walsh",
+      "to": "state-oliver-north",
+      "type": "prosecution",
+      "label": "Prosecuted Iran-Contra charges; convictions later vacated",
+      "date": "1988-03-16",
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Outcome includes reversal arising from immunized testimony.",
+      "limitations": "No standing conviction is asserted."
+    },
+    {
+      "id": "state-walsh-poindexter-prosecution",
+      "from": "state-lawrence-walsh",
+      "to": "state-john-poindexter",
+      "type": "prosecution",
+      "label": "Prosecuted Iran-Contra charges; convictions later vacated",
+      "date": "1988-03-16",
+      "sourceIds": [
+        "state-walsh-archives"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Outcome includes reversal arising from immunized testimony.",
+      "limitations": "No standing conviction is asserted."
+    },
+    {
+      "id": "state-bush-weinberger-pardon",
+      "from": "state-george-hw-bush",
+      "to": "state-caspar-weinberger",
+      "type": "clemency",
+      "label": "Granted pretrial Iran-Contra pardon",
+      "date": "1992-12-24",
+      "sourceIds": [
+        "state-iran-pardons"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Executive clemency before trial.",
+      "limitations": "Pardon does not adjudicate allegations."
+    },
+    {
+      "id": "state-doj-academi-dpa",
+      "from": "us-doj",
+      "to": "academi",
+      "type": "enforcement-agreement",
+      "label": "Entered corporate deferred prosecution agreement",
+      "date": "2012-08-07",
+      "sourceIds": [
+        "state-academi-doj",
+        "state-academi-dpa"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Corporate agreement included admissions, remediation and a monetary penalty.",
+      "limitations": "Not a conviction; later dismissal is reported in the linked case."
+    },
+    {
+      "id": "state-treasury-wagner-sanctions",
+      "from": "us-treasury",
+      "to": "wagner-group",
+      "type": "sanctions",
+      "label": "Designated under transnational-crime sanctions authority",
+      "date": "2023-01-26",
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "evidence": "documented",
+      "topic": "Intelligence & conflict",
+      "context": "Administrative designation attributed to Treasury.",
+      "limitations": "Not a criminal conviction."
+    },
+    {
+      "id": "state-gru-unit26165-affiliation",
+      "from": "state-gru-unit-26165",
+      "to": "gru",
+      "type": "organizational-unit",
+      "label": "Identified as GRU unit in 2018 indictment",
+      "date": "2018-07-13",
+      "sourceIds": [
+        "russia-gru"
+      ],
+      "evidence": "allegation",
+      "topic": "Intelligence & conflict",
+      "context": "Affiliation described in the charging instrument.",
+      "limitations": "Conduct charges concern named defendants."
+    },
+    {
+      "id": "state-gru-unit74455-affiliation",
+      "from": "state-gru-unit-74455",
+      "to": "gru",
+      "type": "organizational-unit",
+      "label": "Identified as GRU unit in indictments",
+      "date": "2020-10-19",
+      "sourceIds": [
+        "russia-gru",
+        "state-gru-malware"
+      ],
+      "evidence": "allegation",
+      "topic": "Intelligence & conflict",
+      "context": "Affiliation described in separate charging instruments.",
+      "limitations": "No unit-wide conviction is asserted."
+    }
+  ],
+  "cases": [
+    {
+      "id": "state-cia-detention-case",
+      "title": "CIA detention and coercive interrogation: Senate findings",
+      "date": "2014-12-09",
+      "topic": "Intelligence & conflict",
+      "summary": "The Senate examined CIA detention and interrogation after September 11.",
+      "entityIds": [
+        "cia",
+        "us-senate"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "cia",
+          "role": "Program operator and subject of inquiry"
+        },
+        {
+          "entityId": "us-senate",
+          "role": "Congressional investigator"
+        }
+      ],
+      "sourceIds": [
+        "intel-detention",
+        "state-cia-findings",
+        "state-cia-response",
+        "state-durham-closure"
+      ],
+      "eventIds": [
+        "i-detention-2014",
+        "state-cia-response-event",
+        "state-durham-closure-event"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "Dated to public release of the Senate study; legislative findings, not criminal convictions.",
+      "findings": "The committee found brutality, misleading descriptions and ineffective coercive interrogation. It identified at least 119 detainees, including at least 26 held outside the program's detention standard.",
+      "response": "CIA acknowledged management, accountability and contractor-conflict failures, but disputed conclusions about unique intelligence and deliberate deception. Separate Senate minority views are linked from the release.",
+      "outcome": "CIA's response said the program ended in 2009 and described reforms. DOJ's separate 2012 investigation into two deaths ended without charges for insufficient admissible evidence.",
+      "limitations": "The full study remained classified in the cited release; findings and rebuttals must be attributed separately. DOJ closure does not reverse the legislative findings.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-fbi-detainees-case",
+      "title": "FBI detainee-interrogation oversight: failures and limits",
+      "date": "2008-05",
+      "topic": "Intelligence & conflict",
+      "summary": "DOJ's inspector general reviewed FBI conduct in Guantanamo, Afghanistan and Iraq.",
+      "entityIds": [
+        "fbi",
+        "state-doj-oig",
+        "cia"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "fbi",
+          "role": "Agency reviewed; agents also reported concerns"
+        },
+        {
+          "entityId": "state-doj-oig",
+          "role": "Independent inspector general"
+        },
+        {
+          "entityId": "cia",
+          "role": "Agency whose techniques agents observed"
+        }
+      ],
+      "sourceIds": [
+        "state-oig-detainees",
+        "state-oig-detainees-summary"
+      ],
+      "eventIds": [
+        "state-fbi-detainee-policy",
+        "state-oig-detainee-report"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "May 2008 OIG review, not an adjudication of every reported incident.",
+      "findings": "OIG found inadequate and delayed guidance and failures to resolve agents' concerns about other agencies' harsh techniques.",
+      "response": "Mueller directed in 2002 that FBI agents avoid joint interrogations using prohibited FBI techniques.",
+      "outcome": "OIG found no support for allegations of FBI detainee abuse and said the vast majority of agents adhered to FBI policy.",
+      "limitations": "OIG noted infrequent departures from normal domestic techniques, while finding no support for abuse allegations. Observing another agency's conduct does not establish participation or supply individual criminal judgments.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-mkultra-case",
+      "title": "MKULTRA: nonconsensual drug experiments and destroyed records",
+      "date": "1977-08-03",
+      "topic": "Intelligence & conflict",
+      "summary": "A Senate hearing examined recovered CIA behavioral-research records.",
+      "entityIds": [
+        "cia",
+        "us-senate",
+        "state-stansfield-turner"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "cia",
+          "role": "Program operator"
+        },
+        {
+          "entityId": "us-senate",
+          "role": "Congressional investigator"
+        },
+        {
+          "entityId": "state-stansfield-turner",
+          "role": "CIA director and witness"
+        }
+      ],
+      "sourceIds": [
+        "intel-mkultra"
+      ],
+      "eventIds": [
+        "state-mkultra-approved",
+        "state-mkultra-destruction",
+        "i-mkultra-1977"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "1977 sworn testimony and documentary record; not a current-operations finding.",
+      "findings": "The record describes covert drug testing on unwitting people and funding through research institutions.",
+      "response": "Turner disclosed recovered financial records and agreed to notify identifiable subjects and institutions.",
+      "outcome": "The hearing exposed additional activity despite destruction of operational records in 1973.",
+      "limitations": "Some researchers and institutions were unaware of CIA sponsorship. Experiments do not establish successful mind control; incomplete records prevent a complete victim or operation list.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-cointelpro-case",
+      "title": "COINTELPRO: political disruption and civil-rights abuses",
+      "date": "1976-04-29",
+      "topic": "Intelligence & conflict",
+      "summary": "The Church Committee documented FBI efforts to disrupt political and civil-rights activity.",
+      "entityIds": [
+        "fbi",
+        "us-senate"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "fbi",
+          "role": "Program operator"
+        },
+        {
+          "entityId": "us-senate",
+          "role": "Congressional investigator"
+        }
+      ],
+      "sourceIds": [
+        "intel-church",
+        "state-fbi-cointelpro"
+      ],
+      "eventIds": [
+        "state-cointelpro-ended",
+        "i-church-1975",
+        "state-church-report"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "1976 legislative findings, with later FBI acknowledgment.",
+      "findings": "The inquiry described efforts to discredit civil-rights and antiwar organizations and individuals, including Martin Luther King Jr.",
+      "response": "The FBI's retrospective acknowledges infringement of First Amendment rights. Senator Tower accepted that excesses occurred while cautioning against excessive restraints on national-security discretion.",
+      "outcome": "COINTELPRO ended in April 1971; the later inquiry contributed to permanent congressional intelligence oversight and other reforms.",
+      "limitations": "This case concerns specific historical programs, not every FBI employee or contemporary investigation.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-iran-contra-case",
+      "title": "Iran-Contra prosecutions, vacated convictions and pardons",
+      "date": "1993-08-04",
+      "topic": "Intelligence & conflict",
+      "summary": "An independent counsel investigated arms transactions and diversion of proceeds to the Contras.",
+      "entityIds": [
+        "state-lawrence-walsh",
+        "fbi",
+        "state-oliver-north",
+        "state-john-poindexter",
+        "state-caspar-weinberger",
+        "state-george-hw-bush"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "state-lawrence-walsh",
+          "role": "Independent counsel"
+        },
+        {
+          "entityId": "fbi",
+          "role": "Investigating agency"
+        },
+        {
+          "entityId": "state-oliver-north",
+          "role": "Defendant; convictions vacated"
+        },
+        {
+          "entityId": "state-john-poindexter",
+          "role": "Defendant; convictions vacated"
+        },
+        {
+          "entityId": "state-caspar-weinberger",
+          "role": "Defendant pardoned before trial"
+        },
+        {
+          "entityId": "state-george-hw-bush",
+          "role": "President issuing pardons"
+        }
+      ],
+      "sourceIds": [
+        "state-walsh-archives",
+        "state-iran-pardons"
+      ],
+      "eventIds": [
+        "state-iran-investigation",
+        "state-iran-indictment",
+        "state-iran-pardons-event",
+        "state-walsh-report"
+      ],
+      "status": "official-investigation",
+      "statusDetail": "Dated to Walsh's final report; individual cases had distinct dispositions.",
+      "findings": "NARA records guilty pleas and convictions arising from the investigation, as well as cases ending without sustained convictions.",
+      "response": "North and Poindexter's convictions were vacated because of taint from immunized congressional testimony. Bush defended his pardons as a response to politicized prosecutions.",
+      "outcome": "Bush pardoned six men in December 1992, including Weinberger and Clarridge before trial; Walsh submitted his report in August 1993.",
+      "limitations": "Vacated convictions cannot be presented as standing convictions. A pardon before trial does not establish the charged allegations.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-nisur-case",
+      "title": "Nisur Square: convictions, appeal, retrial and pardons",
+      "date": "2019-09-05",
+      "topic": "Intelligence & conflict",
+      "summary": "Four former Blackwater guards faced U.S. prosecutions over the 2007 Baghdad shootings.",
+      "entityIds": [
+        "nicholas-slatten",
+        "paul-slough",
+        "evan-liberty",
+        "dustin-heard",
+        "blackwater",
+        "state-dc-circuit",
+        "us-doj",
+        "donald-trump"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "nicholas-slatten",
+          "role": "Convicted after retrial; pardoned in 2020"
+        },
+        {
+          "entityId": "paul-slough",
+          "role": "Convicted defendant; pardoned in 2020"
+        },
+        {
+          "entityId": "evan-liberty",
+          "role": "Convicted defendant; pardoned in 2020"
+        },
+        {
+          "entityId": "dustin-heard",
+          "role": "Convicted defendant; pardoned in 2020"
+        },
+        {
+          "entityId": "blackwater",
+          "role": "Employer at time of incident"
+        },
+        {
+          "entityId": "state-dc-circuit",
+          "role": "Appellate court"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        },
+        {
+          "entityId": "donald-trump",
+          "role": "President issuing pardons"
+        }
+      ],
+      "sourceIds": [
+        "security-nisur",
+        "state-blackwater-appeal",
+        "state-slatten-sentence",
+        "state-trump-pardon-register",
+        "security-pardons"
+      ],
+      "eventIds": [
+        "i-nisur-2007",
+        "state-blackwater-appeal-event",
+        "state-slatten-sentence-event",
+        "i-nisur-sentences",
+        "i-blackwater-pardons"
+      ],
+      "status": "conviction",
+      "statusDetail": "Historical convictions and 2019 sentences; all four defendants received full presidential pardons on December 22, 2020.",
+      "findings": "Slatten was convicted of first-degree murder after retrial. Slough, Liberty and Heard were convicted of manslaughter, attempted manslaughter and firearms offenses.",
+      "response": "The 2017 appeal found Slatten should have received a separate trial and required resentencing of the others; the court included separate opinions.",
+      "outcome": "Slatten received life in August 2019; the others received 180, 168 and 151 months in September. Trump subsequently pardoned all four.",
+      "limitations": "The record does not establish criminal liability of every employee or company owner. The pardons are executive acts, distinct from the jury verdicts.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-blackwater-export-case",
+      "title": "Blackwater/Xe export-control settlement and Academi DPA",
+      "date": "2010-08-18",
+      "topic": "Intelligence & conflict",
+      "summary": "Corporate export and firearms enforcement produced a civil settlement and a later deferred prosecution agreement.",
+      "entityIds": [
+        "blackwater",
+        "academi",
+        "us-state-department",
+        "us-doj"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "blackwater",
+          "role": "Historical corporate operations covered"
+        },
+        {
+          "entityId": "academi",
+          "role": "Corporate DPA party"
+        },
+        {
+          "entityId": "us-state-department",
+          "role": "Civil export-control regulator"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        }
+      ],
+      "sourceIds": [
+        "state-academi-doj",
+        "state-academi-dpa",
+        "state-academi-dismissal-report"
+      ],
+      "eventIds": [
+        "state-blackwater-export-settlement",
+        "state-academi-dpa-event",
+        "state-academi-dismissal-event"
+      ],
+      "status": "civil-settlement",
+      "statusDetail": "2010 State Department settlement; a separate 2012 DPA resolved criminal charges conditionally, without a conviction.",
+      "findings": "The corporate agreement accepted responsibility for its statement of facts involving unauthorized exports, defense services and firearms conduct.",
+      "response": "DOJ acknowledged cooperation, replacement of leadership and improved compliance controls.",
+      "outcome": "The civil penalty was $42 million. The DPA specified $7.5 million with up to $2.5 million in compliance credits. A 2016 Intercept report says deferred charges were dismissed in September 2015 after compliance.",
+      "limitations": "The dismissal is reported through a reproduction; its court order was not retrieved. Corporate admissions do not establish personal guilt of shareholders. No active prosecution or corporate conviction is claimed.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-wagner-sanctions-case",
+      "title": "Wagner: U.S. sanctions findings concerning serious abuses",
+      "date": "2023-01-26",
+      "topic": "Intelligence & conflict",
+      "summary": "Treasury designated Wagner a significant transnational criminal organization.",
+      "entityIds": [
+        "wagner-group",
+        "us-treasury",
+        "yevgeny-prigozhin"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "wagner-group",
+          "role": "Sanctioned organization"
+        },
+        {
+          "entityId": "us-treasury",
+          "role": "Sanctions authority"
+        },
+        {
+          "entityId": "yevgeny-prigozhin",
+          "role": "Leader identified in the 2023 decision"
+        }
+      ],
+      "sourceIds": [
+        "russia-wagner"
+      ],
+      "eventIds": [
+        "i-wagner-2023"
+      ],
+      "status": "regulatory-action",
+      "statusDetail": "January 2023 administrative sanctions determination, not a criminal conviction.",
+      "findings": "Treasury attributed mass executions, rape, child abductions and physical abuse in Mali and the Central African Republic to Wagner personnel.",
+      "response": "The cited Treasury announcement contains no substantive response from Wagner.",
+      "outcome": "Treasury redesignated Wagner under transnational-crime and Central African Republic sanctions authorities.",
+      "limitations": "This entry records the 2023 decision, not a complete or current sanctions register. It does not assign responsibility to every Russian person or every contractor.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-gru-election-case",
+      "title": "Twelve GRU officers: 2016 election-hacking allegations",
+      "date": "2018-07-13",
+      "topic": "Intelligence & conflict",
+      "summary": "A U.S. indictment alleged hacking and release of stolen political documents.",
+      "entityIds": [
+        "gru",
+        "state-gru-unit-26165",
+        "state-gru-unit-74455",
+        "us-doj",
+        "fbi"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "gru",
+          "role": "Agency affiliation alleged for defendants"
+        },
+        {
+          "entityId": "state-gru-unit-26165",
+          "role": "Unit identified in indictment"
+        },
+        {
+          "entityId": "state-gru-unit-74455",
+          "role": "Unit identified in indictment"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        },
+        {
+          "entityId": "fbi",
+          "role": "Investigating agency"
+        }
+      ],
+      "sourceIds": [
+        "russia-gru"
+      ],
+      "eventIds": [
+        "i-gru-indictment"
+      ],
+      "status": "allegation",
+      "statusDetail": "July 2018 indictment; this case card does not represent a conviction or a current docket certification.",
+      "findings": "Prosecutors alleged spearphishing, theft, staged releases and attempts to obtain election-administration data.",
+      "response": "The cited announcement contains no defense pleading and expressly states the presumption of innocence.",
+      "outcome": "Twelve named officers were charged; the verified source records the indictment rather than a trial outcome.",
+      "limitations": "DOJ said this indictment did not allege knowing American participation or changes to vote counts or the election outcome. Institutional affiliation does not make every member a defendant.",
+      "reviewed": "2026-10-19"
+    },
+    {
+      "id": "state-gru-malware-case",
+      "title": "GRU Unit 74455: destructive-malware allegations",
+      "date": "2020-10-19",
+      "topic": "Intelligence & conflict",
+      "summary": "U.S. prosecutors charged six officers over alleged cyberattacks affecting civilian infrastructure and public events.",
+      "entityIds": [
+        "gru",
+        "state-gru-unit-74455",
+        "us-doj",
+        "fbi"
+      ],
+      "entityRoles": [
+        {
+          "entityId": "gru",
+          "role": "Agency affiliation alleged for defendants"
+        },
+        {
+          "entityId": "state-gru-unit-74455",
+          "role": "Unit identified in indictment"
+        },
+        {
+          "entityId": "us-doj",
+          "role": "Prosecuting authority"
+        },
+        {
+          "entityId": "fbi",
+          "role": "Investigating agency"
+        }
+      ],
+      "sourceIds": [
+        "state-gru-malware",
+        "state-gru-malware-indictment"
+      ],
+      "eventIds": [
+        "state-gru-malware-event"
+      ],
+      "status": "allegation",
+      "statusDetail": "October 2020 indictment and announcement; no trial verdict is represented.",
+      "findings": "The indictment alleged Ukrainian power-grid attacks, NotPetya damage, election-related hacking and disruption of the 2018 Winter Olympics.",
+      "response": "The charging release contains no defense response and states that the defendants are presumed innocent.",
+      "outcome": "Six officers were charged. Anatoliy Kovalev was also a defendant in the separate 2018 election case.",
+      "limitations": "Charges are allegations, and affiliation is not collective guilt. This research does not certify the current docket or custody status.",
+      "reviewed": "2026-10-19"
+    }
+  ],
+  "coverage": {
+    "title": "State, intelligence and security accountability records",
+    "scope": "Ten bounded case histories based on official investigations, court records, sanctions decisions and negotiated resolutions; reviewed 19 October 2026.",
+    "limits": [
+      "This is a selected case collection, not a complete history of covert operations or all alleged misconduct.",
+      "Each status describes the dated record specified in statusDetail. Investigative findings, sanctions and indictments are not interchangeable with convictions.",
+      "Officials, investigators, courts, defendants and program operators have explicit case roles. An entity's appearance does not imply culpability.",
+      "Most sources are primary government records. The reported September 2015 dismissal of the Academi deferred charges is attributed to a reproduced Intercept report; the final court order was not retrieved.",
+      "Redacted or destroyed records limit reconstruction. No inference of undisclosed networks, contemporary mind-control operations, or collective responsibility is drawn."
+    ]
+  }
+}

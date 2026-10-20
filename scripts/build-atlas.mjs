@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const files = ['research-bilderberg-dialogue.json', 'research-epstein.json', 'research-history-ai-politics.json'];
+const files = ['research-bilderberg-dialogue.json', 'research-epstein.json', 'research-history-ai-politics.json', 'research-corporate-cases.json', 'research-state-cases.json', 'research-epstein-cases.json'];
 const read = file => JSON.parse(fs.readFileSync(path.join(root, 'research', file), 'utf8').replace(/^\uFEFF/, ''));
 const datasets = files.map(read);
 const unique = values => [...new Set(values)];
@@ -32,6 +32,7 @@ for (const d of datasets) {
 const resolve = id => idMap.get(id) || id;
 const events = datasets.flatMap(d=>d.events).map(e=>({...e,entityIds:unique(e.entityIds.map(resolve)),sortDate: String(e.date).match(/\d{4}(?:-\d{2})?(?:-\d{2})?/)?.[0] || '9999',limitations:text(e.limitations)}));
 const relationships = datasets.flatMap(d=>d.relationships).map(r=>({...r,from:resolve(r.from),to:resolve(r.to),context:text(r.context),limitations:text(r.limitations)}));
+const cases = datasets.flatMap(d=>d.cases||[]).map(c=>({...c,entityIds:unique(c.entityIds.map(resolve)),entityRoles:(c.entityRoles||[]).map(r=>({...r,entityId:resolve(r.entityId)})),evidence:c.evidence||'documented',sortDate:String(c.date).match(/\d{4}(?:-\d{2})?(?:-\d{2})?/)?.[0]||'9999'}));
 const rosters = datasets.flatMap(d=>d.rosters||[]).map(r=>({...r,eventId:resolve(r.eventId),organizationId:resolve(r.organizationId),entries:r.entries.map(e=>({...e,entityId:resolve(e.entityId)}))}));
 for(const e of entities.values()) {
   if(!e.summary) {
@@ -44,7 +45,7 @@ const coverage = datasets.map((d,index)=>{
   const details = Object.entries(c).filter(([k])=>!['title','scope','summary','sourceIds','limits','limitations','gaps','readingRules','topic','asOf'].includes(k)).map(([k,v])=>`${k.replace(/([a-z])([A-Z])/g,'$1 $2')}: ${text(v)}`);
   return {title:c.title||c.topic||['Bilderberg & Dialog','Epstein records','History, AI and public affairs'][index],summary:c.scope||c.summary||'',notes:[...details,...(c.limits||[]),...(c.limitations||[]),...(c.gaps||[]),...(c.readingRules||[])],sourceIds:c.sourceIds||[]};
 });
-const atlas = {version:1,updated:'2026-10-19',title:'Bad Tengu research atlas',sources:[...sources.values()],entities:[...entities.values()],events,relationships,rosters,coverage};
+const atlas = {version:2,updated:'2026-10-19',title:'Bad Tengu research atlas',sources:[...sources.values()],entities:[...entities.values()],events,relationships,cases,rosters,coverage};
 fs.mkdirSync(path.join(root,'public/data'),{recursive:true});
 fs.writeFileSync(path.join(root,'public/data/atlas.json'),JSON.stringify(atlas,null,2)+'\n');
-console.log(`Built atlas: ${atlas.entities.length} entities, ${events.length} events, ${relationships.length} relationships, ${sources.size} sources, ${rosters.length} rosters.`);
+console.log(`Built atlas: ${atlas.entities.length} entities, ${events.length} events, ${relationships.length} relationships, ${sources.size} sources, ${rosters.length} rosters, ${cases.length} cases.`);
